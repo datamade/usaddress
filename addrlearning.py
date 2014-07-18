@@ -31,6 +31,9 @@ def addr2features(address):
 def addr2labels(address):
 	return [address[i][1] for i in range(len(address))]
 
+def addr2tokens(address):
+	return [address[i][0] for i in range(len(address))]
+
 
 # prep the training & test data
 file = open('./training_data/us50.train.tagged', 'r')
@@ -53,3 +56,21 @@ trainer = pycrfsuite.Trainer(verbose=False)
 
 for xseq, yseq in zip(x_train, y_train):
 	trainer.append(xseq, yseq)
+
+trainer.train('usaddr.crfsuite')
+
+#predictions
+tagger = pycrfsuite.Tagger()
+tagger.open('usaddr.crfsuite')
+
+#see predictions of example addresses against correct labels
+example_addrs = test_data[0:10]
+for example in example_addrs:
+	print "ADDRESS:   ", ' '.join(addr2tokens(example))
+	print "PREDICTED: ", ' '.join(tagger.tag(addr2features(example)))
+	print "CORRECT:   ", ' '.join(addr2labels(example)), '\n'
+
+
+
+
+
