@@ -1,4 +1,6 @@
 import pycrfsuite
+import re
+import string
 
 def parseLines(lines):
     parsed = [[]]
@@ -18,7 +20,7 @@ def parseLines(lines):
             token_num = split[1].rstrip()
             token_num = int(token_num)
             token_tag = tag_list[token_num]
-            words = token_string.split(' ')
+            words = re.findall(r"[\w]+|[^\s\w]", token_string)
             for word in words:
                 parsed[addr_index].append((word, token_tag))
 
@@ -27,7 +29,9 @@ def parseLines(lines):
 def word2features(address, i):
     word = address[i][0]
     features = ['word.lower=' + word.lower(), 
-                    'word.isdigit=%s' % word.isdigit()]
+                'word.isdigit=%s' % word.isdigit(),
+                'word.ispunctuation=%s' % (word in string.punctuation)]
+    
     return features
 
 def addr2features(address):
