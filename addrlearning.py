@@ -4,7 +4,8 @@ def parseLines(lines):
     parsed = [[]]
     addr_index = 0
     token_index = 0
-    tag_list = ['', 'street number', '2', 'street', '4', 'city', 'state', 'zip']
+    tag_list = [None, 'street number', 'pobox', 'street', None,
+                'city', 'state', 'zip']
     
     for line in lines:
         if line == '\n':
@@ -18,8 +19,6 @@ def parseLines(lines):
             token_num = int(token_num)
             token_tag = tag_list[token_num]
             parsed[addr_index].append((token_string, token_tag))
-
-    print parsed
 
     return parsed
 
