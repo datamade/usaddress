@@ -18,7 +18,9 @@ def parseLines(lines):
             token_num = split[1].rstrip()
             token_num = int(token_num)
             token_tag = tag_list[token_num]
-            parsed[addr_index].append((token_string, token_tag))
+            words = token_string.split(' ')
+            for word in words:
+                parsed[addr_index].append((word, token_tag))
 
     return parsed
 
