@@ -16,36 +16,36 @@ def parseLines(lines):
             parsed.append([])
         else:
             split = line.split(' |')
-            token_string = split[0]
+            full_token_string = split[0]
             token_num = split[1].rstrip()
             token_num = int(token_num)
             token_tag = tag_list[token_num]
-            words = re.findall(r"[\w]+|[^\s\w]", token_string)
-            for word in words:
-                parsed[addr_index].append((word, token_tag))
+            token_list = re.findall(r"[\w]+|[^\s\w]", full_token_string)
+            for token in token_list:
+                parsed[addr_index].append((token, token_tag))
 
     return parsed
 
-def word2features(address, i):
-    word = address[i][0]
+def token2features(address, i):
+    token = address[i][0]
     if i == 0:
-        wordprevious = ''
+        previous_token = ''
     else:
-        wordprevious = address[i-1][0]
+        previous_token = address[i-1][0]
     if i +1 == len(address):
-        wordnext= ''
+        next_token = ''
     else:
-        wordnext = address[i+1][0]
-    features = ['word.lower=' + word.lower(), 
-                'word.isdigit=%s' % word.isdigit(),
-                'word.ispunctuation=%s' % (word in string.punctuation),
-                'word.previous=' + wordprevious,
-                'word.next=' + wordnext
+        next_token = address[i+1][0]
+    features = ['token.lower=' + token.lower(), 
+                'token.isdigit=%s' % token.isdigit(),
+                'token.ispunctuation=%s' % (token in string.punctuation),
+                'token.previous=' + previous_token,
+                'word.next=' + next_token
                 ]
     return features
 
 def addr2features(address):
-    return [word2features(address, i) for i in range(len(address))]
+    return [token2features(address, i) for i in range(len(address))]
 
 def addr2labels(address):
     return [address[i][1] for i in range(len(address))]
@@ -87,10 +87,7 @@ for example in example_addrs:
     print "PREDICTED: ", ' '.join(tagger.tag(addr2features(example)))
     print "CORRECT:   ", ' '.join(addr2labels(example)), '\n'
 
-
-print train_data[0]
-print "***"
-print x_train[0]
-
-
-
+#see features
+for i in range(0, len(train_data[0])):
+    print "token:    ", train_data[0][i]
+    print "features: ", x_train[0][i]
