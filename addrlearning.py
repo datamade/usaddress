@@ -28,10 +28,20 @@ def parseLines(lines):
 
 def word2features(address, i):
     word = address[i][0]
+    if i == 0:
+        wordprevious = ''
+    else:
+        wordprevious = address[i-1][0]
+    if i +1 == len(address):
+        wordnext= ''
+    else:
+        wordnext = address[i+1][0]
     features = ['word.lower=' + word.lower(), 
                 'word.isdigit=%s' % word.isdigit(),
-                'word.ispunctuation=%s' % (word in string.punctuation)]
-    
+                'word.ispunctuation=%s' % (word in string.punctuation),
+                'word.previous=' + wordprevious,
+                'word.next=' + wordnext
+                ]
     return features
 
 def addr2features(address):
@@ -78,6 +88,9 @@ for example in example_addrs:
     print "CORRECT:   ", ' '.join(addr2labels(example)), '\n'
 
 
+print train_data[0]
+print "***"
+print x_train[0]
 
 
 
