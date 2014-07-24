@@ -28,19 +28,34 @@ def parseLines(lines):
 
 def token2features(address, i):
     token = address[i][0]
-    if i == 0:
-        previous_token = ''
-    else:
+
+    previous_token = ''
+    next_token = ''
+    previous_word = ''
+    next_word = ''
+    if i > 0:
         previous_token = address[i-1][0]
-    if i +1 == len(address):
-        next_token = ''
-    else:
+    if i+1 < len(address):
         next_token = address[i+1][0]
+    search_index = i
+    while (previous_word == '' and search_index > 0):
+        search_index -= 1
+        if address[search_index][0] not in string.punctuation:
+            previous_word = address[search_index][0]
+    search_index = i
+    while (next_word == '' and search_index+1 < len(address)):
+        search_index += 1
+        if address[search_index][0] not in string.punctuation:
+            next_word = address[search_index][0]
+
     features = ['token.lower=' + token.lower(), 
                 'token.isdigit=%s' % token.isdigit(),
                 'token.ispunctuation=%s' % (token in string.punctuation),
+                'token.length=%i' % len(token),
                 'token.previous=' + previous_token,
-                'word.next=' + next_token
+                'token.next=' + next_token,
+                'word.next=' + next_word,
+                'word.previous=' + previous_word
                 ]
     return features
 
