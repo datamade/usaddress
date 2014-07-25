@@ -6,8 +6,8 @@ def parseLines(lines):
     parsed = [[]]
     addr_index = 0
     token_index = 0
-    tag_list = [None, 'street number', 'pobox', 'street', None,
-                'city', 'state', 'zip']
+    tag_list = [None, 'street number', 'pobox', 'street', 'street type',
+                'city', 'state', 'zip', 'suffix']
     
     for line in lines:
         if line == '\n':
@@ -20,44 +20,46 @@ def parseLines(lines):
             token_num = split[1].rstrip()
             token_num = int(token_num)
             token_tag = tag_list[token_num]
-            token_list = re.findall(r"[\w]+|[^\s\w]", full_token_string)
+            token_list = full_token_string.split()
             for token in token_list:
                 parsed[addr_index].append((token, token_tag))
 
     return parsed
 
-def token2features(address, i):
-    token = address[i][0]
+def tokenFeatures(token) :
 
-    previous_token = ''
-    next_token = ''
-    previous_word = ''
-    next_word = ''
-    if i > 0:
-        previous_token = address[i-1][0]
-    if i+1 < len(address):
-        next_token = address[i+1][0]
-    search_index = i
-    while (previous_word == '' and search_index > 0):
-        search_index -= 1
-        if address[search_index][0] not in string.punctuation:
-            previous_word = address[search_index][0]
-    search_index = i
-    while (next_word == '' and search_index+1 < len(address)):
-        search_index += 1
-        if address[search_index][0] not in string.punctuation:
-            next_word = address[search_index][0]
+    features = {'token.lower' : token.lower(), 
+                #'token.isupper' : token.isupper(), 
+                #'token.islower' : token.islower(), 
+                #'token.istitle' : token.istitle(), 
+                'token.isdigit' : token.isdigit(),
+                #'digit.length' : token.isdigit() * len(token),
+                #'token.ispunctuation' : (token in string.punctuation),
+                #'token.length' : len(token),
+                #'ends_in_comma' : token[-1] == ','
+                }
 
-    features = ['token.lower=' + token.lower(), 
-                'token.isdigit=%s' % token.isdigit(),
-                'token.ispunctuation=%s' % (token in string.punctuation),
-                'token.length=%i' % len(token),
-                'token.previous=' + previous_token,
-                'token.next=' + next_token,
-                'word.next=' + next_word,
-                'word.previous=' + previous_word
-                ]
     return features
+
+def token2features(address, i):
+    features = tokenFeatures(address[i][0])
+
+
+    if i > 0:
+        previous_features = tokenFeatures(address[i-1][0])
+        for key, value in previous_features.items() :
+            features['previous.' + key] = value
+    else :
+        features['address.start'] = True
+
+    if i+1 < len(address) :
+        next_features = tokenFeatures(address[i+1][0])
+        for key, value in next_features.items() :
+            features['next.' + key] = value
+    else :
+        features['address.end'] = True
+
+    return [str(each) for each in features.items()]
 
 def addr2features(address):
     return [token2features(address, i) for i in range(len(address))]

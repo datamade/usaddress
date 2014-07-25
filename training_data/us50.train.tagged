@@ -1,4 +1,5 @@
-Homer Spit Road, |3
+Homer Spit |3
+Road, |4
 Homer, |5
 AK |6
 99603 |7
@@ -13,13 +14,16 @@ AR |6
 72027 |7
 
 9878 |1
-North Metro Parkway East, |3
+North Metro |3
+Parkway |4
+East, |8
 Phoenix, |5
 AZ |6
 85051 |7
 
 2896 |1
-Fairfax Street, |3
+Fairfax |3
+Street, |4
 Denver, |5
 CO |6
 80207 |7
@@ -30,31 +34,37 @@ CO |6
 81501 |7
 
 168 |1
-Hillside Avenue, |3
+Hillside |3
+Avenue, |4
 Hartford, |5
 CT |6
 06106 |7
 
 1025 |1
-Vermont Avenue Northwest, |3
+Vermont |3
+Avenue |4
+Northwest, |8
 Washington, |5
 DC |6
 20005 |7
 
 697 |1
-North Dupont Boulevard, |3
+North Dupont |3
+Boulevard, |4
 Milford, |5
 DE |6
 19963 |7
 
 1915 |1
-North Republic De Cuba Avenue, |3
+North Republic De Cuba |3
+Avenue, |4
 Tampa, |5
 FL |6
 33602 |7
 
 2406 |1
-North Slappey Boulevard, |3
+North Slappey |3
+Boulevard, |4
 Albany, |5
 GA |6
 31701 |7
@@ -72,85 +82,99 @@ IA |6
 51060 |7
 
 335 |1
-Deinhard Lane, |3
+Deinhard |3
+Lane, |4
 Mc Call, |5
 ID |6
 83638 |7
 
 8922 |1
-South 1/2 Greenwood Avenue, |3
+South 1/2 Greenwood |3
+Avenue, |4
 Chicago, |5
 IL |6
 60619 |7
 
 239 |1
-West Monroe Street, |3
+West Monroe |3
+Street, |4
 Decatur, |5
 IN |6
 46733 |7
 
 827 |1
-Frontage Road, |3
+Frontage |3
+Road, |4
 Agra, |5
 KS |6
 67621 |7
 
 508 |1
-West 6th Street, |3
+West 6th |3
+Street, |4
 Lexington, |5
 KY |6
 40508 |7
 
 5103 |1
-Hollywood Avenue, |3
+Hollywood |3
+Avenue, |4
 Shreveport, |5
 LA |6
 71109 |7
 
 79 |1
-Power Road, |3
+Power |3
+Road, |4
 Westford, |5
 MA |6
 01886 |7
 
 5105 |1
-Berwyn Road, |3
+Berwyn |3
+Road, |4
 College Park, |5
 MD |6
 20740 |7
 
 47 |1
-Broad Street, |3
+Broad |3
+Street, |4
 Auburn, |5
 ME |6
 04210 |7
 
 470 |1
-South Street, |3
+South |3
+Street, |4
 Ortonville, |5
 MI |6
 48462 |7
 
 404 |1
-Wilson Avenue, |3
+Wilson |3
+Avenue, |4
 Faribault, |5
 MN |6
 55021 |7
 
 5933 |1
-Mc Donnell Boulevard, |3
+Mc Donnell |3
+Boulevard, |4
 Hazelwood, |5
 MO |6
 63042 |7
 
 918 |1
-East Main Avenue, |3
+East Main |3
+Avenue, |4
 Lumberton, |5
 MS |6
 39455 |7
 
 107 |1
-A Street East, |3
+A Street |3
+East, |4
 Poplar, |5
 MT |6
 59255 |7
@@ -161,19 +185,22 @@ NC |6
 28604 |7
 
 2601 |1
-State Street, |3
+State |3
+Street, |4
 Bismarck, |5
 ND |6
 58501 |7
 
 207 |1
-South Bell Street, |3
+South Bell |3
+Street, |4
 Fremont, |5
 NE |6
 68025 |7
 
 107 |1
-State Street, |3
+State |3
+Street, |4
 Portsmouth, |5
 NH |6
 03801 |7
@@ -190,19 +217,22 @@ NM |6
 87740 |7
 
 516 |1
-West Goldfield Avenue, |3
+West Goldfield |3
+Avenue, |4
 Yerington, |5
 NV |6
 89447 |7
 
 2787 |1
-Bway Way, |3
+Bway |3
+Way, |4
 New York, |5
 NY |6
 10001 |7
 
 1380 |1
-Bethel Road, |3
+Bethel |3
+Road, |4
 Columbus, |5
 OH |6
 43220 |7
@@ -214,25 +244,29 @@ OK |6
 73038 |7
 
 17375 |1
-Southwest Tualatin Valley Hwy, |3
+Southwest Tualatin Valley |3
+Hwy, |4
 Beaverton, |5
 OR |6
 97006 |7
 
 114 |1
-Market Street, |3
+Market |3
+Street, |4
 Philadelphia, |5
 PA |6
 19106 |7
 
 169 |1
-Main Street, |3
+Main |3
+Street, |4
 Westerly, |5
 RI |6
 02891 |7
 
 70 |1
-State Street, |3
+State |3
+Street, |4
 Charleston, |5
 SC |6
 29401 |7
@@ -243,13 +277,15 @@ SD |6
 57201 |7
 
 615 |1
-North 8th Avenue, |3
+North 8th |3
+Avenue, |4
 Humboldt, |5
 TN |6
 38343 |7
 
 5435 |1
-North MacArthur Boulevard, |3
+North MacArthur |3
+Boulevard, |4
 Irving, |5
 TX |6
 75038 |7
@@ -261,25 +297,29 @@ UT |6
 84101 |7
 
 2457 |1
-North Harrison Street, |3
+North Harrison |3
+Street, |4
 Arlington, |5
 VA |6
 22207 |7
 
 1 |1
-Lamere Avenue, |3
+Lamere |3
+Avenue, |4
 Ludlow, |5
 VT |6
 05149 |7
 
 5300 |1
-South 76th Street, |3
+South 76th |3
+Street, |4
 Greendale, |5
 WI |6
 53129 |7
 
 200 |1
-Monroe Street, |3
+Monroe |3
+Street, |4
 Alderson, |5
 WV |6
 24910 |7
