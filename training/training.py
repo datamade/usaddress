@@ -91,4 +91,4 @@ trainer = pycrfsuite.Trainer(verbose=False)
 for xseq, yseq in zip(x_train, y_train):
     trainer.append(xseq, yseq)
 
-trainer.train('../usaddressparser/usaddr.crfsuite')
+trainer.train('../usaddress/usaddr.crfsuite')

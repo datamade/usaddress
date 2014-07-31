@@ -1,8 +1,9 @@
+import os
 import pycrfsuite
-#predictions
 
 TAGGER = pycrfsuite.Tagger()
-TAGGER.open('usaddr.crfsuite')
+TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
+            + '/usaddr.crfsuite')
 
 def parse(address_string) :
     tokens = address_string.split()
