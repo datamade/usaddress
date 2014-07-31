@@ -1,1 +1,3 @@
 python-crfsuite
+requests
+lxml
