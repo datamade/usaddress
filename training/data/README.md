@@ -1,5 +1,5 @@
 For our training format, we are using xml tagged strings. The address
-component tags are drawn from the
+component tags are drawn from the [United States Thoroughfare, Landmark, and Postal Address Data Standard](https://www.fgdc.gov/standards/projects/FGDC-standards-projects/street-address/index_html)
 
 
 ```xml
@@ -66,8 +66,6 @@ component tags are drawn from the
       <StateName>AK</StateName> 
       <ZipCode>99801</ZipCode>
     </AddressString>
-
-
   </AddressCollection>
 </xml>
 ```
