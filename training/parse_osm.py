@@ -4,7 +4,7 @@ import re
 
 
 # parse osm_data_street.xml
-tree = etree.parse('osm_data_street.xml')
+tree = etree.parse('data/osm_data_street.xml')
 root = tree.getroot()
 
 street_addr_list=[]
@@ -18,7 +18,7 @@ for element in root:
 
 
 # parse osm_data.txt
-tree = etree.parse('osm_data.xml')
+tree = etree.parse('data/osm_data.xml')
 root = tree.getroot()
 
 addr_list=[]
@@ -32,7 +32,7 @@ for element in root:
 
 
 # osm data to training data
-def osm_to_training(address_list):
+def osmToTraining(address_list):
 	train_data=[]
 	addr_index = 0
 	token_index = 0

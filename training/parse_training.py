@@ -1,6 +1,7 @@
 from lxml import etree
 import ast
 import re
+import training
 
 
 def parseTrainingData(filepath):
@@ -15,5 +16,5 @@ def parseTrainingData(filepath):
 				addr_list.append([x.text, x.tag])
 	return addr_list
 
-train_list = parseTrainingData('example_training.xml')
+train_list = parseTrainingData('data/example_training.xml')
 print train_list
