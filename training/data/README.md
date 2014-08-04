@@ -59,7 +59,7 @@ component tags are drawn from the [United States Thoroughfare, Landmark, and Pos
       <StreetNamePostType>Road</StreetNamePostType>
       , 
       <OccupancyType>Suite</OccupancyType> 
-      <OccupancyIdentifier>A.<OccupancyIdentifier>
+      <OccupancyIdentifier>A.</OccupancyIdentifier>
       , 
       <PlaceName>Juneau</PlaceName>
       , 
@@ -67,5 +67,4 @@ component tags are drawn from the [United States Thoroughfare, Landmark, and Pos
       <ZipCode>99801</ZipCode>
     </AddressString>
   </AddressCollection>
-</xml>
 ```
