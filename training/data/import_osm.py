@@ -19,7 +19,7 @@ query1 = """<union>
 <print/>""" % ((-86.805193, 47.080799, 42.491920, -92.889259) * 2)
 r1 = requests.post('http://overpass-api.de/api/interpreter/', data=query1)
 
-f = open("osm_data.txt", "w")
+f = open("osm_data.xml", "w")
 f.write(r1.text)
 
 
@@ -43,6 +43,6 @@ query2 = """<union>
 <print/>""" % ((-87.61309146881104, 41.890042371392965, 41.87234107841773, -87.64235973358154) * 2)
 r2 = requests.post('http://overpass-api.de/api/interpreter/', data=query2)
 
-f = codecs.open("osm_data_street.txt", "wb", "utf-8")
+f = codecs.open("osm_data_street.xml", "wb", "utf-8")
 r2.encoding = 'utf-8'
 f.write(r2.text)
