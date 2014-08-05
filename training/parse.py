@@ -1,7 +1,22 @@
 from lxml import etree
 import ast
 
-# parse xml data, return a list of dicts representing addresses
+
+# parse xml data in training format
+def parseTrainingData(filepath):
+	tree = etree.parse(filepath)
+	root = tree.getroot()
+	
+	addr_list = []
+	for element in root: #this ignores punctuation - need to figure out how to handle
+		address = []
+		for x in element.iter():
+			if x.tag != 'AddressString':
+				addr_list.append([x.text, x.tag])
+	return addr_list
+
+
+# parse osm xml data, return a list of dicts representing addresses
 def xmlToAddrList(xml_file):
 	tree = etree.parse(xml_file)
 	root = tree.getroot()
