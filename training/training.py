@@ -1,30 +1,8 @@
 import pycrfsuite
 import re
 import string
+import parse
 
-def parseLines(lines):
-    parsed = [[]]
-    addr_index = 0
-    token_index = 0
-    tag_list = [None, 'street number', 'pobox', 'street', 'street type',
-                'city', 'state', 'zip', 'suffix']
-    
-    for line in lines:
-        if line == '\n':
-            addr_index += 1
-            token_index = 0
-            parsed.append([])
-        else:
-            split = line.split(' |')
-            full_token_string = split[0]
-            token_num = split[1].rstrip()
-            token_num = int(token_num)
-            token_tag = tag_list[token_num]
-            token_list = full_token_string.split()
-            for token in token_list:
-                parsed[addr_index].append((token, token_tag))
-
-    return parsed
 
 def tokenFeatures(token) :
 
@@ -71,24 +49,31 @@ def addr2tokens(address):
     return [address[i][0] for i in range(len(address))]
 
 
+# **** us50 data ****
 # prep the training & test data
-with open('data/us50.train.tagged', 'r') as train_file :
-    train_data = parseLines(train_file)
+#train_data = parse.parseLines('data/us50.train.tagged')
+#x_train = [addr2features(addr) for addr in train_data]
+#y_train = [addr2labels(addr) for addr in train_data]
 
+#test_data = parse.parseLines('data/us50.test.tagged')
+#x_test = [addr2features(addr) for addr in test_data]
+#y_test = [addr2labels(addr) for addr in test_data]
+
+# train model
+#trainer = pycrfsuite.Trainer(verbose=False)
+#for xseq, yseq in zip(x_train, y_train):
+#    trainer.append(xseq, yseq)
+#trainer.train('../usaddress/usaddr.crfsuite')
+
+
+# **** osm data ****
+# prep the training data
+train_data = parse.osmToTraining('data/osm_data_street.xml')
 x_train = [addr2features(addr) for addr in train_data]
 y_train = [addr2labels(addr) for addr in train_data]
 
-with open('data/us50.test.tagged', 'r') as test_file :
-    test_data = parseLines(test_file)
-
-x_test = [addr2features(addr) for addr in test_data]
-y_test = [addr2labels(addr) for addr in test_data]
-
-
-#train model
+# train model
 trainer = pycrfsuite.Trainer(verbose=False)
-
 for xseq, yseq in zip(x_train, y_train):
     trainer.append(xseq, yseq)
-
-trainer.train('../usaddress/usaddr.crfsuite')
+trainer.train('../usaddress/osm_usaddr.crfsuite')

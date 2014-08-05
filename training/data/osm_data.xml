@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2014-08-04T22:22:02Z"/>
+
+  <node id="1667650066" lat="44.1732622" lon="-88.4933776">
+    <tag k="addr:city" v="Neenah"/>
+    <tag k="addr:full" v="1158 West Towne Dr"/>
+    <tag k="addr:housenumber" v="1158 Westowne Drive"/>
+    <tag k="addr:postcode" v="54956"/>
+    <tag k="addr:street" v="1158 Westowne Drive"/>
+    <tag k="amenity" v="hospital"/>
+    <tag k="description" v="Physical Therapy Clinic"/>
+    <tag k="emergency" v="no"/>
+    <tag k="name" v="MotionWorks Physical Therapy"/>
+    <tag k="phone" v="920-215-2050"/>
+    <tag k="website" v="http://www.motionworkspt.com"/>
+    <tag k="wheelchair" v="yes"/>
+    <tag k="wifi" v="yes"/>
+  </node>
+  <way id="53217717">
+    <nd ref="696223640"/>
+    <nd ref="673573523"/>
+    <nd ref="673573532"/>
+    <nd ref="673573534"/>
+    <nd ref="673573513"/>
+    <nd ref="1264533018"/>
+    <nd ref="1508016838"/>
+    <nd ref="673573514"/>
+    <nd ref="673573515"/>
+    <nd ref="1264533015"/>
+    <nd ref="1264534597"/>
+    <nd ref="673573518"/>
+    <nd ref="1264533030"/>
+    <nd ref="673573520"/>
+    <nd ref="1315482919"/>
+    <nd ref="1264533028"/>
+    <nd ref="1264533022"/>
+    <nd ref="696223640"/>
+    <tag k="addr:city" v="Milwaukee"/>
+    <tag k="addr:full" v="345 West Saint Paul Avenue"/>
+    <tag k="addr:housenumber" v="345"/>
+    <tag k="addr:postcode" v="53203-3099"/>
+    <tag k="addr:street" v="West Saint Paul Avenue"/>
+    <tag k="amenity" v="post_office"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="US Post Office"/>
+  </way>
+  <way id="86562282">
+    <nd ref="1006029583"/>
+    <nd ref="1006029683"/>
+    <nd ref="1006029418"/>
+    <nd ref="1006029146"/>
+    <nd ref="1006029583"/>
+    <tag k="addr:city" v="Brown Deer"/>
+    <tag k="addr:full" v="4327 W Schroeder Dr"/>
+    <tag k="addr:housenumber" v="4327"/>
+    <tag k="addr:postcode" v="53223"/>
+    <tag k="addr:street" v="W Schroeder Dr"/>
+    <tag k="amenity" v="fast_food"/>
+    <tag k="building" v="yes"/>
+    <tag k="cuisine" v="burger"/>
+    <tag k="name" v="Culver's"/>
+  </way>
+  <way id="102924076">
+    <nd ref="1188494923"/>
+    <nd ref="1188498478"/>
+    <nd ref="1188495896"/>
+    <nd ref="1188497532"/>
+    <nd ref="1188494923"/>
+    <tag k="addr:city" v="Portage"/>
+    <tag k="addr:full" v="2733 New Pinery Rd"/>
+    <tag k="addr:housenumber" v="2733"/>
+    <tag k="addr:postcode" v="53901"/>
+    <tag k="addr:street" v="New Pinery Rd"/>
+    <tag k="amenity" v="fast_food"/>
+    <tag k="building" v="yes"/>
+    <tag k="cuisine" v="burger"/>
+    <tag k="name" v="Culver's"/>
+  </way>
+  <way id="102924290">
+    <nd ref="1188497001"/>
+    <nd ref="1188495083"/>
+    <nd ref="2701888535"/>
+    <nd ref="2701888539"/>
+    <nd ref="2701888541"/>
+    <nd ref="2701888543"/>
+    <nd ref="1188497953"/>
+    <nd ref="1188495352"/>
+    <nd ref="1188497001"/>
+    <tag k="addr:city" v="Platteville"/>
+    <tag k="addr:full" v="375 E US Hwy 151"/>
+    <tag k="addr:housenumber" v="375"/>
+    <tag k="addr:postcode" v="53818"/>
+    <tag k="addr:street" v="E Business Hwy 151"/>
+    <tag k="amenity" v="fast_food"/>
+    <tag k="building" v="yes"/>
+    <tag k="cuisine" v="burger"/>
+    <tag k="name" v="Culver's"/>
+    <tag k="phone" v="+1 608 348-9993"/>
+    <tag k="website" v="http://www.culvers.com/"/>
+  </way>
+
+</osm>
