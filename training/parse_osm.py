@@ -22,6 +22,7 @@ def osmToTraining(address_list):
 	train_data=[]
 	addr_index = 0
 	token_index = 0
+	# only the osm tags below will end up in training data; others will be ignored
 	osm_tags_to_addr_tags = {
 		"addr:house:number":"AddressNumber",
 		"addr:street:prefix":"StreetNamePreDirectional",
@@ -32,9 +33,9 @@ def osmToTraining(address_list):
 		"addr:postcode":"ZipCode"}
 	for address in address_list:
 		addr_train = []
-		for key, value in address.items(): #iterate through dict ****
-			if key in osm_tags_to_addr_tags.keys(): #if the key is one of the defined osm tags
-				addr_train.append([value ,osm_tags_to_addr_tags[key]]) #add (token, tokentag)
+		for key, value in address.items():
+			if key in osm_tags_to_addr_tags.keys():
+				addr_train.append([value ,osm_tags_to_addr_tags[key]])
 		train_data.append(addr_train)
 	return train_data
 
