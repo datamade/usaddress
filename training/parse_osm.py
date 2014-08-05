@@ -2,36 +2,22 @@ from lxml import etree
 import ast
 import re
 
-
-# parse osm_data_street.xml
-tree = etree.parse('data/osm_data_street.xml')
-root = tree.getroot()
-
-street_addr_list=[]
-for element in root:
-	if element.tag == 'node' or element.tag =='way':
-		address={}
-		for x in element.iter('tag'):
-			addr = ast.literal_eval(str(x.attrib))
-			address[addr['k']]=addr['v']
-		street_addr_list.append(address)
-
-
-# parse osm_data.txt
-tree = etree.parse('data/osm_data.xml')
-root = tree.getroot()
-
-addr_list=[]
-for element in root:
-	if element.tag == 'node' or element.tag =='way':
-		address={}
-		for x in element.iter('tag'):
-			addr = ast.literal_eval(str(x.attrib))
-			address[addr['k']]=addr['v']
-		addr_list.append(address)
+# parse xml data, return a list of dicts representing addresses
+def xmlToAddrList(xml_file):
+	tree = etree.parse(xml_file)
+	root = tree.getroot()
+	addr_list=[]
+	for element in root:
+		if element.tag == 'node' or element.tag =='way':
+			address={}
+			for x in element.iter('tag'):
+				addr = ast.literal_eval(str(x.attrib))
+				address[addr['k']]=addr['v']
+			addr_list.append(address)
+	return addr_list
 
 
-# osm data to training data
+# transform osm data into tagged training data
 def osmToTraining(address_list):
 	train_data=[]
 	addr_index = 0
@@ -51,10 +37,4 @@ def osmToTraining(address_list):
 				addr_train.append([value ,osm_tags_to_addr_tags[key]]) #add (token, tokentag)
 		train_data.append(addr_train)
 	return train_data
-
-training_data = osm_to_training(addr_list)
-
-street_training_data = osm_to_training(street_addr_list)
-for addr in street_training_data:
-	print addr
 
