@@ -46,11 +46,10 @@ def parseLines(addr_file):
 	parsed = [[]]
 	addr_index = 0
 	token_index = 0
-	tag_list = [None, 'street number', 'pobox', 'street', 'street type',
-                'city', 'state', 'zip', 'suffix']
+	tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
+                'PlaceName', 'StateName', 'ZipCode', 'suffix']
 
 	for line in lines:
-		print line
 		if line == '\n':
 			addr_index += 1
 			token_index = 0
