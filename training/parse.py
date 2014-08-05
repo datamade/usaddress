@@ -1,6 +1,5 @@
 from lxml import etree
 import ast
-import re
 
 # parse xml data, return a list of dicts representing addresses
 def xmlToAddrList(xml_file):
@@ -17,8 +16,9 @@ def xmlToAddrList(xml_file):
 	return addr_list
 
 
-# transform osm data into tagged training data
-def osmToTraining(address_list):
+# transform osm xml data into tagged training data
+def osmToTraining(xml_file):
+	address_list = xmlToAddrList(xml_file)
 	train_data=[]
 	addr_index = 0
 	token_index = 0
@@ -39,3 +39,28 @@ def osmToTraining(address_list):
 		train_data.append(addr_train)
 	return train_data
 
+
+# transform us50 address lines into tagged training data
+def parseLines(addr_file):
+	lines = open(addr_file, 'r')
+    parsed = [[]]
+    addr_index = 0
+    token_index = 0
+    tag_list = [None, 'street number', 'pobox', 'street', 'street type',
+                'city', 'state', 'zip', 'suffix']
+    
+    for line in lines:
+        if line == '\n':
+            addr_index += 1
+            token_index = 0
+            parsed.append([])
+        else:
+            split = line.split(' |')
+            full_token_string = split[0]
+            token_num = split[1].rstrip()
+            token_num = int(token_num)
+            token_tag = tag_list[token_num]
+            token_list = full_token_string.split()
+            for token in token_list:
+                parsed[addr_index].append((token, token_tag))
+    return parsed
