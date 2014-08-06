@@ -32,9 +32,9 @@ def xmlToAddrList(xml_file):
 
 
 # transform osm xml data into tagged training data
-def osmToTraining(xml_file):
+def osmToTraining(xml_file, parse_label):
 	address_list = xmlToAddrList(xml_file)
-	train_data=[]
+	train_addr_list=[]
 	addr_index = 0
 	token_index = 0
 	# only the osm tags below will end up in training data; others will be ignored
@@ -47,12 +47,22 @@ def osmToTraining(xml_file):
 		"addr:state":"StateName",
 		"addr:postcode":"ZipCode"}
 	for address in address_list:
-		addr_train = []
-		for key, value in address.items():
-			if key in osm_tags_to_addr_tags.keys():
-				addr_train.append([value ,osm_tags_to_addr_tags[key]])
-		train_data.append(addr_train)
-	return train_data
+		addr_tokens = address[parse_label].split()
+		train_addr = []
+		is_addr_taggable = True
+		print addr_tokens
+		#loop through tokens & find tags for each
+		for token in addr_tokens:
+			is_token_taggable = False
+			for key, value in address.items():
+				if key in osm_tags_to_addr_tags.keys() and key != parse_label and token in value.split():
+					is_taggable = True
+					train_addr.append((token, osm_tags_to_addr_tags[key]))
+			if is_token_taggable ==False:
+				is_addr_taggable = False
+		if is_addr_taggable == True:
+			train_addr_list.append(train_addr)
+	return train_addr_list
 
 
 # transform us50 address lines into tagged training data

@@ -68,12 +68,12 @@ def addr2tokens(address):
 
 # **** osm data ****
 # prep the training data
-train_data = parse.osmToTraining('data/osm_data_street.xml')
-x_train = [addr2features(addr) for addr in train_data]
-y_train = [addr2labels(addr) for addr in train_data]
+train_data = parse.osmToTraining('data/osm_data_street.xml', 'addr:street')
+#x_train = [addr2features(addr) for addr in train_data]
+#y_train = [addr2labels(addr) for addr in train_data]
 
 # train model
-trainer = pycrfsuite.Trainer(verbose=False)
-for xseq, yseq in zip(x_train, y_train):
-    trainer.append(xseq, yseq)
-trainer.train('../usaddress/osm_usaddr.crfsuite')
+#trainer = pycrfsuite.Trainer(verbose=False)
+#for xseq, yseq in zip(x_train, y_train):
+#    trainer.append(xseq, yseq)
+#trainer.train('../usaddress/osm_usaddr_street.crfsuite')
