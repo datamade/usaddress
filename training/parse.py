@@ -50,7 +50,6 @@ def osmToTraining(xml_file, parse_label):
 		addr_tokens = address[parse_label].split()
 		train_addr = []
 		is_addr_taggable = True
-		print addr_tokens
 		#loop through tokens & find tags for each
 		for token in addr_tokens:
 			is_token_taggable = False
