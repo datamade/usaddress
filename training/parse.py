@@ -32,10 +32,11 @@ def xmlToAddrList(xml_file):
 	return addr_list
 
 
-# transform osm xml data into tagged training data
-def osmToTraining(xml_file, parse_label):
+# transform natural addresses (in addr:full) from osm xml data into training file
+def osmNaturalToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
-	train_addr_list=[]
+	train_addr_list = etree.Element('AddressCollection')
+	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
 	addr_index = 0
 	token_index = 0
 	# only the osm tags below will end up in training data; others will be ignored
@@ -48,21 +49,25 @@ def osmToTraining(xml_file, parse_label):
 		"addr:state":"StateName",
 		"addr:postcode":"ZipCode"}
 	for address in address_list:
-		addr_tokens = address[parse_label].split()
-		train_addr = []
+		addr_tokens = address['addr:full'].split()
+		train_addr = etree.Element('AddressString')
 		is_addr_taggable = True
 		#loop through tokens & find tags for each
 		for token in addr_tokens:
 			is_token_taggable = False
 			for key, value in address.items():
-				if key in osm_tags_to_addr_tags.keys() and key != parse_label and token in value.split():
+				if key in osm_tags_to_addr_tags.keys() and key != 'addr:full' and token in value.split():
 					is_taggable = True
-					train_addr.append((token, osm_tags_to_addr_tags[key]))
+					token_xml = etree.Element(osm_tags_to_addr_tags[key])
+					token_xml.text = token
+					train_addr.append(token_xml)
 			if is_token_taggable ==False:
 				is_addr_taggable = False
 		if is_addr_taggable == True:
 			train_addr_list.append(train_addr)
-	return train_addr_list
+	output = etree.tostring(train_addr_list, pretty_print=True)
+	with open(trainFileName, 'w') as f:
+		f.write(output)
 
 # create training file (in training_data) for us50 data
 def trainFileFromLines(addr_file):
@@ -92,6 +97,5 @@ def trainFileFromLines(addr_file):
 	with open(trainFileName, 'w') as f:
 		f.write(output)
 
-trainFileFromLines('data/us50.train.tagged')
-trainFileFromLines('data/us50.test.tagged')
+
 
