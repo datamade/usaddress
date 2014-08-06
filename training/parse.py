@@ -37,11 +37,9 @@ def osmNaturalToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
 	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
-	addr_index = 0
-	token_index = 0
 	# only the osm tags below will end up in training data; others will be ignored
 	osm_tags_to_addr_tags = {
-		"addr:house:number":"AddressNumber",
+		"addr:housenumber":"AddressNumber",
 		"addr:street:prefix":"StreetNamePreDirectional",
 		"addr:street:name":"StreetName",
 		"addr:street:type":"StreetNamePostType",
@@ -65,6 +63,39 @@ def osmNaturalToTraining(xml_file):
 				is_addr_taggable = False
 		if is_addr_taggable == True:
 			train_addr_list.append(train_addr)
+	output = etree.tostring(train_addr_list, pretty_print=True)
+	with open(trainFileName, 'w') as f:
+		f.write(output)
+
+# create synthetic addresses from osm xml data, then transform into training file
+def osmSyntheticToTraining(xml_file):
+	address_list = xmlToAddrList(xml_file)
+	train_addr_list = etree.Element('AddressCollection')
+	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
+	osm_tags_to_addr_tags = {
+		"addr:housenumber":"AddressNumber",
+		"addr:street:prefix":"StreetNamePreDirectional",
+		"addr:street:name":"StreetName",
+		"addr:street:type":"StreetNamePostType",
+		"addr:city":"PlaceName",
+		"addr:state":"StateName",
+		"addr:postcode":"ZipCode"}
+	synthetic_order = [
+		'addr:housenumber',
+		'addr:street:prefix',
+		'addr:street:name',
+		'addr:street:type',
+		'addr:city',
+		'addr:state',
+		'addr:postcode']
+	for address in address_list:
+		train_addr = etree.Element('AddressString')
+		for tag in synthetic_order:
+			if tag in address.keys():
+				token_xml = etree.Element(osm_tags_to_addr_tags[tag])
+				token_xml.text = address[tag]
+				train_addr.append(token_xml)
+		train_addr_list.append(train_addr)
 	output = etree.tostring(train_addr_list, pretty_print=True)
 	with open(trainFileName, 'w') as f:
 		f.write(output)
