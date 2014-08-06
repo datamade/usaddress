@@ -1,0 +1,384 @@
+<AddressCollection>
+  <AddressString>
+    <StreetName>Homer Spit</StreetName>
+    <StreetNamePostType>Road,</StreetNamePostType>
+    <PlaceName>Homer,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99603</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Lnlck Shopping Center,</StreetName>
+    <PlaceName>Anniston,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Center Ridge,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72027</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9878</AddressNumber>
+    <StreetName>North Metro</StreetName>
+    <StreetNamePostType>Parkway</StreetNamePostType>
+    <suffix>East,</suffix>
+    <PlaceName>Phoenix,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85051</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2896</AddressNumber>
+    <StreetName>Fairfax</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Denver,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80207</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Mesa Mall,</StreetName>
+    <PlaceName>Grand Junction,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>81501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>168</AddressNumber>
+    <StreetName>Hillside</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Hartford,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06106</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1025</AddressNumber>
+    <StreetName>Vermont</StreetName>
+    <StreetNamePostType>Avenue</StreetNamePostType>
+    <suffix>Northwest,</suffix>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20005</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>697</AddressNumber>
+    <StreetName>North Dupont</StreetName>
+    <StreetNamePostType>Boulevard,</StreetNamePostType>
+    <PlaceName>Milford,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19963</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1915</AddressNumber>
+    <StreetName>North Republic De Cuba</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Tampa,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33602</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2406</AddressNumber>
+    <StreetName>North Slappey</StreetName>
+    <StreetNamePostType>Boulevard,</StreetNamePostType>
+    <PlaceName>Albany,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>98-1247</AddressNumber>
+    <StreetName>Kaahumanu,</StreetName>
+    <PlaceName>Aiea,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>103</AddressNumber>
+    <StreetName>West Main,</StreetName>
+    <PlaceName>Ute,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>51060</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>335</AddressNumber>
+    <StreetName>Deinhard</StreetName>
+    <StreetNamePostType>Lane,</StreetNamePostType>
+    <PlaceName>Mc Call,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83638</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8922</AddressNumber>
+    <StreetName>South 1/2 Greenwood</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Chicago,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60619</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>239</AddressNumber>
+    <StreetName>West Monroe</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Decatur,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46733</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>827</AddressNumber>
+    <StreetName>Frontage</StreetName>
+    <StreetNamePostType>Road,</StreetNamePostType>
+    <PlaceName>Agra,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67621</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>508</AddressNumber>
+    <StreetName>West 6th</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Lexington,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40508</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5103</AddressNumber>
+    <StreetName>Hollywood</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Shreveport,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>71109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>79</AddressNumber>
+    <StreetName>Power</StreetName>
+    <StreetNamePostType>Road,</StreetNamePostType>
+    <PlaceName>Westford,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01886</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5105</AddressNumber>
+    <StreetName>Berwyn</StreetName>
+    <StreetNamePostType>Road,</StreetNamePostType>
+    <PlaceName>College Park,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>20740</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>47</AddressNumber>
+    <StreetName>Broad</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Auburn,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04210</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>470</AddressNumber>
+    <StreetName>South</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Ortonville,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48462</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>404</AddressNumber>
+    <StreetName>Wilson</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Faribault,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55021</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5933</AddressNumber>
+    <StreetName>Mc Donnell</StreetName>
+    <StreetNamePostType>Boulevard,</StreetNamePostType>
+    <PlaceName>Hazelwood,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>63042</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>918</AddressNumber>
+    <StreetName>East Main</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Lumberton,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39455</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>107</AddressNumber>
+    <StreetName>A Street</StreetName>
+    <StreetNamePostType>East,</StreetNamePostType>
+    <PlaceName>Poplar,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59255</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Village Shps Of Bnr,</StreetName>
+    <PlaceName>Banner Elk,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28604</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2601</AddressNumber>
+    <StreetName>State</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Bismarck,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>207</AddressNumber>
+    <StreetName>South Bell</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Fremont,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68025</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>107</AddressNumber>
+    <StreetName>State</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Portsmouth,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1413</AddressNumber>
+    <StreetName>State Highway #50,</StreetName>
+    <PlaceName>Mays Landing,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08330</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>I-25 Highway 87,</StreetName>
+    <PlaceName>Raton,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87740</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>516</AddressNumber>
+    <StreetName>West Goldfield</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Yerington,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89447</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2787</AddressNumber>
+    <StreetName>Bway</StreetName>
+    <StreetNamePostType>Way,</StreetNamePostType>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1380</AddressNumber>
+    <StreetName>Bethel</StreetName>
+    <StreetNamePostType>Road,</StreetNamePostType>
+    <PlaceName>Columbus,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>43220</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>305</AddressNumber>
+    <StreetName>Main,</StreetName>
+    <PlaceName>Fort Cobb,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73038</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17375</AddressNumber>
+    <StreetName>Southwest Tualatin Valley</StreetName>
+    <StreetNamePostType>Hwy,</StreetNamePostType>
+    <PlaceName>Beaverton,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97006</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>114</AddressNumber>
+    <StreetName>Market</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Philadelphia,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19106</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>169</AddressNumber>
+    <StreetName>Main</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Westerly,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02891</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>70</AddressNumber>
+    <StreetName>State</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Charleston,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>East Highway 212,</StreetName>
+    <PlaceName>Watertown,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>615</AddressNumber>
+    <StreetName>North 8th</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Humboldt,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38343</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5435</AddressNumber>
+    <StreetName>North MacArthur</StreetName>
+    <StreetNamePostType>Boulevard,</StreetNamePostType>
+    <PlaceName>Irving,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75038</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>511</AddressNumber>
+    <StreetName>South 300 West,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2457</AddressNumber>
+    <StreetName>North Harrison</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Arlington,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>22207</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1</AddressNumber>
+    <StreetName>Lamere</StreetName>
+    <StreetNamePostType>Avenue,</StreetNamePostType>
+    <PlaceName>Ludlow,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05149</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5300</AddressNumber>
+    <StreetName>South 76th</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Greendale,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53129</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>200</AddressNumber>
+    <StreetName>Monroe</StreetName>
+    <StreetNamePostType>Street,</StreetNamePostType>
+    <PlaceName>Alderson,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>24910</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>973</AddressNumber>
+    <StreetName>US Highway 16,</StreetName>
+    <PlaceName>Worland,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82401</ZipCode>
+  </AddressString>
+</AddressCollection>

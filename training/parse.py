@@ -1,5 +1,6 @@
 from lxml import etree
 import ast
+import re
 
 
 # parse xml data in training format
@@ -63,28 +64,34 @@ def osmToTraining(xml_file, parse_label):
 			train_addr_list.append(train_addr)
 	return train_addr_list
 
-
-# transform us50 address lines into tagged training data
-def parseLines(addr_file):
+# create training file (in training_data) for us50 data
+def trainFileFromLines(addr_file):
 	lines = open(addr_file, 'r')
-	parsed = [[]]
 	addr_index = 0
 	token_index = 0
+	trainFileName = '../training_data/'+re.sub(r'\W+', '_', addr_file)+'.xml'
 	tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
                 'PlaceName', 'StateName', 'ZipCode', 'suffix']
-
+	addr_list = etree.Element('AddressCollection')
+	addr = etree.Element('AddressString')
 	for line in lines:
-		if line == '\n':
+		if line =='\n':
 			addr_index += 1
 			token_index = 0
-			parsed.append([])
+			addr_list.append(addr)
+			addr = etree.Element('AddressString')
 		else:
 			split = line.split(' |')
-			full_token_string = split[0]
-			token_num = split[1].rstrip()
-			token_num = int(token_num)
+			token_string = split[0]
+			token_num = int(split[1].rstrip())
 			token_tag = tag_list[token_num]
-			token_list = full_token_string.split()
-			for token in token_list:
-				parsed[addr_index].append((token, token_tag))
-	return parsed
+			token_xml = etree.Element(token_tag)
+			token_xml.text = token_string
+			addr.append(token_xml)
+	output = etree.tostring(addr_list, pretty_print=True)
+	with open(trainFileName, 'w') as f:
+		f.write(output)
+
+trainFileFromLines('data/us50.train.tagged')
+trainFileFromLines('data/us50.test.tagged')
+
