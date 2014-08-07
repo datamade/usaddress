@@ -11,9 +11,10 @@ def parseTrainingData(filepath):
 	addr_list = []
 	for element in root: #this ignores punctuation - need to figure out how to handle
 		address = []
-		for x in element.iter():
-			if x.tag != 'AddressString':
-				addr_list.append([x.text, x.tag])
+		for x in list(element):
+			addr_list.append([x.text, x.tag])
+			if x.tail.strip() :
+				addr_list.append([x.tail.strip(), None])
 	return addr_list
 
 
@@ -72,29 +73,31 @@ def osmSyntheticToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
 	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
-	osm_tags_to_addr_tags = {
-		"addr:housenumber":"AddressNumber",
-		"addr:street:prefix":"StreetNamePreDirectional",
-		"addr:street:name":"StreetName",
-		"addr:street:type":"StreetNamePostType",
-		"addr:city":"PlaceName",
-		"addr:state":"StateName",
-		"addr:postcode":"ZipCode"}
 	synthetic_order = [
-		'addr:housenumber',
-		'addr:street:prefix',
-		'addr:street:name',
-		'addr:street:type',
-		'addr:city',
-		'addr:state',
-		'addr:postcode']
+		('addr:housenumber', 'AddressNumber', 'Street'),
+		('addr:street:prefix', 'StreetNamePreDirectional', 'Street'),
+		('addr:street:name', 'StreetName', 'Street'),
+		('addr:street:type', 'StreetNamePostType', 'Street'),
+		('addr:city', 'PlaceName', 'City'),
+		('addr:state', 'StateName', 'Area'),
+		('addr:postcode', 'ZipCode', 'Area')]
 	for address in address_list:
 		train_addr = etree.Element('AddressString')
-		for tag in synthetic_order:
-			if tag in address.keys():
-				token_xml = etree.Element(osm_tags_to_addr_tags[tag])
-				token_xml.text = address[tag]
-				train_addr.append(token_xml)
+		components = {'Street' : [], 'City' : [], 'Area' : []}
+		for source_tag, target_tag, tag_type in synthetic_order:
+			if source_tag in address.keys():
+				token_xml = etree.Element(target_tag)
+				token_xml.text = address[source_tag]
+				components[tag_type].append(token_xml)
+		compnent_list = []
+		for tag_type in ('Street','City', 'Area') :
+			l = components[tag_type]
+			if l :
+				l[-1].tail = ','
+		address_xml = components['Street'] + components['City'] + components['Area']
+		address_xml[-1].tail = None
+		for xml_element in address_xml:
+			train_addr.append(xml_element)
 		train_addr_list.append(train_addr)
 	output = etree.tostring(train_addr_list, pretty_print=True)
 	with open(trainFileName, 'w') as f:
