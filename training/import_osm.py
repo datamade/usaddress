@@ -46,3 +46,23 @@ r2 = requests.post('http://overpass-api.de/api/interpreter/', data=query2)
 f = codecs.open("data/osm_data_street.xml", "wb", "utf-8")
 r2.encoding = 'utf-8'
 f.write(r2.text)
+
+
+query3 = """<union>
+<query type="way">
+  <has-kv k="addr:full" regv="^[0-9]+.*[a-z]+.*[0-9]+.*"/>
+  <bbox-query e="%s" n="%s" s="%s" w="%s"/>
+  </query>
+<query type="node">
+  <has-kv k="addr:full" regv="^[0-9]+.*[a-z]+.*[0-9]+.*"/>
+  <bbox-query e="%s" n="%s" s="%s" w="%s"/>
+</query>
+</union>
+
+<print/>
+""" % ((-70.000000, 50.000000, 25.000000, -125.000000) * 2)
+r3 = requests.post('http://overpass-api.de/api/interpreter/', data=query3)
+
+f = codecs.open("data/osm_data_full_addr.xml", "wb", "utf-8")
+r3.encoding = 'utf-8'
+f.write(r3.text)
