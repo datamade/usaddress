@@ -3,13 +3,13 @@ import ast
 import re
 
 
-# parse xml data in training format
+# training file (xml) -> list of addresses, where addresses are lists of text/tag pairs
 def parseTrainingData(filepath):
 	tree = etree.parse(filepath)
 	root = tree.getroot()
 	
 	addr_list = []
-	for element in root: #this ignores punctuation - need to figure out how to handle
+	for element in root:
 		address = []
 		for x in list(element):
 			addr_list.append([x.text, x.tag])
@@ -18,7 +18,7 @@ def parseTrainingData(filepath):
 	return addr_list
 
 
-# parse osm xml data, return a list of dicts representing addresses
+# osm xml data -> list of dicts representing osm addresses
 def xmlToAddrList(xml_file):
 	tree = etree.parse(xml_file)
 	root = tree.getroot()
@@ -33,11 +33,12 @@ def xmlToAddrList(xml_file):
 	return addr_list
 
 
-# transform natural addresses (in addr:full) from osm xml data into training file
+# natural addresses (in addr:full from osm xml data) -> training file (xml)
 def osmNaturalToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
 	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
+	punc_list = ',.'
 	# only the osm tags below will end up in training data; others will be ignored
 	osm_tags_to_addr_tags = {
 		"addr:housenumber":"AddressNumber",
@@ -58,7 +59,11 @@ def osmNaturalToTraining(xml_file):
 				if key in osm_tags_to_addr_tags.keys() and key != 'addr:full' and token in value.split():
 					is_taggable = True
 					token_xml = etree.Element(osm_tags_to_addr_tags[key])
+					#check for punctuation
 					token_xml.text = token
+					if token[-1] in punc_list:
+						token_xml.text = token[0:-1]
+						token_xml.tail = token[-1]
 					train_addr.append(token_xml)
 			if is_token_taggable ==False:
 				is_addr_taggable = False
@@ -68,7 +73,7 @@ def osmNaturalToTraining(xml_file):
 	with open(trainFileName, 'w') as f:
 		f.write(output)
 
-# create synthetic addresses from osm xml data, then transform into training file
+# osm xml data -> synthetic addresses -> training file (xml)
 def osmSyntheticToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
@@ -86,10 +91,11 @@ def osmSyntheticToTraining(xml_file):
 		components = {'Street' : [], 'City' : [], 'Area' : []}
 		for source_tag, target_tag, tag_type in synthetic_order:
 			if source_tag in address.keys():
-				token_xml = etree.Element(target_tag)
-				token_xml.text = address[source_tag]
-				components[tag_type].append(token_xml)
-		compnent_list = []
+				words = address[source_tag].split()
+				for word in words:
+					token_xml = etree.Element(target_tag)
+					token_xml.text = word
+					components[tag_type].append(token_xml)
 		for tag_type in ('Street','City', 'Area') :
 			l = components[tag_type]
 			if l :
@@ -103,7 +109,9 @@ def osmSyntheticToTraining(xml_file):
 	with open(trainFileName, 'w') as f:
 		f.write(output)
 
-# create training file (in training_data) for us50 data
+osmSyntheticToTraining('data/sample_osm.xml')
+
+# us50 data -> training file (xml)
 def trainFileFromLines(addr_file):
 	lines = open(addr_file, 'r')
 	addr_index = 0
