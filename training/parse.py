@@ -12,10 +12,11 @@ def parseTrainingData(filepath):
 	for element in root:
 		address = []
 		for x in list(element):
-			addr_list.append([x.text, x.tag])
+			address.append([x.text, x.tag])
 			if x.tail :
 				if x.tail.strip():
-					addr_list.append([x.tail.strip(), None])
+					address.append([x.tail.strip(), None])
+		addr_list.append(address)
 	return addr_list
 
 
