@@ -13,8 +13,9 @@ def parseTrainingData(filepath):
 		address = []
 		for x in list(element):
 			addr_list.append([x.text, x.tag])
-			if x.tail.strip() :
-				addr_list.append([x.tail.strip(), None])
+			if x.tail :
+				if x.tail.strip():
+					addr_list.append([x.tail.strip(), None])
 	return addr_list
 
 
@@ -77,7 +78,7 @@ def osmNaturalToTraining(xml_file):
 def osmSyntheticToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
-	trainFileName = '../training_data/'+re.sub(r'\W+', '_', xml_file)+'.xml'
+	trainFileName = '../training_data/synthetic_'+re.sub(r'\W+', '_', xml_file)+'.xml'
 	synthetic_order = [
 		('addr:housenumber', 'AddressNumber', 'Street'),
 		('addr:street:prefix', 'StreetNamePreDirectional', 'Street'),
@@ -109,7 +110,6 @@ def osmSyntheticToTraining(xml_file):
 	with open(trainFileName, 'w') as f:
 		f.write(output)
 
-osmSyntheticToTraining('data/sample_osm.xml')
 
 # us50 data -> training file (xml)
 def trainFileFromLines(addr_file):
