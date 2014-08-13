@@ -43,37 +43,62 @@ def addr2features(address):
     return [token2features(address, i) for i in range(len(address))]
 
 def addr2labels(address):
-    return [address[i][1] for i in range(len(address))]
+    #return [address[i][1] for i in range(len(address))]
+    labels = []
+    for i in range(len(address)):
+        if address[i][1]:
+            labels.append(address[i][1])
+        else:
+            labels.append("punc")
+    return labels
+
 
 def addr2tokens(address):
     return [address[i][0] for i in range(len(address))]
 
 
-# **** us50 data ****
-# prep the training & test data
-#train_data = parse.parseLines('data/us50.train.tagged')
-#x_train = [addr2features(addr) for addr in train_data]
-#y_train = [addr2labels(addr) for addr in train_data]
+def evaluateParser(train_data, test_data, modelname):
+    #prep data
+    x_train = [addr2features(addr) for addr in train_data]
+    y_train = [addr2labels(addr) for addr in train_data]
 
-#test_data = parse.parseLines('data/us50.test.tagged')
-#x_test = [addr2features(addr) for addr in test_data]
-#y_test = [addr2labels(addr) for addr in test_data]
+    #train model
+    trainer = pycrfsuite.Trainer(verbose=False)
+    for xseq, yseq in zip(x_train, y_train):
+        trainer.append(xseq, yseq)
+    modelfile = "models/"+re.sub(r'/W', '_', modelname)+".crfsuite"
+    trainer.train(modelfile)
 
-# train model
-#trainer = pycrfsuite.Trainer(verbose=False)
-#for xseq, yseq in zip(x_train, y_train):
-#    trainer.append(xseq, yseq)
-#trainer.train('../usaddress/usaddr.crfsuite')
+    #predictions
+    tagger = pycrfsuite.Tagger()
+    tagger.open(modelfile)
+    total_addr_count = len(test_data)
+    correct_count = 0
+    incorrect_predictions = []
+    for addr in test_data:
+        address = addr2tokens(addr)
+        labels_pred = tagger.tag(addr2features(addr))
+        labels_true = addr2labels(addr)
+        if labels_pred == labels_true:
+            correct_count += 1
+        else:
+            incorrect = { "addr": address, "pred": labels_pred, "true": labels_true}
+            incorrect_predictions.append(incorrect)
+    print correct_count, "out of", total_addr_count, "addresses correctly labeled"
+    print float(correct_count)/float(total_addr_count)*100, "%"
+    for incorrect_prediction in incorrect_predictions:
+        address = incorrect_prediction["addr"]
+        print "\nADDRESS:   ", ' '.join(address)
+        for i in range(len(address)):
+            if incorrect_prediction["pred"][i] != incorrect_prediction["true"][i]:
+                print address[i], "was labeled as", incorrect_prediction["pred"][i], "instead of", incorrect_prediction["true"][i]
 
 
-# **** osm data ****
-# prep the training data
-train_data = parse.osmToTraining('data/osm_data_street.xml', 'addr:street')
-x_train = [addr2features(addr) for addr in train_data]
-y_train = [addr2labels(addr) for addr in train_data]
 
-# train model
-trainer = pycrfsuite.Trainer(verbose=False)
-for xseq, yseq in zip(x_train, y_train):
-    trainer.append(xseq, yseq)
-trainer.train('../usaddress/osm_usaddr_street.crfsuite')
+# **** osm synthetic data ****
+#parse.osmSyntheticToTraining('data/osm_data_street.xml')
+synthetictrainfile = '../training_data/synthetic_data_osm_data_street_xml.xml'
+data = parse.parseTrainingData(synthetictrainfile)
+train_data = data[0:20]
+test_data = data[20:40]
+evaluateParser(train_data, test_data, "testing")
