@@ -5,23 +5,15 @@ import random
 import os
 from lxml import etree
 
-def addr2labels(address):
-    labels = []
-    for i in range(len(address)):
-        if address[i][1]:
-            labels.append(address[i][1])
-        else:
-            labels.append(NULL_TAG)
-    return tuple(labels)
-
 def trainModel(training_data, model_file) :
 
     X = []
     Y = []
 
     for address_text, components in training_data :
-        X.append(usaddress.addr2features(components))
-        Y.append(addr2labels(components))
+        tokens, labels = zip(*components)
+        X.append(usaddress.addr2features(tokens))
+        Y.append(labels)
 
     #train model
     trainer = pycrfsuite.Trainer(verbose=False)
