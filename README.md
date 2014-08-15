@@ -7,5 +7,6 @@ To build and test development code.
 ```bash
 > pip install -r requirements.txt
 > python setup.py develop
-> bash build.sh
+> python training/training.py
+> nosetests .
 ```
