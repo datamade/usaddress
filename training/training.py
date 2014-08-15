@@ -1,9 +1,10 @@
 import pycrfsuite
 import usaddress
-from usaddress import NULL_TAG
 import random
 import os
 from lxml import etree
+
+NULL_TAG = 'Null'
 
 def trainModel(training_data, model_file) :
 

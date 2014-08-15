@@ -3,8 +3,6 @@ import string
 import pycrfsuite
 import re
 
-NULL_TAG = 'Null'
-
 TAGGER = pycrfsuite.Tagger()
 TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
             + '/usaddr.crfsuite')
