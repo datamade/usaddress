@@ -12,8 +12,8 @@ class ParseTest(unittest.TestCase) :
              ('St.', 'street type'), ('Chicago,', 'city'), 
              ('IL', 'state'), ('60647', 'zip')]
 
-class syntheticDataTest(unittest.TestCase) :
-    def setUp(self) :
+class TestSynthetic(object) :
+    def __init__(self) :
         synthetictrainfile = 'training_data/synthetic_data_osm_cleaned.xml'
         data = training.parse.parseTrainingData(synthetictrainfile)
         random.shuffle(data)
@@ -39,12 +39,11 @@ class syntheticDataTest(unittest.TestCase) :
         #correct_count = 0
         assert len(self.test_data) > 0
         for addr in self.test_data:
-            print addr
-            assert 1 == 0
             #address = training.addr2tokens(addr)
-            labels_pred = tagger.tag(training.addr2features(addr))
+            labels_pred = tagger.tag(training.training.addr2features(addr))
             labels_true = training.training.addr2labels(addr)
-            yield equals, labels_pred, labels_true
+            yield equals, labels_pred, labels_true, addr
 
-def equals(labels_pred, labels_true):
-    assert labels_pred != labels_true
+def equals(labels_pred, labels_true, addr):
+    print zip(*addr)
+    assert labels_pred == labels_true
