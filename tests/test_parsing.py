@@ -10,7 +10,7 @@ class TestSynthetic(object) :
         temp_counter = 0 #until we get testing sorted
         for address_text, components in parseTrainingData(test_file) :
             labels_true = training.training.addr2labels(components)
-            labels_pred = zip(*parse(address_text))[1]
+            _, labels_pred = zip(*parse(address_text))
             yield equals, address_text, labels_pred, labels_true
             temp_counter += 1
             if temp_counter > 4 :

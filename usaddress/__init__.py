@@ -12,6 +12,7 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 def parse(address_string) :
     tokens = re.findall(r"\w+|[^\w\s]", address_string, re.UNICODE)
     features = addr2features(tokens)
+
     tags = TAGGER.tag(features)
     return zip(tokens, tags)
 
@@ -32,25 +33,37 @@ def tokenFeatures(token) :
 
     return features
 
-def token2features(address, i):
-    features = tokenFeatures(address[i][0])
-
-    if i > 0:
-        previous_features = tokenFeatures(address[i-1][0])
-        for key, value in previous_features.items() :
-            features['previous.' + key] = value
-    else :
-        features['address.start'] = True
-
-    if i+1 < len(address) :
-        next_features = tokenFeatures(address[i+1][0])
-        for key, value in next_features.items() :
-            features['next.' + key] = value
-    else :
-        features['address.end'] = True
-
-    return [str(each) for each in features.items()]
-
 def addr2features(address):
-    return [token2features(address, i) for i in range(len(address))]
+    feature_sequence = []
+    
+    address = address[:]
 
+    previous_feature = tokenFeatures(address.pop(0))
+    previous_feature['address.start'] = True
+
+    feature_sequence.append(previous_feature)
+
+    for token in address :
+        next_feature = tokenFeatures(token)
+        for key, value in next_feature.items() :
+            feature_sequence[-1]['next.' + key] = value
+        for key, value in previous_feature.items() :
+            if key[:5] != 'next.' and key[:9] != 'previous.' :
+                next_feature['previous.' + key] = value
+
+        feature_sequence.append(next_feature)
+        previous_feature = next_feature
+
+
+
+    feature_sequence[-1]['address.end'] = True
+
+    try :
+        feature_sequence[-2]['next.address.end'] = True
+    except IndexError :
+        pass
+
+    feature_sequence = [[str(each) for each in feature.items()]
+                         for feature in feature_sequence]
+
+    return feature_sequence
