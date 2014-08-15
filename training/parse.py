@@ -3,21 +3,6 @@ import ast
 import re
 
 
-# training file (xml) -> list of addresses, where addresses are lists of text/tag pairs
-def parseTrainingData(filepath):
-	tree = etree.parse(filepath)
-	root = tree.getroot()
-	
-	addr_list = []
-	for element in root:
-		address = []
-		for x in list(element):
-			address.append([x.text, x.tag])
-			if x.tail :
-				if x.tail.strip():
-					address.append([x.tail.strip(), None])
-		addr_list.append(address)
-	return addr_list
 
 
 # osm xml data -> list of dicts representing osm addresses
