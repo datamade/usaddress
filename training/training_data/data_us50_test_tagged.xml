@@ -1,0 +1,4712 @@
+<AddressCollection>
+  <AddressString>
+    <PlaceName>Soldotna,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99669</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9112</AddressNumber>
+    <StreetName>Mendenhall Mall Road,</StreetName>
+    <PlaceName>Juneau,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Mile K Beach Road # 1,</StreetName>
+    <PlaceName>Kenai,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99611</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Mile K Beach Road # 1,</StreetName>
+    <PlaceName>Kenai,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99611</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Mi K Beach Road # 2,</StreetName>
+    <PlaceName>Kenai,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99611</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Sand Point,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99661</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Ridgecrest Drive,</StreetName>
+    <PlaceName>Bethel,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99559</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Bethel,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99559</ZipCode>
+  </AddressString>
+  <AddressString>
+    <USPSBox>Box # 63,</USPSBox>
+    <PlaceName>Cordova,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99574</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Cordova,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99574</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>32-233</AddressNumber>
+    <StreetName>M Street,</StreetName>
+    <PlaceName>Elmendorf Afb,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99506</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2932</AddressNumber>
+    <StreetName>Boniface Parkway,</StreetName>
+    <PlaceName>Anchorage,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99504</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>34115</AddressNumber>
+    <StreetName>Sterling Highway,</StreetName>
+    <PlaceName>Anchor Point,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99556</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Anchor Point,</PlaceName>
+    <StateName>AK</StateName>
+    <ZipCode>99556</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2101</AddressNumber>
+    <StreetName>1st Avenue North,</StreetName>
+    <PlaceName>Pell City,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35125</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8483</AddressNumber>
+    <StreetName>Al Highway 157,</StreetName>
+    <PlaceName>Moulton,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35650</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>64</AddressNumber>
+    <StreetName>South Water Street,</StreetName>
+    <PlaceName>Mobile,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36602</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>30653</AddressNumber>
+    <StreetName>Highway 278,</StreetName>
+    <PlaceName>Addison,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35540</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>325</AddressNumber>
+    <StreetName>Copeland Street,</StreetName>
+    <PlaceName>Eufaula,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36027</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1405</AddressNumber>
+    <StreetName>Sunset Drive,</StreetName>
+    <PlaceName>Guntersville,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35976</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>131</AddressNumber>
+    <StreetName>Cove Avenue,</StreetName>
+    <PlaceName>Gulf Shores,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36542</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1014</AddressNumber>
+    <StreetName>Market Street,</StreetName>
+    <PlaceName>Greensboro,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36744</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Dthn Arprt Trmnl,</StreetName>
+    <PlaceName>Midland City,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36350</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1720</AddressNumber>
+    <StreetName>North Eufaula Avenue,</StreetName>
+    <PlaceName>Eufaula,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36027</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>88175</AddressNumber>
+    <StreetName>US Highway 278,</StreetName>
+    <PlaceName>Altoona,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35952</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1361</AddressNumber>
+    <StreetName>Federal Drive,</StreetName>
+    <PlaceName>Montgomery,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36107</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1400</AddressNumber>
+    <StreetName>Lloyd Street,</StreetName>
+    <PlaceName>Montgomery,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>36107</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>120</AddressNumber>
+    <StreetName>Oxmoor Boulevard,</StreetName>
+    <PlaceName>Birmingham,</PlaceName>
+    <StateName>AL</StateName>
+    <ZipCode>35209</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7104</AddressNumber>
+    <StreetName>Highway 62 West,</StreetName>
+    <PlaceName>Gassville,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72635</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2112</AddressNumber>
+    <StreetName>Linwood Drive,</StreetName>
+    <PlaceName>Paragould,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72450</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>408</AddressNumber>
+    <StreetName>North Walnut Street,</StreetName>
+    <PlaceName>Searcy,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72143</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3209</AddressNumber>
+    <StreetName>Northeast 11th Street,</StreetName>
+    <PlaceName>Bentonville,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72712</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Perryville,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72126</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>302</AddressNumber>
+    <StreetName>Veneer Street,</StreetName>
+    <PlaceName>Malvern,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72104</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 71 B,</StreetName>
+    <PlaceName>Fayetteville,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Springdale,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72762</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Springdale,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72762</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>198</AddressNumber>
+    <StreetName>South Poplar Street,</StreetName>
+    <PlaceName>Marianna,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72360</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>703</AddressNumber>
+    <StreetName>East Race Avenue,</StreetName>
+    <PlaceName>Searcy,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72143</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Lawson,</StreetName>
+    <PlaceName>Urbana,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>71768</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3000</AddressNumber>
+    <StreetName>Kavanaugh Boulevard,</StreetName>
+    <PlaceName>Little Rock,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72205</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>406</AddressNumber>
+    <StreetName>North Highway 71 Business,</StreetName>
+    <PlaceName>Lowell,</PlaceName>
+    <StateName>AR</StateName>
+    <ZipCode>72745</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1445</AddressNumber>
+    <StreetName>West Southern Avenue,</StreetName>
+    <PlaceName>Mesa,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85202</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1690</AddressNumber>
+    <StreetName>East Ash Street,</StreetName>
+    <PlaceName>Globe,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>910</AddressNumber>
+    <StreetName>South Beeline Highway,</StreetName>
+    <PlaceName>Payson,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85541</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6500</AddressNumber>
+    <StreetName>Highway 179,</StreetName>
+    <PlaceName>Sedona,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>86351</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Southgate Mall,</StreetName>
+    <PlaceName>Yuma,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85364</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1202</AddressNumber>
+    <StreetName>A Avenue,</StreetName>
+    <PlaceName>Douglas,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85607</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2890</AddressNumber>
+    <StreetName>East Andy Devine Avenue,</StreetName>
+    <PlaceName>Kingman,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>86401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11291</AddressNumber>
+    <StreetName>East Viaduct Linda,</StreetName>
+    <PlaceName>Scottsdale,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85259</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Elfrida,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85610</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>300</AddressNumber>
+    <StreetName>West Apache Trail,</StreetName>
+    <PlaceName>Apache Junction,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85220</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5235</AddressNumber>
+    <StreetName>North Highway 64,</StreetName>
+    <PlaceName>Williams,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>86046</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1015</AddressNumber>
+    <StreetName>North Stone Avenue,</StreetName>
+    <PlaceName>Tucson,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85705</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6300</AddressNumber>
+    <StreetName>East Golf Links Road,</StreetName>
+    <PlaceName>Tucson,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85730</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2616</AddressNumber>
+    <StreetName>South Mission Road,</StreetName>
+    <PlaceName>Tucson,</PlaceName>
+    <StateName>AZ</StateName>
+    <ZipCode>85713</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8501</AddressNumber>
+    <StreetName>West Bowles Avenue,</StreetName>
+    <PlaceName>Littleton,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80123</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2700</AddressNumber>
+    <StreetName>Colorado Boulevard,</StreetName>
+    <PlaceName>Idaho Springs,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80452</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>926</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Longmont,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>680</AddressNumber>
+    <StreetName>Oak Avenue,</StreetName>
+    <PlaceName>Eaton,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80615</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1606</AddressNumber>
+    <StreetName>West Eisenhower Boulevard,</StreetName>
+    <PlaceName>Loveland,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80537</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>525</AddressNumber>
+    <StreetName>North Avenue,</StreetName>
+    <PlaceName>Grand Junction,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>81501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2255</AddressNumber>
+    <StreetName>Sheridan Boulevard,</StreetName>
+    <PlaceName>Denver,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80214</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1001</AddressNumber>
+    <StreetName>West New York Avenue,</StreetName>
+    <PlaceName>Gunnison,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>81230</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>132</AddressNumber>
+    <StreetName>West 6th Street,</StreetName>
+    <PlaceName>Glenwood Springs,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>81601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>321</AddressNumber>
+    <StreetName>South Denver Avenue,</StreetName>
+    <PlaceName>Fort Lupton,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80621</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>390</AddressNumber>
+    <StreetName>South McCaslin Boulevard,</StreetName>
+    <PlaceName>Louisville,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80027</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1298</AddressNumber>
+    <StreetName>North College Avenue,</StreetName>
+    <PlaceName>Fort Collins,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>80524</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>771</AddressNumber>
+    <StreetName>South Santa Fe Avenue,</StreetName>
+    <PlaceName>Pueblo,</PlaceName>
+    <StateName>CO</StateName>
+    <ZipCode>81006</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>100</AddressNumber>
+    <StreetName>Greyrock Place,</StreetName>
+    <PlaceName>Stamford,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06901</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Meriden Square,</StreetName>
+    <PlaceName>Meriden,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06450</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>228</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Winsted,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06098</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>287</AddressNumber>
+    <StreetName>New Britain Avenue,</StreetName>
+    <PlaceName>Hartford,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06106</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>316</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Cromwell,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06416</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>621</AddressNumber>
+    <StreetName>Washington Avenue,</StreetName>
+    <PlaceName>Bridgeport,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06604</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>377</AddressNumber>
+    <StreetName>South Center Street,</StreetName>
+    <PlaceName>Windsor Locks,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06096</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>20</AddressNumber>
+    <StreetName>West Pine Way,</StreetName>
+    <PlaceName>Plainville,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06062</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>360</AddressNumber>
+    <StreetName>Watertown Road,</StreetName>
+    <PlaceName>Thomaston,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06787</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>53</AddressNumber>
+    <StreetName>Quinnipiac Avenue,</StreetName>
+    <PlaceName>North Haven,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06473</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>26</AddressNumber>
+    <StreetName>Killingworth Road,</StreetName>
+    <PlaceName>Higganum,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06441</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>942</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Hartford,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>West Route Box West # 4,</StreetName>
+    <PlaceName>Goshen,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06756</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>907</AddressNumber>
+    <StreetName>Boston Post Road,</StreetName>
+    <PlaceName>Old Saybrook,</PlaceName>
+    <StateName>CT</StateName>
+    <ZipCode>06475</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>222</AddressNumber>
+    <StreetName>7th Street Southeast,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3320</AddressNumber>
+    <StreetName>M Street Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20007</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1517</AddressNumber>
+    <StreetName>Connecticut Avenue Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20036</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4115</AddressNumber>
+    <StreetName>Wisconsin Avenue Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20016</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>613</AddressNumber>
+    <StreetName>K Street Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2014</AddressNumber>
+    <StreetName>P Street Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20036</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1606</AddressNumber>
+    <StreetName>7th Street Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1063</AddressNumber>
+    <StreetName>31st Street Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20007</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3500</AddressNumber>
+    <StreetName>Connecticut Avenue Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20008</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1654</AddressNumber>
+    <StreetName>Columbia Road Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20009</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4615</AddressNumber>
+    <StreetName>Wisconsin Avenue Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20016</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Union Station,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>499</AddressNumber>
+    <StreetName>South Capitol Street Southwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5532</AddressNumber>
+    <StreetName>Connecticut Avenue Northwest,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>DC</StateName>
+    <ZipCode>20015</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1720</AddressNumber>
+    <StreetName>West Gilpin Drive,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19805</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2222</AddressNumber>
+    <StreetName>Silverside Road,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19810</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>213</AddressNumber>
+    <StreetName>Anglers Road,</StreetName>
+    <PlaceName>Lewes,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19958</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>500</AddressNumber>
+    <StreetName>Greenhill Avenue,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19805</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12</AddressNumber>
+    <StreetName>East Lea Boulevard,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19802</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1270</AddressNumber>
+    <StreetName>Ocean Outlt,</StreetName>
+    <PlaceName>Rehoboth Beach,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19971</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>791</AddressNumber>
+    <StreetName>North Dual Highway,</StreetName>
+    <PlaceName>Seaford,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19973</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>909</AddressNumber>
+    <StreetName>North Dupont Highway,</StreetName>
+    <PlaceName>Dover,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19901</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>900</AddressNumber>
+    <StreetName>Churchmans Road,</StreetName>
+    <PlaceName>Newark,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19713</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2354</AddressNumber>
+    <StreetName>Glasgow Avenue,</StreetName>
+    <PlaceName>Newark,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19702</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>134</AddressNumber>
+    <StreetName>North Dupont Highway,</StreetName>
+    <PlaceName>New Castle,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19720</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4000</AddressNumber>
+    <StreetName>Concord Pike,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19803</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2719</AddressNumber>
+    <StreetName>Philadelphia Pike,</StreetName>
+    <PlaceName>Claymont,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19703</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3211</AddressNumber>
+    <StreetName>Kirkwood Highway,</StreetName>
+    <PlaceName>Wilmington,</PlaceName>
+    <StateName>DE</StateName>
+    <ZipCode>19808</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8751</AddressNumber>
+    <StreetName>Himes Avenue North,</StreetName>
+    <PlaceName>Tampa,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33614</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>13690</AddressNumber>
+    <StreetName>Stoneybrook Drive,</StreetName>
+    <PlaceName>Clearwater,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33762</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1733</AddressNumber>
+    <StreetName>Tamiami Trail South,</StreetName>
+    <PlaceName>Venice,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34293</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1812</AddressNumber>
+    <StreetName>South Osprey Avenue,</StreetName>
+    <PlaceName>Sarasota,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34239</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6600</AddressNumber>
+    <StreetName>Gulf Drive,</StreetName>
+    <PlaceName>Bradenton Beach,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34217</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1287</AddressNumber>
+    <StreetName>1st Street,</StreetName>
+    <PlaceName>Sarasota,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34236</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5401</AddressNumber>
+    <StreetName>West Kennedy Boulevard,</StreetName>
+    <PlaceName>Tampa,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33609</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>301</AddressNumber>
+    <StreetName>Gulf Boulevard,</StreetName>
+    <PlaceName>Belleair Beach,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33786</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1601</AddressNumber>
+    <StreetName>Englewood Road Route 776,</StreetName>
+    <PlaceName>Englewood,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34223</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4023</AddressNumber>
+    <StreetName>Water Avenue West,</StreetName>
+    <PlaceName>Tampa,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33614</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>285</AddressNumber>
+    <StreetName>West Dearborn,</StreetName>
+    <PlaceName>Englewood,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>34223</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1330</AddressNumber>
+    <StreetName>9th Avenue,</StreetName>
+    <PlaceName>Tampa,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33605</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>844</AddressNumber>
+    <StreetName>6th Street Northwest,</StreetName>
+    <PlaceName>Winter Haven,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33881</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1411</AddressNumber>
+    <StreetName>49th Street South,</StreetName>
+    <PlaceName>Saint Petersburg,</PlaceName>
+    <StateName>FL</StateName>
+    <ZipCode>33707</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 80,</StreetName>
+    <PlaceName>Allentown,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>108</AddressNumber>
+    <StreetName>South Park Avenue,</StreetName>
+    <PlaceName>Calhoun,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>30701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>122</AddressNumber>
+    <StreetName>Cedar Street,</StreetName>
+    <PlaceName>Arlington,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31713</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>110</AddressNumber>
+    <StreetName>1st Street Southwest,</StreetName>
+    <PlaceName>Moultrie,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31768</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2567</AddressNumber>
+    <StreetName>Main Street West,</StreetName>
+    <PlaceName>Snellville,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>30078</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Pineville Road,</StreetName>
+    <PlaceName>Buena Vista,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31803</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2601</AddressNumber>
+    <StreetName>Dawson Road,</StreetName>
+    <PlaceName>Albany,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31707</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Northlake Mall,</StreetName>
+    <PlaceName>Tucker,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>30084</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1000</AddressNumber>
+    <StreetName>North Point Circle,</StreetName>
+    <PlaceName>Alpharetta,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>30022</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>419</AddressNumber>
+    <StreetName>Spaulding Road,</StreetName>
+    <PlaceName>Montezuma,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31063</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>615</AddressNumber>
+    <StreetName>Newton Road,</StreetName>
+    <PlaceName>Camilla,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31730</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>932</AddressNumber>
+    <StreetName>McDaniel Street Southwest,</StreetName>
+    <PlaceName>Atlanta,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>30310</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Buford Street,</StreetName>
+    <PlaceName>Shellman,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31786</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>614</AddressNumber>
+    <StreetName>North Hutchinson Avenue,</StreetName>
+    <PlaceName>Adel,</PlaceName>
+    <StateName>GA</StateName>
+    <ZipCode>31620</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1750</AddressNumber>
+    <StreetName>Kalakaua Avenue Fl 3rd,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96826</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1215</AddressNumber>
+    <StreetName>South Kihei Road  Unit F,</StreetName>
+    <PlaceName>Kihei,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96753</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>111</AddressNumber>
+    <StreetName>Banyan Drive,</StreetName>
+    <PlaceName>Hilo,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96720</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>217</AddressNumber>
+    <StreetName>Waianuenue Avenue,</StreetName>
+    <PlaceName>Hilo,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96720</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1050</AddressNumber>
+    <StreetName>Ala Moana Boulevard,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96813</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2239</AddressNumber>
+    <StreetName>South King Street,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96826</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2463</AddressNumber>
+    <StreetName>South Kihei Road,</StreetName>
+    <PlaceName>Kihei,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96753</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>935</AddressNumber>
+    <StreetName>California Avenue,</StreetName>
+    <PlaceName>Wahiawa,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96786</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>94-210</AddressNumber>
+    <StreetName>Leokane,</StreetName>
+    <USPSBox>Suite 105,</USPSBox>
+    <PlaceName>Waipahu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96797</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2500</AddressNumber>
+    <StreetName>Kalakaua Avenue Unit A,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96815</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1314</AddressNumber>
+    <StreetName>North King Street,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96817</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>120</AddressNumber>
+    <StreetName>Hekili,</StreetName>
+    <PlaceName>Kailua,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96734</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1279</AddressNumber>
+    <StreetName>South Kihei Road Suite 122,</StreetName>
+    <PlaceName>Kihei,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96753</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1121</AddressNumber>
+    <StreetName>Nuuanu Avenue Suite 105,</StreetName>
+    <PlaceName>Honolulu,</PlaceName>
+    <StateName>HI</StateName>
+    <ZipCode>96817</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 34 East,</StreetName>
+    <PlaceName>Albia,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>52531</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Valley West Mall,</StreetName>
+    <PlaceName>West Des Moines,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50266</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2801</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Keokuk,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>52632</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1804</AddressNumber>
+    <StreetName>Highway Boulevard,</StreetName>
+    <PlaceName>Spencer,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>51301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1106</AddressNumber>
+    <StreetName>Highway 69 North,</StreetName>
+    <PlaceName>Forest City,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50436</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3070</AddressNumber>
+    <StreetName>Highway 22,</StreetName>
+    <PlaceName>Riverside,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>52327</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9125</AddressNumber>
+    <StreetName>Atlantic Drive Southwest,</StreetName>
+    <PlaceName>Cedar Rapids,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>52404</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>West Taylor Street,</StreetName>
+    <PlaceName>Creston,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1302</AddressNumber>
+    <StreetName>US Highway 71 North,</StreetName>
+    <PlaceName>Carroll,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>51401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>115</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Ames,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50010</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1905</AddressNumber>
+    <StreetName>Cottage Grove Avenue,</StreetName>
+    <PlaceName>Des Moines,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50314</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>127</AddressNumber>
+    <StreetName>East 18th Street,</StreetName>
+    <PlaceName>Cedar Falls,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50613</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>812</AddressNumber>
+    <StreetName>Illinois Street,</StreetName>
+    <PlaceName>Sidney,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>51652</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>215</AddressNumber>
+    <StreetName>East Walnut Street,</StreetName>
+    <PlaceName>Des Moines,</PlaceName>
+    <StateName>IA</StateName>
+    <ZipCode>50309</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>978</AddressNumber>
+    <StreetName>East Main Street,</StreetName>
+    <PlaceName>Burley,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83318</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>348</AddressNumber>
+    <StreetName>Addison Avenue West,</StreetName>
+    <PlaceName>Twin Falls,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>295</AddressNumber>
+    <StreetName>South 250 East,</StreetName>
+    <PlaceName>Burley,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83318</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>423</AddressNumber>
+    <StreetName>South Oneida Street,</StreetName>
+    <PlaceName>Rupert,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83350</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>123</AddressNumber>
+    <StreetName>West 5th North,</StreetName>
+    <PlaceName>Burley,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83318</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>317</AddressNumber>
+    <StreetName>Happy Day Boulevard,</StreetName>
+    <PlaceName>Caldwell,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83607</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>524</AddressNumber>
+    <StreetName>Airport Loop,</StreetName>
+    <PlaceName>Twin Falls,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>111</AddressNumber>
+    <StreetName>Broadway Avenue,</StreetName>
+    <PlaceName>Boise,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83702</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6536</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Bonners Ferry,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83805</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 77,</StreetName>
+    <PlaceName>Albion,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83311</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>220</AddressNumber>
+    <StreetName>6th Street,</StreetName>
+    <PlaceName>Wallace,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83873</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>150</AddressNumber>
+    <StreetName>1st Street,</StreetName>
+    <PlaceName>Idaho Falls,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>160</AddressNumber>
+    <StreetName>West Main Street,</StreetName>
+    <PlaceName>Oakley,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83346</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Almo,</PlaceName>
+    <StateName>ID</StateName>
+    <ZipCode>83312</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2256</AddressNumber>
+    <StreetName>Northbrook Court,</StreetName>
+    <PlaceName>Northbrook,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60062</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1060</AddressNumber>
+    <StreetName>Spring Hill Mall,</StreetName>
+    <PlaceName>Dundee,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60118</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6</AddressNumber>
+    <StreetName>West South Water Market,</StreetName>
+    <PlaceName>Chicago,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60608</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>14510</AddressNumber>
+    <StreetName>South Indiana Avenue,</StreetName>
+    <PlaceName>Riverdale,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60827</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>719</AddressNumber>
+    <StreetName>West Elm Street,</StreetName>
+    <PlaceName>Hoopeston,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60942</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1612</AddressNumber>
+    <StreetName>North Sedgwick Street,</StreetName>
+    <PlaceName>Chicago,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60614</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3359</AddressNumber>
+    <StreetName>West 115th Street,</StreetName>
+    <PlaceName>Alsip,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60803</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>425</AddressNumber>
+    <StreetName>West 115th Street,</StreetName>
+    <PlaceName>Chicago,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60628</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4730</AddressNumber>
+    <StreetName>West 103rd Street,</StreetName>
+    <PlaceName>Oak Lawn,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60453</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6943</AddressNumber>
+    <StreetName>Roosevelt Road,</StreetName>
+    <PlaceName>Berwyn,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60402</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1330</AddressNumber>
+    <StreetName>West Madison Street,</StreetName>
+    <PlaceName>Chicago,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60607</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4128</AddressNumber>
+    <StreetName>14th Avenue,</StreetName>
+    <PlaceName>Rock Island,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>61201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>829</AddressNumber>
+    <StreetName>Moen Avenue,</StreetName>
+    <PlaceName>Joliet,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60436</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8922</AddressNumber>
+    <StreetName>North 1/2 Greenwood Avenue,</StreetName>
+    <PlaceName>Niles,</PlaceName>
+    <StateName>IL</StateName>
+    <ZipCode>60714</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>40</AddressNumber>
+    <StreetName>East Main Street,</StreetName>
+    <PlaceName>Hagerstown,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47346</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>313-317</AddressNumber>
+    <StreetName>Broadway,</StreetName>
+    <PlaceName>Madison,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47250</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2371</AddressNumber>
+    <StreetName>North 26th Street,</StreetName>
+    <PlaceName>Lafayette,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47904</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>10</AddressNumber>
+    <StreetName>West Market Street,</StreetName>
+    <PlaceName>Indianapolis,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46204</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3906</AddressNumber>
+    <StreetName>North Indianapolis Road,</StreetName>
+    <PlaceName>Columbus,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1100</AddressNumber>
+    <StreetName>West 11th Street,</StreetName>
+    <PlaceName>Bloomington,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47404</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12510</AddressNumber>
+    <StreetName>North Meridian Street,</StreetName>
+    <PlaceName>Carmel,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46032</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1753</AddressNumber>
+    <StreetName>East 12th Street,</StreetName>
+    <PlaceName>Mishawaka,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46544</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1900</AddressNumber>
+    <StreetName>South Mock Avenue,</StreetName>
+    <PlaceName>Muncie,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47302</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1800</AddressNumber>
+    <StreetName>East Market Street,</StreetName>
+    <PlaceName>Logansport,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46947</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1621</AddressNumber>
+    <StreetName>East 10th Street,</StreetName>
+    <PlaceName>Jeffersonville,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>47130</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>239</AddressNumber>
+    <StreetName>West Monroe Street,</StreetName>
+    <PlaceName>Decatur,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46733</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>US 6 Ind 15,</StreetName>
+    <PlaceName>Milford,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46542</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1000</AddressNumber>
+    <StreetName>Indiana Highway 212,</StreetName>
+    <PlaceName>Michigan City,</PlaceName>
+    <StateName>IN</StateName>
+    <ZipCode>46360</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>324</AddressNumber>
+    <StreetName>West Washington Street,</StreetName>
+    <PlaceName>Oskaloosa,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66066</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8</AddressNumber>
+    <StreetName>East 6th Street,</StreetName>
+    <PlaceName>Lawrence,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66044</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1044</AddressNumber>
+    <StreetName>West 29th Street North,</StreetName>
+    <PlaceName>Wichita,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67204</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8533</AddressNumber>
+    <StreetName>Southwest 21st Street,</StreetName>
+    <PlaceName>Topeka,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66615</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6249</AddressNumber>
+    <StreetName>East 21st Street North,</StreetName>
+    <PlaceName>Wichita,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67208</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>707</AddressNumber>
+    <StreetName>North Main Street,</StreetName>
+    <PlaceName>Newton,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67114</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1135</AddressNumber>
+    <StreetName>College Drive,</StreetName>
+    <PlaceName>Garden City,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67846</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2615</AddressNumber>
+    <StreetName>1/2 Gary Avenue,</StreetName>
+    <PlaceName>Dodge City,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>103</AddressNumber>
+    <StreetName>West 5th Street,</StreetName>
+    <PlaceName>Admire,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66830</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>13964</AddressNumber>
+    <StreetName>Santa Fe Trail Drive,</StreetName>
+    <PlaceName>Shawnee Mission,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66215</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11120</AddressNumber>
+    <StreetName>Antioch Road,</StreetName>
+    <PlaceName>Shawnee Mission,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>66210</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>311</AddressNumber>
+    <StreetName>West Holme Street,</StreetName>
+    <PlaceName>Norton,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67654</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3002</AddressNumber>
+    <StreetName>East Central Avenue,</StreetName>
+    <PlaceName>Wichita,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67214</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Municipal Airport,</StreetName>
+    <PlaceName>Hutchinson,</PlaceName>
+    <StateName>KS</StateName>
+    <ZipCode>67501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>211</AddressNumber>
+    <StreetName>Clover Lane,</StreetName>
+    <PlaceName>Louisville,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40207</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Crsrds Highway 139 A,</StreetName>
+    <PlaceName>Cadiz,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>42211</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>440</AddressNumber>
+    <StreetName>East Main Street,</StreetName>
+    <PlaceName>Bowling Green,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>42101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>600</AddressNumber>
+    <StreetName>West 9th Street,</StreetName>
+    <PlaceName>Russellville,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>42276</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Alvy Prk And Hghwy # 54,</StreetName>
+    <PlaceName>Owensboro,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>42301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>433</AddressNumber>
+    <StreetName>Johnson Street,</StreetName>
+    <PlaceName>Covington,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>41011</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>610</AddressNumber>
+    <StreetName>West Magnolia Avenue,</StreetName>
+    <PlaceName>Louisville,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40208</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>445</AddressNumber>
+    <StreetName>Highway 44 East,</StreetName>
+    <PlaceName>Shepherdsville,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40165</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>134</AddressNumber>
+    <StreetName>Spout Springs Road,</StreetName>
+    <PlaceName>Irvine,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40336</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>820</AddressNumber>
+    <StreetName>Madison Avenue,</StreetName>
+    <PlaceName>Covington,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>41011</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9464</AddressNumber>
+    <StreetName>Brownsboro Road,</StreetName>
+    <PlaceName>Louisville,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40241</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>41</AddressNumber>
+    <StreetName>East Washington Street,</StreetName>
+    <PlaceName>Sebree,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>42455</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>410</AddressNumber>
+    <StreetName>West Vine Street,</StreetName>
+    <PlaceName>Lexington,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>40507</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>500</AddressNumber>
+    <StreetName>Winchester Avenue,</StreetName>
+    <PlaceName>Ashland,</PlaceName>
+    <StateName>KY</StateName>
+    <ZipCode>41101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1587</AddressNumber>
+    <StreetName>Crowley Rayne Highway,</StreetName>
+    <PlaceName>Crowley,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70526</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>Cheyenne Drive,</StreetName>
+    <PlaceName>Scott,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70583</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1003</AddressNumber>
+    <StreetName>Hugh Wallis Road South,</StreetName>
+    <PlaceName>Lafayette,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70508</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>724</AddressNumber>
+    <StreetName>Iberville Street,</StreetName>
+    <PlaceName>New Orleans,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70130</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>724</AddressNumber>
+    <StreetName>Iberville Street,</StreetName>
+    <PlaceName>New Orleans,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70130</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>305</AddressNumber>
+    <StreetName>Constitution Drive,</StreetName>
+    <PlaceName>West Monroe,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>71292</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8523</AddressNumber>
+    <StreetName>Highway 23,</StreetName>
+    <PlaceName>Belle Chasse,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70037</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8523</AddressNumber>
+    <StreetName>Highway 23,</StreetName>
+    <PlaceName>Belle Chasse,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70037</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>611</AddressNumber>
+    <StreetName>Frenchmen Street,</StreetName>
+    <PlaceName>New Orleans,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70116</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>New Iberia,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70560</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>401</AddressNumber>
+    <StreetName>Highway 1 North,</StreetName>
+    <PlaceName>Oil City,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>71061</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4396</AddressNumber>
+    <StreetName>Natchitoches Highway,</StreetName>
+    <PlaceName>Many,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>71449</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3810</AddressNumber>
+    <StreetName>East Texas Street,</StreetName>
+    <PlaceName>Bossier City,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>71111</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6764</AddressNumber>
+    <StreetName>Airline Highway,</StreetName>
+    <PlaceName>Baton Rouge,</PlaceName>
+    <StateName>LA</StateName>
+    <ZipCode>70805</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1665</AddressNumber>
+    <StreetName>Beacon Street,</StreetName>
+    <PlaceName>Brookline,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02445</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>212</AddressNumber>
+    <StreetName>Stuart Street,</StreetName>
+    <PlaceName>Boston,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02116</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>529</AddressNumber>
+    <StreetName>King Street,</StreetName>
+    <PlaceName>Littleton,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01460</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>72</AddressNumber>
+    <StreetName>Bigelow Avenue,</StreetName>
+    <PlaceName>Watertown,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02472</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>234</AddressNumber>
+    <StreetName>John Wise Avenue,</StreetName>
+    <PlaceName>Essex,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01929</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1655</AddressNumber>
+    <StreetName>Lakeview Avenue,</StreetName>
+    <PlaceName>Dracut,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01826</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>30</AddressNumber>
+    <StreetName>Boltwood Avenue,</StreetName>
+    <PlaceName>Amherst,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01002</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>45</AddressNumber>
+    <StreetName>School Street,</StreetName>
+    <PlaceName>Boston,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02108</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2465</AddressNumber>
+    <StreetName>Massachusetts Avenue,</StreetName>
+    <PlaceName>Cambridge,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02140</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>313</AddressNumber>
+    <StreetName>Littleton Road,</StreetName>
+    <PlaceName>Westford,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>01886</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>472</AddressNumber>
+    <StreetName>Massachusetts Avenue,</StreetName>
+    <PlaceName>Cambridge,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02139</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>752</AddressNumber>
+    <StreetName>Plain Street,</StreetName>
+    <PlaceName>Marshfield,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02050</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>259</AddressNumber>
+    <StreetName>Union Street,</StreetName>
+    <PlaceName>Holbrook,</PlaceName>
+    <StateName>MA</StateName>
+    <ZipCode>02343</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17503</AddressNumber>
+    <StreetName>Redland Road,</StreetName>
+    <PlaceName>Derwood,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>20855</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>996</AddressNumber>
+    <StreetName>West Patrick Street,</StreetName>
+    <PlaceName>Frederick,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21703</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6339</AddressNumber>
+    <StreetName>Allentown Road,</StreetName>
+    <PlaceName>Temple Hills,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>20748</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>190</AddressNumber>
+    <StreetName>Thomas Jefferson Drive,</StreetName>
+    <PlaceName>Frederick,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21702</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>58</AddressNumber>
+    <StreetName>South Potomac Street,</StreetName>
+    <PlaceName>Hagerstown,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21740</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Pikesville,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21208</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Drum Point Road,</StreetName>
+    <PlaceName>Deale,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>20751</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1678</AddressNumber>
+    <StreetName>Village Green,</StreetName>
+    <PlaceName>Crofton,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21114</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2700</AddressNumber>
+    <StreetName>Turf Valley Road,</StreetName>
+    <PlaceName>Ellicott City,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21042</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1011</AddressNumber>
+    <StreetName>Baltimore Boulevard,</StreetName>
+    <PlaceName>Westminster,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21157</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>580</AddressNumber>
+    <StreetName>Ritchie Highway,</StreetName>
+    <PlaceName>Severna Park,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21146</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>106</AddressNumber>
+    <StreetName>Reisterstown Road,</StreetName>
+    <PlaceName>Pikesville,</PlaceName>
+    <StateName>MD</StateName>
+    <ZipCode>21208</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Kennebunkport,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04046</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>55</AddressNumber>
+    <StreetName>Western Avenue,</StreetName>
+    <PlaceName>Kennebunk,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04043</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Main,</StreetName>
+    <PlaceName>Mars Hill,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04758</ZipCode>
+  </AddressString>
+  <AddressString>
+    <USPSBox>Route Box # 201,</USPSBox>
+    <PlaceName>Bingham,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04920</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>21</AddressNumber>
+    <StreetName>North Main Street,</StreetName>
+    <PlaceName>Rockland,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04841</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>71</AddressNumber>
+    <StreetName>India Street,</StreetName>
+    <PlaceName>Portland,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>30</AddressNumber>
+    <StreetName>Fair Street,</StreetName>
+    <PlaceName>Norway,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04268</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>469</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Saco,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04072</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Midtown Mall,</StreetName>
+    <PlaceName>Sanford,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04073</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>458</AddressNumber>
+    <StreetName>Center Street,</StreetName>
+    <PlaceName>Auburn,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04210</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>148</AddressNumber>
+    <StreetName>Pleasant Street,</StreetName>
+    <PlaceName>Brunswick,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04011</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9</AddressNumber>
+    <StreetName>Dana Street,</StreetName>
+    <PlaceName>Portland,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Anchor Inn Road,</StreetName>
+    <PlaceName>Round Pond,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04564</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12</AddressNumber>
+    <StreetName>Bridge Street,</StreetName>
+    <PlaceName>Boothbay Harbor,</PlaceName>
+    <StateName>ME</StateName>
+    <ZipCode>04538</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9793</AddressNumber>
+    <StreetName>Telegraph Road,</StreetName>
+    <PlaceName>Erie,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48133</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>621</AddressNumber>
+    <StreetName>East Michigan Avenue,</StreetName>
+    <PlaceName>Lansing,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48912</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3555</AddressNumber>
+    <StreetName>68th Street Southeast,</StreetName>
+    <PlaceName>Caledonia,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>49316</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>84</AddressNumber>
+    <StreetName>East 8th Street,</StreetName>
+    <PlaceName>Holland,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>49423</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4346</AddressNumber>
+    <StreetName>South Division Avenue,</StreetName>
+    <PlaceName>Grand Rapids,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>49548</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>19214</AddressNumber>
+    <StreetName>Joy Road,</StreetName>
+    <PlaceName>Detroit,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48228</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9405</AddressNumber>
+    <StreetName>West Fort Street,</StreetName>
+    <PlaceName>Detroit,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48209</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2229</AddressNumber>
+    <StreetName>18 Mile Road,</StreetName>
+    <PlaceName>Sterling Heights,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48314</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>510</AddressNumber>
+    <StreetName>North Telegraph Road,</StreetName>
+    <PlaceName>Pontiac,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48341</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12200</AddressNumber>
+    <StreetName>Market Place Drive,</StreetName>
+    <PlaceName>Birch Run,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48415</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>18440</AddressNumber>
+    <StreetName>West Warren Avenue,</StreetName>
+    <PlaceName>Detroit,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48228</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>304</AddressNumber>
+    <StreetName>North State Street,</StreetName>
+    <PlaceName>Big Rapids,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>49307</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>301</AddressNumber>
+    <StreetName>Lafayette Avenue,</StreetName>
+    <PlaceName>Bay City,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48708</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>200</AddressNumber>
+    <StreetName>South Cherry Street,</StreetName>
+    <PlaceName>Flushing,</PlaceName>
+    <StateName>MI</StateName>
+    <ZipCode>48433</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>510</AddressNumber>
+    <StreetName>Groveland Avenue,</StreetName>
+    <PlaceName>Minneapolis,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55403</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 59 North,</StreetName>
+    <PlaceName>Detroit Lakes,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>56501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1364</AddressNumber>
+    <StreetName>West 71 Street,</StreetName>
+    <PlaceName>Saint Paul,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1285</AddressNumber>
+    <StreetName>Highway 7 East,</StreetName>
+    <PlaceName>Hutchinson,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55350</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Minneapolis,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3131</AddressNumber>
+    <StreetName>West 3rd Street,</StreetName>
+    <PlaceName>Duluth,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55806</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1200</AddressNumber>
+    <StreetName>12th Street Southwest,</StreetName>
+    <PlaceName>Rochester,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55902</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>103</AddressNumber>
+    <StreetName>Main Street South,</StreetName>
+    <PlaceName>Aurora,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55705</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17280</AddressNumber>
+    <StreetName>Highway 23 Northeast,</StreetName>
+    <PlaceName>New London,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>56273</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Hwys 16 And 63 North,</StreetName>
+    <PlaceName>Spring Valley,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55975</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>910</AddressNumber>
+    <StreetName>4th Street Northwest,</StreetName>
+    <PlaceName>Austin,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55912</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1529</AddressNumber>
+    <StreetName>Robert Street South,</StreetName>
+    <PlaceName>Saint Paul,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>55118</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 28 And 55,</StreetName>
+    <PlaceName>Glenwood,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>56334</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>510</AddressNumber>
+    <StreetName>1st Street West,</StreetName>
+    <PlaceName>Fosston,</PlaceName>
+    <StateName>MN</StateName>
+    <ZipCode>56542</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>510</AddressNumber>
+    <StreetName>Southwest 3rd Street,</StreetName>
+    <PlaceName>Lees Summit,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>64063</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Junction Highway 76 37 &amp;#38; 86,</StreetName>
+    <PlaceName>Cassville,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65625</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>803</AddressNumber>
+    <StreetName>Franklin Avenue,</StreetName>
+    <PlaceName>Washington,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>63090</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>405</AddressNumber>
+    <StreetName>West Main Street,</StreetName>
+    <PlaceName>Branson,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65616</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Tipton,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65081</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>318</AddressNumber>
+    <StreetName>East 51st Street,</StreetName>
+    <PlaceName>Kansas City,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>64112</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>609</AddressNumber>
+    <StreetName>West Newton Street,</StreetName>
+    <PlaceName>Versailles,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65084</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Hghwy 54 And East Hckry,</StreetName>
+    <PlaceName>Nevada,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>64772</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2003</AddressNumber>
+    <StreetName>Southridge Drive,</StreetName>
+    <PlaceName>Jefferson City,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>303</AddressNumber>
+    <StreetName>Northeast Englewood Road,</StreetName>
+    <PlaceName>Kansas City,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>64118</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5801</AddressNumber>
+    <StreetName>North Highway 763,</StreetName>
+    <PlaceName>Columbia,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65202</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 63 South,</StreetName>
+    <PlaceName>Edgar Springs,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65462</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17315</AddressNumber>
+    <StreetName>Highway 87,</StreetName>
+    <PlaceName>Boonville,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>65233</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>19</AddressNumber>
+    <StreetName>Charlestowne Plaza,</StreetName>
+    <PlaceName>Saint Charles,</PlaceName>
+    <StateName>MO</StateName>
+    <ZipCode>63303</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>789</AddressNumber>
+    <StreetName>Vieux Marche Mall,</StreetName>
+    <PlaceName>Biloxi,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39530</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>130</AddressNumber>
+    <StreetName>Airport Cafe Circle,</StreetName>
+    <PlaceName>Lucedale,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39452</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Glfprt Blx Rgnl Arpr,</StreetName>
+    <PlaceName>Gulfport,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>118</AddressNumber>
+    <StreetName>Courthouse Square,</StreetName>
+    <PlaceName>Oxford,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>38655</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2039</AddressNumber>
+    <StreetName>Highway 82 East,</StreetName>
+    <PlaceName>Greenville,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>38703</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2028</AddressNumber>
+    <StreetName>Beach Boulevard,</StreetName>
+    <PlaceName>Biloxi,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39531</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Highway 27 South,</StreetName>
+    <PlaceName>Monticello,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39654</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>107</AddressNumber>
+    <StreetName>East Jackson Street,</StreetName>
+    <PlaceName>Belzoni,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39038</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>646</AddressNumber>
+    <StreetName>Highway 48 West,</StreetName>
+    <PlaceName>Tylertown,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39667</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>25357</AddressNumber>
+    <StreetName>Highway 330,</StreetName>
+    <PlaceName>Oakland,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>38948</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>741</AddressNumber>
+    <StreetName>West Broadway Street,</StreetName>
+    <PlaceName>Yazoo City,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39194</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>134</AddressNumber>
+    <StreetName>North Front Street,</StreetName>
+    <PlaceName>Senatobia,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>38668</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>511</AddressNumber>
+    <StreetName>East Waldron Street,</StreetName>
+    <PlaceName>Corinth,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>38834</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3307</AddressNumber>
+    <StreetName>Mlk Jr Drive,</StreetName>
+    <PlaceName>Jackson,</PlaceName>
+    <StateName>MS</StateName>
+    <ZipCode>39213</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>142</AddressNumber>
+    <StreetName>South Pratten,</StreetName>
+    <PlaceName>Columbus,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59019</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>US Highway 22,</StreetName>
+    <PlaceName>Miles City,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5225</AddressNumber>
+    <StreetName>West Broadway Street,</StreetName>
+    <PlaceName>Missoula,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59808</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Kalispell,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59901</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>419</AddressNumber>
+    <StreetName>South Ellery Avenue,</StreetName>
+    <PlaceName>Fairview,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59221</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Sheridan,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59749</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>22</AddressNumber>
+    <StreetName>1st Street East,</StreetName>
+    <PlaceName>Kalispell,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59901</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>West Fork Pls Mdw Village,</StreetName>
+    <PlaceName>Big Sky,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59716</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>600</AddressNumber>
+    <StreetName>Central Avenue,</StreetName>
+    <PlaceName>Great Falls,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Kalispell,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59901</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Columbia Falls,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59912</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1425</AddressNumber>
+    <StreetName>Broadwater Avenue,</StreetName>
+    <PlaceName>Billings,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7353</AddressNumber>
+    <StreetName>Goddard Drive,</StreetName>
+    <PlaceName>Malmstrom A F B,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59402</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Gldn Egl Lodge Mdw Village,</StreetName>
+    <PlaceName>Big Sky,</PlaceName>
+    <StateName>MT</StateName>
+    <ZipCode>59716</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1</AddressNumber>
+    <StreetName>The Square,</StreetName>
+    <PlaceName>Lillington,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27546</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1205</AddressNumber>
+    <StreetName>Shelby Highway,</StreetName>
+    <PlaceName>Cherryville,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28021</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>710</AddressNumber>
+    <StreetName>East 10th Street,</StreetName>
+    <PlaceName>Roanoke Rapids,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27870</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>118</AddressNumber>
+    <StreetName>South Hancock Street,</StreetName>
+    <PlaceName>Rockingham,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28379</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>121</AddressNumber>
+    <StreetName>South Trade Street,</StreetName>
+    <PlaceName>Tryon,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28782</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1222</AddressNumber>
+    <StreetName>North Alston Avenue,</StreetName>
+    <PlaceName>Durham,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>935</AddressNumber>
+    <StreetName>College Street,</StreetName>
+    <PlaceName>Oxford,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27565</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Queen Elizabeth Avenue,</StreetName>
+    <PlaceName>Manteo,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27954</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Tranquil House Inn,</StreetName>
+    <PlaceName>Manteo,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27954</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>123</AddressNumber>
+    <StreetName>Landmark Alley,</StreetName>
+    <PlaceName>Statesville,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28677</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1025</AddressNumber>
+    <StreetName>Blue Ridge Road,</StreetName>
+    <PlaceName>Raleigh,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27607</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>443</AddressNumber>
+    <StreetName>2nd Avenue Southwest,</StreetName>
+    <PlaceName>Hickory,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>28602</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6500</AddressNumber>
+    <StreetName>Aviation Parkway,</StreetName>
+    <PlaceName>Morrisville,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27560</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>200</AddressNumber>
+    <StreetName>North Davie Street,</StreetName>
+    <PlaceName>Greensboro,</PlaceName>
+    <StateName>NC</StateName>
+    <ZipCode>27401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>106</AddressNumber>
+    <StreetName>5th Avenue Southwest,</StreetName>
+    <PlaceName>Valley City,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58072</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2302</AddressNumber>
+    <StreetName>15th Street Southwest,</StreetName>
+    <PlaceName>Minot,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2851</AddressNumber>
+    <StreetName>South Columbia Road,</StreetName>
+    <PlaceName>Grand Forks,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>434</AddressNumber>
+    <StreetName>South 3rd Street,</StreetName>
+    <PlaceName>Bismarck,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58504</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>289</AddressNumber>
+    <StreetName>15th Street West,</StreetName>
+    <PlaceName>Dickinson,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2802</AddressNumber>
+    <StreetName>13th Avenue South,</StreetName>
+    <PlaceName>Fargo,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>106</AddressNumber>
+    <StreetName>26th Street West,</StreetName>
+    <PlaceName>Williston,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2400</AddressNumber>
+    <StreetName>10th Street Southwest,</StreetName>
+    <PlaceName>Minot,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1419</AddressNumber>
+    <StreetName>South Columbia Road,</StreetName>
+    <PlaceName>Grand Forks,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2815</AddressNumber>
+    <StreetName>13th Avenue South,</StreetName>
+    <PlaceName>Fargo,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1415</AddressNumber>
+    <StreetName>42nd Street South,</StreetName>
+    <PlaceName>Fargo,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1117</AddressNumber>
+    <StreetName>38th Street North,</StreetName>
+    <PlaceName>Fargo,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>251</AddressNumber>
+    <StreetName>14th Street West,</StreetName>
+    <PlaceName>Dickinson,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1801</AddressNumber>
+    <StreetName>8th Avenue Southwest,</StreetName>
+    <PlaceName>Jamestown,</PlaceName>
+    <StateName>ND</StateName>
+    <ZipCode>58401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1824</AddressNumber>
+    <StreetName>North 120th Street,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68154</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>220</AddressNumber>
+    <StreetName>West 2nd Street,</StreetName>
+    <PlaceName>Grand Island,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>122</AddressNumber>
+    <StreetName>East 16th Street,</StreetName>
+    <PlaceName>Schuyler,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68661</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1006</AddressNumber>
+    <StreetName>Howard Street,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Municipal Airport,</StreetName>
+    <PlaceName>Lincoln,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68524</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Lee Bird Fld,</StreetName>
+    <PlaceName>North Platte,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>69101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11036</AddressNumber>
+    <StreetName>Elm Street,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68144</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>106</AddressNumber>
+    <StreetName>East Front Street,</StreetName>
+    <PlaceName>Alda,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68810</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8021</AddressNumber>
+    <StreetName>Blondo Street,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68134</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Plainview,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68769</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>10220</AddressNumber>
+    <StreetName>Regency Circle,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68114</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>432</AddressNumber>
+    <StreetName>East Douglas Street,</StreetName>
+    <PlaceName>Oneill,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68763</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>10405</AddressNumber>
+    <StreetName>Calhoun Road,</StreetName>
+    <PlaceName>Omaha,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68112</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>520</AddressNumber>
+    <StreetName>South Main,</StreetName>
+    <PlaceName>Ohiowa,</PlaceName>
+    <StateName>NE</StateName>
+    <ZipCode>68416</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>90</AddressNumber>
+    <StreetName>Front Street,</StreetName>
+    <PlaceName>Exeter,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03833</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17</AddressNumber>
+    <StreetName>Newmarket Road,</StreetName>
+    <PlaceName>Durham,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03824</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9</AddressNumber>
+    <StreetName>Depot Street,</StreetName>
+    <PlaceName>Hillsboro,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03244</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Tecumseh Road,</StreetName>
+    <PlaceName>Waterville Valley,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03215</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Westside Road,</StreetName>
+    <PlaceName>North Conway,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03860</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Lee's Mill Road,</StreetName>
+    <PlaceName>Moultonborough,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03254</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>176</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Keene,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03431</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route 16,</StreetName>
+    <PlaceName>North Conway,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03860</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Woodbury Avenue,</StreetName>
+    <PlaceName>Portsmouth,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>21</AddressNumber>
+    <StreetName>Front Street,</StreetName>
+    <PlaceName>Manchester,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>837</AddressNumber>
+    <StreetName>Brattleboro Road,</StreetName>
+    <PlaceName>Hinsdale,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03451</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Bennington,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03442</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Main,</StreetName>
+    <PlaceName>Ashland,</PlaceName>
+    <StateName>NH</StateName>
+    <ZipCode>03217</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>667</AddressNumber>
+    <StreetName>Palisade Avenue,</StreetName>
+    <PlaceName>Cliffside Park,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07010</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2</AddressNumber>
+    <StreetName>Bay Avenue,</StreetName>
+    <PlaceName>Highlands,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07732</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7</AddressNumber>
+    <StreetName>Grove Street,</StreetName>
+    <PlaceName>Wanaque,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07465</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1101</AddressNumber>
+    <StreetName>U.S. Highway No. 130 North,</StreetName>
+    <PlaceName>Burlington,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08016</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Medford,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08055</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2011</AddressNumber>
+    <StreetName>Route 70 West,</StreetName>
+    <PlaceName>Cherry Hill,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08002</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>185</AddressNumber>
+    <StreetName>3rd Avenue,</StreetName>
+    <PlaceName>Long Branch,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07740</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>301</AddressNumber>
+    <StreetName>Howard Street,</StreetName>
+    <PlaceName>Cape May,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08204</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>254</AddressNumber>
+    <StreetName>U.S. Highway No 202,</StreetName>
+    <PlaceName>Pluckemin,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07978</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>State Highway No 33,</StreetName>
+    <PlaceName>Hightstown,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08520</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2104</AddressNumber>
+    <StreetName>State Highway No 70,</StreetName>
+    <PlaceName>Lakehurst,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08733</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>118</AddressNumber>
+    <StreetName>Berkshire Avenue,</StreetName>
+    <PlaceName>Paterson,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>07502</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2</AddressNumber>
+    <StreetName>Broadway,</StreetName>
+    <PlaceName>Somers Point,</PlaceName>
+    <StateName>NJ</StateName>
+    <ZipCode>08244</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1451</AddressNumber>
+    <StreetName>Mechem Drive,</StreetName>
+    <PlaceName>Ruidoso,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>88345</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>62</AddressNumber>
+    <StreetName>Camino Azul,</StreetName>
+    <PlaceName>Jemez Springs,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87025</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>205</AddressNumber>
+    <StreetName>Central Avenue,</StreetName>
+    <PlaceName>Tularosa,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>88352</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Los Ojos,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87551</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7400</AddressNumber>
+    <StreetName>North US Highway 54-70,</StreetName>
+    <PlaceName>Tularosa,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>88352</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12999</AddressNumber>
+    <StreetName>Central Avenue Northeast,</StreetName>
+    <PlaceName>Albuquerque,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87123</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1015</AddressNumber>
+    <StreetName>Rio Grande Boulevard Northwest,</StreetName>
+    <PlaceName>Albuquerque,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87104</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2101</AddressNumber>
+    <StreetName>Louisiana Boulevard Northeast,</StreetName>
+    <PlaceName>Albuquerque,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87110</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>500</AddressNumber>
+    <StreetName>Marquette Avenue Northwest Suite 1500,</StreetName>
+    <PlaceName>Albuquerque,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3297</AddressNumber>
+    <StreetName>Cerrillos Road,</StreetName>
+    <PlaceName>Santa Fe,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87505</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Mora,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87732</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>801</AddressNumber>
+    <StreetName>Delaware Avenue,</StreetName>
+    <PlaceName>Alamogordo,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>88310</ZipCode>
+  </AddressString>
+  <AddressString>
+    <USPSBox>Box # 209,</USPSBox>
+    <PlaceName>Glorieta,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87535</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1341</AddressNumber>
+    <StreetName>State Road 75,</StreetName>
+    <PlaceName>Penasco,</PlaceName>
+    <StateName>NM</StateName>
+    <ZipCode>87553</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>515</AddressNumber>
+    <StreetName>South Virginia Street,</StreetName>
+    <PlaceName>Reno,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>442</AddressNumber>
+    <StreetName>Flint Street,</StreetName>
+    <PlaceName>Reno,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5030</AddressNumber>
+    <StreetName>Paradise Road,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89119</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3999</AddressNumber>
+    <StreetName>Las Vegas Boulevard South,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89119</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1950</AddressNumber>
+    <StreetName>East Greg Street,</StreetName>
+    <PlaceName>Sparks,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89431</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3763</AddressNumber>
+    <StreetName>Las Vegas Boulevard South,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3100</AddressNumber>
+    <StreetName>Needles Highway,</StreetName>
+    <PlaceName>Laughlin,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89029</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3100</AddressNumber>
+    <StreetName>Needles Highway,</StreetName>
+    <PlaceName>Laughlin,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89029</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3466</AddressNumber>
+    <StreetName>South Decatur Boulevard,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3025</AddressNumber>
+    <StreetName>Las Vegas Boulevard South,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5550</AddressNumber>
+    <StreetName>West Charleston Boulevard,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89146</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3400</AddressNumber>
+    <StreetName>Las Vegas Boulevard South,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>375</AddressNumber>
+    <StreetName>East Harmon Avenue,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2845</AddressNumber>
+    <StreetName>Las Vegas Boulevard South,</StreetName>
+    <PlaceName>Las Vegas,</PlaceName>
+    <StateName>NV</StateName>
+    <ZipCode>89109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1011</AddressNumber>
+    <StreetName>Avn Of Th Amrcs,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10018</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>361</AddressNumber>
+    <StreetName>1st Avenue,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10010</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1511</AddressNumber>
+    <StreetName>Lexington Avenue,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10029</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>770</AddressNumber>
+    <StreetName>Washington Avenue,</StreetName>
+    <PlaceName>Brooklyn,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>11238</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1007</AddressNumber>
+    <StreetName>Clarkson Avenue,</StreetName>
+    <PlaceName>Brooklyn,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>11212</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>West 23rd Street,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10011</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>10018</AddressNumber>
+    <StreetName>4th Avenue,</StreetName>
+    <PlaceName>Brooklyn,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>11209</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>East 161st Street,</StreetName>
+    <PlaceName>Bronx,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10451</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1010</AddressNumber>
+    <StreetName>Northern Boulevard,</StreetName>
+    <PlaceName>Great Neck,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>11021</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>103</AddressNumber>
+    <StreetName>2nd Avenue,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>229</AddressNumber>
+    <StreetName>East 9th Street,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>725</AddressNumber>
+    <StreetName>10th Avenue,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10019</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>104</AddressNumber>
+    <StreetName>West 57th Street,</StreetName>
+    <PlaceName>New York,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>10019</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>107</AddressNumber>
+    <StreetName>Forest Avenue,</StreetName>
+    <PlaceName>Locust Valley,</PlaceName>
+    <StateName>NY</StateName>
+    <ZipCode>11560</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>356</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Wellsville,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>43968</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4919</AddressNumber>
+    <StreetName>Mount Pleasant Street Northwest,</StreetName>
+    <PlaceName>Canton,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>44720</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4919</AddressNumber>
+    <StreetName>Mount Pleasant Street Northwest,</StreetName>
+    <PlaceName>Green,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>44232</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>389</AddressNumber>
+    <StreetName>South Green Road,</StreetName>
+    <PlaceName>Cleveland,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>44121</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>123</AddressNumber>
+    <StreetName>North Paint Street,</StreetName>
+    <PlaceName>Chillicothe,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>45601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4200</AddressNumber>
+    <StreetName>Kettering Boulevard,</StreetName>
+    <PlaceName>Dayton,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>45439</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2241</AddressNumber>
+    <StreetName>East 42nd Street,</StreetName>
+    <PlaceName>Lorain,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>44055</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>33587</AddressNumber>
+    <StreetName>Aurora Road,</StreetName>
+    <PlaceName> Solon,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>44139</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>T703 State Route 66,</StreetName>
+    <PlaceName>Archbold,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>43502</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>T703 State Route 66,</StreetName>
+    <PlaceName>Archbold,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>43502</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3257</AddressNumber>
+    <StreetName>West Siebenthaler Avenue,</StreetName>
+    <PlaceName>Dayton,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>45406</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1130</AddressNumber>
+    <StreetName>US Highway 52,</StreetName>
+    <PlaceName>Aberdeen,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>45101</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4016</AddressNumber>
+    <StreetName>Glenway Avenue,</StreetName>
+    <PlaceName>Cincinnati,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>45205</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>33</AddressNumber>
+    <StreetName>East Schtock Road,</StreetName>
+    <PlaceName>New Albany,</PlaceName>
+    <StateName>OH</StateName>
+    <ZipCode>43054</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>201</AddressNumber>
+    <StreetName>East Main,</StreetName>
+    <PlaceName>Binger,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73009</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2014</AddressNumber>
+    <StreetName>West Gary Boulevard,</StreetName>
+    <PlaceName>Clinton,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1002</AddressNumber>
+    <StreetName>West Jackson Street,</StreetName>
+    <PlaceName>Hugo,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>74743</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>119</AddressNumber>
+    <StreetName>East 10,</StreetName>
+    <PlaceName>Weleetka,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>74880</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1254</AddressNumber>
+    <StreetName>North Eastern Avenue,</StreetName>
+    <PlaceName>Oklahoma City,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73160</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2118</AddressNumber>
+    <StreetName>West Edmond Road,</StreetName>
+    <PlaceName>Edmond,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>401</AddressNumber>
+    <StreetName>Grant,</StreetName>
+    <PlaceName>Agra,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>74824</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>722</AddressNumber>
+    <StreetName>Asp Avenue,</StreetName>
+    <PlaceName>Norman,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73069</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8500</AddressNumber>
+    <StreetName>South Elwood,</StreetName>
+    <PlaceName>Jenks,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>74037</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11919</AddressNumber>
+    <StreetName>North Pennsylvania Avenue,</StreetName>
+    <PlaceName>Oklahoma City,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73120</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4734</AddressNumber>
+    <StreetName>Southeast 29th Street,</StreetName>
+    <PlaceName>Oklahoma City,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73115</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1809</AddressNumber>
+    <StreetName>South Air Depot Boulevard,</StreetName>
+    <PlaceName>Oklahoma City,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73110</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2917</AddressNumber>
+    <StreetName>South Douglas Boulevard,</StreetName>
+    <PlaceName>Oklahoma City,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>73130</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2748</AddressNumber>
+    <StreetName>South Harvard Avenue,</StreetName>
+    <PlaceName>Tulsa,</PlaceName>
+    <StateName>OK</StateName>
+    <ZipCode>74114</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4021</AddressNumber>
+    <StreetName>Southwest 117th Avenue Suite C,</StreetName>
+    <PlaceName>Beaverton,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97005</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1341</AddressNumber>
+    <StreetName>Northeast Orenco Station Pakway,</StreetName>
+    <PlaceName>Hillsboro,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97124</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4</AddressNumber>
+    <StreetName>South Main Street,</StreetName>
+    <PlaceName>Joseph,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97846</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>13500</AddressNumber>
+    <StreetName>Southwest Pacific Highway,</StreetName>
+    <PlaceName>Portland,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97223</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>16165</AddressNumber>
+    <StreetName>Southwest Regatta Lane,</StreetName>
+    <USPSBox>Suite 1000,</USPSBox>
+    <PlaceName>Beaverton,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97006</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2628</AddressNumber>
+    <StreetName>North Highway 99 West,</StreetName>
+    <PlaceName>Mcminnville,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97128</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2525</AddressNumber>
+    <StreetName>Southeast Clinton,</StreetName>
+    <PlaceName>Portland,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97202</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17210</AddressNumber>
+    <StreetName>Southwest Shaw Street,</StreetName>
+    <PlaceName>Aloha,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97007</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>15700</AddressNumber>
+    <StreetName>Northwest Blue Ridge Street,</StreetName>
+    <PlaceName>Beaverton,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97006</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17455</AddressNumber>
+    <StreetName>Southwest Farmington Road,</StreetName>
+    <PlaceName>Aloha,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97007</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>500</AddressNumber>
+    <StreetName>Southeast Butler Road,</StreetName>
+    <PlaceName>Gresham,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97080</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Portland,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97210</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1025</AddressNumber>
+    <StreetName>Chetco Avenue,</StreetName>
+    <PlaceName>Brookings,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97415</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4805</AddressNumber>
+    <StreetName>Southwest 229th,</StreetName>
+    <PlaceName>Aloha,</PlaceName>
+    <StateName>OR</StateName>
+    <ZipCode>97007</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12</AddressNumber>
+    <StreetName>East Lancaster Avenue,</StreetName>
+    <PlaceName>Ardmore,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>709</AddressNumber>
+    <StreetName>Olde Hickory Road,</StreetName>
+    <PlaceName>Lancaster,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>17601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2300</AddressNumber>
+    <StreetName>Route 309,</StreetName>
+    <PlaceName>Wilkes Barre,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>18702</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4034</AddressNumber>
+    <StreetName>Easton Avenue,</StreetName>
+    <PlaceName>Bethlehem,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>18020</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>422</AddressNumber>
+    <StreetName>East State Street,</StreetName>
+    <PlaceName>Sharon,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>16146</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4431</AddressNumber>
+    <StreetName>Easton Avenue,</StreetName>
+    <PlaceName>Bethlehem,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>18020</ZipCode>
+  </AddressString>
+  <AddressString>
+    <USPSBox>RR 422 Box,</USPSBox>
+    <PlaceName>Douglassville,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19518</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1591</AddressNumber>
+    <StreetName>Big Oak Rd,</StreetName>
+    <PlaceName>Yardley,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19067</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Rt 10,</StreetName>
+    <PlaceName>Parkesburg,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19365</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>522</AddressNumber>
+    <StreetName>McKean Avenue,</StreetName>
+    <PlaceName>Donora,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>15033</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>800</AddressNumber>
+    <StreetName>Spring Mill Avenue,</StreetName>
+    <PlaceName>Conshohocken,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19428</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>West Business Center,</StreetName>
+    <PlaceName>Wayne,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>19087</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1358</AddressNumber>
+    <StreetName>Columbia Ave,</StreetName>
+    <PlaceName>Lancaster,</PlaceName>
+    <StateName>PA</StateName>
+    <ZipCode>17603</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1</AddressNumber>
+    <StreetName>Broadway,</StreetName>
+    <PlaceName>Newport,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02840</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Bristol Harbor,</StreetName>
+    <PlaceName>Bristol,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02809</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>11</AddressNumber>
+    <StreetName>John Street,</StreetName>
+    <PlaceName>Bristol,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02809</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>28</AddressNumber>
+    <StreetName>Market Street,</StreetName>
+    <PlaceName>Warren,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02885</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>99</AddressNumber>
+    <StreetName>Fortin Road,</StreetName>
+    <PlaceName>Kingston,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02881</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1715</AddressNumber>
+    <StreetName>Stafford Road,</StreetName>
+    <PlaceName>Tiverton,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02878</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>130</AddressNumber>
+    <StreetName>Chapel Street,</StreetName>
+    <PlaceName>Harrisville,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02830</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>577</AddressNumber>
+    <StreetName>South Main Street,</StreetName>
+    <PlaceName>Providence,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02903</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>800</AddressNumber>
+    <StreetName>Greenwich Avenue,</StreetName>
+    <PlaceName>Warwick,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02886</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>449</AddressNumber>
+    <StreetName>West Shore Road,</StreetName>
+    <PlaceName>Warwick,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02889</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7570</AddressNumber>
+    <StreetName>Post Road,</StreetName>
+    <PlaceName>North Kingstown,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02852</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>134</AddressNumber>
+    <StreetName>Providence Street,</StreetName>
+    <PlaceName>Woonsocket,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02895</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>80</AddressNumber>
+    <StreetName>River Street,</StreetName>
+    <PlaceName>Woonsocket,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02895</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>54</AddressNumber>
+    <StreetName>Smithfield Avenue,</StreetName>
+    <PlaceName>Pawtucket,</PlaceName>
+    <StateName>RI</StateName>
+    <ZipCode>02860</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>101</AddressNumber>
+    <StreetName>Aiken Road,</StreetName>
+    <PlaceName>Graniteville,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29829</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2701</AddressNumber>
+    <StreetName>David H McLeod Boulevard,</StreetName>
+    <PlaceName>Florence,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4634</AddressNumber>
+    <StreetName>Factory Stores Boulevard,</StreetName>
+    <PlaceName>Myrtle Beach,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29579</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1600</AddressNumber>
+    <StreetName>Marina Road,</StreetName>
+    <PlaceName>Irmo,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29063</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>931</AddressNumber>
+    <StreetName>Senate Street,</StreetName>
+    <PlaceName>Columbia,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>338</AddressNumber>
+    <StreetName>King Street,</StreetName>
+    <PlaceName>Charleston,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1010</AddressNumber>
+    <StreetName>Ocean Boulevard,</StreetName>
+    <PlaceName>Isle Of Palms,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29451</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>961</AddressNumber>
+    <StreetName>West Union Road,</StreetName>
+    <PlaceName>West Union,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29696</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>17166</AddressNumber>
+    <StreetName>Highway 72 West,</StreetName>
+    <PlaceName>Waterloo,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29384</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2401</AddressNumber>
+    <StreetName>Reidville Road,</StreetName>
+    <PlaceName>Spartanburg,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12188</AddressNumber>
+    <StreetName>Old Number 6 Highway,</StreetName>
+    <PlaceName>Eutawville,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29048</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1215</AddressNumber>
+    <StreetName>Saint Andrews Road,</StreetName>
+    <PlaceName>Columbia,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29210</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>702</AddressNumber>
+    <StreetName>North Greenwood Avenue,</StreetName>
+    <PlaceName>Ware Shoals,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29692</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>213</AddressNumber>
+    <StreetName>Meeting Street,</StreetName>
+    <PlaceName>Charleston,</PlaceName>
+    <StateName>SC</StateName>
+    <ZipCode>29401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3800</AddressNumber>
+    <StreetName>South Louise Avenue Frnt,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57106</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2160</AddressNumber>
+    <StreetName>North Haines Avenue,</StreetName>
+    <PlaceName>Rapid City,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>333</AddressNumber>
+    <StreetName>West Jackson Boulevard,</StreetName>
+    <PlaceName>Spearfish,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57783</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5050</AddressNumber>
+    <StreetName>North Cliff Avenue,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57104</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3820</AddressNumber>
+    <StreetName>West 41st Street,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57106</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1308</AddressNumber>
+    <StreetName>East 60th Street North,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57104</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>915</AddressNumber>
+    <StreetName>8th Avenue Northwest,</StreetName>
+    <PlaceName>Aberdeen,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>535</AddressNumber>
+    <StreetName>Mountain View Road,</StreetName>
+    <PlaceName>Rapid City,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57702</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Rushmore Mall,</StreetName>
+    <PlaceName>Rapid City,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1500</AddressNumber>
+    <StreetName>South Burr Street,</StreetName>
+    <PlaceName>Mitchell,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>The Empire,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2729</AddressNumber>
+    <StreetName>East 10th Street,</StreetName>
+    <PlaceName>Sioux Falls,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57103</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1620</AddressNumber>
+    <StreetName>Cambell Street,</StreetName>
+    <PlaceName>Rapid City,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>111</AddressNumber>
+    <StreetName>Iowa Street,</StreetName>
+    <PlaceName>Alcester,</PlaceName>
+    <StateName>SD</StateName>
+    <ZipCode>57001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>835</AddressNumber>
+    <StreetName>Foothills Mall Drive,</StreetName>
+    <PlaceName>Maryville,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>929</AddressNumber>
+    <StreetName>Dolly Parton Parkway,</StreetName>
+    <PlaceName>Sevierville,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37862</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1824</AddressNumber>
+    <StreetName>East Stone Drive,</StreetName>
+    <PlaceName>Kingsport,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37660</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4014</AddressNumber>
+    <StreetName>Hillsboro Circle,</StreetName>
+    <PlaceName>Nashville,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37215</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3100</AddressNumber>
+    <StreetName>North Roan Street,</StreetName>
+    <PlaceName>Johnson City,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37601</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1001</AddressNumber>
+    <StreetName>Kingston Street,</StreetName>
+    <PlaceName>Lenoir City,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37771</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1718</AddressNumber>
+    <StreetName>Madison Avenue,</StreetName>
+    <PlaceName>Memphis,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38104</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1021</AddressNumber>
+    <StreetName>Jackson Avenue,</StreetName>
+    <PlaceName>Memphis,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38107</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7409</AddressNumber>
+    <StreetName>Middlebrook Pike,</StreetName>
+    <PlaceName>Knoxville,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37909</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2204</AddressNumber>
+    <StreetName>Whitten Road,</StreetName>
+    <PlaceName>Memphis,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38133</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>209</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Petros,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>37845</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3445</AddressNumber>
+    <StreetName>Poplar Avenue,</StreetName>
+    <PlaceName>Memphis,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38111</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3445</AddressNumber>
+    <StreetName>Poplar Avenue,</StreetName>
+    <PlaceName>Memphis,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38111</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>24</AddressNumber>
+    <StreetName>Front Street,</StreetName>
+    <PlaceName>Big Sandy,</PlaceName>
+    <StateName>TN</StateName>
+    <ZipCode>38221</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>304</AddressNumber>
+    <StreetName>North Llano,</StreetName>
+    <PlaceName>Fredericksburg,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>78624</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1328</AddressNumber>
+    <StreetName>West McDermott Suite 200,</StreetName>
+    <PlaceName>Allen,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75013</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>820</AddressNumber>
+    <StreetName>East IH35 South Suite A,</StreetName>
+    <PlaceName>Denton,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>76205</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>220</AddressNumber>
+    <StreetName>East Las Colinas Boulevard,</StreetName>
+    <PlaceName>Irving,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75039</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2969</AddressNumber>
+    <StreetName>West 15th Street,</StreetName>
+    <PlaceName>Plano,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75075</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4501</AddressNumber>
+    <StreetName>Travis Street,</StreetName>
+    <PlaceName>Dallas,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75205</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>807</AddressNumber>
+    <StreetName>South Central Expressway,</StreetName>
+    <PlaceName>Richardson,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75080</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3068</AddressNumber>
+    <StreetName>Forest Lane,</StreetName>
+    <PlaceName>Dallas,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75234</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2029</AddressNumber>
+    <StreetName>East  Highway 356 (Irving Boulevard),</StreetName>
+    <PlaceName>Irving,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75038</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3948</AddressNumber>
+    <StreetName>Legacy Drive,</StreetName>
+    <PlaceName>Plano,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75023</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>120</AddressNumber>
+    <StreetName>South Main,</StreetName>
+    <PlaceName>Grapevine,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>76051</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2001</AddressNumber>
+    <StreetName>Coit Road,</StreetName>
+    <PlaceName>Plano,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75075</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2300</AddressNumber>
+    <StreetName>Cross Timbers,</StreetName>
+    <PlaceName>Flower Mound,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75028</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1045</AddressNumber>
+    <StreetName>Hidden Ridge,</StreetName>
+    <PlaceName>Irving,</PlaceName>
+    <StateName>TX</StateName>
+    <ZipCode>75038</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4140</AddressNumber>
+    <StreetName>West 5415 South,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84118</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1500</AddressNumber>
+    <StreetName>Kearns Boulevard,</StreetName>
+    <PlaceName>Park City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84060</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>164</AddressNumber>
+    <StreetName>South 100 West,</StreetName>
+    <PlaceName>Cedar City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84720</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Sandy,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84092</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>239</AddressNumber>
+    <StreetName>South 500 East,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84102</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3513</AddressNumber>
+    <StreetName>Riverdale Road,</StreetName>
+    <PlaceName>Ogden,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84405</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2901</AddressNumber>
+    <StreetName>East 3300 South,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84109</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1754</AddressNumber>
+    <StreetName>West 7800 South,</StreetName>
+    <PlaceName>West Jordan,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84088</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3765</AddressNumber>
+    <StreetName>West 5400 South,</StreetName>
+    <PlaceName>Kearns,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84118</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4931</AddressNumber>
+    <StreetName>South State Street,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84107</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1168</AddressNumber>
+    <StreetName>32nd Street,</StreetName>
+    <PlaceName>Ogden,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84403</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1499</AddressNumber>
+    <StreetName>South State Street,</StreetName>
+    <PlaceName>Salt Lake City,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84115</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1516</AddressNumber>
+    <StreetName>North Freedom Boulevard,</StreetName>
+    <PlaceName>Provo,</PlaceName>
+    <StateName>UT</StateName>
+    <ZipCode>84604</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6065</AddressNumber>
+    <StreetName>Jefferson Avenue,</StreetName>
+    <PlaceName>Newport News,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23605</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>232</AddressNumber>
+    <StreetName>South Armistead Avenue,</StreetName>
+    <PlaceName>Hampton,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23669</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6723</AddressNumber>
+    <StreetName>Richmond Highway,</StreetName>
+    <PlaceName>Alexandria,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>22306</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4300</AddressNumber>
+    <StreetName>Colley Avenue,</StreetName>
+    <PlaceName>Norfolk,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23508</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2887</AddressNumber>
+    <StreetName>Poindexter Road,</StreetName>
+    <PlaceName>Trevilians,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23170</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>422</AddressNumber>
+    <StreetName>William Street,</StreetName>
+    <PlaceName>Fredericksburg,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>22401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1402</AddressNumber>
+    <StreetName>Richmond Road,</StreetName>
+    <PlaceName>Williamsburg,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23185</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>516</AddressNumber>
+    <StreetName>South Van Dorn Street,</StreetName>
+    <PlaceName>Alexandria,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>22304</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7279</AddressNumber>
+    <StreetName>Arlington Boulevard,</StreetName>
+    <PlaceName>Falls Church,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>22042</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>8701</AddressNumber>
+    <StreetName>Midlothian Turnpike,</StreetName>
+    <PlaceName>Richmond,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23235</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2926</AddressNumber>
+    <StreetName>Franklin Road Southwest,</StreetName>
+    <PlaceName>Roanoke,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>24000</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2500</AddressNumber>
+    <StreetName>Riverside Drive,</StreetName>
+    <PlaceName>Danville,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>24540</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>116</AddressNumber>
+    <StreetName>S. Independence Blvd.,</StreetName>
+    <PlaceName>Virginia Beach,</PlaceName>
+    <StateName>VA</StateName>
+    <ZipCode>23462</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route Box # 100,</StreetName>
+    <PlaceName>West Dover,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05356</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>15</AddressNumber>
+    <StreetName>Barre Street Suite 1,</StreetName>
+    <PlaceName>Montpelier,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05602</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route Box # 15,</StreetName>
+    <PlaceName>Cambridge,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05444</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>18</AddressNumber>
+    <StreetName>Lake Street,</StreetName>
+    <PlaceName>Saint Albans,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05478</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4</AddressNumber>
+    <StreetName>Fairground Road,</StreetName>
+    <PlaceName>Brattleboro,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05301</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>50</AddressNumber>
+    <StreetName>Railroad Street,</StreetName>
+    <PlaceName>Montpelier,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05602</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>20</AddressNumber>
+    <StreetName>Susie Wilson Road,</StreetName>
+    <PlaceName>Essex Junction,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05452</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>South Route Box South # 7,</StreetName>
+    <PlaceName>Bennington,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>225</AddressNumber>
+    <StreetName>Woodstock Avenue,</StreetName>
+    <PlaceName>Rutland,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05701</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Okemo Market Place,</StreetName>
+    <PlaceName>Ludlow,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05149</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route Box # 65,</StreetName>
+    <PlaceName>Brookfield,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05036</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route 7 RR 7 Box,</StreetName>
+    <PlaceName>Arlington,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05250</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3904</AddressNumber>
+    <StreetName>Route # A,</StreetName>
+    <PlaceName>Arlington,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05250</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Route 313 RR 313 Box,</StreetName>
+    <PlaceName>Arlington,</PlaceName>
+    <StateName>VT</StateName>
+    <ZipCode>05250</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>31595</AddressNumber>
+    <StreetName>SR 20,</StreetName>
+    <PlaceName>Oak Harbor,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98277</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>5694</AddressNumber>
+    <StreetName>Third Avenue,</StreetName>
+    <PlaceName>Ferndale,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98248</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>20221</AddressNumber>
+    <StreetName>Aurora Avenue North,</StreetName>
+    <PlaceName>Seattle,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98133</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>630</AddressNumber>
+    <StreetName>Southeast Pioneer Way,</StreetName>
+    <PlaceName>Oak Harbor,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98277</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6251</AddressNumber>
+    <StreetName>Northeast Bothell Way,</StreetName>
+    <PlaceName>Kenmore,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98028</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1427</AddressNumber>
+    <StreetName>228th Street Suite 82,</StreetName>
+    <PlaceName>Bothell,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98021</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1351</AddressNumber>
+    <StreetName>Southwest Barlow Street,</StreetName>
+    <PlaceName>Oak Harbor,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98277</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>21210</AddressNumber>
+    <StreetName>44th Avenue West,</StreetName>
+    <PlaceName>Mountlake Terrace,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98043</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>225</AddressNumber>
+    <StreetName>Highway 150,</StreetName>
+    <PlaceName>Chelan,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98816</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>15740</AddressNumber>
+    <StreetName>Aurora Avenue North,</StreetName>
+    <PlaceName>Seattle,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98133</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1114</AddressNumber>
+    <StreetName>First Street,</StreetName>
+    <PlaceName>Snohomish,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98290</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>546</AddressNumber>
+    <StreetName>5th Avenue South,</StreetName>
+    <PlaceName>Edmonds,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98020</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>12025</AddressNumber>
+    <StreetName>Highway 99,</StreetName>
+    <PlaceName>Everett,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98204</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4520</AddressNumber>
+    <StreetName>200th Street Southwest,</StreetName>
+    <PlaceName>Lynnwood,</PlaceName>
+    <StateName>WA</StateName>
+    <ZipCode>98036</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>231</AddressNumber>
+    <StreetName>East Towne Mall,</StreetName>
+    <PlaceName>Madison,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53704</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>108</AddressNumber>
+    <StreetName>West Towne Mall,</StreetName>
+    <PlaceName>Madison,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53719</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2500</AddressNumber>
+    <StreetName>North Mayfair Road,</StreetName>
+    <PlaceName>Milwaukee,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53226</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>4301</AddressNumber>
+    <StreetName>West Wisconsin Avenue,</StreetName>
+    <PlaceName>Appleton,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54913</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2401</AddressNumber>
+    <StreetName>South Oneida Street,</StreetName>
+    <PlaceName>Green Bay,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54304</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>325</AddressNumber>
+    <StreetName>Central Avenue,</StreetName>
+    <PlaceName>Owen,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54460</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>6189</AddressNumber>
+    <StreetName>US Highway 18 And 15,</StreetName>
+    <PlaceName>Dodgeville,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53533</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2559</AddressNumber>
+    <StreetName>South Howell Avenue,</StreetName>
+    <PlaceName>Milwaukee,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>53207</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>9067</AddressNumber>
+    <StreetName>State Highway 70 West,</StreetName>
+    <PlaceName>Saint Germain,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54558</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Wausau,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54403</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>635</AddressNumber>
+    <StreetName>South Main Street,</StreetName>
+    <PlaceName>Shawano,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54166</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3201</AddressNumber>
+    <StreetName>East Main Street,</StreetName>
+    <PlaceName>Merrill,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54452</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>7441</AddressNumber>
+    <StreetName>East County Road Y,</StreetName>
+    <PlaceName>Gordon,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54838</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>102</AddressNumber>
+    <StreetName>Old Abe Road,</StreetName>
+    <PlaceName>Lac Du Flambeau,</PlaceName>
+    <StateName>WI</StateName>
+    <ZipCode>54538</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1193</AddressNumber>
+    <StreetName>Pineview Drive,</StreetName>
+    <PlaceName>Morgantown,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26505</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>345</AddressNumber>
+    <StreetName>High Street,</StreetName>
+    <PlaceName>Morgantown,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26505</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>512</AddressNumber>
+    <StreetName>West Main Street,</StreetName>
+    <PlaceName>West Union,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26456</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>78</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Shinnston,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26431</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>256</AddressNumber>
+    <StreetName>Carolina Avenue,</StreetName>
+    <PlaceName>Chester,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26034</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Keyser,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26726</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>50</AddressNumber>
+    <StreetName>Carmel Road,</StreetName>
+    <PlaceName>Wheeling,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26003</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Terra Alta,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26764</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>102</AddressNumber>
+    <StreetName>Forever Green Drive,</StreetName>
+    <PlaceName>Falling Waters,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>25419</ZipCode>
+  </AddressString>
+  <AddressString>
+    <PlaceName>Fairmont,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26554</ZipCode>
+  </AddressString>
+  <AddressString>
+    <StreetName>Cortland Road,</StreetName>
+    <PlaceName>Davis,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26260</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>205</AddressNumber>
+    <StreetName>West Maple Avenue,</StreetName>
+    <PlaceName>Fayetteville,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>25840</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>120</AddressNumber>
+    <StreetName>East German,</StreetName>
+    <PlaceName>Shepherdstown,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>25443</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>669</AddressNumber>
+    <StreetName>Main Street,</StreetName>
+    <PlaceName>Follansbee,</PlaceName>
+    <StateName>WV</StateName>
+    <ZipCode>26037</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1401</AddressNumber>
+    <StreetName>Dell Range Boulevard,</StreetName>
+    <PlaceName>Cheyenne,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82009</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>3209</AddressNumber>
+    <StreetName>East Grand Avenue,</StreetName>
+    <PlaceName>Laramie,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82070</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>128</AddressNumber>
+    <StreetName>West Valley Road,</StreetName>
+    <PlaceName>Torrington,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82240</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1777</AddressNumber>
+    <StreetName>Coffeen Avenue,</StreetName>
+    <PlaceName>Sheridan,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82801</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2720</AddressNumber>
+    <StreetName>South Douglas Highway,</StreetName>
+    <PlaceName>Gillette,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82718</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1140</AddressNumber>
+    <StreetName>West Main Street,</StreetName>
+    <PlaceName>Riverton,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82501</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>91</AddressNumber>
+    <StreetName>16th Street,</StreetName>
+    <PlaceName>Wheatland,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82201</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>310</AddressNumber>
+    <StreetName>East Lincolnway,</StreetName>
+    <PlaceName>Cheyenne,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82001</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1500</AddressNumber>
+    <StreetName>Big Horn Avenue,</StreetName>
+    <PlaceName>Worland,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82401</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1503</AddressNumber>
+    <StreetName>Sheridan Avenue,</StreetName>
+    <PlaceName>Cody,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82414</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>2148</AddressNumber>
+    <StreetName>East Grand Avenue,</StreetName>
+    <PlaceName>Laramie,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82070</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>355</AddressNumber>
+    <StreetName>North Russell Avenue,</StreetName>
+    <PlaceName>Douglas,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82633</ZipCode>
+  </AddressString>
+  <AddressString>
+    <AddressNumber>1899</AddressNumber>
+    <StreetName>Dewar Drive,</StreetName>
+    <PlaceName>Rock Springs,</PlaceName>
+    <StateName>WY</StateName>
+    <ZipCode>82901</ZipCode>
+  </AddressString>
+</AddressCollection>

@@ -1,60 +1,52 @@
 import pycrfsuite
-import re
-import string
-import parse
+import usaddress
+from usaddress import NULL_TAG
 import random
-
-
-def tokenFeatures(token) :
-
-    features = {'token.lower' : token.lower(), 
-                'token.isupper' : token.isupper(), 
-                #'token.islower' : token.islower(), 
-                #'token.istitle' : token.istitle(), 
-                'token.isdigit' : token.isdigit(),
-                'token.isstartdigit' : token[0].isdigit(),
-                #'digit.length' : token.isdigit() * len(token),
-                'token.ispunctuation' : (token in string.punctuation),
-                'token.length' : len(token),
-                #'ends_in_comma' : token[-1] == ','
-                'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
-                }
-
-    return features
-
-def token2features(address, i):
-    features = tokenFeatures(address[i][0])
-
-
-    if i > 0:
-        previous_features = tokenFeatures(address[i-1][0])
-        for key, value in previous_features.items() :
-            features['previous.' + key] = value
-    else :
-        features['address.start'] = True
-
-    if i+1 < len(address) :
-        next_features = tokenFeatures(address[i+1][0])
-        for key, value in next_features.items() :
-            features['next.' + key] = value
-    else :
-        features['address.end'] = True
-
-    return [str(each) for each in features.items()]
-
-def addr2features(address):
-    return [token2features(address, i) for i in range(len(address))]
+import os
+from lxml import etree
 
 def addr2labels(address):
-    #return [address[i][1] for i in range(len(address))]
     labels = []
     for i in range(len(address)):
         if address[i][1]:
             labels.append(address[i][1])
         else:
-            labels.append("punc")
-    return labels
+            labels.append(NULL_TAG)
+    return tuple(labels)
 
+def trainModel(training_data, model_file) :
 
-def addr2tokens(address):
-    return [address[i][0] for i in range(len(address))]
+    X = []
+    Y = []
+
+    for address_text, components in training_data :
+        X.append(usaddress.addr2features(components))
+        Y.append(addr2labels(components))
+
+    #train model
+    trainer = pycrfsuite.Trainer(verbose=False)
+    for xseq, yseq in zip(X, Y):
+        trainer.append(xseq, yseq)
+
+    trainer.train(model_file)
+
+def parseTrainingData(filepath):
+    tree = etree.parse(filepath)
+    address_collection = tree.getroot()
+	
+    for address in address_collection :
+        address_components = []
+        address_text = etree.tostring(address, method='text')
+        for component in list(address) :
+            address_components.append([component.text, component.tag])
+            if component.tail and component.tail.strip() :
+                address_components.append([component.tail.strip(), NULL_TAG])
+
+        yield address_text, address_components 
+
+if __name__ == '__main__' :
+    root_path = os.path.split(os.path.split(os.path.abspath(__file__))[0])[0]
+    
+    training_data = parseTrainingData(root_path + '/training/training_data/synthetic_data_osm_cleaned.xml')
+
+    trainModel(training_data, root_path + '/usaddress/usaddr.crfsuite')
