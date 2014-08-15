@@ -34,34 +34,29 @@ def tokenFeatures(token) :
     return features
 
 def addr2features(address):
-    feature_sequence = []
     
-    address = address[:]
+    previous_feature = tokenFeatures(address[0])
+    feature_sequence = [previous_feature]
 
-    previous_feature = tokenFeatures(address.pop(0))
-    previous_feature['address.start'] = True
-
-    feature_sequence.append(previous_feature)
-
-    for token in address :
+    for token in address[1:] :
         next_feature = tokenFeatures(token)
-        for key, value in next_feature.items() :
-            feature_sequence[-1]['next.' + key] = value
-        for key, value in previous_feature.items() :
-            if key[:5] != 'next.' and key[:9] != 'previous.' :
-                next_feature['previous.' + key] = value
 
-        feature_sequence.append(next_feature)
+        for key, value in next_feature.items() :
+            feature_sequence[-1][('next', key)] = value
+
+        feature_sequence.append(next_feature.copy())
+
+        for key, value in previous_feature.items() :
+            feature_sequence[-1][('previous', key)] = value
+
         previous_feature = next_feature
 
-
-
+    feature_sequence[0]['address.start'] = True
     feature_sequence[-1]['address.end'] = True
 
-    try :
-        feature_sequence[-2]['next.address.end'] = True
-    except IndexError :
-        pass
+    if len(feature_sequence) > 1 :
+        feature_sequence[1][('previous', 'address.start')] = True
+        feature_sequence[-2][('next', 'address.end')] = True
 
     feature_sequence = [[str(each) for each in feature.items()]
                          for feature in feature_sequence]
