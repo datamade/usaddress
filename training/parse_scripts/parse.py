@@ -1,6 +1,7 @@
 from lxml import etree
 import ast
 import re
+import random
 
 # osm xml data -> list of dicts representing osm addresses
 def xmlToAddrList(xml_file):
@@ -59,48 +60,67 @@ def osmNaturalToTraining(xml_file):
 
 # osm xml data -> synthetic addresses -> training file (xml)
 def osmSyntheticToTraining(xml_file):
-	address_list = xmlToAddrList(xml_file)
-	train_addr_list = etree.Element('AddressCollection')
-	trainFileName = '../training_data/synthetic_'+re.sub(r'\W+', '_', xml_file)+'.xml'
-	synthetic_order = [
-		('addr:housenumber', 'AddressNumber', 'Street'),
-		('addr:street:prefix', 'StreetNamePreDirectional', 'Street'),
-		('addr:street:name', 'StreetName', 'Street'),
-		('addr:street:type', 'StreetNamePostType', 'Street'),
-		('addr:city', 'PlaceName', 'City'),
-		('addr:state', 'StateName', 'Area'),
-		('addr:postcode', 'ZipCode', 'Area')]
-	for address in address_list:
-		train_addr = etree.Element('AddressString')
-		components = {'Street' : [], 'City' : [], 'Area' : []}
-		for source_tag, target_tag, tag_type in synthetic_order:
-                        if source_tag in address.keys():
-				words = address[source_tag].split()
-				for word in words:
-					token_xml = etree.Element(target_tag)
-					token_xml.text = word
-					components[tag_type].append(token_xml)
-		for tag_type in ('Street','City', 'Area') :
-			l = components[tag_type]
-			if l :
-				l[-1].tail = ','
+    address_list = xmlToAddrList(xml_file)
+    train_addr_list = []
 
-                
-                        
-		address_xml = components['Street'] + components['City'] + components['Area']
-                for each in address_xml :
-                        if each.tail :
-                                each.tail += ' '
-                        else :
-                                each.tail = ' '
-		address_xml[-1].tail = None
+    trainFileName = '../training_data/synthetic'+re.sub(r'\W+', '_', xml_file)+'.xml'
+    testFileName = '../test_data/synthetic'+re.sub(r'\W+', '_', xml_file)+'.xml'
 
-		for xml_element in address_xml:
-			train_addr.append(xml_element)
-		train_addr_list.append(train_addr)
-	output = etree.tostring(train_addr_list, pretty_print=True)
-	with open(trainFileName, 'w') as f:
-		f.write(output)
+    synthetic_order = [
+            ('addr:housenumber', 'AddressNumber', 'Street'),
+            ('addr:street:prefix', 'StreetNamePreDirectional', 'Street'),
+            ('addr:street:name', 'StreetName', 'Street'),
+            ('addr:street:type', 'StreetNamePostType', 'Street'),
+            ('addr:city', 'PlaceName', 'City'),
+            ('addr:state', 'StateName', 'Area'),
+            ('addr:postcode', 'ZipCode', 'Area')]
+    
+    for address in address_list:
+        train_addr = etree.Element('AddressString')
+        components = {'Street' : [], 'City' : [], 'Area' : []}
+        for source_tag, target_tag, tag_type in synthetic_order:
+            if source_tag in address.keys():
+                words = address[source_tag].split()
+                for word in words:
+                    token_xml = etree.Element(target_tag)
+                    token_xml.text = word
+                    components[tag_type].append(token_xml)
+		
+        for tag_type in ('Street','City', 'Area') :
+            l = components[tag_type]
+            if l :
+                l[-1].tail = ','
+
+        address_xml = (components['Street'] 
+                       + components['City'] 
+                       + components['Area'])
+ 
+        for each in address_xml :
+            if each.tail :
+                each.tail += ' '
+            else :
+                each.tail = ' '
+		
+        address_xml[-1].tail = None
+
+        for xml_element in address_xml:
+            train_addr.append(xml_element)
+
+        train_addr_list.append(train_addr)
+
+    percent_20 = int(len(train_addr_list) * 0.2)
+
+    test_data = etree.Element('AddressCollection')
+    test_data.extend(train_addr_list[:percent_20])
+
+    train_data = etree.Element('AddressCollection')
+    train_data.extend(train_addr_list[percent_20:])
+
+    with open(trainFileName, 'w') as f:
+        f.write(etree.tostring(train_data, pretty_print=True))
+
+    with open(testFileName, 'w') as f:
+        f.write(etree.tostring(test_data, pretty_print=True))
 
 
 # us50 data -> training file (xml)
@@ -109,6 +129,8 @@ def trainFileFromLines(addr_file):
 	addr_index = 0
 	token_index = 0
 	trainFileName = '../training_data/'+re.sub(r'\W+', '_', addr_file)+'.xml'
+
+
 	tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
                 'PlaceName', 'StateName', 'ZipCode', 'suffix']
 	addr_list = etree.Element('AddressCollection')
@@ -126,7 +148,10 @@ def trainFileFromLines(addr_file):
 			token_tag = tag_list[token_num]
 			token_xml = etree.Element(token_tag)
 			token_xml.text = token_string
-			addr.append(token_xml)
+		addr.append(token_xml)
+
+
+
 	output = etree.tostring(addr_list, pretty_print=True)
 	with open(trainFileName, 'w') as f:
 		f.write(output)
