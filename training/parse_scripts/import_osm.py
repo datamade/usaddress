@@ -92,8 +92,10 @@ query3 = """<union>
 
 <print/>
 """ % ((-70.000000, 50.000000, 25.000000, -125.000000) * 2)
-#r3 = requests.post('http://overpass-api.de/api/interpreter/', data=query3)
 
-#f = codecs.open("data/osm_data_full_addr.xml", "wb", "utf-8")
-#r3.encoding = 'utf-8'
-#f.write(r3.text)
+if __name__ == '__main__' :
+    r3 = requests.post('http://overpass-api.de/api/interpreter/', data=query3)
+
+    f = codecs.open("data/osm_data_full_addr.xml", "wb", "utf-8")
+    r3.encoding = 'utf-8'
+    f.write(r3.text)
