@@ -8,7 +8,15 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
             + '/usaddr.crfsuite')
 
 def parse(address_string) :
-    tokens = re.findall(r"\w+|[^\w\s]", address_string, re.UNICODE)
+
+    re_tokens = re.compile(r"""
+    \b[^\s]+(?=\b)   # 'F-H '   -> ['F-H']
+    |
+    [^\w\s](?=\s)    # [', ']   -> [',']
+    """,
+                           re.VERBOSE | re.UNICODE)
+
+    tokens = re_tokens.findall(address_string)
     features = addr2features(tokens)
 
     tags = TAGGER.tag(features)
@@ -18,15 +26,14 @@ def tokenFeatures(token) :
 
     features = {'token.lower' : token.lower(), 
                 'token.isupper' : token.isupper(), 
-                #'token.islower' : token.islower(), 
-                #'token.istitle' : token.istitle(), 
+                'token.islower' : token.islower(), 
+                'token.istitle' : token.istitle(), 
                 'token.isdigit' : token.isdigit(),
                 'token.isstartdigit' : token[0].isdigit(),
-                #'digit.length' : token.isdigit() * len(token),
+                'digit.length' : token.isdigit() * len(token),
                 'token.ispunctuation' : (token in string.punctuation),
                 'token.length' : len(token),
-                #'ends_in_comma' : token[-1] == ','
-                'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
+                #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
                 }
 
     return features

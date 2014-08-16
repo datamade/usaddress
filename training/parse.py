@@ -2,9 +2,6 @@ from lxml import etree
 import ast
 import re
 
-
-
-
 # osm xml data -> list of dicts representing osm addresses
 def xmlToAddrList(xml_file):
 	tree = etree.parse(xml_file)
@@ -64,7 +61,7 @@ def osmNaturalToTraining(xml_file):
 def osmSyntheticToTraining(xml_file):
 	address_list = xmlToAddrList(xml_file)
 	train_addr_list = etree.Element('AddressCollection')
-	trainFileName = '../training_data/synthetic_'+re.sub(r'\W+', '_', xml_file)+'.xml'
+	trainFileName = 'training_data/synthetic_'+re.sub(r'\W+', '_', xml_file)+'.xml'
 	synthetic_order = [
 		('addr:housenumber', 'AddressNumber', 'Street'),
 		('addr:street:prefix', 'StreetNamePreDirectional', 'Street'),
@@ -77,7 +74,7 @@ def osmSyntheticToTraining(xml_file):
 		train_addr = etree.Element('AddressString')
 		components = {'Street' : [], 'City' : [], 'Area' : []}
 		for source_tag, target_tag, tag_type in synthetic_order:
-			if source_tag in address.keys():
+                        if source_tag in address.keys():
 				words = address[source_tag].split()
 				for word in words:
 					token_xml = etree.Element(target_tag)
@@ -87,8 +84,17 @@ def osmSyntheticToTraining(xml_file):
 			l = components[tag_type]
 			if l :
 				l[-1].tail = ','
+
+                
+                        
 		address_xml = components['Street'] + components['City'] + components['Area']
+                for each in address_xml :
+                        if each.tail :
+                                each.tail += ' '
+                        else :
+                                each.tail = ' '
 		address_xml[-1].tail = None
+
 		for xml_element in address_xml:
 			train_addr.append(xml_element)
 		train_addr_list.append(train_addr)
@@ -102,7 +108,7 @@ def trainFileFromLines(addr_file):
 	lines = open(addr_file, 'r')
 	addr_index = 0
 	token_index = 0
-	trainFileName = '../training_data/'+re.sub(r'\W+', '_', addr_file)+'.xml'
+	trainFileName = 'training_data/'+re.sub(r'\W+', '_', addr_file)+'.xml'
 	tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
                 'PlaceName', 'StateName', 'ZipCode', 'suffix']
 	addr_list = etree.Element('AddressCollection')
@@ -127,3 +133,5 @@ def trainFileFromLines(addr_file):
 
 
 
+if __name__ == '__main__' :
+        osmSyntheticToTraining('data/osm_data.xml')

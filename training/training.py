@@ -40,6 +40,6 @@ def parseTrainingData(filepath):
 if __name__ == '__main__' :
     root_path = os.path.split(os.path.split(os.path.abspath(__file__))[0])[0]
     
-    training_data = parseTrainingData(root_path + '/training/training_data/synthetic_data_osm_cleaned.xml')
+    training_data = parseTrainingData(root_path + '/training/training_data/synthetic_data_osm_data_xml.xml')
 
     trainModel(training_data, root_path + '/usaddress/usaddr.crfsuite')
