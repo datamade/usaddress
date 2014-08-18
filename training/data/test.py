@@ -2,47 +2,53 @@ import streetaddress as sa
 import unittest
 
 class addressTests(unittest.TestCase) :
-  def test_all(self) :
+    def test_all(self) :
 
     assert sa.parse('1005 Gravenstein Hwy 95472') == {'number' :'1005',
-                                                      'street' : 'Gravenstein',
-                                                      'zip' : '95472',
-                                                      'type' :'Hwy'}
+                'street' : 'Gravenstein',
+                'zip' : '95472',
+                'type' :'Hwy'
+            }
 
     assert sa.parse('1005 Gravenstein Hwy, 95472') == {'number' :'1005',
-                                                       'street' : 'Gravenstein',
-                                                       'zip' : '95472',
-                                                       'type' :'Hwy'}
+                'street' : 'Gravenstein',
+                'zip' : '95472',
+                'type' :'Hwy'
+            }
 
     assert sa.parse('1005 Gravenstein Hwy N, 95472') == {'number' :'1005',
-                                                         'street' : 'Gravenstein',
-                                                         'zip' : '95472',
-                                                         'type' :'Hwy',
-                                                         'suffix' : 'N'}
+                'street' : 'Gravenstein',
+                'zip' : '95472',
+                'type' :'Hwy',
+                'suffix' : 'N'
+            }
+
     assert sa.parse('1005 Gravenstein Highway North, 95472') == {'number' :'1005',
-                                                                 'street' : 'Gravenstein',
-                                                                 'zip' : '95472',
-                                                                 'type' :'Hwy',
-                                                                 'suffix' : 'N'}
+                'street' : 'Gravenstein',
+                'zip' : '95472',
+                'type' :'Hwy',
+                'suffix' : 'N'
+            }
 
     assert sa.parse('1005 N Gravenstein Highway, Sebastopol, CA') == {'number' :'1005',
-                                                                      'street' : 'Gravenstein',
+                'street' : 'Gravenstein',
 
-                                                                      'type' :'Hwy',
-                                                                      'prefix' : 'N',
-                                                                      'city' : 'Sebastopol',
-                                                                      'state' : 'CA'}
+                'type' :'Hwy',
+                'prefix' : 'N',
+                'city' : 'Sebastopol',
+                'state' : 'CA'
+            }
 
 
     assert sa.parse("1005 N Gravenstein Highway, Suite 500, Sebastopol, CA") == {
-              'number' : '1005',
-              'street' : 'Gravenstein',
-              'state' : 'CA',
-              'city' : 'Sebastopol',
-              'type' : 'Hwy',
-              'prefix' : 'N',
-              'sec_unit_type' : 'Suite',
-              'sec_unit_num' : '500',
+                'number' : '1005',
+                'street' : 'Gravenstein',
+                'state' : 'CA',
+                'city' : 'Sebastopol',
+                'type' : 'Hwy',
+                'prefix' : 'N',
+                'sec_unit_type' : 'Suite',
+                'sec_unit_num' : '500',
             }
 
 
@@ -50,14 +56,14 @@ class addressTests(unittest.TestCase) :
 
 
     assert sa.parse("1005 N Gravenstein Highway, Suite 500, Sebastopol, CA") == {
-              'number' : '1005',
-              'street' : 'Gravenstein',
-              'state' : 'CA',
-              'city' : 'Sebastopol',
-              'type' : 'Hwy',
-              'prefix' : 'N',
-              'sec_unit_type' : 'Suite',
-              'sec_unit_num' : '500',
+                'number' : '1005',
+                'street' : 'Gravenstein',
+                'state' : 'CA',
+                'city' : 'Sebastopol',
+                'type' : 'Hwy',
+                'prefix' : 'N',
+                'sec_unit_type' : 'Suite',
+                'sec_unit_num' : '500',
             }
     assert sa.parse("1005 N Gravenstein Hwy Suite 500 Sebastopol, CA") == {
               'number' : '1005',
