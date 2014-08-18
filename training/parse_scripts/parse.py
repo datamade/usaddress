@@ -84,22 +84,17 @@ def osmSyntheticToTraining(xml_file):
                 for word in words:
                     token_xml = etree.Element(target_tag)
                     token_xml.text = word
+                    token_xml.tail = ' '
                     components[tag_type].append(token_xml)
 		
         for tag_type in ('Street','City', 'Area') :
             l = components[tag_type]
             if l :
-                l[-1].tail = ','
+                l[-1].tail = ', '
 
         address_xml = (components['Street'] 
                        + components['City'] 
                        + components['Area'])
- 
-        for each in address_xml :
-            if each.tail :
-                each.tail += ' '
-            else :
-                each.tail = ' '
 		
         address_xml[-1].tail = None
 
@@ -108,6 +103,7 @@ def osmSyntheticToTraining(xml_file):
 
         train_addr_list.append(train_addr)
 
+    random.shuffle(train_addr_list)
     percent_20 = int(len(train_addr_list) * 0.2)
 
     test_data = etree.Element('AddressCollection')
@@ -121,6 +117,8 @@ def osmSyntheticToTraining(xml_file):
 
     with open(testFileName, 'w') as f:
         f.write(etree.tostring(test_data, pretty_print=True))
+
+osmSyntheticToTraining('../data/osm_data.xml')
 
 
 # us50 data -> training file (xml)
