@@ -58,7 +58,7 @@ def osmNaturalToTraining(xml_file):
     with open(trainFileName, 'w') as f:
         f.write(output)
 
-# osm xml data -> synthetic addresses -> training file (xml)
+# osm xml data -> synthetic addresses -> training & test files (xml)
 def osmSyntheticToTraining(xml_file):
     address_list = xmlToAddrList(xml_file)
     train_addr_list = []
@@ -118,43 +118,50 @@ def osmSyntheticToTraining(xml_file):
     with open(testFileName, 'w') as f:
         f.write(etree.tostring(test_data, pretty_print=True))
 
-osmSyntheticToTraining('../data/osm_data.xml')
 
-
-# us50 data -> training file (xml)
-def trainFileFromLines(addr_file):
+# us50 data -> training or test file (xml)
+def trainFileFromLines(addr_file, is_train=True):
     lines = open(addr_file, 'r')
     addr_index = 0
     token_index = 0
-    trainFileName = '../training_data/'+re.sub(r'\W+', '_', addr_file)+'.xml'
-
+    punc_list = ',.'
+    if is_train == True:
+        outputFileName = '../training_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
+    else:
+        outputFileName = '../test_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
 
     tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
                 'PlaceName', 'StateName', 'ZipCode', 'suffix']
     addr_list = etree.Element('AddressCollection')
     addr = etree.Element('AddressString')
     for line in lines:
-        if line =='\n':
-            addr_index += 1
-            token_index = 0
+        if line =='\n': #add addr to list & reset addr
+            addr[-1].tail = None
             addr_list.append(addr)
             addr = etree.Element('AddressString')
         else:
             split = line.split(' |')
-            token_string = split[0]
+            addr_line = split[0]
+            addr_tokens = addr_line.split()
             token_num = int(split[1].rstrip())
             token_tag = tag_list[token_num]
-            token_xml = etree.Element(token_tag)
-            token_xml.text = token_string
-        addr.append(token_xml)
-
-
+            for token in addr_tokens:
+                punc = ''
+                if token[-1] in punc_list:
+                    punc = token[-1]
+                    token = token[:-1]
+                token_xml = etree.Element(token_tag)
+                token_xml.text = token
+                token_xml.tail = punc + ' '
+                addr.append(token_xml)
 
     output = etree.tostring(addr_list, pretty_print=True)
-    with open(trainFileName, 'w') as f:
+    with open(outputFileName, 'w') as f:
         f.write(output)
 
 
 
 if __name__ == '__main__' :
-        osmSyntheticToTraining('../data/osm_data.xml')
+        #osmSyntheticToTraining('../data/osm_data.xml')
+        trainFileFromLines('../data/us50.train.tagged')
+        trainFileFromLines('../data/us50.test.tagged', False)
