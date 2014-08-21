@@ -13,7 +13,8 @@ component tags are drawn from the [United States Thoroughfare, Landmark, and Pos
     </AddressString>
     <AddressString>
       <AddressNumber>9112</AddressNumber> 
-      <StreetName>Mendenhall Mall</StreetName> 
+      <StreetName>Mendenhall</StreetName> 
+      <StreetName>Mall</StreetName> 
       <StreetNamePostType>Road</StreetNamePostType>
       , 
       <PlaceName>Juneau</PlaceName>
@@ -38,7 +39,8 @@ component tags are drawn from the [United States Thoroughfare, Landmark, and Pos
       <StreetName>M</StreetName> 
       <StreetNamePostType>Street</StreetNamePostType>
       , 
-      <PlaceName>Elmendorf Afb</PlaceName>
+      <PlaceName>Elmendorf</PlaceName> 
+      <PlaceName>Afb</PlaceName>
       , 
       <StateName>AK</StateName>
       <ZipCode>99506</ZipCode>
