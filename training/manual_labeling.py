@@ -26,7 +26,6 @@ def consoleLabel(raw_addr_list, label_options): #should this also take the model
             addr_tokens = addr_string.split()
 
             valid_yn = False
-            valid_tag = False
             user_input_yn = ''
             user_input_tag = ''
 
@@ -38,20 +37,7 @@ def consoleLabel(raw_addr_list, label_options): #should this also take the model
 
             while not valid_yn:
 
-                # pretty print for address tokens & tags
-                for pred in preds:
-                    n = 12-len(pred[0])
-                    print pred[0], ' '*n, '|',
-                print "\n",
-                for pred in preds:
-                    if pred[1] == 'Null':
-                        print_tag = 'punc' # ** this could be smarter
-                    else:
-                        print_tag = label_dict[pred[1]]
-                    n = 12-len(print_tag)
-                    print print_tag, ' '*n, '|',
-                #print predicted tags here
-                print "\n\n",
+                addrPrettyPrint(preds, label_dict)
 
                 sys.stderr.write('Is this correct? (y)es / (n)o / (s)kip\n')
                 user_input_yn = sys.stdin.readline().strip()
@@ -66,24 +52,7 @@ def consoleLabel(raw_addr_list, label_options): #should this also take the model
                 tagged_addr_list.append(tagged_addr)
 
             elif user_input_yn =='n':
-                while not valid_tag:
-                    tagged_addr = []
-                    for token in preds:
-                        valid_tag = False
-                        while not valid_tag:
-                            print 'What is \''+token[0]+'\' ? If '+token[1]+' hit return' #where should the tag list be printed?
-                            user_input_tag = sys.stdin.readline().strip()
-                            if user_input_tag in valid_input_tags or user_input_tag == '':
-                                valid_tag = True
-
-                        xml_tag = ''
-                        if user_input_tag == '':
-                            xml_tag = token[1]
-                        else:
-                            xml_tag = label_options[int(user_input_tag)][1]
-
-                        tagged_addr.append((token[0], xml_tag))
-
+                tagged_addr = manualTagging(preds, valid_input_tags, label_options)
                 tagged_addr_list.append(tagged_addr)
 
             else:
@@ -93,6 +62,40 @@ def consoleLabel(raw_addr_list, label_options): #should this also take the model
         finished = True
 
     return tagged_addr_list
+
+
+def addrPrettyPrint(preds, label_dict):
+    for pred in preds:
+        n = 12-len(pred[0])
+        print pred[0], ' '*n, '|',
+    print "\n",
+    for pred in preds:
+        if pred[1] == 'Null':
+            print_tag = 'punc' # ** this could be smarter
+        else:
+            print_tag = label_dict[pred[1]]
+        n = 12-len(print_tag)
+        print print_tag, ' '*n, '|',
+    print "\n"
+
+def manualTagging(preds, valid_input_tags, label_options):
+    tagged_addr = []
+    for token in preds:
+        valid_tag = False
+        while not valid_tag:
+            print 'What is \''+token[0]+'\' ? If '+token[1]+' hit return' #where should the tag list be printed?
+            user_input_tag = sys.stdin.readline().strip()
+            if user_input_tag in valid_input_tags or user_input_tag == '':
+                valid_tag = True
+
+        xml_tag = ''
+        if user_input_tag == '':
+            xml_tag = token[1]
+        else:
+            xml_tag = label_options[int(user_input_tag)][1]
+
+        tagged_addr.append((token[0], xml_tag))
+    return tagged_addr
 
 
 def list2XMLfile(addr_list, filepath):
