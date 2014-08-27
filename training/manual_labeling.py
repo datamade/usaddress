@@ -3,80 +3,58 @@ from lxml import etree
 import sys
 
 
-def consoleLabel(raw_addr_list, label_options): #should this also take the model filepath as an argument?
-    finished = False
-    tagged_addr_list = []
-    punc_list = ['.', ',']
-    valid_input_tags = []
-    label_dict = {}
+def consoleLabel(raw_addr_list, label_options): 
 
-    for i in range(len(label_options)):
-        valid_input_tags.append(str(i))
+    valid_input_tags = dict((str(i), tag) 
+                            for i, tag
+                            in enumerate(label_options))
+    valid_responses = ['y', 'n', 's', '']
 
-    for label in label_options:
-        label_dict[label[0]] = label[1]
-        label_dict[label[1]] = label[0]
 
-    addr_index = 0
     total_addrs = len(raw_addr_list)
-    while not finished:
-        for addr_string in raw_addr_list:
-            addr_index += 1
 
-            addr_tokens = addr_string.split()
+    tagged_addr_list = []
 
-            valid_yn = False
-            user_input_yn = ''
-            user_input_tag = ''
+    for i, addr_string in enumerate(raw_addr_list, 1):
 
-            print "("+str(addr_index)+" of "+str(total_addrs)+") ", "-"*50
-            print "ADDRESS STRING: ", addr_string
-            #tag addr tokens using model
-            preds = usaddress.parse(addr_string)
-            # ** check that the predicted labels match up with those in label_options?
+        print "(%s of %s)" % (i, total_addrs)
+        print "-"*50
+        print "ADDRESS STRING: ", addr_string
+            
+        preds = usaddress.parse(addr_string)
 
-            while not valid_yn:
+        user_input = None 
+        while user_input not in valid_responses :
 
-                addrPrettyPrint(preds, label_dict)
+            print_table(preds)
 
-                sys.stderr.write('Is this correct? (y)es / (n)o / (s)kip\n')
-                user_input_yn = sys.stdin.readline().strip()
-                if user_input_yn in ['y', 'n', 's', '']:
-                    valid_yn = True
+            sys.stderr.write('Is this correct? (y)es / (n)o / (s)kip\n')
+            user_input = sys.stdin.readline().strip()
 
+            if user_input =='y':
+                tagged_addr_list.append(preds)
 
-            if user_input_yn =='y':
-                tagged_addr=[]
-                for token in preds:
-                    tagged_addr.append((token[0], token[1]))
+            elif user_input =='n':
+                tagged_addr = manualTagging(preds, 
+                                            valid_input_tags, 
+                                            label_options)
                 tagged_addr_list.append(tagged_addr)
 
-            elif user_input_yn =='n':
-                tagged_addr = manualTagging(preds, valid_input_tags, label_options)
-                tagged_addr_list.append(tagged_addr)
-
-            else:
+            elif user_input in ('' or 's') :
                 print "Skipped\n"
 
-        print "Done! Yay!"
-        finished = True
-
+    print "Done! Yay!"
+    
     return tagged_addr_list
 
 
-def addrPrettyPrint(preds, label_dict):
-    for pred in preds:
-        n = 12-len(pred[0])
-        print pred[0], ' '*n, '|',
-    print "\n",
-    for pred in preds:
-        if pred[1] == 'Null':
-            print_tag = 'punc' # ** this could be smarter
-        else:
-            print_tag = label_dict[pred[1]]
-        n = 12-len(print_tag)
-        print print_tag, ' '*n, '|',
-    print "\n"
+
+def print_table(table):
+    col_width = [max(len(x) for x in col) for col in zip(*table)]
+    for line in table:
+        print "| %s |" % " | ".join("{:{}}".format(x, col_width[i])
+                                for i, x in enumerate(line))
+
 
 def manualTagging(preds, valid_input_tags, label_options):
     tagged_addr = []
@@ -121,30 +99,32 @@ def list2XMLfile(addr_list, filepath):
         f.write(etree.tostring(address_list_xml, pretty_print = True))
 
 
+if __name__ == '__main__' :
 
-
-sample_addr_list = [
-    '6943 Roosevelt Road, Berwyn, IL 60402',
-    '1330 West Madison Street, Chicago, IL 60607',
-    '4128 14th Avenue, Rock Island, IL 61201'
+    sample_addr_list = [
+        '6943 Roosevelt Road, Berwyn, IL 60402',
+        '1330 West Madison Street, Chicago, IL 60607',
+        '4128 14th Avenue, Rock Island, IL 61201'
     ]
-
-# a list of labels, w/ each label represented as [label display name, label xml tag]
-labels = [
-    ['punc', None],
-    ['addr no', 'AddressNumber'],
-    ['street dir', 'StreetNamePreDirectional'],
-    ['street name', 'StreetName'],
-    ['street type', 'StreetNamePostType'],
-    ['unit type', 'OccupancyType'],
-    ['unit no', 'OccupancyIdentifier'],
-    ['box type', 'USPSBoxType'],
-    ['box no', 'USPSBoxID'],
-    ['city', 'PlaceName'],
-    ['state', 'StateName'],
-    ['zip', 'ZipCode']
+    
+    # a list of labels, w/ each label represented as [label display
+    # name, label xml tag]
+    labels = [
+        ['punc', None],
+        ['addr no', 'AddressNumber'],
+        ['street dir', 'StreetNamePreDirectional'],
+        ['street name', 'StreetName'],
+        ['street type', 'StreetNamePostType'],
+        ['unit type', 'OccupancyType'],
+        ['unit no', 'OccupancyIdentifier'],
+        ['box type', 'USPSBoxType'],
+        ['box no', 'USPSBoxID'],
+        ['city', 'PlaceName'],
+        ['state', 'StateName'],
+        ['zip', 'ZipCode']
     ]
-
-tagged_addr_list = consoleLabel( sample_addr_list, labels )
-list2XMLfile( tagged_addr_list, 'training_data/TESTINGcommandline.xml' )
+    
+    tagged_addr_list = consoleLabel( sample_addr_list, labels )
+    print tagged_addr_list
+    list2XMLfile( tagged_addr_list, 'training_data/TESTINGcommandline.xml' )
 
