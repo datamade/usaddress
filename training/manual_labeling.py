@@ -122,14 +122,9 @@ def list2file(addr_list, filepath):
 
 if __name__ == '__main__' :
 
-    sample_addr_list = [
-        '6943 Roosevelt Road, Berwyn, IL 60402',
-        '1330 West Madison Street, Chicago, IL 60607',
-        '4128 14th Avenue, Rock Island, IL 61201'
-    ]
-    
-    # a list of labels, w/ each label represented as [label display
-    # name, label xml tag]
+    import csv
+    from argparse import ArgumentParser
+
     labels = [
         ['punc', None],
         ['addr #', 'AddressNumber'],
@@ -144,8 +139,19 @@ if __name__ == '__main__' :
         ['state', 'StateName'],
         ['zip', 'ZipCode']
     ]
-    
-    tagged_addr_list, remaining_addrs = consoleLabel( sample_addr_list, labels )
-    list2XMLfile( tagged_addr_list, 'training/training_data/TESTINGmanuallytagged.xml' )
-    list2file( remaining_addrs, 'training/training_data/TESTINGlefttotag.txt')
 
+
+    parser = ArgumentParser(description="Label some addresses")
+    parser.add_argument(dest="filename", 
+                        help="input csv with addresses", metavar="FILE")
+    args = parser.parse_args()
+
+    
+    with open(args.filename) as infile :
+        reader = csv.reader(infile)
+
+        address_strings = set([row[0] for row in reader])
+
+    tagged_addr_list, remaining_addrs = consoleLabel(address_strings, labels) 
+    list2XMLfile(tagged_addr_list, 'labeled.xml')
+    list2file(remaining_addrs, 'unlabeled.csv')
