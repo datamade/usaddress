@@ -5,10 +5,12 @@ import sys
 
 def consoleLabel(raw_addr_list, label_options): 
 
-    valid_input_tags = dict((str(i), tag) 
-                            for i, tag
-                            in enumerate(label_options))
-    valid_responses = ['y', 'n', 's', '']
+    friendly_tag_dict = dict((label[1], label[0])
+                            for label in label_options)
+    friendly_tag_dict['Null'] = friendly_tag_dict[None] #this could be smarter
+    valid_responses = ['y', 'n', 's', 'f', '']
+    addrs_left_to_tag = []
+    finished = False
 
 
     total_addrs = len(raw_addr_list)
@@ -16,36 +18,42 @@ def consoleLabel(raw_addr_list, label_options):
     tagged_addr_list = []
 
     for i, addr_string in enumerate(raw_addr_list, 1):
+        if not finished:
 
-        print "(%s of %s)" % (i, total_addrs)
-        print "-"*50
-        print "ADDRESS STRING: ", addr_string
-            
-        preds = usaddress.parse(addr_string)
+            print "(%s of %s)" % (i, total_addrs)
+            print "-"*50
+            print "ADDRESS STRING: ", addr_string
+                
+            preds = usaddress.parse(addr_string)
 
-        user_input = None 
-        while user_input not in valid_responses :
+            user_input = None 
+            while user_input not in valid_responses :
 
-            print_table(preds)
 
-            sys.stderr.write('Is this correct? (y)es / (n)o / (s)kip\n')
-            user_input = sys.stdin.readline().strip()
+                friendly_addr = [(token[0], friendly_tag_dict[token[1]]) for token in preds]
+                print_table(friendly_addr)
 
-            if user_input =='y':
-                tagged_addr_list.append(preds)
+                sys.stderr.write('Is this correct? (y)es / (n)o / (s)kip / (f)inish tagging\n')
+                user_input = sys.stdin.readline().strip()
 
-            elif user_input =='n':
-                tagged_addr = manualTagging(preds, 
-                                            valid_input_tags, 
-                                            label_options)
-                tagged_addr_list.append(tagged_addr)
+                if user_input =='y':
+                    tagged_addr_list.append(preds)
 
-            elif user_input in ('' or 's') :
-                print "Skipped\n"
+                elif user_input =='n':
+                    tagged_addr = manualTagging(preds, 
+                                                label_options,
+                                                friendly_tag_dict)
+                    tagged_addr_list.append(tagged_addr)
+
+                elif user_input in ('' or 's') :
+                    print "Skipped\n"
+                elif user_input == 'f':
+                    addrs_left_to_tag = raw_addr_list[i-1:]
+                    finished = True
 
     print "Done! Yay!"
     
-    return tagged_addr_list
+    return tagged_addr_list, addrs_left_to_tag
 
 
 
@@ -54,17 +62,25 @@ def print_table(table):
     for line in table:
         print "| %s |" % " | ".join("{:{}}".format(x, col_width[i])
                                 for i, x in enumerate(line))
+        
 
 
-def manualTagging(preds, valid_input_tags, label_options):
+def manualTagging(preds, label_options, friendly_tag_dict):
+    valid_input_tags = dict((str(i), tag[0]) 
+                            for i, tag
+                            in enumerate(label_options))
     tagged_addr = []
     for token in preds:
         valid_tag = False
         while not valid_tag:
-            print 'What is \''+token[0]+'\' ? If '+token[1]+' hit return' #where should the tag list be printed?
+            print 'What is \''+token[0]+'\' ? If '+ friendly_tag_dict[token[1]]+' hit return' #where should the tag list be printed?
             user_input_tag = sys.stdin.readline().strip()
             if user_input_tag in valid_input_tags or user_input_tag == '':
                 valid_tag = True
+            else:
+                print 'These are the valid inputs:'
+                for i in range(len(label_options)):
+                    print i, ": ", valid_input_tags[str(i)]
 
         xml_tag = ''
         if user_input_tag == '':
@@ -98,6 +114,11 @@ def list2XMLfile(addr_list, filepath):
     with open( filepath, 'w' ) as f:
         f.write(etree.tostring(address_list_xml, pretty_print = True))
 
+def list2file(addr_list, filepath):
+    file = open( filepath, 'w' )
+    for addr in addr_list:
+        file.write("%s\n" % addr)
+
 
 if __name__ == '__main__' :
 
@@ -111,7 +132,7 @@ if __name__ == '__main__' :
     # name, label xml tag]
     labels = [
         ['punc', None],
-        ['addr no', 'AddressNumber'],
+        ['addr #', 'AddressNumber'],
         ['street dir', 'StreetNamePreDirectional'],
         ['street name', 'StreetName'],
         ['street type', 'StreetNamePostType'],
@@ -124,7 +145,7 @@ if __name__ == '__main__' :
         ['zip', 'ZipCode']
     ]
     
-    tagged_addr_list = consoleLabel( sample_addr_list, labels )
-    print tagged_addr_list
-    list2XMLfile( tagged_addr_list, 'training_data/TESTINGcommandline.xml' )
+    tagged_addr_list, remaining_addrs = consoleLabel( sample_addr_list, labels )
+    list2XMLfile( tagged_addr_list, 'training/training_data/TESTINGmanuallytagged.xml' )
+    list2file( remaining_addrs, 'training/training_data/TESTINGlefttotag.txt')
 
