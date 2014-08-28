@@ -12,7 +12,7 @@ def parse(address_string) :
     re_tokens = re.compile(r"""
     \b[^\s]+(?=\b)   # 'F-H '   -> ['F-H']
     |
-    [^\w\s](?=\s)    # [', ']   -> [',']
+    [,#](?=\s)    # [', ']   -> [',']
     """,
                            re.VERBOSE | re.UNICODE)
 
