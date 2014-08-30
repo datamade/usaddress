@@ -3,7 +3,7 @@ from lxml import etree
 import sys
 
 
-def consoleLabel(raw_addr_list, label_options): 
+def consoleLabel(raw_addr, label_options): 
 
     friendly_tag_dict = dict((label[1], label[0])
                             for label in label_options)
@@ -13,11 +13,11 @@ def consoleLabel(raw_addr_list, label_options):
     finished = False
 
 
-    total_addrs = len(raw_addr_list)
+    total_addrs = len(raw_addr)
 
-    tagged_addr_list = []
+    tagged_addr = set([])
 
-    for i, addr_string in enumerate(raw_addr_list, 1):
+    for i, addr_string in enumerate(raw_addr, 1):
         if not finished:
 
             print "(%s of %s)" % (i, total_addrs)
@@ -37,23 +37,23 @@ def consoleLabel(raw_addr_list, label_options):
                 user_input = sys.stdin.readline().strip()
 
                 if user_input =='y':
-                    tagged_addr_list.append(preds)
+                    tagged_addr.add(tuple(preds))
 
                 elif user_input =='n':
                     tagged_addr = manualTagging(preds, 
                                                 label_options,
                                                 friendly_tag_dict)
-                    tagged_addr_list.append(tagged_addr)
+                    tagged_addr.add(tuple(tagged_addr))
 
                 elif user_input in ('' or 's') :
                     print "Skipped\n"
                 elif user_input == 'f':
-                    addrs_left_to_tag = raw_addr_list[i-1:]
+                    addrs_left_to_tag = raw_addr - tagged_addr
                     finished = True
 
     print "Done! Yay!"
     
-    return tagged_addr_list, addrs_left_to_tag
+    return tagged_addr, addrs_left_to_tag
 
 
 
