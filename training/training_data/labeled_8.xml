@@ -1,0 +1,12 @@
+<AddressCollection>
+  <AddressString><USPSBoxType>Box</USPSBoxType># <USPSBoxID>63</USPSBoxID>, <PlaceName>Cordova</PlaceName>, <StateName>AK</StateName> <ZipCode>99574</ZipCode></AddressString>
+  <AddressString><AddressNumber>16165</AddressNumber> <StreetName>Southwest</StreetName> <StreetName>Regatta</StreetName> <StreetNamePostType>Lane</StreetNamePostType>, <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>1000</OccupancyIdentifier>, <PlaceName>Beaverton</PlaceName>, <StateName>OR</StateName> <ZipCode>97006</ZipCode></AddressString>
+  <AddressString><AddressNumber>4931</AddressNumber> <StreetNamePreDirectional>South</StreetNamePreDirectional> <StreetName>State</StreetName> <StreetNamePostType>Street</StreetNamePostType>, <PlaceName>Salt</PlaceName> <StreetName>Lake</StreetName> <StreetNamePostType>City</StreetNamePostType>, <StateName>UT</StateName> <ZipCode>84107</ZipCode></AddressString>
+  <AddressString><AddressNumber>500</AddressNumber> <StreetName>Marquette</StreetName> <StreetName>Avenue</StreetName> <StreetNamePostType>Northwest</StreetNamePostType> <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>1500</OccupancyIdentifier>, <PlaceName>Albuquerque</PlaceName>, <StateName>NM</StateName> <ZipCode>87102</ZipCode></AddressString>
+  <AddressString><PlaceName>Minneapolis</PlaceName>, <StateName>MN</StateName> <ZipCode>55401</ZipCode></AddressString>
+  <AddressString><PlaceName>Plainview</PlaceName>, <StateName>NE</StateName> <ZipCode>68769</ZipCode></AddressString>
+  <AddressString><PlaceName>Terra</PlaceName> <PlaceName>Alta</PlaceName>, <StateName>WV</StateName> <ZipCode>26764</ZipCode></AddressString>
+  <AddressString><USPSBoxType>Route</USPSBoxType> <USPSBoxType>Box</USPSBoxType># <USPSBoxID>201</USPSBoxID>, <PlaceName>Bingham</PlaceName>, <StateName>ME</StateName> <ZipCode>04920</ZipCode></AddressString>
+  <AddressString><StreetName>Lee's</StreetName> <StreetName>Mill</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Moultonborough</PlaceName>, <StateName>NH</StateName> <ZipCode>03254</ZipCode></AddressString>
+  <AddressString><AddressNumber>1121</AddressNumber> <StreetName>Nuuanu</StreetName> <StreetNamePostType>Avenue</StreetNamePostType> <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>105</OccupancyIdentifier>, <PlaceName>Honolulu</PlaceName>, <StateName>HI</StateName> <ZipCode>96817</ZipCode></AddressString>
+</AddressCollection>

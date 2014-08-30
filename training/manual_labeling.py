@@ -12,6 +12,7 @@ def consoleLabel(raw_addr, label_options):
     addrs_left_to_tag = []
     finished = False
 
+    addrs_left_to_tag = raw_addr.copy()
 
     total_addrs = len(raw_addr)
 
@@ -38,17 +39,19 @@ def consoleLabel(raw_addr, label_options):
 
                 if user_input =='y':
                     tagged_addr.add(tuple(preds))
+                    addrs_left_to_tag.remove(addr_string)
 
                 elif user_input =='n':
-                    tagged_addr = manualTagging(preds, 
+                    corrected_addr = manualTagging(preds, 
                                                 label_options,
                                                 friendly_tag_dict)
-                    tagged_addr.add(tuple(tagged_addr))
+                    tagged_addr.add(tuple(corrected_addr))
+                    addrs_left_to_tag.remove(addr_string)
+
 
                 elif user_input in ('' or 's') :
                     print "Skipped\n"
                 elif user_input == 'f':
-                    addrs_left_to_tag = raw_addr - tagged_addr
                     finished = True
 
     print "Done! Yay!"
@@ -117,7 +120,7 @@ def list2XMLfile(addr_list, filepath):
 def list2file(addr_list, filepath):
     file = open( filepath, 'w' )
     for addr in addr_list:
-        file.write("%s\n" % addr)
+        file.write('"%s"\n' % addr)
 
 
 if __name__ == '__main__' :
@@ -128,9 +131,10 @@ if __name__ == '__main__' :
     labels = [
         ['punc', None],
         ['addr #', 'AddressNumber'],
-        ['street dir', 'StreetNamePreDirectional'],
+        ['street dir pre', 'StreetNamePreDirectional'],
         ['street name', 'StreetName'],
         ['street type', 'StreetNamePostType'],
+        ['street dir post', 'StreetNamePostDirectional'],
         ['unit type', 'OccupancyType'],
         ['unit no', 'OccupancyIdentifier'],
         ['box type', 'USPSBoxType'],

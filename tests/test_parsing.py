@@ -29,11 +29,13 @@ class TestUS50_2(object) :
 def equals(addr, 
            labels_pred, 
            labels_true) :
+    print "ADDRESS: ", addr
     assert labels_pred == labels_true
 
 def fuzzyEquals(addr, 
            labels_true, 
            labels_pred) :
+    print "ADDRESS: ", addr
     labels = []
     fuzzy_labels = []
     for label in labels_pred:
