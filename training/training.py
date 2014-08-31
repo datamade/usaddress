@@ -50,6 +50,11 @@ if __name__ == '__main__' :
     training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_7.xml'))
     training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_8.xml'))
     training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_9.xml'))
+    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_10.xml'))
+    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_11.xml'))
+    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_12.xml'))
+    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_13.xml'))
+    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_14.xml'))
 
 
 

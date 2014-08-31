@@ -1,0 +1,10 @@
+<AddressCollection>
+  <AddressString><AddressNumber>214</AddressNumber> <OccupancyIdentifier>B</OccupancyIdentifier> <StreetName>South</StreetName> <StreetNamePostType>Boulevard</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60202</ZipCode></AddressString>
+  <AddressString><AddressNumber>9265</AddressNumber> <StreetName>Huer</StreetName> <StreetName>Huero</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Creston</PlaceName>, <ZipCode>93432</ZipCode></AddressString>
+  <AddressString><AddressNumber>2677</AddressNumber> <StreetName>Gross</StreetName> <StreetName>Point</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60201</ZipCode></AddressString>
+  <AddressString><AddressNumber>1044</AddressNumber> <StreetName>Lake</StreetName> <StreetName>Shore</StreetName> <StreetNamePostType>Boulevard</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60202</ZipCode></AddressString>
+  <AddressString><AddressNumber>6257A</AddressNumber> <StreetNamePreDirectional>North</StreetNamePreDirectional> <StreetName>McCormick</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Chicago</PlaceName>, <ZipCode>60659</ZipCode></AddressString>
+  <AddressString><AddressNumber>1085</AddressNumber> <StreetName>Santa</StreetName> <StreetName>Paula</StreetName> <StreetNamePostType>Avenue</StreetNamePostType>, <PlaceName>Los</PlaceName> <PlaceName>Osos</PlaceName></AddressString>
+  <AddressString><AddressNumber>60</AddressNumber> <StreetNamePreDirectional>East</StreetNamePreDirectional> <StreetName>Walton</StreetName> <StreetNamePostType>Street</StreetNamePostType>, <ZipCode>60611</ZipCode></AddressString>
+  <AddressString><AddressNumber>1</AddressNumber> <StreetName>Avila</StreetName> <StreetName>Beach</StreetName> <StreetNamePostType>Drive</StreetNamePostType>, <PlaceName>Avila</PlaceName> <PlaceName>Beach</PlaceName></AddressString>
+</AddressCollection>

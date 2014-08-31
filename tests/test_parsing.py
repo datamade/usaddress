@@ -39,7 +39,7 @@ def fuzzyEquals(addr,
     labels = []
     fuzzy_labels = []
     for label in labels_pred:
-        if label == 'StreetNamePostType' or label == 'StreetNamePreDirectional':
+        if label.startswith('StreetName') :
             fuzzy_labels.append('StreetName')
         else:
             fuzzy_labels.append(label)

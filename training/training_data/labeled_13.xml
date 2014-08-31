@@ -1,0 +1,11 @@
+<AddressCollection>
+  <AddressString><StreetNamePreType>Highway</StreetNamePreType> <StreetName>34</StreetName> <StreetNamePostDirectional>East</StreetNamePostDirectional>, <PlaceName>Albia</PlaceName>, <StateName>IA</StateName> <ZipCode>52531</ZipCode></AddressString>
+  <AddressString><LandmarkName>The</LandmarkName> <LandmarkName>Empire</LandmarkName>, <PlaceName>Sioux</PlaceName> <PlaceName>Falls</PlaceName>, <StateName>SD</StateName> <ZipCode>57103</ZipCode></AddressString>
+  <AddressString><LandmarkName>Municipal</LandmarkName> <LandmarkName>Airport</LandmarkName>, <PlaceName>Lincoln</PlaceName>, <StateName>NE</StateName> <ZipCode>68524</ZipCode></AddressString>
+  <AddressString><LandmarkName>Lee</LandmarkName> <LandmarkName>Bird</LandmarkName> <LandmarkName>Fld</LandmarkName>, <PlaceName>North</PlaceName> <PlaceName>Platte</PlaceName>, <StateName>NE</StateName> <ZipCode>69101</ZipCode></AddressString>
+  <AddressString><PlaceName>Columbia</PlaceName> <PlaceName>Falls</PlaceName>, <StateName>MT</StateName> <ZipCode>59912</ZipCode></AddressString>
+  <AddressString><AddressNumber>12188</AddressNumber> <StreetName>Old</StreetName> <StreetName>Number</StreetName> <StreetName>6</StreetName> <StreetNamePostType>Highway</StreetNamePostType>, <PlaceName>Eutawville</PlaceName>, <StateName>SC</StateName> <ZipCode>29048</ZipCode></AddressString>
+  <AddressString><AddressNumber>2300</AddressNumber> <StreetNamePreType>Route</StreetNamePreType> <StreetName>309</StreetName>, <PlaceName>Wilkes</PlaceName> <PlaceName>Barre</PlaceName>, <StateName>PA</StateName> <ZipCode>18702</ZipCode></AddressString>
+  <AddressString><LandmarkName>Gldn</LandmarkName> <LandmarkName>Egl</LandmarkName> <LandmarkName>Lodge</LandmarkName> <LandmarkName>Mdw</LandmarkName> <LandmarkName>Village</LandmarkName>, <PlaceName>Big</PlaceName> <PlaceName>Sky</PlaceName>, <StateName>MT</StateName> <ZipCode>59716</ZipCode></AddressString>
+  <AddressString><AddressNumber>31595</AddressNumber> <StreetNamePreType>SR</StreetNamePreType> <StreetName>20</StreetName>, <PlaceName>Oak</PlaceName> <PlaceName>Harbor</PlaceName>, <StateName>WA</StateName> <ZipCode>98277</ZipCode></AddressString>
+</AddressCollection>

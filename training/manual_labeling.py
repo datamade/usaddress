@@ -133,7 +133,8 @@ if __name__ == '__main__' :
         ['addr #', 'AddressNumber'],
         ['street dir pre', 'StreetNamePreDirectional'],
         ['street name', 'StreetName'],
-        ['street type', 'StreetNamePostType'],
+        ['street type, post', 'StreetNamePostType'],
+        ['street type, pre', 'StreetNamePreType'],
         ['street dir post', 'StreetNamePostDirectional'],
         ['unit type', 'OccupancyType'],
         ['unit no', 'OccupancyIdentifier'],
@@ -141,7 +142,11 @@ if __name__ == '__main__' :
         ['box no', 'USPSBoxID'],
         ['city', 'PlaceName'],
         ['state', 'StateName'],
-        ['zip', 'ZipCode']
+        ['zip', 'ZipCode'],
+        ['landmark', 'LandmarkName'],
+        ['box group type', 'USPSBoxGroupType'],
+        ['box group id', 'USPSBoxGroupID'],
+        ['address number suffix', 'AddressNumberSuffix']
     ]
 
 
