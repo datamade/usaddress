@@ -344,7 +344,6 @@
   <AddressString><AddressNumber>173</AddressNumber> <StreetNamePreType>IL</StreetNamePreType> <StreetNamePreType>Rte.</StreetNamePreType> <StreetName>2</StreetName></AddressString>
   <AddressString><AddressNumber>343</AddressNumber> <StreetName>Park</StreetName> <StreetNamePostType>Avenue</StreetNamePostType> <OccupancyType>Unit</OccupancyType> <OccupancyIdentifier>2</OccupancyIdentifier> <OccupancyIdentifier>East</OccupancyIdentifier></AddressString>
   <AddressString><AddressNumber>5544</AddressNumber> <StreetName>St</StreetName> <StreetName>Charles</StreetName> <StreetNamePostType>Road</StreetNamePostType></AddressString>
-  <AddressString><AddressNumber>P.</AddressNumber> <StreetNamePreDirectional>O.</StreetNamePreDirectional> <StreetName>Box</StreetName> <USPSBoxID>534</USPSBoxID></AddressString>
   <AddressString><USPSBoxType>P.O.</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>11418</USPSBoxID></AddressString>
   <AddressString><AddressNumber>612</AddressNumber> <AddressNumberSuffix>A </AddressNumberSuffix> <StreetNamePreDirectional>So</StreetNamePreDirectional> <StreetName>Lake</StreetName> <StreetNamePostType>St</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>2820</AddressNumber> <StreetNamePreDirectional>N.</StreetNamePreDirectional> <StreetName>Greenview</StreetName> <OccupancyType>Unit</OccupancyType> <OccupancyIdentifier>1</OccupancyIdentifier></AddressString>
