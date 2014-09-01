@@ -41,20 +41,8 @@ if __name__ == '__main__' :
     root_path = os.path.split(os.path.split(os.path.abspath(__file__))[0])[0]
     
     #training_data = list(parseTrainingData(root_path + '/training/training_data/synthetic_data_osm_data_xml.xml'))
-    training_data = list(parseTrainingData(root_path + '/training/training_data/labeled_1.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_2.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_3.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_4.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_5.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_6.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_7.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_8.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_9.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_10.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_11.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_12.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_13.xml'))
-    training_data += list(parseTrainingData(root_path + '/training/training_data/labeled_14.xml'))
+    training_data = list(parseTrainingData(root_path + '/training/training_data/labeled.xml'))
+
 
 
 

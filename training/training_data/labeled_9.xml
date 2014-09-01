@@ -1,9 +1,0 @@
-<AddressCollection>
-  <AddressString><AddressNumber>60</AddressNumber> <StreetName>Arts</StreetName> <StreetName>Circle</StreetName> <StreetNamePostType>Drive</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60208</ZipCode></AddressString>
-  <AddressString><AddressNumber>2026</AddressNumber> <StreetName>Green</StreetName> <StreetName>Bay</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60201</ZipCode></AddressString>
-  <AddressString><AddressNumber>400</AddressNumber> <StreetNamePreDirectional>South</StreetNamePreDirectional> <StreetName>La</StreetName> <StreetName>Salle</StreetName> <StreetNamePostType>Street</StreetNamePostType>, <ZipCode>60605</ZipCode></AddressString>
-  <AddressString><AddressNumber>30</AddressNumber> <StreetName>King</StreetName> <StreetNamePostType>Court</StreetNamePostType>, <PlaceName>San</PlaceName> <PlaceName>Luis</PlaceName> <PlaceName>Obispo</PlaceName>, <ZipCode>93401</ZipCode></AddressString>
-  <AddressString><AddressNumber>26</AddressNumber> <StreetName>Ocean</StreetName> <StreetName>Oaks</StreetName> <StreetNamePostType>Lane</StreetNamePostType>, <ZipCode>39424</ZipCode></AddressString>
-  <AddressString><AddressNumber>557</AddressNumber> <StreetName>Casa</StreetName> <StreetName>Del</StreetName> <StreetName>Mar</StreetName> <StreetNamePostType>Drive</StreetNamePostType>, <PlaceName>San</PlaceName> <PlaceName>Simeon</PlaceName>, <ZipCode>93452</ZipCode></AddressString>
-  <AddressString><AddressNumber>758</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>Chicago</StreetName> <StreetNamePostType>Avenue</StreetNamePostType>, <PlaceName>Chicago</PlaceName>, <StateName>IL</StateName></AddressString>
-</AddressCollection>

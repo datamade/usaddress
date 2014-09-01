@@ -127,6 +127,7 @@ if __name__ == '__main__' :
 
     import csv
     from argparse import ArgumentParser
+    import unidecode
 
     labels = [
         ['punc', None],
@@ -146,7 +147,9 @@ if __name__ == '__main__' :
         ['landmark', 'LandmarkName'],
         ['box group type', 'USPSBoxGroupType'],
         ['box group id', 'USPSBoxGroupID'],
-        ['address number suffix', 'AddressNumberSuffix']
+        ['address number suffix', 'AddressNumberSuffix'],
+        ['subaddress id', 'SubaddressIdentifier'],
+        ['subaddress type', 'SubaddressType']
     ]
 
 
@@ -159,7 +162,7 @@ if __name__ == '__main__' :
     with open(args.filename) as infile :
         reader = csv.reader(infile)
 
-        address_strings = set([row[0] for row in reader])
+        address_strings = set([unidecode.unidecode(row[0]) for row in reader])
 
     tagged_addr_list, remaining_addrs = consoleLabel(address_strings, labels) 
     list2XMLfile(tagged_addr_list, 'labeled.xml')
