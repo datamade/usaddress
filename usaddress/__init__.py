@@ -10,10 +10,6 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 def parse(address_string) :
 
     re_tokens = re.compile(r"""
-    \b\d+(?=-[a-zA-Z]\b) 
-    |
-    (?<=\-)\w{1}\s
-    |
     \b\w[^\s]*(?=\b)\.*   # 'F-H. ' -> ['F-H.']
     |
     [^\w\s](?=\s)       # [', ']  -> [',']
@@ -23,6 +19,9 @@ def parse(address_string) :
                            re.VERBOSE | re.UNICODE)
 
     tokens = re_tokens.findall(address_string)
+
+    if not tokens :
+        return []
 
     features = addr2features(tokens)
 
