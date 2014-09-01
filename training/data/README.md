@@ -1,5 +1,5 @@
 For our training format, we are using xml tagged strings. The address
-component tags are drawn from the [United States Thoroughfare, Landmark, and Postal Address Data Standard](https://www.fgdc.gov/standards/projects/FGDC-standards-projects/street-address/index_html)
+component tags are drawn from the [United States Thoroughfare, Landmark, and Postal Address Data Standard](http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard/)
 
 
 ```xml
