@@ -149,7 +149,8 @@ if __name__ == '__main__' :
         ['box group id', 'USPSBoxGroupID'],
         ['address number suffix', 'AddressNumberSuffix'],
         ['subaddress id', 'SubaddressIdentifier'],
-        ['subaddress type', 'SubaddressType']
+        ['subaddress type', 'SubaddressType'],
+        ['recipient', 'Recipient']
     ]
 
 
