@@ -150,7 +150,8 @@ if __name__ == '__main__' :
         ['subaddress id', 'SubaddressIdentifier'],
         ['subaddress type', 'SubaddressType'],
         ['recipient', 'Recipient'],
-        ['streetname modifer, pre', 'StreetNamePreModifier']
+        ['streetname modifer, pre', 'StreetNamePreModifier'],
+        ['building name', 'BuildingName'],
 
     ]
 

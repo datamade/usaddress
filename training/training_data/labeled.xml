@@ -439,4 +439,12 @@
   <AddressString><AddressNumber>1005</AddressNumber> <StreetName>Gravenstein</StreetName> <StreetNamePostType>Hwy</StreetNamePostType>, <StreetNamePostDirectional>N</StreetNamePostDirectional> <PlaceName>Sebastopol</PlaceName> <StateName>CA</StateName></AddressString>
   <AddressString><OccupancyIdentifier>lt42</OccupancyIdentifier> <AddressNumber>99</AddressNumber> <StreetName>Some</StreetName> <StreetNamePostType>Road</StreetNamePostType>, <PlaceName>Some</PlaceName> <PlaceName>City</PlaceName> <StateName>LA</StateName></AddressString>
   <AddressString><AddressNumber>2349</AddressNumber> <StreetNamePreModifier>Old</StreetNamePreModifier> <StreetNamePreType>State</StreetNamePreType> <StreetNamePreType>Route</StreetNamePreType> <StreetName>3</StreetName></AddressString>
+  <AddressString><AddressNumber>115</AddressNumber> <StreetName>Harting</StreetName> <StreetNamePostType>Road</StreetNamePostType> <USPSBoxType>PO</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>X</USPSBoxID></AddressString>
+  <AddressString><AddressNumber>2020</AddressNumber> <StreetNamePreDirectional>N.</StreetNamePreDirectional> <StreetName>LINCOLN</StreetName> <StreetNamePostType>PARK</StreetNamePostType> <StreetNamePostDirectional>WEST</StreetNamePostDirectional> <OccupancyIdentifier>36M</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>200</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetName>jACKSON</StreetName> <StreetNamePostType>bLVD.</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>1</AddressNumber> <StreetName>PINTO</StreetName> <StreetNamePostType>DR.</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>440</AddressNumber> <StreetName>LaSalle</StreetName> <StreetNamePostType>St.</StreetNamePostType> <BuildingName>1</BuildingName> <BuildingName>Financial</BuildingName> <BuildingName>Place</BuildingName></AddressString>
+  <AddressString><AddressNumber>613</AddressNumber> <StreetNamePreDirectional>S.</StreetNamePreDirectional> <StreetName>Main</StreetName>, <USPSBoxType>PO</USPSBoxType> <OccupancyIdentifier>123</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>200</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetName>22nd</StreetName> <StreetNamePostType>St.</StreetNamePostType># <OccupancyIdentifier>201</OccupancyIdentifier></AddressString>
+  <AddressString><Recipient>JMB</Recipient> <Recipient>Insurance</Recipient></AddressString>
 </AddressCollection>
