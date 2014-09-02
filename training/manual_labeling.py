@@ -150,7 +150,9 @@ if __name__ == '__main__' :
         ['address number suffix', 'AddressNumberSuffix'],
         ['subaddress id', 'SubaddressIdentifier'],
         ['subaddress type', 'SubaddressType'],
-        ['recipient', 'Recipient']
+        ['recipient', 'Recipient'],
+        ['streetname modifer, pre', 'StreetNamePreModifier']
+
     ]
 
 
