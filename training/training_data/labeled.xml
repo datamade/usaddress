@@ -417,4 +417,5 @@
   <AddressString><AddressNumber>1755</AddressNumber> <StreetName>Howard</StreetName> <StreetNamePostType>Street</StreetNamePostType> <PlaceName>DesPlaines</PlaceName></AddressString>
   <AddressString><AddressNumber>3215</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>162nd</StreetName> <StreetNamePostType>Street</StreetNamePostType> <PlaceName>Markham</PlaceName></AddressString>
   <AddressString><AddressNumber>1020</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>Bryn</StreetName> <StreetName>Mawr</StreetName> <OccupancyIdentifier>211</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>358</AddressNumber> <AddressNumber>370</AddressNumber> <StreetNamePreDirectional>E</StreetNamePreDirectional> <StreetName>71ST</StreetName></AddressString>
 </AddressCollection>
