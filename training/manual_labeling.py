@@ -114,7 +114,7 @@ def list2XMLfile(addr_list, filepath):
         addr_xml.extend(xml_token_list)
         address_list_xml.append(addr_xml)
 
-    with open( filepath, 'w' ) as f:
+    with open( filepath, 'a+' ) as f:
         f.write(etree.tostring(address_list_xml, pretty_print = True))
 
 def list2file(addr_list, filepath):
