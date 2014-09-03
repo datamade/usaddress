@@ -126,9 +126,9 @@ def trainFileFromLines(addr_file, is_train=True):
     token_index = 0
     punc_list = ',.'
     if is_train == True:
-        outputFileName = '../training_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
+        outputFileName = 'training/training_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
     else:
-        outputFileName = '../test_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
+        outputFileName = 'training/test_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
 
     tag_list = [None, 'AddressNumber', 'USPSBox', 'StreetName', 'StreetNamePostType',
                 'PlaceName', 'StateName', 'ZipCode', 'suffix']
@@ -146,13 +146,9 @@ def trainFileFromLines(addr_file, is_train=True):
             token_num = int(split[1].rstrip())
             token_tag = tag_list[token_num]
             for token in addr_tokens:
-                punc = ''
-                if token[-1] in punc_list:
-                    punc = token[-1]
-                    token = token[:-1]
                 token_xml = etree.Element(token_tag)
                 token_xml.text = token
-                token_xml.tail = punc + ' '
+                token_xml.tail = ' '
                 addr.append(token_xml)
 
     output = etree.tostring(addr_list, pretty_print=True)
@@ -163,5 +159,5 @@ def trainFileFromLines(addr_file, is_train=True):
 
 if __name__ == '__main__' :
         #osmSyntheticToTraining('../data/osm_data.xml')
-        trainFileFromLines('../data/us50.train.tagged')
-        trainFileFromLines('../data/us50.test.tagged', False)
+        trainFileFromLines('training/data/us50.train.tagged')
+        trainFileFromLines('training/data/us50.test.tagged', False)
