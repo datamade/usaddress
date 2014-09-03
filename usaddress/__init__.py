@@ -7,6 +7,8 @@ TAGGER = pycrfsuite.Tagger()
 TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
             + '/usaddr.crfsuite')
 
+nopunc = string.
+
 def parse(address_string) :
 
     re_tokens = re.compile(r"""
@@ -31,14 +33,16 @@ def parse(address_string) :
 def tokenFeatures(token) :
 
     features = {'token.lower' : token.lower(), 
-                'token.isupper' : token.isupper(), 
+                'token.nopunc' : token.lower().translate(string.maketrans("",""), string.punctuation), #should this only strip punc from end of token?
+                'token.isupper' : token.isupper(),
                 'token.islower' : token.islower(), 
                 'token.istitle' : token.istitle(), 
                 'token.isalldigits' : token.isdigit(),
                 'token.hasadigit' : any(char.isdigit() for char in token),
                 'token.isstartdigit' : token[0].isdigit(),
-                'digit.length' : token.isdigit() * len(token),
+                'digit.length' : token.isdigit() * len(token), #should the features above be defined on token w/ punc removed?
                 'token.ispunctuation' : (token in string.punctuation),
+                'token.endsinpunc' : (token[-1] in string.punctuation)
                 'token.length' : len(token),
                 #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
                 }

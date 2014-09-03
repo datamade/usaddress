@@ -125,7 +125,6 @@ def trainFileFromLines(addr_file, is_train=True):
     lines = open(addr_file, 'r')
     addr_index = 0
     token_index = 0
-    punc_list = ',.'
     if is_train == True:
         outputFileName = 'training/training_data/'+re.sub(r'\W+', '_', re.sub(r'.*/', '', addr_file))+'.xml'
     else:
