@@ -66,9 +66,8 @@ def print_table(table):
 
 
 def manualTagging(preds, label_options, friendly_tag_dict):
-    valid_input_tags = dict((str(i), tag[0]) 
-                            for i, tag
-                            in enumerate(label_options))
+    valid_input_tags = dict((tag[0], tag[1]) 
+                            for tag in label_options)
     tagged_addr = []
     for token in preds:
         valid_tag = False
@@ -79,14 +78,14 @@ def manualTagging(preds, label_options, friendly_tag_dict):
                 valid_tag = True
             else:
                 print 'These are the valid inputs:'
-                for i in range(len(label_options)):
-                    print i, ": ", valid_input_tags[str(i)]
+                for label in label_options:
+                    print label[0]
 
         xml_tag = ''
         if user_input_tag == '':
             xml_tag = token[1]
         else:
-            xml_tag = label_options[int(user_input_tag)][1]
+            xml_tag = valid_input_tags[user_input_tag]
 
         tagged_addr.append((token[0], xml_tag))
     return tagged_addr
@@ -128,13 +127,13 @@ if __name__ == '__main__' :
     labels = [
         ['punc', None],
         ['addr #', 'AddressNumber'],
-        ['street dir', 'StreetNamePreDirectional'],
-        ['street name', 'StreetName'],
-        ['street type', 'StreetNamePostType'],
+        ['st dir', 'StreetNamePreDirectional'],
+        ['st name', 'StreetName'],
+        ['st type', 'StreetNamePostType'],
         ['unit type', 'OccupancyType'],
-        ['unit no', 'OccupancyIdentifier'],
+        ['unit #', 'OccupancyIdentifier'],
         ['box type', 'USPSBoxType'],
-        ['box no', 'USPSBoxID'],
+        ['box #', 'USPSBoxID'],
         ['city', 'PlaceName'],
         ['state', 'StateName'],
         ['zip', 'ZipCode']
