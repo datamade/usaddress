@@ -3,7 +3,7 @@ from lxml import etree
 import sys
 
 
-def consoleLabel(raw_addr_list, label_options): 
+def consoleLabel(raw_addr, label_options): 
 
     friendly_tag_dict = dict((label[1], label[0])
                             for label in label_options)
@@ -12,12 +12,13 @@ def consoleLabel(raw_addr_list, label_options):
     addrs_left_to_tag = []
     finished = False
 
+    addrs_left_to_tag = raw_addr.copy()
 
-    total_addrs = len(raw_addr_list)
+    total_addrs = len(raw_addr)
 
-    tagged_addr_list = []
+    tagged_addr = set([])
 
-    for i, addr_string in enumerate(raw_addr_list, 1):
+    for i, addr_string in enumerate(raw_addr, 1):
         if not finished:
 
             print "(%s of %s)" % (i, total_addrs)
@@ -37,23 +38,25 @@ def consoleLabel(raw_addr_list, label_options):
                 user_input = sys.stdin.readline().strip()
 
                 if user_input =='y':
-                    tagged_addr_list.append(preds)
+                    tagged_addr.add(tuple(preds))
+                    addrs_left_to_tag.remove(addr_string)
 
                 elif user_input =='n':
-                    tagged_addr = manualTagging(preds, 
+                    corrected_addr = manualTagging(preds, 
                                                 label_options,
                                                 friendly_tag_dict)
-                    tagged_addr_list.append(tagged_addr)
+                    tagged_addr.add(tuple(corrected_addr))
+                    addrs_left_to_tag.remove(addr_string)
+
 
                 elif user_input in ('' or 's') :
                     print "Skipped\n"
                 elif user_input == 'f':
-                    addrs_left_to_tag = raw_addr_list[i-1:]
                     finished = True
 
     print "Done! Yay!"
     
-    return tagged_addr_list, addrs_left_to_tag
+    return tagged_addr, addrs_left_to_tag
 
 
 
@@ -116,27 +119,39 @@ def list2XMLfile(addr_list, filepath):
 def list2file(addr_list, filepath):
     file = open( filepath, 'w' )
     for addr in addr_list:
-        file.write("%s\n" % addr)
+        file.write('"%s"\n' % addr)
 
 
 if __name__ == '__main__' :
 
     import csv
     from argparse import ArgumentParser
+    import unidecode
 
     labels = [
         ['punc', None],
         ['addr #', 'AddressNumber'],
-        ['st dir', 'StreetNamePreDirectional'],
+        ['st dir pre', 'StreetNamePreDirectional'],
+        ['st dir post', 'StreetNamePostDirectional'],
         ['st name', 'StreetName'],
-        ['st type', 'StreetNamePostType'],
+        ['st type post', 'StreetNamePostType'],
+        ['st type pre', 'StreetNamePreType'],
         ['unit type', 'OccupancyType'],
         ['unit #', 'OccupancyIdentifier'],
         ['box type', 'USPSBoxType'],
         ['box #', 'USPSBoxID'],
         ['city', 'PlaceName'],
         ['state', 'StateName'],
-        ['zip', 'ZipCode']
+        ['zip', 'ZipCode'],
+        ['landmark', 'LandmarkName'],
+        ['box group type', 'USPSBoxGroupType'],
+        ['box group id', 'USPSBoxGroupID'],
+        ['address number suffix', 'AddressNumberSuffix'],
+        ['subaddress id', 'SubaddressIdentifier'],
+        ['subaddress type', 'SubaddressType'],
+        ['recipient', 'Recipient'],
+        ['streetname modifer, pre', 'StreetNamePreModifier']
+
     ]
 
 
@@ -149,7 +164,7 @@ if __name__ == '__main__' :
     with open(args.filename) as infile :
         reader = csv.reader(infile)
 
-        address_strings = set([row[0] for row in reader])
+        address_strings = set([unidecode.unidecode(row[0]) for row in reader])
 
     tagged_addr_list, remaining_addrs = consoleLabel(address_strings, labels) 
     list2XMLfile(tagged_addr_list, 'labeled.xml')
