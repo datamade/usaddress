@@ -30,7 +30,7 @@ def parse(address_string) :
 
 def tokenFeatures(token) :
 
-    features = {'token.lower' : token.lower(), 
+    features = {'token.lower' : re.sub(r'(^[\W]*)|([\W]*$)', '', token.lower()), 
                 'token.nopunc' : token.lower().translate(string.maketrans("",""), string.punctuation), #should this only strip punc from end of token?
                 'token.isupper' : token.isupper(),
                 'token.islower' : token.islower(), 
@@ -41,6 +41,7 @@ def tokenFeatures(token) :
                 'digit.length' : token.isdigit() * len(token), #should the features above be defined on token w/ punc removed?
                 'token.ispunctuation' : (token in string.punctuation),
                 'token.endsinpunc' : (token[-1] in string.punctuation)
+                'end.comma' : (token[-1] == ',')
                 'token.length' : len(token),
                 #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
                 }
