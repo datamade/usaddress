@@ -30,15 +30,16 @@ def parse(address_string) :
 
 def tokenFeatures(token) :
 
-    features = {'token.lower' : re.sub(r'(^[\W]*)|([\W]*$)', '', token.lower()), 
-                'token.nopunc' : token.lower().translate(string.maketrans("",""), string.punctuation), #should this only strip punc from end of token?
-                'token.isupper' : token.isupper(),
-                'token.islower' : token.islower(), 
-                'token.istitle' : token.istitle(), 
-                'token.isalldigits' : token.isdigit(),
-                'token.hasadigit' : any(char.isdigit() for char in token),
-                'token.isstartdigit' : token[0].isdigit(),
-                'digit.length' : token.isdigit() * len(token), #should the features above be defined on token w/ punc removed?
+    token_clean = re.sub(r'(^[\W]*)|([\W]*$)', '', token)
+    features = {'token.lower' : token_clean.lower(), 
+                'token.nopunc' : re.sub(r'\W*', '', token.lower()),
+                'token.isupper' : token_clean.isupper(),
+                'token.islower' : token_clean.islower(), 
+                'token.istitle' : token_clean.istitle(), 
+                'token.isalldigits' : token_clean.isdigit(),
+                'token.hasadigit' : any(char.isdigit() for char in token_clean),
+                'token.isstartdigit' : token_clean[0].isdigit(),
+                'digit.length' : token_clean.isdigit() * len(token), #should the features above be defined on token w/ punc removed?
                 'token.ispunctuation' : (token in string.punctuation),
                 'token.endsinpunc' : (token[-1] in string.punctuation)
                 'end.comma' : (token[-1] == ',')
