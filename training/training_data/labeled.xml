@@ -493,4 +493,43 @@
   <AddressString><AddressNumber>5052</AddressNumber> <StreetName>Foxfield</StreetName> <StreetNamePostType>Lane</StreetNamePostType>, <StreetNamePostDirectional>SE</StreetNamePostDirectional></AddressString>
   <AddressString><AddressNumber>159</AddressNumber> <StreetName>The</StreetName> <StreetName>Prado</StreetName> <StreetNamePostDirectional>NE</StreetNamePostDirectional></AddressString>
   <AddressString><AddressNumber>150</AddressNumber> <StreetNamePreDirectional>E</StreetNamePreDirectional> <StreetName>Ponce</StreetName> <StreetName>de</StreetName> <StreetName>Leon</StreetName>, <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>230</OccupancyIdentifier></AddressString>
+  <AddressString><Recipient>JPMORGAN</Recipient> <Recipient>INVESTMENT</Recipient> <Recipient>MGMT</Recipient> <Recipient>INC</Recipient> <Recipient>REAL</Recipient> <Recipient>ESTATE</Recipient> <Recipient>INFR</Recipient></AddressString>
+  <AddressString><AddressNumber>790</AddressNumber> <StreetName>FOGGY</StreetName> <StreetName>BOTTOM</StreetName> <StreetName>FARM</StreetName> <StreetNamePostType>RD</StreetNamePostType></AddressString>
+  <AddressString><Recipient>C/O</Recipient> <Recipient>GLENN</Recipient> <Recipient>M</Recipient> <Recipient>KOOGLER</Recipient></AddressString>
+  <AddressString><Recipient>C/O</Recipient> <Recipient>DAVID</Recipient> <Recipient>C</Recipient> <Recipient>FALK</Recipient></AddressString>
+  <AddressString><AddressNumber>514</AddressNumber> <StreetName>PEACE</StreetName> <StreetName>&amp;</StreetName> <StreetName>PLENTY</StreetName> <StreetNamePostType>LANE</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>6190</AddressNumber> <StreetName>TURKEY</StreetName> <StreetName>RUN</StreetName> <StreetNamePostType>COURT</StreetNamePostType></AddressString>
+  <AddressString><Recipient>C/O</Recipient> <Recipient>JAMES</Recipient> <Recipient>H.</Recipient> <Recipient>MOSHOVITIS</Recipient></AddressString>
+  <AddressString><BuildingName>First</BuildingName> <BuildingName>National</BuildingName> <BuildingName>Bank</BuildingName> <BuildingName>Building</BuildingName></AddressString>
+  <AddressString><Recipient>C/O</Recipient> <Recipient>LAWSON</Recipient> <Recipient>TARTER</Recipient> <Recipient>&amp;</Recipient> <Recipient>CHARVET</Recipient></AddressString>
+  <AddressString><AddressNumber>790</AddressNumber> <StreetName>FOGGY</StreetName> <StreetName>BOTTOM</StreetName> <StreetName>FARM</StreetName> <StreetNamePostType>RD</StreetNamePostType></AddressString>
+  <AddressString><USPSBoxGroupType>RT</USPSBoxGroupType> <USPSBoxGroupID>1</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <OccupancyIdentifier>81</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>3713</AddressNumber> <StreetName>BARRINGTON</StreetName> <StreetName>BRIDGE</StreetName> <StreetNamePostType>PL</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>1999</AddressNumber> <StreetNamePreType>AVENUE</StreetNamePreType> <StreetName>OF</StreetName> <StreetName>THE</StreetName> <StreetName>STARS</StreetName></AddressString>
+  <AddressString><AddressNumber>1950</AddressNumber> <StreetName>LOUIS</StreetName> <StreetName>HENNA</StreetName> <StreetNamePostType>BLVD</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>2225</AddressNumber> <StreetName>COMMONWEALTH</StreetName> <OccupancyType>APT</OccupancyType> <OccupancyIdentifier>F</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>15825</AddressNumber> <StreetName>SHADY</StreetName> <StreetName>GROVE</StreetName> <StreetNamePostType>ROAD</StreetNamePostType> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>55</OccupancyIdentifier></AddressString>
+  <AddressString><Recipient>UNITED</Recipient> <Recipient>MANAGEMENT</Recipient> <Recipient>CO</Recipient></AddressString>
+  <AddressString><Recipient>C/O</Recipient> <Recipient>FAIRFAX</Recipient> <Recipient>CTY</Recipient> <Recipient>REDEV</Recipient> <Recipient>AND</Recipient> <Recipient>HOUSING</Recipient> <Recipient>AUTHORITY</Recipient></AddressString>
+  <AddressString><AddressNumber>4400</AddressNumber> <StreetName>POST</StreetName> <StreetName>OAK</StreetName> <StreetNamePostType>PARKWAY</StreetNamePostType># <OccupancyIdentifier>2350</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>10317</AddressNumber> <StreetName>HOLLY</StreetName> <StreetName>HILL</StreetName> <StreetNamePostType>PLACE</StreetNamePostType></AddressString>
+  <AddressString><Recipient>C.O</Recipient> <Recipient>NDC</Recipient> <Recipient>REALTY</Recipient> <Recipient>INVESTMENTS</Recipient>, <Recipient>INC.</Recipient></AddressString>
+  <AddressString><Recipient>c/o</Recipient> <Recipient>G.</Recipient> <Recipient>Thomas</Recipient> <Recipient>Collins</Recipient> <Recipient>,</Recipient> <Recipient>Jr.</Recipient></AddressString>
+  <AddressString><OccupancyIdentifier>100</OccupancyIdentifier> <BuildingName>ONE</BuildingName> <BuildingName>JACKSON</BuildingName> <BuildingName>PLACE</BuildingName></AddressString>
+  <AddressString><AddressNumber>6618</AddressNumber> <StreetName>FROST</StreetName> <StreetName>LAKE</StreetName> <StreetNamePostType>LANE</StreetNamePostType></AddressString>
+  <AddressString><USPSBoxType>POST</USPSBoxType> <USPSBoxType>OFFICE</USPSBoxType> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>1197</USPSBoxID></AddressString>
+  <AddressString><BuildingName>ONE</BuildingName> <BuildingName>JAMES</BuildingName> <BuildingName>CENTER</BuildingName>, <OccupancyType>SUITE</OccupancyType> <OccupancyIdentifier>902</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>1400</AddressNumber> <StreetNamePreDirectional>WEST</StreetNamePreDirectional> <StreetName>SHADY</StreetName> <StreetName>GROVE</StreetName></AddressString>
+  <AddressString><AddressNumber>6811</AddressNumber> <StreetName>KENILWORTH</StreetName> <StreetNamePostType>AVE</StreetNamePostType> <OccupancyIdentifier>6TH</OccupancyIdentifier> <OccupancyType>FL</OccupancyType></AddressString>
+  <AddressString><USPSBoxType>Post</USPSBoxType> <USPSBoxType>Office</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>40177</USPSBoxID></AddressString>
+  <AddressString><AddressNumber>1809</AddressNumber> <AddressNumberSuffix>C</AddressNumberSuffix> <StreetName>CROSS</StreetName> <StreetName>BEAM</StreetName> <StreetNamePostType>DRIVE</StreetNamePostType></AddressString>
+  <AddressString><BuildingName>1000</BuildingName> <BuildingName>NATIONSBANK</BuildingName> <BuildingName>CENTER</BuildingName></AddressString>
+  <AddressString><AddressNumber>707</AddressNumber> <StreetNamePreDirectional>E</StreetNamePreDirectional> <StreetName>MAIN</StreetName> <StreetNamePostType>ST</StreetNamePostType> <OccupancyIdentifier>20TH</OccupancyIdentifier> <OccupancyType>FL</OccupancyType></AddressString>
+  <AddressString><AddressNumber>11719</AddressNumber> <AddressNumberSuffix>B</AddressNumberSuffix> <StreetName>JEFFERSON</StreetName> <StreetNamePostType>AVE</StreetNamePostType> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>103</OccupancyIdentifier></AddressString>
+  <AddressString><Recipient>CHAMAN</Recipient> <Recipient>PURI</Recipient> <Recipient>,</Recipient> <Recipient>PURI</Recipient> <Recipient>BORTHERS</Recipient>, <Recipient>INC.</Recipient></AddressString>
+  <AddressString><OccupancyIdentifier>310</OccupancyIdentifier> <BuildingName>ASPEN</BuildingName> <BuildingName>AIRPORT</BuildingName> <BuildingName>BUSINESS</BuildingName> <BuildingName>CENTER</BuildingName></AddressString>
+  <AddressString><AddressNumber>60</AddressNumber> <StreetName>BARN</StreetName> <StreetName>HILL</StreetName></AddressString>
+  <AddressString><Recipient>c/o</Recipient> <Recipient>E.</Recipient> <Recipient>G.</Recipient> <Recipient>Allen</Recipient>, <Recipient>Jr.</Recipient></AddressString>
+  <AddressString><AddressNumber>303</AddressNumber> <StreetNamePreDirectional>s</StreetNamePreDirectional> <StreetName>loudoun</StreetName> <StreetNamePostType>st</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>11988</AddressNumber> <StreetNamePreModifier>EL</StreetNamePreModifier> <StreetNamePreType>CAMINO</StreetNamePreType> <StreetName>REAL</StreetName></AddressString>
 </AddressCollection>
