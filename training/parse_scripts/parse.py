@@ -63,8 +63,8 @@ def osmSyntheticToTraining(xml_file):
     address_list = xmlToAddrList(xml_file)
     train_addr_list = []
 
-    trainFileName = '../training_data/synthetic'+re.sub(r'\W+', '_', xml_file)+'.xml'
-    testFileName = '../test_data/synthetic'+re.sub(r'\W+', '_', xml_file)+'.xml'
+    trainFileName = 'training/training_data/synthetic_'+re.sub(r'\W+', '_', re.sub(r'.*/', '', xml_file))+'.xml'
+    testFileName = 'training/test_data/synthetic_'+re.sub(r'\W+', '_', re.sub(r'.*/', '', xml_file))+'.xml'
 
     synthetic_order = [
             ('addr:housenumber', 'AddressNumber', 'Street'),
@@ -90,12 +90,13 @@ def osmSyntheticToTraining(xml_file):
         for tag_type in ('Street','City', 'Area') :
             l = components[tag_type]
             if l :
-                l[-1].tail = ', '
+                l[-1].text += ','
 
         address_xml = (components['Street'] 
                        + components['City'] 
                        + components['Area'])
         
+        address_xml[-1].text = address_xml[-1].text[:-1]
         address_xml[-1].tail = None
 
         for xml_element in address_xml:
@@ -158,6 +159,6 @@ def trainFileFromLines(addr_file, is_train=True):
 
 
 if __name__ == '__main__' :
-        #osmSyntheticToTraining('../data/osm_data.xml')
-        trainFileFromLines('training/data/us50.train.tagged')
-        trainFileFromLines('training/data/us50.test.tagged', False)
+        osmSyntheticToTraining('training/data/osm_data.xml')
+        #trainFileFromLines('training/data/us50.train.tagged')
+        #trainFileFromLines('training/data/us50.test.tagged', False)
