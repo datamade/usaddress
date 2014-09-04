@@ -15,6 +15,8 @@ def parse(address_string) :
     [^\w\s](?=\s)         # [', ']  -> [',']
     |
     (?<=\s)\#             # ['#f ']  -> ['#']
+    |
+    \#
     """,
                            re.VERBOSE | re.UNICODE)
 
