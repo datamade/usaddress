@@ -1,6 +1,7 @@
 import usaddress
 from lxml import etree
 import sys
+import os.path
 
 
 def consoleLabel(raw_addr, label_options): 
@@ -96,7 +97,7 @@ def manualTagging(preds, label_options, friendly_tag_dict):
 
 
 def list2XMLfile(addr_list, filepath):
-    address_list_xml = etree.Element('AddressCollection')
+    new_address_list = []
 
     for addr in addr_list:
         addr_xml = etree.Element('AddressString')
@@ -112,10 +113,20 @@ def list2XMLfile(addr_list, filepath):
                 xml_token_list.append(token_xml)
         xml_token_list[-1].tail = ''
         addr_xml.extend(xml_token_list)
-        address_list_xml.append(addr_xml)
+        new_address_list.append(addr_xml)
 
-    with open( filepath, 'a+' ) as f:
-        f.write(etree.tostring(address_list_xml, pretty_print = True))
+    if os.path.isfile(filepath):
+        with open( filepath, 'r+' ) as f:
+            tree = etree.parse(filepath)
+            address_collection = tree.getroot()
+            address_collection.extend(new_address_list)
+            f.write(etree.tostring(address_collection, pretty_print = True))
+    else:
+        with open( filepath, 'w' ) as f:
+            address_collection = etree.Element('AddressCollection')
+            address_collection.extend(new_address_list)
+            f.write(etree.tostring(address_collection, pretty_print = True))
+
 
 def list2file(addr_list, filepath):
     file = open( filepath, 'w' )
@@ -130,13 +141,14 @@ if __name__ == '__main__' :
     import unidecode
 
     labels = [
-        ['punc', None],
+        ['not addr', None],
         ['addr #', 'AddressNumber'],
         ['st dir pre', 'StreetNamePreDirectional'],
         ['st dir post', 'StreetNamePostDirectional'],
         ['st name', 'StreetName'],
         ['st type post', 'StreetNamePostType'],
         ['st type pre', 'StreetNamePreType'],
+        ['intersection separator', 'IntersectionSeparator'],
         ['unit type', 'OccupancyType'],
         ['unit no', 'OccupancyIdentifier'],
         ['box type', 'USPSBoxType'],
@@ -152,7 +164,7 @@ if __name__ == '__main__' :
         ['subaddress type', 'SubaddressType'],
         ['recipient', 'Recipient'],
         ['streetname modifer, pre', 'StreetNamePreModifier'],
-        ['building name', 'BuildingName'],
+        ['building name', 'BuildingName']
 
     ]
 
@@ -163,7 +175,7 @@ if __name__ == '__main__' :
     args = parser.parse_args()
 
     
-    with open(args.filename) as infile :
+    with open(args.filename, 'rU') as infile :
         reader = csv.reader(infile)
 
         address_strings = set([unidecode.unidecode(row[0]) for row in reader])
