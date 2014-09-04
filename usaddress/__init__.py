@@ -10,7 +10,7 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 def parse(address_string) :
 
     re_tokens = re.compile(r"""
-    \b\w[^\s]*(?=\b)\.*   # 'F-H. ' -> ['F-H.']
+    \b\w[^\s]*(?=\b)\.*,*   # 'F-H. ' -> ['F-H.']
     |
     [^\w\s](?=\s)         # [', ']  -> [',']
     |
@@ -38,12 +38,12 @@ def tokenFeatures(token) :
                 'token.istitle' : token_clean.istitle(), 
                 'token.isalldigits' : token_clean.isdigit(),
                 'token.hasadigit' : any(char.isdigit() for char in token_clean),
-                'token.isstartdigit' : token_clean[0].isdigit(),
-                'digit.length' : token_clean.isdigit() * len(token), #should the features above be defined on token w/ punc removed?
+                'token.isstartdigit' : (False if len(token_clean)==0 else token_clean[0].isdigit()),
+                'digit.length' : token_clean.isdigit() * len(token_clean),
                 'token.ispunctuation' : (token in string.punctuation),
-                'token.endsinpunc' : (token[-1] in string.punctuation)
-                'end.comma' : (token[-1] == ',')
-                'token.length' : len(token),
+                'token.endsinpunc' : (token[-1] in string.punctuation),
+                'end.comma' : (token[-1] == ','),
+                'token.length' : len(token_clean),
                 #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
                 }
 
