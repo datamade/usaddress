@@ -188,6 +188,16 @@ if __name__ == '__main__' :
                         help="input csv with addresses", metavar="FILE")
     args = parser.parse_args()
 
+
+    # Check to make sure we can write to outfile
+    if os.path.isfile(args.outfile):
+        with open(args.outfile, 'r+' ) as f:
+            try :
+                tree = etree.parse(f)
+            except :
+                raise ValueError("%s does not seem to be a valid xml file"
+                                 % args.outfile)
+
     
     with open(args.infile, 'rU') as infile :
         reader = csv.reader(infile)
