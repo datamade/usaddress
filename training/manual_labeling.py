@@ -95,21 +95,26 @@ def manualTagging(preds, label_options, friendly_tag_dict):
         tagged_addr.append((token[0], xml_tag))
     return tagged_addr
 
-def list2XML(addr_list, collection) :
+def appendListToXML(addr_list, collection) :
     for addr in addr_list:
-        addr_xml = etree.Element('AddressString')
-        for token, label in addr:
-            if label == None or label == 'Null': #make this smarter
-                if len(addr_xml) > 0:
-                    addr_xml[-1].tail = token + ' '
-            else:
-                component_xml = etree.Element(label)
-                component_xml.text = token
-                component_xml.tail = ' '
-            addr_xml.append(component_xml)
-        addr_xml[-1].tail = ''
+        addr_xml = addr2XML(addr)
         collection.append(addr_xml)
     return collection
+
+def addr2XML(addr) :
+    addr_xml = etree.Element('AddressString')
+    for token, label in addr:
+        if label == None or label == 'Null': #make this smarter
+            if len(addr_xml) > 0:
+                addr_xml[-1].tail = token + ' '
+        else:
+            component_xml = etree.Element(label)
+            component_xml.text = token
+            component_xml.tail = ' '
+        addr_xml.append(component_xml)
+    addr_xml[-1].tail = ''
+    return addr_xml
+
 
 def stripFormatting(collection) :
     collection.text = None 
@@ -120,7 +125,7 @@ def stripFormatting(collection) :
     return collection
 
 
-def list2XMLfile(addr_list, filepath):
+def appendListToXMLfile(addr_list, filepath):
 
     if os.path.isfile(filepath):
         with open( filepath, 'r+' ) as f:
@@ -132,7 +137,7 @@ def list2XMLfile(addr_list, filepath):
         address_collection = etree.Element('AddressCollection')
 
 
-    address_collection = list2XML(addr_list, address_collection)
+    address_collection = appendListToXML(addr_list, address_collection)
 
 
     with open(filepath, 'w') as f :
@@ -205,5 +210,5 @@ if __name__ == '__main__' :
         address_strings = set([unidecode.unidecode(row[0]) for row in reader])
 
     tagged_addr_list, remaining_addrs = consoleLabel(address_strings, labels) 
-    list2XMLfile(tagged_addr_list, args.outfile)
+    appendListToXMLfile(tagged_addr_list, args.outfile)
     list2file(remaining_addrs, 'unlabeled.csv')
