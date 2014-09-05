@@ -68,5 +68,6 @@ def fuzzyEquals(addr,
     assert fuzzy_labels == labels
 
 def tokenEquals(addr_string, correct_tokens) :
-    print "ADDRESS: ", addr_string
+    print "ADDRESS:   ", addr_string
+    print "tokenized: ", tokenize(addr_string)
     assert tokenize(addr_string) == correct_tokens
