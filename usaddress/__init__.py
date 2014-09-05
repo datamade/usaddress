@@ -44,7 +44,7 @@ def tokenFeatures(token) :
 
     token_clean = re.sub(r'(^[\W]*)|([\W]*$)', '', token)
     features = {'token.lower' : token_clean.lower(), 
-                'token.nopunc' : re.sub(r'\W*', '', token.lower()),
+                'token.nopunc' : re.sub(r'[.]', '', token_clean.lower()),
                 'token.isupper' : token_clean.isupper(),
                 'token.islower' : token_clean.islower(), 
                 'token.istitle' : token_clean.istitle(), 

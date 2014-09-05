@@ -19,10 +19,10 @@ class TestUS50_2(object) :
         test_file = 'training/test_data/us50_test_tagged.xml'
 
         for address_text, components in parseTrainingData(test_file) :
-            _, labels_t = zip(*components)
-            _, labels = zip(*parse(address_text))
+            _, labels_true = zip(*components)
+            _, labels_pred = zip(*parse(address_text))
             
-            yield fuzzyEquals, address_text, labels_t, labels
+            yield fuzzyEquals, address_text, labels_pred, labels_true
 
 class TestTokenizing(object) :
     def test_Tokenizer(self):
@@ -51,8 +51,8 @@ def equals(addr,
     assert labels_pred == labels_true
 
 def fuzzyEquals(addr, 
-           labels_true, 
-           labels_pred) :
+                labels_pred,
+                labels_true) : 
     labels = []
     fuzzy_labels = []
     for label in labels_pred:
