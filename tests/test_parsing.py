@@ -5,7 +5,7 @@ from training.training import parseTrainingData
 class TestSynthetic(object) :
     def test_Parser(self):
 
-        test_file = 'training/test_data/synthetic_data_osm_data_xml.xml'
+        test_file = 'training/test_data/synthetic_osm_data_xml.xml'
 
         for address_text, components in parseTrainingData(test_file) :
             _, labels_true = zip(*components)
@@ -19,10 +19,10 @@ class TestUS50_2(object) :
         test_file = 'training/test_data/us50_test_tagged.xml'
 
         for address_text, components in parseTrainingData(test_file) :
-            _, labels_t = zip(*components)
-            _, labels = zip(*parse(address_text))
+            _, labels_true = zip(*components)
+            _, labels_pred = zip(*parse(address_text))
             
-            yield fuzzyEquals, address_text, labels_t, labels
+            yield fuzzyEquals, address_text, labels_pred, labels_true
 
 
 
@@ -33,8 +33,8 @@ def equals(addr,
     assert labels_pred == labels_true
 
 def fuzzyEquals(addr, 
-           labels_true, 
-           labels_pred) :
+                labels_pred,
+                labels_true) : 
     print "ADDRESS: ", addr
     labels = []
     fuzzy_labels = []

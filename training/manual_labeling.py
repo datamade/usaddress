@@ -95,9 +95,21 @@ def manualTagging(preds, label_options, friendly_tag_dict):
         tagged_addr.append((token[0], xml_tag))
     return tagged_addr
 
-
 def list2XMLfile(addr_list, filepath):
-    new_address_list = []
+
+    if os.path.isfile(filepath):
+        with open( filepath, 'r+' ) as f:
+            tree = etree.parse(filepath)
+            address_collection = tree.getroot()
+            address_collection.text = None # remove white space so we
+                                           # can pretty print later
+            for address in address_collection :
+                address.text = None
+                address.tail = None
+
+            
+    else:
+        address_collection = etree.Element('AddressCollection')
 
     for addr in addr_list:
         addr_xml = etree.Element('AddressString')
@@ -110,22 +122,15 @@ def list2XMLfile(addr_list, filepath):
                 token_xml = etree.Element(token[1])
                 token_xml.text = token[0]
                 token_xml.tail = ' '
-                xml_token_list.append(token_xml)
-        xml_token_list[-1].tail = ''
-        addr_xml.extend(xml_token_list)
-        new_address_list.append(addr_xml)
+            addr_xml.append(token_xml)
+        addr_xml[-1].tail = ''
+        address_collection.append(addr_xml)
 
-    if os.path.isfile(filepath):
-        with open( filepath, 'r+' ) as f:
-            tree = etree.parse(filepath)
-            address_collection = tree.getroot()
-            address_collection.extend(new_address_list)
-            f.write(etree.tostring(address_collection, pretty_print = True))
-    else:
-        with open( filepath, 'w' ) as f:
-            address_collection = etree.Element('AddressCollection')
-            address_collection.extend(new_address_list)
-            f.write(etree.tostring(address_collection, pretty_print = True))
+
+
+    with open(filepath, 'w') as f :
+        f.write(etree.tostring(address_collection, pretty_print = True)) 
+
 
 
 def list2file(addr_list, filepath):
@@ -170,16 +175,18 @@ if __name__ == '__main__' :
 
 
     parser = ArgumentParser(description="Label some addresses")
-    parser.add_argument(dest="filename", 
+    parser.add_argument(dest="infile", 
+                        help="input csv with addresses", metavar="FILE")
+    parser.add_argument(dest="outfile", 
                         help="input csv with addresses", metavar="FILE")
     args = parser.parse_args()
 
     
-    with open(args.filename, 'rU') as infile :
+    with open(args.infile, 'rU') as infile :
         reader = csv.reader(infile)
 
         address_strings = set([unidecode.unidecode(row[0]) for row in reader])
 
     tagged_addr_list, remaining_addrs = consoleLabel(address_strings, labels) 
-    list2XMLfile(tagged_addr_list, 'labeled.xml')
+    list2XMLfile(tagged_addr_list, args.outfile)
     list2file(remaining_addrs, 'unlabeled.csv')
