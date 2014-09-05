@@ -7,8 +7,7 @@ TAGGER = pycrfsuite.Tagger()
 TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
             + '/usaddr.crfsuite')
 
-def parse(address_string) :
-
+def tokenize(address_string) :
     re_tokens = re.compile(r"""
     \b\w[^\s,;]*(?=\b)[.,;]*   # ['F-H. '] -> ['F-H.'], ['ab,cd'] -> ['ab,']
     |
@@ -23,6 +22,15 @@ def parse(address_string) :
                            re.VERBOSE | re.UNICODE)
 
     tokens = re_tokens.findall(address_string)
+
+    if not tokens :
+        return []
+
+    return tokens
+
+def parse(address_string) :
+
+    tokens = tokenize(address_string)
 
     if not tokens :
         return []
