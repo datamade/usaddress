@@ -9,7 +9,7 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
-    \b[^\s,;]+[.,;]*         # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \b[^\s,;#]+[.,;]*         # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
     \#                       # [^'#abc'] -> ['#']
     """,
