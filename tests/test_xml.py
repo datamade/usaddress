@@ -8,8 +8,8 @@ class TestList2XML(unittest.TestCase) :
         XMLequals( [('#', 'foo'), ('1', 'foo'), ('Pinto', 'foo')], '<foo>#</foo> <foo>1</foo> <foo>Pinto</foo>')
 
     def test_none_tag(self):
-        XMLequals( [('Box', 'foo'), ('#', None), ('1', 'foo'), ('Pinto', 'foo')], '<foo>Box</foo># <foo>1</foo> <foo>Pinto</foo>')
-        XMLequals( [('#', None), ('1', 'foo'), ('Pinto', 'foo')], '# <foo>1</foo> <foo>Pinto</foo>')
+        XMLequals( [('Box', 'foo'), ('#', 'Null'), ('1', 'foo'), ('Pinto', 'foo')], '<foo>Box</foo> <Null>#</Null> <foo>1</foo> <foo>Pinto</foo>')
+        XMLequals( [('#', 'Null'), ('1', 'foo'), ('Pinto', 'foo')], '<Null>#</Null> <foo>1</foo> <foo>Pinto</foo>')
        
        
 def XMLequals(labeled_addr, xml):

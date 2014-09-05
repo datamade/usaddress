@@ -8,7 +8,6 @@ def consoleLabel(raw_addr, label_options):
 
     friendly_tag_dict = dict((label[1], label[0])
                             for label in label_options)
-    friendly_tag_dict['Null'] = friendly_tag_dict[None] #this could be smarter
     valid_responses = ['y', 'n', 's', 'f', '']
     addrs_left_to_tag = []
     finished = False
@@ -104,14 +103,10 @@ def appendListToXML(addr_list, collection) :
 def addr2XML(addr) :
     addr_xml = etree.Element('AddressString')
     for token, label in addr:
-        if label == None or label == 'Null': #make this smarter
-            if len(addr_xml) > 0:
-                addr_xml[-1].tail = token + ' '
-        else:
-            component_xml = etree.Element(label)
-            component_xml.text = token
-            component_xml.tail = ' '
-            addr_xml.append(component_xml)
+        component_xml = etree.Element(label)
+        component_xml.text = token
+        component_xml.tail = ' '
+        addr_xml.append(component_xml)
     addr_xml[-1].tail = ''
     return addr_xml
 
@@ -158,7 +153,7 @@ if __name__ == '__main__' :
     import unidecode
 
     labels = [
-        ['not addr', None],
+        ['not addr', 'Null'],
         ['addr #', 'AddressNumber'],
         ['st dir pre', 'StreetNamePreDirectional'],
         ['st dir post', 'StreetNamePostDirectional'],

@@ -36,19 +36,20 @@ def parse(address_string) :
 
 def tokenFeatures(token) :
 
-    token_clean = re.sub(r'(^[\W]*)|([\W]*$)', '', token)
+    token_clean = re.sub(r'(^[\W]*)|([\s,;]$)', '', token)
     features = {'token.lower' : token_clean.lower(), 
                 'token.nopunc' : re.sub(r'[.]', '', token_clean.lower()),
                 'token.isupper' : token_clean.isupper(),
                 'token.islower' : token_clean.islower(), 
                 'token.istitle' : token_clean.istitle(), 
                 'token.isalldigits' : token_clean.isdigit(),
-                'token.hasadigit' : any(char.isdigit() for char in token_clean),
-                'token.isstartdigit' : (False if len(token_clean)==0 else token_clean[0].isdigit()),
-                'digit.length' : token_clean.isdigit() * len(token_clean),
-                'token.ispunctuation' : (token in string.punctuation),
+                'token.mixdigit' : (any(char.isdigit() for char in token_clean)
+                                    and
+                                    any(not char.isdigit for char in token_clean)),
+                'digit.length' : (len(token_clean) if token_clean.isdigit() 
+                                  else False),
                 'token.endsinpunc' : (token[-1] in string.punctuation),
-                'end.comma' : (token[-1] == ','),
+                'end.comma' : token[-1] in (',', ';'),
                 'token.length' : len(token_clean),
                 #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
                 }
@@ -64,12 +65,12 @@ def addr2features(address):
         next_feature = tokenFeatures(token)
 
         for key, value in next_feature.items() :
-            feature_sequence[-1][('next', key)] = value
+            feature_sequence[-1]['next.%s' % key] = value
 
         feature_sequence.append(next_feature.copy())
 
         for key, value in previous_feature.items() :
-            feature_sequence[-1][('previous', key)] = value
+            feature_sequence[-1]['previous.%s' % key] = value
 
         previous_feature = next_feature
 
@@ -77,8 +78,8 @@ def addr2features(address):
     feature_sequence[-1]['address.end'] = True
 
     if len(feature_sequence) > 1 :
-        feature_sequence[1][('previous', 'address.start')] = True
-        feature_sequence[-2][('next', 'address.end')] = True
+        feature_sequence[1]['previous.address.start'] = True
+        feature_sequence[-2]['next.address.end'] = True
 
     feature_sequence = [[str(each) for each in feature.items()]
                          for feature in feature_sequence]
