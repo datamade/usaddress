@@ -10,15 +10,15 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 def parse(address_string) :
 
     re_tokens = re.compile(r"""
-    \b\w[^\s,;]*(?=\b)[\.,;]*   # 'F-H. ' -> ['F-H.']
+    \b\w[^\s,;]*(?=\b)[.,;]*   # ['F-H. '] -> ['F-H.'], ['ab,cd'] -> ['ab,']
     |
-    \b[^\s,;]+[\.,;]+
+    \b[^\s,;]+[.,;]+           # ['ab,cd'] -> ['cd']
     |
-    [^\w\s](?=\s)         # [', ']  -> [',']
+    [^\w\s](?=\s)              # [', ']  -> [',']
     |
-    (?<=\s)\#             # ['#f ']  -> ['#']
+    (?<=\s)\#                  # ['#f ']  -> ['#']
     |
-    \#
+    \#                         # [^'#abc'] -> ['#']
     """,
                            re.VERBOSE | re.UNICODE)
 
