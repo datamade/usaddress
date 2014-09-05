@@ -111,7 +111,7 @@ def addr2XML(addr) :
             component_xml = etree.Element(label)
             component_xml.text = token
             component_xml.tail = ' '
-        addr_xml.append(component_xml)
+            addr_xml.append(component_xml)
     addr_xml[-1].tail = ''
     return addr_xml
 
