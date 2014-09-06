@@ -11,7 +11,7 @@ def tokenize(address_string) :
     re_tokens = re.compile(r"""
     \b[^\s,;#]+[.,;]*         # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
-    \#                       # [^'#abc'] -> ['#']
+    [#&]                      # [^'#abc'] -> ['#']
     """,
                            re.VERBOSE | re.UNICODE)
 

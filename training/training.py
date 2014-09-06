@@ -30,6 +30,7 @@ def parseTrainingData(filepath):
     for address in address_collection :
         address_components = []
         address_text = etree.tostring(address, method='text')
+        address_text = address_text.replace('&#38;', '&')
         for component in list(address) :
             address_components.append([component.text, component.tag])
             if component.tail and component.tail.strip() :

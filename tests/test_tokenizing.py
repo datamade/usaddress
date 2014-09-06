@@ -33,5 +33,8 @@ class TestTokenizing(unittest.TestCase) :
 
         assert tokenize('222 W Merchandise Mart Plaza Chicago IL 60654') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza', 'Chicago', 'IL', '60654' ]
 
+    def test_ampersand(self) :
+        assert tokenize('123 & 456') == ['123', '&', '456']
+
 if __name__ == '__main__' :
     unittest.main()    
