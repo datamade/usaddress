@@ -171,12 +171,14 @@ if __name__ == '__main__' :
         ['landmark', 'LandmarkName'],
         ['box group type', 'USPSBoxGroupType'],
         ['box group id', 'USPSBoxGroupID'],
+        ['address number prefix', 'AddressNumberPrefix'],
         ['address number suffix', 'AddressNumberSuffix'],
         ['subaddress id', 'SubaddressIdentifier'],
         ['subaddress type', 'SubaddressType'],
         ['recipient', 'Recipient'],
         ['streetname modifer, pre', 'StreetNamePreModifier'],
-        ['building name', 'BuildingName']
+        ['building name', 'BuildingName'],
+        ['corner/junction', 'CornerOf']
 
     ]
 
