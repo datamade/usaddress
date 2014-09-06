@@ -36,52 +36,51 @@ def parse(address_string) :
 
 def tokenFeatures(token) :
 
-    token_clean = re.sub(r'(^[\W]*)|([\s,;]$)', '', token)
+    token_clean = re.sub(r'(^[\W]*)|([\s,;]$)', u'', token)
+    token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'token.lower' : token_clean.lower(), 
-                'token.nopunc' : re.sub(r'[.]', '', token_clean.lower()),
+                'token.nopunc' : token_abbrev,
                 'token.isupper' : token_clean.isupper(),
                 'token.islower' : token_clean.islower(), 
                 'token.istitle' : token_clean.istitle(), 
                 'token.isalldigits' : token_clean.isdigit(),
-                'token.mixdigit' : (any(char.isdigit() for char in token_clean)
-                                    and
-                                    any(not char.isdigit for char in token_clean)),
-                'digit.length' : (len(token_clean) if token_clean.isdigit() 
-                                  else False),
+                'token.mixeddigit' :  bool(re.match(r'\d+[\W\S]\d+', 
+                                                    token_clean)),
+                'digit.length' : unicode(len(token_clean)
+                                         if token_clean.isdigit() 
+                                         else False),
                 'token.endsinpunc' : (token[-1] in string.punctuation),
-                'end.comma' : token[-1] in (',', ';'),
-                'token.length' : len(token_clean),
-                #'token.isdirection' : (token.lower in ['north', 'east', 'south', 'west', 'n', 'e', 's', 'w'])
+                'end.comma' : token[-1] in (u',', u';'),
+                'token.length' : unicode(len(token_clean)),
                 }
 
     return features
 
 def addr2features(address):
     
-    previous_feature = tokenFeatures(address[0])
-    feature_sequence = [previous_feature]
+    feature_sequence = [tokenFeatures(address[0])]
+    previous_features = feature_sequence[-1].copy()
 
     for token in address[1:] :
-        next_feature = tokenFeatures(token)
+        token_features = tokenFeatures(token) 
+        current_features = token_features.copy()
 
-        for key, value in next_feature.items() :
-            feature_sequence[-1]['next.%s' % key] = value
+        feature_sequence[-1]['next'] = current_features
+        token_features['previous'] = previous_features
+            
+        feature_sequence.append(token_features)
 
-        feature_sequence.append(next_feature.copy())
-
-        for key, value in previous_feature.items() :
-            feature_sequence[-1]['previous.%s' % key] = value
-
-        previous_feature = next_feature
+        previous_features = current_features
 
     feature_sequence[0]['address.start'] = True
     feature_sequence[-1]['address.end'] = True
 
     if len(feature_sequence) > 1 :
-        feature_sequence[1]['previous.address.start'] = True
-        feature_sequence[-2]['next.address.end'] = True
+        feature_sequence[1]['previous']['address.start'] = True
+        feature_sequence[-2]['next']['address.end'] = True
 
-    feature_sequence = [[str(each) for each in feature.items()]
-                         for feature in feature_sequence]
+    import pprint
+    #pp = pprint.PrettyPrinter(indent=4)
+    #pp.pprint(feature_sequence)
 
     return feature_sequence
