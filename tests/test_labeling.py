@@ -2,6 +2,7 @@ from usaddress import parse
 import training
 from training.training import parseTrainingData
 
+
 class TestSynthetic(object) :
     def test_Parser(self):
 
@@ -38,6 +39,8 @@ def fuzzyEquals(addr,
     for label in labels_pred:
         if label.startswith('StreetName') :
             fuzzy_labels.append('StreetName')
+        elif label.startswith('AddressNumber') :
+            fuzzy_labels.append('AddressNumber')
         else:
             fuzzy_labels.append(label)
     for label in labels_true:
@@ -45,4 +48,5 @@ def fuzzyEquals(addr,
     print "ADDRESS:    ", addr
     print "fuzzy pred: ", fuzzy_labels
     print "true:       ", labels
+
     assert fuzzy_labels == labels
