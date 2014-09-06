@@ -9,9 +9,9 @@ TAGGER.open(os.path.split(os.path.abspath(__file__))[0]
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
-    \b[^\s,;#]+[.,;]*         # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \b[^\s,;#]+[.,;]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
-    [#&]                      # [^'#abc'] -> ['#']
+    [#&]                # [^'#abc'] -> ['#']
     """,
                            re.VERBOSE | re.UNICODE)
 
@@ -38,20 +38,22 @@ def tokenFeatures(token) :
 
     token_clean = re.sub(r'(^[\W]*)|([\s,;]$)', u'', token)
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
-    features = {'token.lower' : token_clean.lower(), 
-                'token.nopunc' : token_abbrev,
-                'token.isupper' : token_clean.isupper(),
-                'token.islower' : token_clean.islower(), 
-                'token.istitle' : token_clean.istitle(), 
-                'token.isalldigits' : token_clean.isdigit(),
-                'token.mixeddigit' :  bool(re.match(r'\d+[\W\S]\d+', 
-                                                    token_clean)),
+    features = {'lower' : token_clean.lower(), 
+                'nopunc' : token_abbrev,
+                'isupper' : token_clean.isupper(),
+                'islower' : token_clean.islower(), 
+                'istitle' : token_clean.istitle(), 
+                'isalldigits' : token_clean.isdigit(),
+                'split_digit' :  bool(re.match(r'\d+[\W\S]+\d+', 
+                                               token_clean)),
                 'digit.length' : unicode(len(token_clean)
                                          if token_clean.isdigit() 
                                          else False),
-                'token.endsinpunc' : (token[-1] in string.punctuation),
-                'end.comma' : token[-1] in (u',', u';'),
-                'token.length' : unicode(len(token_clean)),
+                'endsinpunc' : token[-1] in string.punctuation,
+                'end.delim' : token[-1] in (u',', u';'),
+                'wordl.length' : unicode(len(token_clean)
+                                         if not token_clean.isdigit()
+                                         else False),
                 }
 
     return features
@@ -78,9 +80,5 @@ def addr2features(address):
     if len(feature_sequence) > 1 :
         feature_sequence[1]['previous']['address.start'] = True
         feature_sequence[-2]['next']['address.end'] = True
-
-    import pprint
-    #pp = pprint.PrettyPrinter(indent=4)
-    #pp.pprint(feature_sequence)
 
     return feature_sequence
