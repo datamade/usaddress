@@ -599,4 +599,6 @@
   <AddressString><AddressNumber>720</AddressNumber> <AddressNumberSuffix>1/2</AddressNumberSuffix> <StreetName>Clark</StreetName> <StreetNamePostType>Street,</StreetNamePostType> <PlaceName>Evanston,</PlaceName> <ZipCode>60201</ZipCode></AddressString>
   <AddressString><LandmarkName>Bristol</LandmarkName> <LandmarkName>Harbor,</LandmarkName> <PlaceName>Bristol,</PlaceName> <StateName>RI</StateName> <ZipCode>02809</ZipCode></AddressString>
   <AddressString><LandmarkName>Meriden</LandmarkName> <LandmarkName>Square,</LandmarkName> <PlaceName>Meriden,</PlaceName> <StateName>CT</StateName> <ZipCode>06450</ZipCode></AddressString>
+  <AddressString><StreetNamePreType>Hghwy</StreetNamePreType> <StreetName>54</StreetName> <IntersectionSeparator>And</IntersectionSeparator> <StreetNamePreDirectional>East</StreetNamePreDirectional> <StreetName>Hckry,</StreetName> <PlaceName>Nevada,</PlaceName> <StateName>MO</StateName> <ZipCode>64772</ZipCode></AddressString>
+  <AddressString><AddressNumber>6189</AddressNumber> <StreetNamePreType>US</StreetNamePreType> <StreetNamePreType>Highway</StreetNamePreType> <StreetName>18</StreetName> <IntersectionSeparator>And</IntersectionSeparator> <StreetName>15,</StreetName> <PlaceName>Dodgeville,</PlaceName> <StateName>WI</StateName> <ZipCode>53533</ZipCode></AddressString>
 </AddressCollection>
