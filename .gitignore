@@ -52,4 +52,10 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-usaddr.crfsuite
+*.crfsuite
+*.csv
+*.txt
+
+# temp files
+*~
+*#
