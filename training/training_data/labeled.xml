@@ -572,4 +572,15 @@
   <AddressString><USPSBoxType>Route</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>15,</USPSBoxID> <PlaceName>Cambridge,</PlaceName> <StateName>VT</StateName> <ZipCode>05444</ZipCode></AddressString>
   <AddressString><StreetNamePreType>US</StreetNamePreType> <StreetName>6</StreetName> <Null>Ind</Null> <Null>15,</Null> <PlaceName>Milford,</PlaceName> <StateName>IN</StateName> <ZipCode>46542</ZipCode></AddressString>
   <AddressString><AddressNumber>2101</AddressNumber> <StreetName>Louisiana</StreetName> <StreetNamePostType>Boulevard</StreetNamePostType> <StreetNamePostDirectional>Northeast,</StreetNamePostDirectional> <PlaceName>Albuquerque,</PlaceName> <StateName>NM</StateName> <ZipCode>87110</ZipCode></AddressString>
+  <AddressString><AddressNumber>3665</AddressNumber> <StreetName>Chesnut</StreetName> <StreetNamePostType>Drive,</StreetNamePostType> <OccupancyIdentifier>C-5</OccupancyIdentifier></AddressString>
+  <AddressString><USPSBoxType>POB</USPSBoxType> <ZipCode>19060</ZipCode></AddressString>
+  <AddressString><AddressNumber>ONE</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>JEFFERSON</StreetName> <StreetNamePostType>AVE</StreetNamePostType></AddressString>
+  <AddressString><AddressNumberPrefix>#</AddressNumberPrefix> <AddressNumber>2</AddressNumber> <StreetName>TURNER</StreetName> <StreetNamePostType>RD</StreetNamePostType></AddressString>
+  <AddressString><LandmarkName>Wrigley</LandmarkName> <LandmarkName>Field</LandmarkName></AddressString>
+  <AddressString><AddressNumber>401</AddressNumber> <StreetNamePreDirectional>SW</StreetNamePreDirectional> <StreetName>Water</StreetName> <StreetNamePostType>Street,</StreetNamePostType> <OccupancyIdentifier>Unit508</OccupancyIdentifier></AddressString>
+  <AddressString><BuildingName>1015</BuildingName> <BuildingName>FINANCIAL</BuildingName> <BuildingName>CENTER</BuildingName> <AddressNumber>505</AddressNumber> <StreetName>20TH</StreetName> <StreetNamePostType>ST</StreetNamePostType> <StreetNamePostDirectional>N</StreetNamePostDirectional></AddressString>
+  <AddressString><AddressNumber>11484</AddressNumber> <StreetName>WASHINGTON</StreetName> <StreetNamePostType>PLAZA</StreetNamePostType> <StreetNamePostDirectional>WEST</StreetNamePostDirectional></AddressString>
+  <AddressString><AddressNumber>4582</AddressNumber> <StreetNamePreDirectional>S</StreetNamePreDirectional> <StreetName>ULSTER</StreetName> <StreetName>ST</StreetName> <StreetNamePostType>PKWY</StreetNamePostType> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>1100</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>6910</AddressNumber> <OccupancyType>#</OccupancyType> <OccupancyIdentifier>G</OccupancyIdentifier> <StreetName>MARY</StreetName> <StreetName>CAROLINE</StreetName> <StreetNamePostType>CIRCLE</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>1600</AddressNumber> <BuildingName>CRESTAR</BuildingName> <BuildingName>BANK</BuildingName> <BuildingName>BLDG</BuildingName></AddressString>
 </AddressCollection>
