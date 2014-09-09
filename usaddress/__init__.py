@@ -3,6 +3,11 @@ import string
 import pycrfsuite
 import re
 
+DIRECTIONS = set(['n', 's', 'e', 'w',
+                  'ne', 'nw', 'se', 'sw',
+                  'north', 'south', 'east', 'west', 
+                  'northeast', 'northwest', 'southeast', 'southwest'])
+
 TAGGER = pycrfsuite.Tagger()
 TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
             + '/usaddr.crfsuite')
@@ -51,9 +56,10 @@ def tokenFeatures(token) :
                                          else False),
                 'endsinpunc' : token[-1] in string.punctuation,
                 'end.delim' : token[-1] in (u',', u';'),
-                'wordl.length' : unicode(len(token_clean)
-                                         if not token_clean.isdigit()
-                                         else False),
+                'word.length' : unicode(len(token_clean)
+                                        if not token_clean.isdigit()
+                                        else False),
+                'directional' : token_abbrev in DIRECTIONS,
                 }
 
     return features
