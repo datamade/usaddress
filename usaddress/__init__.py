@@ -60,6 +60,7 @@ def tokenFeatures(token) :
                                         if not token_clean.isdigit()
                                         else False),
                 'directional' : token_abbrev in DIRECTIONS,
+                'has.vowels'  : bool(set(token_clean) & set('aeiou')),
                 }
 
     return features
