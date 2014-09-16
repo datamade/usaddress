@@ -2,6 +2,7 @@ import os
 import string
 import pycrfsuite
 import re
+from collections import OrderedDict
 
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
@@ -11,6 +12,31 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
 TAGGER = pycrfsuite.Tagger()
 TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
             + '/usaddr.crfsuite')
+
+def parse(address_string) :
+
+    tokens = tokenize(address_string)
+
+    if not tokens :
+        return []
+
+    features = addr2features(tokens)
+
+    tags = TAGGER.tag(features)
+    return zip(tokens, tags)
+
+def tag(address_string) :
+    tagged_address = OrderedDict()
+    for token, label in parse(address_string) :
+        tagged_address.setdefault(label, []).append(token)
+
+    for token in tagged_address :
+        component = ' '.join(tagged_address[token])
+        component = component.strip(" ,;")
+        tagged_address[token] = component
+
+    return tagged_address 
+
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
@@ -27,17 +53,6 @@ def tokenize(address_string) :
 
     return tokens
 
-def parse(address_string) :
-
-    tokens = tokenize(address_string)
-
-    if not tokens :
-        return []
-
-    features = addr2features(tokens)
-
-    tags = TAGGER.tag(features)
-    return zip(tokens, tags)
 
 def tokenFeatures(token) :
 

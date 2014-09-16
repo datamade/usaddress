@@ -715,4 +715,11 @@
   <AddressString><AddressNumber>340</AddressNumber> <StreetName>ROYAL</StreetName> <StreetName>POINCIANA</StreetName> <StreetNamePostType>WAY</StreetNamePostType> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>305</OccupancyIdentifier></AddressString>
   <AddressString><CornerOf>CORNER</CornerOf> <CornerOf>OF</CornerOf> <StreetName>CAVE</StreetName> <IntersectionSeparator>&amp;</IntersectionSeparator> <StreetName>ZERKEL</StreetName> <StreetNamePostType>STS</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>9820-B</AddressNumber> <StreetName>MIDLOTHIAN</StreetName> <StreetNamePostType>TURNPIKE</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>7361</AddressNumber> <StreetName>BOOKER</StreetName> <StreetName>T</StreetName> <StreetName>WASHINGTON</StreetName> <StreetNamePostType>HWY</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>1114</AddressNumber> <StreetNamePreType>AVENUE</StreetNamePreType> <StreetName>OF</StreetName> <StreetName>THE</StreetName> <StreetName>AMERICAS</StreetName> <OccupancyIdentifier>27TH</OccupancyIdentifier> <OccupancyType>FL</OccupancyType></AddressString>
+  <AddressString><AddressNumber>961</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>A1A</StreetName> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>158</USPSBoxID></AddressString>
+  <AddressString><AddressNumber>4004</AddressNumber> <StreetName>OCEAN</StreetName> <StreetName>FRONT</StreetName> <OccupancyType>APT</OccupancyType> <OccupancyIdentifier>410</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>3101</AddressNumber> <StreetName>VIRGINIA</StreetName> <StreetName>BEACH</StreetName> <StreetNamePostType>BLVD</StreetNamePostType> <OccupancyType>UNIT</OccupancyType> <OccupancyIdentifier>101-102</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>5555</AddressNumber> <StreetName>SAN</StreetName> <StreetName>FELIPE</StreetName></AddressString>
+  <AddressString><AddressNumber>1821</AddressNumber> <StreetName>AVON</StreetName> <StreetNamePostType>ST</StreetNamePostType> <StreetNamePostModifier>EXT</StreetNamePostModifier> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>200</OccupancyIdentifier></AddressString>
 </AddressCollection>
