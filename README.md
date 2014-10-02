@@ -2,6 +2,11 @@ usaddress
 =================
 usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
 
+To install
+```bash
+> pip install usaddress
+```
+
 To build and test development code.
 
 ```bash
