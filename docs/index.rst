@@ -9,6 +9,7 @@ usaddress |release|
 
 usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
 
+
    .. code:: python
 
       >>> import usaddress
@@ -20,6 +21,16 @@ usaddress is a python library for parsing unstructured address strings into addr
        ('100', 'OccupancyIdentifier'), 
        ('Chicago,', 'PlaceName'), 
        ('IL', 'StateName')]
+
+Installation
+============
+
+.. code-block:: bash
+
+   pip install usaddress
+
+Details
+=======
 
 The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard <http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard/>`__, and usaddress knows about the following types of components: 
 
