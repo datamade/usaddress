@@ -61,6 +61,14 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 * BuildingName
 
 
+Important links
+===============
+
+Documentation: http://usaddress.rtfd.org/
+Repository: https://github.com/datamade/us-address-parser
+Issues: https://github.com/datamade/us-address-parser/issues
+
+
 Indices and tables
 ==================
 
