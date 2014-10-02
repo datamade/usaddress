@@ -24,3 +24,11 @@ Here's how you use it:
  ('Chicago,', 'PlaceName'), 
  ('IL', 'StateName')]
 ```
+
+Important links
+===============
+
+* Documentation: http://usaddress.rtfd.org/
+* Repository: https://github.com/datamade/us-address-parser
+* Issues: https://github.com/datamade/us-address-parser/issues
+* Distribution: https://pypi.python.org/pypi/usaddress
