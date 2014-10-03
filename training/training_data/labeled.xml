@@ -626,7 +626,6 @@
   <AddressString><AddressNumber>33O</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>WABASH</StreetName></AddressString>
   <AddressString><AddressNumber>4800</AddressNumber> <StreetName>Fair</StreetName> <StreetName>Elms</StreetName></AddressString>
   <AddressString><AddressNumber>110</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>Edwards</StreetName> <USPSBoxType>P.O.</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>5000</USPSBoxID></AddressString>
-  <AddressString><BuildingName>222</BuildingName> <BuildingName>Merchandis</BuildingName> <BuildingName>Mart</BuildingName> <BuildingName>Plazaz</BuildingName></AddressString>
   <AddressString><AddressNumber>5536</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>103</StreetName> <StreetNamePostType>Place</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>750</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetNamePreType>County</StreetNamePreType> <StreetNamePreType>Road</StreetNamePreType> <OccupancyIdentifier>1220</OccupancyIdentifier></AddressString>
   <AddressString><AddressNumber>3218</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetName>Irving</StreetName> <StreetName>Pk.</StreetName> <StreetNamePostType>Rd.</StreetNamePostType></AddressString>
