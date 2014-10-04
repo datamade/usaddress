@@ -3,15 +3,19 @@ import string
 import pycrfsuite
 import re
 from collections import OrderedDict
+import warnings
 
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
                   'north', 'south', 'east', 'west', 
                   'northeast', 'northwest', 'southeast', 'southwest'])
 
-TAGGER = pycrfsuite.Tagger()
-TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
-            + '/usaddr.crfsuite')
+try :
+    TAGGER = pycrfsuite.Tagger()
+    TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
+                + '/usaddr.crfsuite')
+except IOError :
+    warnings.warn("You must train the model (run training/training.py) and create the usaddr.crfsuite file before you can use the parse and tag methods")
 
 def parse(address_string) :
 
