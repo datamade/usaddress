@@ -3,30 +3,20 @@ import string
 import pycrfsuite
 import re
 from collections import OrderedDict
+import warnings
 
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
                   'north', 'south', 'east', 'west', 
                   'northeast', 'northwest', 'southeast', 'southwest'])
 
-TAGGER = None
-
-def load_tagger(name=None):
-    global TAGGER
+try :
     TAGGER = pycrfsuite.Tagger()
-    if name is None:
-        name = os.path.join(os.path.split(os.path.abspath(__file__))[0],
-                            '/usaddr.crfsuite')
-    TAGGER.open(name)
+    TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
+                + '/usaddr.crfsuite')
+except IOError :
+    warnings.warn("You must train the model (run training/training.py) and create the usaddr.crfsuite file before you can use the parse and tag methods")
 
-def _check_tagger_exists(func, *args, **kwargs):
-    def _do_check(*args, **kwargs):
-        if TAGGER is None:
-            raise ValueError('A tagger model has not been loaded from file.')
-        func()
-    return _do_check
-
-@_check_tagger_exists()
 def parse(address_string) :
 
     tokens = tokenize(address_string)
@@ -39,7 +29,6 @@ def parse(address_string) :
     tags = TAGGER.tag(features)
     return zip(tokens, tags)
 
-@_check_tagger_exists
 def tag(address_string) :
     tagged_address = OrderedDict()
     for token, label in parse(address_string) :
