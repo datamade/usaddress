@@ -30,6 +30,13 @@ Here's how you use it:
  ('IL', 'StateName')]
 ```
 
+Notes
+===============
+
+**What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
+
+**What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
+
 Important links
 ===============
 
