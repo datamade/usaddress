@@ -6,7 +6,7 @@ from lxml import etree
 
 NULL_TAG = 'Null'
 
-def trainModel(training_data, model_file) :
+def trainModel(training_data, model_file, params_to_set=dict()) :
 
     X = []
     Y = []
@@ -17,7 +17,7 @@ def trainModel(training_data, model_file) :
         Y.append(labels)
 
     #train model
-    trainer = pycrfsuite.Trainer(verbose=False)
+    trainer = pycrfsuite.Trainer(verbose=False, params=params_to_set)
     for xseq, yseq in zip(X, Y):
         trainer.append(xseq, yseq)
 
@@ -26,7 +26,7 @@ def trainModel(training_data, model_file) :
 def parseTrainingData(filepath):
     tree = etree.parse(filepath)
     address_collection = tree.getroot()
-	
+
     for address in address_collection :
         address_components = []
         address_text = etree.tostring(address, method='text')
