@@ -17,7 +17,7 @@ def mean_scores_over_crossvalidation(n=5, params_to_set=dict()):
     for i, (train, test) in enumerate(cv):
         print 'Doing fold %d' % i
         trainModel(itemgetter(*train)(data), model_path)
-        usaddress.load_tagger(model_path)
+        reload(usaddress) # tagger object is defined at the module level, update now
 
         y_true = []
         y_pred = []
@@ -30,12 +30,9 @@ def mean_scores_over_crossvalidation(n=5, params_to_set=dict()):
                 # Let's pretend this never happened
                 # print 'WARNING: data tokenized incorrectly'
                 continue
-            predictions = usaddress.tag(address_text)
-
-            for pred_labels, pred_tokens in predictions.items():
-                for _ in usaddress.tokenize(pred_tokens):
-                    y_pred.append(pred_labels)
-            y_true.extend(list(labels))
+            predictions = usaddress.parse(address_text)
+            y_pred.extend(x[1] for x in predictions)
+            y_true.extend(labels)
             assert len(y_pred) == len(y_true)
 
         # print classification_report(y_true, y_pred)
