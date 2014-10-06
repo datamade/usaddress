@@ -12,8 +12,9 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
 
 try :
     TAGGER = pycrfsuite.Tagger()
-    TAGGER.open(os.path.split(os.path.abspath(__file__))[0] 
-                + '/usaddr.crfsuite')
+    path = os.path.split(os.path.abspath(__file__))[0] + '/usaddr.crfsuite'
+    print(path)
+    TAGGER.open(path)
 except IOError :
     warnings.warn("You must train the model (run training/training.py) and create the usaddr.crfsuite file before you can use the parse and tag methods")
 
@@ -70,12 +71,12 @@ def tokenFeatures(token) :
                 'isalldigits' : token_clean.isdigit(),
                 'split_digit' :  bool(re.match(r'\d+[\W\S]+\d+', 
                                                token_clean)),
-                'digit.length' : unicode(len(token_clean)
+                'digit.length' : (len(token_clean)
                                          if token_clean.isdigit() 
                                          else False),
                 'endsinpunc' : token[-1] in string.punctuation,
                 'end.delim' : token[-1] in (u',', u';'),
-                'word.length' : unicode(len(token_clean)
+                'word.length' : (len(token_clean)
                                         if not token_clean.isdigit()
                                         else False),
                 'directional' : token_abbrev in DIRECTIONS,
