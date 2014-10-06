@@ -8,7 +8,7 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 We currently only support `python 2.7`
 
-To install
+### Installation
 ```bash
 > pip install usaddress
 ```
@@ -22,7 +22,7 @@ To build and test development code.
 > nosetests .
 ```
 
-Here's how you use it:
+### Usage
 
 ```python
 >>> import usaddress
@@ -36,30 +36,29 @@ Here's how you use it:
  ('IL', 'StateName')]
 ```
 
-Important links
-===============
+### Important links
 
 * Documentation: http://usaddress.rtfd.org/
 * Repository: https://github.com/datamade/us-address-parser
 * Issues: https://github.com/datamade/us-address-parser/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
 
-## Team
+### Team
 
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
 
-## Errors / Bugs
+### Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
 [Report it here](https://github.com/datamade/us-address-parser/issues)
 
-## Note on Patches/Pull Requests
+### Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
 * Send us a pull request. Bonus points for topic branches.
 
-## Copyright
+### Copyright
 
 Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/us-address-parser/blob/master/LICENSE).
