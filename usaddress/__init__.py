@@ -13,7 +13,6 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
 try :
     TAGGER = pycrfsuite.Tagger()
     path = os.path.split(os.path.abspath(__file__))[0] + '/usaddr.crfsuite'
-    print(path)
     TAGGER.open(path)
 except IOError :
     warnings.warn("You must train the model (run training/training.py) and create the usaddr.crfsuite file before you can use the parse and tag methods")
