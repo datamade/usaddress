@@ -43,6 +43,15 @@ def parseTrainingData(filepath):
 
 
 def get_data_sklearn_format(path='training/training_data/labeled.xml'):
+    """
+    Parses the specified data file and returns it in sklearn format.
+    :param path:
+    :return: tuple of:
+                1) list of training addresses, each of which is a string
+                2) list of gold standard labels, each of which is a tuple
+                of strings, one for each token in the corresponding training
+                address
+    """
     data = list(parseTrainingData(path))
     random.shuffle(data)
 
