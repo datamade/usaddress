@@ -40,7 +40,7 @@ To build and test development code.
 
 * Documentation: http://usaddress.rtfd.org/
 * Repository: https://github.com/datamade/usaddress
-* Issues: https://github.com/datamade/us-address-parser/issues
+* Issues: https://github.com/datamade/usaddress/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
 
 ### Team
