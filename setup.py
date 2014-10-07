@@ -6,7 +6,7 @@ except ImportError :
 
 setup(
     version='0.1.1',
-    url='https://github.com/datamade/us-address-parser',
+    url='https://github.com/datamade/usaddress',
     description='Parse US addresses using conditional random fields',
     name='usaddress',
     packages=['usaddress'],
