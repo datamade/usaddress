@@ -70,12 +70,12 @@ def tokenFeatures(token) :
                 'isalldigits' : token_clean.isdigit(),
                 'split_digit' :  bool(re.match(r'\d+[\W\S]+\d+', 
                                                token_clean)),
-                'digit.length' : (len(token_clean)
+                'digit.length' : unicode(len(token_clean)
                                          if token_clean.isdigit() 
                                          else False),
                 'endsinpunc' : token[-1] in string.punctuation,
                 'end.delim' : token[-1] in (u',', u';'),
-                'word.length' : (len(token_clean)
+                'word.length' : unicode(len(token_clean)
                                         if not token_clean.isdigit()
                                         else False),
                 'directional' : token_abbrev in DIRECTIONS,
