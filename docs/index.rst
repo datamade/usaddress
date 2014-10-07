@@ -65,8 +65,8 @@ Important links
 ===============
 
 * Documentation: http://usaddress.rtfd.org/
-* Repository: https://github.com/datamade/us-address-parser
-* Issues: https://github.com/datamade/us-address-parser/issues
+* Repository: https://github.com/datamade/usaddress
+* Issues: https://github.com/datamade/usaddress/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
 
 Indices and tables
