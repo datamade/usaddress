@@ -39,19 +39,20 @@ To build and test development code.
 ### Important links
 
 * Documentation: http://usaddress.rtfd.org/
-* Repository: https://github.com/datamade/us-address-parser
-* Issues: https://github.com/datamade/us-address-parser/issues
+* Repository: https://github.com/datamade/usaddress
+* Issues: https://github.com/datamade/usaddress/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
 
 ### Team
 
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
+* [Miroslav Batchkarov](http://mbatchkarov.github.io), University of Sussex
 
 ### Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
-[Report it here](https://github.com/datamade/us-address-parser/issues)
+[Report it here](https://github.com/datamade/usaddress/issues)
 
 ### Note on Patches/Pull Requests
  
@@ -61,4 +62,4 @@ If something is not behaving intuitively, it is a bug, and should be reported.
 
 ### Copyright
 
-Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/us-address-parser/blob/master/LICENSE).
+Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).
