@@ -44,7 +44,7 @@ def tag(address_string) :
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
-    \b[^\s,;#]+[.,;]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \(*\b[^\s,;#(]+[.,;]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
     [#&]                # [^'#abc'] -> ['#']
     """,
