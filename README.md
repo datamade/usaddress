@@ -4,7 +4,7 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
-**What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
+**What this cannot do:** It cannot identify address components with perfect accuracy (currently accuracy is at 90%), nor can it verify that a given address is correct/valid.
 
 We currently only support `python 2.7`
 
@@ -47,6 +47,7 @@ To build and test development code.
 
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
+* [Miroslav Batchkarov](http://mbatchkarov.github.io), University of Sussex
 
 ### Errors / Bugs
 
