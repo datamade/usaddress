@@ -7,7 +7,8 @@ from imp import reload
 
 NULL_TAG = 'Null'
 
-def trainModel(training_data, model_file, params_to_set=dict()) :
+def trainModel(training_data, model_file,
+               params_to_set={'c1':1, 'c2':0, 'feature.minfreq':0}):
 
     X = []
     Y = []
@@ -24,7 +25,6 @@ def trainModel(training_data, model_file, params_to_set=dict()) :
 
     trainer.train(model_file)
     reload(usaddress)
-    print(list(usaddress.parse('12 Awesome blvd'))) # todo remove
 
 def parseTrainingData(filepath):
     tree = etree.parse(filepath)
