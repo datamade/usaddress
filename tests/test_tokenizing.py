@@ -28,6 +28,7 @@ class TestTokenizing(unittest.TestCase) :
 
         assert tokenize('222 W. Merchandise Mart Plaza') == ['222', 'W.', 'Merchandise', 'Mart', 'Plaza']
         assert tokenize('222 W Merchandise Mart Plaza, Chicago, IL') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza,', 'Chicago,', 'IL' ]
+        assert tokenize('123 Monroe- St') == ['123', 'Monroe-', 'St']
 
     def test_nums(self) :
 
@@ -35,6 +36,11 @@ class TestTokenizing(unittest.TestCase) :
 
     def test_ampersand(self) :
         assert tokenize('123 & 456') == ['123', '&', '456']
+
+    def test_paren(self) :
+        assert tokenize('222 W Merchandise Mart Plaza (1871) Chicago IL 60654') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza', '(1871)', 'Chicago', 'IL', '60654' ]
+        assert tokenize('222 W Merchandise Mart Plaza (1871), Chicago IL 60654') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza', '(1871),', 'Chicago', 'IL', '60654' ]
+        assert tokenize('222 W Merchandise Mart Plaza(1871) Chicago IL 60654') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza', '(1871)', 'Chicago', 'IL', '60654' ]
 
 if __name__ == '__main__' :
     unittest.main()    
