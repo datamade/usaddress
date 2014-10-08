@@ -47,6 +47,7 @@ To build and test development code.
 
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
+* [Miroslav Batchkarov](http://mbatchkarov.github.io), University of Sussex
 
 ### Errors / Bugs
 
