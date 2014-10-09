@@ -2,40 +2,7 @@ from usaddress import parse
 import training
 from training.training import parseTrainingData
 
-
-class TestSynthetic(object) :
-    def test_Parser(self):
-
-        test_file = 'training/test_data/synthetic_osm_data_xml.xml'
-
-        for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
-            yield equals, address_text, labels_pred, labels_true
-
-
-class TestUS50_2(object) :
-    def test_Parser(self):
-
-        test_file = 'training/test_data/us50_test_tagged.xml'
-
-        for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
-            
-            yield fuzzyEquals, address_text, labels_pred, labels_true
-
-
-class TestOpenaddress(object) :
-    def test_us_ia_linn(self) :
-
-        test_file = 'training/training_data/openaddress_us_ia_linn.xml'
-
-        for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
-            yield equals, address_text, labels_pred, labels_true
-
+#tests to ensure that the parser maintains performance on various simple address patterns
 
 def equals(addr, 
            labels_pred, 
