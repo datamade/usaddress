@@ -44,7 +44,7 @@ def tag(address_string) :
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
-    \(*\b[^\s,;#(]+[.,;]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \(*\b[^\s,;#()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
     [#&]                # [^'#abc'] -> ['#']
     """,
@@ -60,26 +60,23 @@ def tokenize(address_string) :
 
 def tokenFeatures(token) :
 
-    token_clean = re.sub(r'(^[\W]*)|([\s,;]$)', u'', token)
+    if token in (u'&', u'#') :
+        token_clean = token
+    else :
+        token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
-    features = {'lower' : token_clean.lower(), 
-                'nopunc' : token_abbrev,
-                'isupper' : token_clean.isupper(),
-                'islower' : token_clean.islower(), 
-                'istitle' : token_clean.istitle(), 
-                'isalldigits' : token_clean.isdigit(),
-                'split_digit' :  bool(re.match(r'\d+[\W\S]+\d+', 
-                                               token_clean)),
-                'digit.length' : unicode(len(token_clean)
-                                         if token_clean.isdigit() 
-                                         else False),
-                'endsinpunc' : token[-1] in string.punctuation,
-                'end.delim' : token[-1] in (u',', u';'),
-                'word.length' : unicode(len(token_clean)
-                                        if not token_clean.isdigit()
-                                        else False),
+    features = {'nopunc' : token_abbrev,
+                'abbrev' : token_clean[-1] == u'.',
+                'case' : casing(token_clean),
+                'digits' : digits(token_clean),
+                'length' : (u'd:' + unicode(len(token_abbrev))
+                            if token_abbrev.isdigit()
+                            else u'w:' + unicode(len(token_abbrev))),
+                'endsinpunc' : (token[-1]
+                                if bool(re.match('.+[^.\w]', token))
+                                else False),
                 'directional' : token_abbrev in DIRECTIONS,
-                'has.vowels'  : bool(set(token_clean) & set('aeiou')),
+                'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
                 }
 
     return features
@@ -108,3 +105,23 @@ def addr2features(address):
         feature_sequence[-2]['next']['address.end'] = True
 
     return feature_sequence
+
+def casing(token) :
+    if token.isupper() :
+        return 'upper'
+    elif token.islower() :
+        return 'lower' 
+    elif token.istitle() :
+        return 'title'
+    else :
+        return 'other'
+
+def digits(token) :
+    if token.isdigit() :
+        return 'all_digits' 
+    elif set(token) & set(string.digits) :
+        return 'some_digits' 
+    else :
+        return 'no_digits'
+                                    
+
