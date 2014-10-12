@@ -1,3 +1,4 @@
+<AddressCollection>
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>1</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>RICHARDSON</StreetName><StreetNamePostType>ST</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>10</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>BRUGGER</StreetName><StreetNamePostType>ST</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>10</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>CANBY</StreetName><StreetNamePostType>ST</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
@@ -1487,3 +1488,5 @@
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>2107</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>GREENWOOD</StreetName><StreetNamePostType>RD</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>2484</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>MILITARY</StreetName><StreetNamePostType>RD</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
 <AddressString><AddressNumberPrefix>0</AddressNumberPrefix><AddressNumber>921</AddressNumber><StreetNamePreDirectional>SW</StreetNamePreDirectional><StreetName>PALATINE HILL</StreetName><StreetNamePostType>RD</StreetNamePostType><PlaceName>Portland</PlaceName><StateName>OR</StateName></AddressString>
+</AddressCollection>
+
