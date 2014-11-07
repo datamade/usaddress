@@ -168,7 +168,7 @@ if __name__ == '__main__' :
         ['city', 'PlaceName'],
         ['state', 'StateName'],
         ['zip', 'ZipCode'],
-        ['zip+4', 'ZipCodePlusFour'],
+        ['zip+4', 'ZipPlus4'],
         ['country', 'CountryName'],
         ['landmark', 'LandmarkName'],
         ['box group type', 'USPSBoxGroupType'],
@@ -179,6 +179,7 @@ if __name__ == '__main__' :
         ['subaddress type', 'SubaddressType'],
         ['recipient', 'Recipient'],
         ['streetname modifer, pre', 'StreetNamePreModifier'],
+        ['streetname modifer, post', 'StreetNamePostModifier'],
         ['building name', 'BuildingName'],
         ['corner/junction', 'CornerOf']
 
