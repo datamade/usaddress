@@ -1,6 +1,6 @@
 usaddress
 =================
-usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
+usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](http://usaddress.datamade.us/)!
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
