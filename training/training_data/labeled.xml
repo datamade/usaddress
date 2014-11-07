@@ -813,7 +813,10 @@
   <AddressString><SubaddressType>HRCC</SubaddressType> <SubaddressType>Inc</SubaddressType> <USPSBoxType>PO</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>1313</USPSBoxID> <PlaceName>Jefferson</PlaceName> <PlaceName>City</PlaceName> <StateName>MO</StateName> <ZipCode>65102</ZipCode></AddressString>
   <AddressString><AddressNumber>465</AddressNumber> <StreetName>pack</StreetName> <StreetNamePostType>lane</StreetNamePostType> <PlaceName>cheshire</PlaceName> <StateName>ct</StateName></AddressString>
   <AddressString><AddressNumber>2149</AddressNumber> <StreetName>highalnder</StreetName> <PlaceName>kentwood</PlaceName> <StateName>mi</StateName></AddressString>
-  <AddressString><CountryName>USA</CountryName></AddressString>
+  <AddressString>
+    <CountryName>USA</CountryName>
+  </AddressString>
   <AddressString><Recipient>AIR</Recipient> <Recipient>SYSTEMS</Recipient> <Recipient>PERFORMANCE</Recipient> <Recipient>CONSULTANTS,</Recipient> <Recipient>INC.,</Recipient> <AddressNumber>162</AddressNumber> <StreetName>LIMERICK</StreetName> <StreetNamePostType>LANE,</StreetNamePostType> <PlaceName>ROCHESTER,</PlaceName> <StateName>NEW,</StateName> <StateName>YORK</StateName> <ZipCode>14606,</ZipCode> <CountryName>USA</CountryName></AddressString>
   <AddressString><AddressNumber>111</AddressNumber> <StreetNamePreDirectional>N</StreetNamePreDirectional> <StreetName>Wyoming</StreetName> <StreetNamePostType>avenue,</StreetNamePostType> <PlaceName>Washington,</PlaceName> <StateName>District</StateName> <StateName>of</StateName> <StateName>Columbia,</StateName> <ZipCode>22202</ZipCode></AddressString>
+  <AddressString><AddressNumber>19</AddressNumber> <StreetName>Railroad</StreetName> <StreetNamePostType>Pl</StreetNamePostType> <PlaceName>West</PlaceName> <PlaceName>Hartford,</PlaceName> <StateName>Connecticut</StateName> <ZipCode>06110</ZipCode></AddressString>
 </AddressCollection>
