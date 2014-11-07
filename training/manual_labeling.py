@@ -168,6 +168,8 @@ if __name__ == '__main__' :
         ['city', 'PlaceName'],
         ['state', 'StateName'],
         ['zip', 'ZipCode'],
+        ['zip+4', 'ZipCodePlusFour'],
+        ['country', 'CountryName'],
         ['landmark', 'LandmarkName'],
         ['box group type', 'USPSBoxGroupType'],
         ['box group id', 'USPSBoxGroupID'],
