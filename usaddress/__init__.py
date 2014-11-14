@@ -29,19 +29,6 @@ def parse(address_string) :
     tags = TAGGER.tag(features)
     return zip(tokens, tags)
 
-def tag(address_string) :
-    tagged_address = OrderedDict()
-    for token, label in parse(address_string) :
-        tagged_address.setdefault(label, []).append(token)
-
-    for token in tagged_address :
-        component = ' '.join(tagged_address[token])
-        component = component.strip(" ,;")
-        tagged_address[token] = component
-
-    return tagged_address 
-
-
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
     \(*\b[^\s,;#()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
@@ -124,4 +111,47 @@ def digits(token) :
     else :
         return 'no_digits'
                                     
+def tag(address_string) :
+    tagged_address = OrderedDict()
+
+    last_label = None
+    intersection = False
+
+    for token, label in parse(address_string) :
+        if label == 'IntersectionSeparator' :
+            intersection = True
+        if 'StreetName' in label and intersection :
+            label = 'Second' + label 
+        if label == last_label :
+            tagged_address[label].append(token)
+        elif label not in tagged_address :
+            tagged_address[label] = [token]
+        else :
+            print parse(address_string)
+            raise ValueError("More than one area of address has the same label")
+            
+        last_label = label
+
+    for token in tagged_address :
+        component = ' '.join(tagged_address[token])
+        component = component.strip(" ,;")
+        tagged_address[token] = component
+
+
+    if 'AddressNumber' in tagged_address :
+        if not intersection :
+            address_type = 'Street Address'
+
+    elif intersection :
+        address_type = 'Intersection'
+
+    elif 'USPSBoxID' in tagged_address :
+        address_type = 'PO Box'
+
+    else :
+        address_type = 'Ambiguous'
+
+    return (tagged_address, address_type)
+
+
 
