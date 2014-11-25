@@ -141,13 +141,10 @@ def tag(address_string) :
     if 'AddressNumber' in tagged_address :
         if not intersection :
             address_type = 'Street Address'
-
     elif intersection :
         address_type = 'Intersection'
-
     elif 'USPSBoxID' in tagged_address :
         address_type = 'PO Box'
-
     else :
         address_type = 'Ambiguous'
 
