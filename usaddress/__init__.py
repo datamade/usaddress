@@ -5,6 +5,43 @@ import re
 from collections import OrderedDict
 import warnings
 
+# The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard
+# http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard
+
+LABELS = [
+'AddressNumber',
+'StreetName',
+'PlaceName',
+'StateName',
+'ZipCode',
+'AddressNumberPrefix',
+'AddressNumberSuffix',
+'StreetNamePreDirectional',
+'StreetNamePostDirectional',
+'StreetNamePreModifier',
+'StreetNamePostType',
+'StreetNamePreType',
+'USPSBoxType',
+'USPSBoxID',
+'USPSBoxGroupType',
+'USPSBoxGroupID',
+'LandmarkName',
+'CornerOf',
+'IntersectionSeparator',
+'OccupancyType',
+'OccupancyIdentifier',
+'SubaddressIdentifier',
+'SubaddressType',
+'Recipient',
+'BuildingName'
+]
+
+PARENT_LABEL = 'AddressString'
+GROUP_LABEL = 'AddressCollection'
+
+MODEL_FILE = 'usaddr.crfsuite'
+
+
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
                   'north', 'south', 'east', 'west', 
@@ -12,10 +49,9 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
 
 try :
     TAGGER = pycrfsuite.Tagger()
-    path = os.path.split(os.path.abspath(__file__))[0] + '/usaddr.crfsuite'
-    TAGGER.open(path)
+    TAGGER.open(MODEL_FILE)
 except IOError :
-    warnings.warn("You must train the model (run training/training.py) and create the usaddr.crfsuite file before you can use the parse and tag methods")
+    warnings.warn('You must train the model (parserator train --trainfile FILES) to create the %s file before you can use the parse and tag methods' %MODEL_FILE)
 
 def parse(address_string) :
 
@@ -26,8 +62,53 @@ def parse(address_string) :
 
     features = addr2features(tokens)
 
+    try :
+        TAGGER = pycrfsuite.Tagger()
+        TAGGER.open(MODEL_FILE)
+    except IOError :
+        warnings.warn('You must train the model (parserator train --trainfile FILES) to create the %s file before you can use the parse and tag methods' %MODEL_FILE)
+
     tags = TAGGER.tag(features)
     return zip(tokens, tags)
+
+def tag(address_string) :
+    tagged_address = OrderedDict()
+
+    last_label = None
+    intersection = False
+
+    for token, label in parse(address_string) :
+        if label == 'IntersectionSeparator' :
+            intersection = True
+        if 'StreetName' in label and intersection :
+            label = 'Second' + label 
+        if label == last_label :
+            tagged_address[label].append(token)
+        elif label not in tagged_address :
+            tagged_address[label] = [token]
+        else :
+            print parse(address_string)
+            raise ValueError("More than one area of address has the same label")
+            
+        last_label = label
+
+    for token in tagged_address :
+        component = ' '.join(tagged_address[token])
+        component = component.strip(" ,;")
+        tagged_address[token] = component
+
+
+    if 'AddressNumber' in tagged_address :
+        if not intersection :
+            address_type = 'Street Address'
+    elif intersection :
+        address_type = 'Intersection'
+    elif 'USPSBoxID' in tagged_address :
+        address_type = 'PO Box'
+    else :
+        address_type = 'Ambiguous'
+
+    return (tagged_address, address_type)
 
 def tokenize(address_string) :
     re_tokens = re.compile(r"""
@@ -43,7 +124,6 @@ def tokenize(address_string) :
         return []
 
     return tokens
-
 
 def tokenFeatures(token) :
 
@@ -111,44 +191,3 @@ def digits(token) :
     else :
         return 'no_digits'
                                     
-def tag(address_string) :
-    tagged_address = OrderedDict()
-
-    last_label = None
-    intersection = False
-
-    for token, label in parse(address_string) :
-        if label == 'IntersectionSeparator' :
-            intersection = True
-        if 'StreetName' in label and intersection :
-            label = 'Second' + label 
-        if label == last_label :
-            tagged_address[label].append(token)
-        elif label not in tagged_address :
-            tagged_address[label] = [token]
-        else :
-            print parse(address_string)
-            raise ValueError("More than one area of address has the same label")
-            
-        last_label = label
-
-    for token in tagged_address :
-        component = ' '.join(tagged_address[token])
-        component = component.strip(" ,;")
-        tagged_address[token] = component
-
-
-    if 'AddressNumber' in tagged_address :
-        if not intersection :
-            address_type = 'Street Address'
-    elif intersection :
-        address_type = 'Intersection'
-    elif 'USPSBoxID' in tagged_address :
-        address_type = 'PO Box'
-    else :
-        address_type = 'Ambiguous'
-
-    return (tagged_address, address_type)
-
-
-
