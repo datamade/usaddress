@@ -148,7 +148,7 @@ def tokenFeatures(token) :
 
     return features
 
-def addr2features(address):
+def tokens2features(address):
     
     feature_sequence = [tokenFeatures(address[0])]
     previous_features = feature_sequence[-1].copy()
