@@ -60,7 +60,7 @@ def parse(address_string) :
     if not tokens :
         return []
 
-    features = addr2features(tokens)
+    features = tokens2features(tokens)
 
     try :
         TAGGER = pycrfsuite.Tagger()
