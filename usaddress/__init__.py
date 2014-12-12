@@ -40,7 +40,7 @@ PARENT_LABEL = 'AddressString'
 GROUP_LABEL = 'AddressCollection'
 
 MODEL_FILE = 'usaddr.crfsuite'
-MODEL_PATH = os.path.split(os.path.abspath(__file__))[0] + '/' + MODEL_FILE
+
 
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
@@ -49,9 +49,8 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
 
 try :
     TAGGER = pycrfsuite.Tagger()
-    TAGGER.open(MODEL_PATH)
+    TAGGER.open(os.path.split(os.path.abspath(__file__))[0]+'/'+MODEL_FILE)
 except IOError :
-    
     warnings.warn('You must train the model (parserator train --trainfile FILES) to create the %s file before you can use the parse and tag methods' %MODEL_FILE)
 
 def parse(address_string) :
@@ -65,7 +64,7 @@ def parse(address_string) :
 
     try :
         TAGGER = pycrfsuite.Tagger()
-        TAGGER.open(MODEL_PATH)
+        TAGGER.open(os.path.split(os.path.abspath(__file__))[0]+'/'+MODEL_FILE)
     except IOError :
         warnings.warn('You must train the model (parserator train --trainfile FILES) to create the %s file before you can use the parse and tag methods' %MODEL_FILE)
 
