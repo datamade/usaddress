@@ -2,7 +2,7 @@ from usaddress import parse, GROUP_LABEL
 from parserator.training import readTrainingData
 import unittest
 
-class TestSimpleAddresses(object) :
+class TestSimpleAddresses(object) : # for test generators, must inherit from object
     def test_simple_addresses(self):
         test_file = 'measure_performance/test_data/simple_address_patterns.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
