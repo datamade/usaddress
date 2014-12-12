@@ -2,7 +2,7 @@ from usaddress import parse, GROUP_LABEL
 from parserator.training import readTrainingData
 import unittest
 
-class TestSimpleAddresses(unittest.TestCase) :
+class TestSimpleAddresses(object) :
     def test_simple_addresses(self):
         test_file = 'measure_performance/test_data/simple_address_patterns.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
@@ -13,7 +13,7 @@ class TestSimpleAddresses(unittest.TestCase) :
             _, labels_pred = zip(*parse(address_text))
             yield equals, address_text, labels_pred, labels_true
 
-class TestSyntheticAddresses(unittest.TestCase) :
+class TestSyntheticAddresses(object) :
     def test_synthetic_addresses(self):
 
         test_file = 'measure_performance/test_data/synthetic_osm_data.xml'
@@ -25,7 +25,7 @@ class TestSyntheticAddresses(unittest.TestCase) :
             _, labels_pred = zip(*parse(address_text))
             yield equals, address_text, labels_pred, labels_true
 
-class TestUS50Addresses(unittest.TestCase) :
+class TestUS50Addresses(object) :
     def test_us50(self):
         test_file = 'measure_performance/test_data/us50_test_tagged.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
@@ -40,7 +40,7 @@ class TestUS50Addresses(unittest.TestCase) :
 def equals(addr, 
            labels_pred, 
            labels_true) :
-    print "ADDRESS: ", addr
+    prettyPrint(addr, labels_pred, labels_true)
     assert labels_pred == labels_true
 
 
@@ -58,11 +58,16 @@ def fuzzyEquals(addr,
             fuzzy_labels.append(label)
     for label in labels_true:
         labels.append(label)
-    print "ADDRESS:    ", addr
-    print "fuzzy pred: ", fuzzy_labels
-    print "true:       ", labels
+    prettyPrint(addr, fuzzy_labels, labels)
 
     assert fuzzy_labels == labels
+
+def prettyPrint(addr, predicted, true) :
+    print "ADDRESS:    ", addr
+    print "fuzzy pred: ", predicted
+    print "true:       ", true
+
+
 
 if __name__== "__main__":
     unittest.main()
