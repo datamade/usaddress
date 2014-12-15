@@ -36,6 +36,17 @@ class TestTokenizing(unittest.TestCase) :
 
     def test_ampersand(self) :
         assert tokenize('123 & 456') == ['123', '&', '456']
+        assert tokenize('123&456') == ['123', '&', '456']
+        assert tokenize('123& 456') == ['123', '&', '456']
+        assert tokenize('123 &456') == ['123', '&', '456']
+        assert tokenize('123 &#38; 456') == ['123', '&', '456']
+        assert tokenize('123&#38;456') == ['123', '&', '456']
+        assert tokenize('123&#38; 456') == ['123', '&', '456']
+        assert tokenize('123 &#38;456') == ['123', '&', '456']
+        assert tokenize('123 &amp; 456') == ['123', '&', '456']
+        assert tokenize('123&amp;456') == ['123', '&', '456']
+        assert tokenize('123&amp; 456') == ['123', '&', '456']
+        assert tokenize('123 &amp;456') == ['123', '&', '456']
 
     def test_paren(self) :
         assert tokenize('222 W Merchandise Mart Plaza (1871) Chicago IL 60654') == ['222', 'W', 'Merchandise', 'Mart', 'Plaza', '(1871)', 'Chicago', 'IL', '60654' ]

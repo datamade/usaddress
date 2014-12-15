@@ -111,8 +111,9 @@ def tag(address_string) :
     return (tagged_address, address_type)
 
 def tokenize(address_string) :
+    address_string = re.sub(r'(&#38;)|(&amp;)', '&', address_string)
     re_tokens = re.compile(r"""
-    \(*\b[^\s,;#()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \(*\b[^\s,;#&()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
     [#&]                # [^'#abc'] -> ['#']
     """,
