@@ -18,7 +18,7 @@ To build and test development code.
 ```bash
 > pip install -r requirements.txt
 > python setup.py develop
-> python training/training.py
+> parserator usaddress train --traindata training/labeled.xml
 > nosetests .
 ```
 

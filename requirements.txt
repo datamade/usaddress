@@ -2,3 +2,4 @@ python-crfsuite>=0.7
 requests
 lxml
 nose
+parserator
