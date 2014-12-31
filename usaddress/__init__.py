@@ -2,7 +2,10 @@ import os
 import string
 import pycrfsuite
 import re
-from collections import OrderedDict
+try :
+    from collections import OrderedDict
+except ImportError :
+    from ordereddict import OrderedDict
 import warnings
 
 # The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard
@@ -33,7 +36,8 @@ LABELS = [
 'SubaddressIdentifier',
 'SubaddressType',
 'Recipient',
-'BuildingName'
+'BuildingName',
+'Null'
 ]
 
 PARENT_LABEL = 'AddressString'
@@ -62,12 +66,6 @@ def parse(address_string) :
 
     features = tokens2features(tokens)
 
-    try :
-        TAGGER = pycrfsuite.Tagger()
-        TAGGER.open(MODEL_PATH)
-    except IOError :
-        warnings.warn('You must train the model (parserator train --trainfile FILES) to create the %s file before you can use the parse and tag methods' %MODEL_FILE)
-
     tags = TAGGER.tag(features)
     return zip(tokens, tags)
 
@@ -87,6 +85,8 @@ def tag(address_string) :
         elif label not in tagged_address :
             tagged_address[label] = [token]
         else :
+            print "ORIGINAL STRING: ",
+            print address_string
             print parse(address_string)
             raise ValueError("More than one area of address has the same label")
             
