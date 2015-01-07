@@ -46,6 +46,13 @@ usaddress uses parserator, a library for making and improving probabilistic pars
  ```
 parserator label [infile] [outfile] usaddress  
 ```  
+  Our main training file is `training/labeled.xml` so you can do
+
+```
+parserator label [infile] training/labeled.xml usaddress  
+```  
+
+
   This will start a console labeling task, where you will be prompted to label raw strings via the command line. For more info on using parserator, see the [parserator documentation](https://github.com/datamade/parserator/blob/master/README.md).  
 #### Re-training the model  
   If you've added new training data, you will need to re-train the model. 
@@ -53,8 +60,16 @@ parserator label [infile] [outfile] usaddress
   ```
   parserator train [traindata] usaddress  
   ```  
+  
+  So, you could do 
+  
+  ```
+  parserator label [infile] training/labeled.xml usaddress  
+  ```  
+  
   To set multiple files as traindata, separate them with commas (e.g. ```training/foo.xml,training/bar.xml```)
 
+  Contribute back by making a pull request with your added training examples.
 
 ### Important links
 
