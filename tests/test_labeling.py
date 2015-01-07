@@ -1,47 +1,48 @@
-from usaddress import parse
-import training
-from training.training import parseTrainingData
+from usaddress import parse, GROUP_LABEL
+from parserator.training import readTrainingData
 import unittest
 
-#tests to ensure that the parser maintains accuracy on various simple address patterns
-class TestSimple(unittest.TestCase) :
-
+class TestSimpleAddresses(object) : # for test generators, must inherit from object
     def test_simple_addresses(self):
-        test_file = 'training/test_data/simple_address_patterns.xml'
+        test_file = 'measure_performance/test_data/simple_address_patterns.xml'
+        data = list(readTrainingData([test_file], GROUP_LABEL))
 
-        for address_text, components in parseTrainingData(test_file) :
+        for labeled_address in data :
+            address_text, components = labeled_address
             _, labels_true = zip(*components)
             _, labels_pred = zip(*parse(address_text))
             yield equals, address_text, labels_pred, labels_true
 
-class TestSynthetic(unittest.TestCase) :
-    def test_Parser(self):
+class TestSyntheticAddresses(object) :
+    def test_synthetic_addresses(self):
 
-        test_file = 'test_data/synthetic_osm_data_xml.xml'
+        test_file = 'measure_performance/test_data/synthetic_osm_data.xml'
+        data = list(readTrainingData([test_file], GROUP_LABEL))
 
-        for address_text, components in parseTrainingData(test_file) :
+        for labeled_address in data :
+            address_text, components = labeled_address
             _, labels_true = zip(*components)
             _, labels_pred = zip(*parse(address_text))
             yield equals, address_text, labels_pred, labels_true
 
+class TestUS50Addresses(object) :
+    def test_us50(self):
+        test_file = 'measure_performance/test_data/us50_test_tagged.xml'
+        data = list(readTrainingData([test_file], GROUP_LABEL))
 
-class TestUS50_2(unittest.TestCase) :
-    def test_Parser(self):
-
-        test_file = 'test_data/us50_test_tagged.xml'
-
-        for address_text, components in parseTrainingData(test_file) :
+        for labeled_address in data :
+            address_text, components = labeled_address
             _, labels_true = zip(*components)
             _, labels_pred = zip(*parse(address_text))
-            
             yield fuzzyEquals, address_text, labels_pred, labels_true
 
 
 def equals(addr, 
            labels_pred, 
            labels_true) :
-    print "ADDRESS: ", addr
+    prettyPrint(addr, labels_pred, labels_true)
     assert labels_pred == labels_true
+
 
 def fuzzyEquals(addr, 
                 labels_pred,
@@ -57,8 +58,16 @@ def fuzzyEquals(addr,
             fuzzy_labels.append(label)
     for label in labels_true:
         labels.append(label)
-    print "ADDRESS:    ", addr
-    print "fuzzy pred: ", fuzzy_labels
-    print "true:       ", labels
+    prettyPrint(addr, fuzzy_labels, labels)
 
     assert fuzzy_labels == labels
+
+def prettyPrint(addr, predicted, true) :
+    print "ADDRESS:    ", addr
+    print "fuzzy pred: ", predicted
+    print "true:       ", true
+
+
+
+if __name__== "__main__":
+    unittest.main()

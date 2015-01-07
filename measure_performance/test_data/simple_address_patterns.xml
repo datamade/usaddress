@@ -1,0 +1,10 @@
+<AddressCollection>
+  <AddressString><AddressNumber>9112</AddressNumber> <StreetName>Mendenhall</StreetName> <StreetName>Mall</StreetName> <StreetNamePostType>Road,</StreetNamePostType> <PlaceName>Juneau,</PlaceName> <StateName>AK</StateName> <ZipCode>99801</ZipCode></AddressString>
+  <AddressString><AddressNumber>2701</AddressNumber> <StreetName>Thayer</StreetName> <StreetNamePostType>Street</StreetNamePostType>, <PlaceName>Evanston</PlaceName>, <ZipCode>60201</ZipCode></AddressString>
+  <AddressString><AddressNumber>34115</AddressNumber> <StreetName>Sterling</StreetName> <StreetNamePostType>Highway,</StreetNamePostType> <PlaceName>Anchor</PlaceName> <PlaceName>Point,</PlaceName> <StateName>AK</StateName> <ZipCode>99556</ZipCode></AddressString>
+  <AddressString><AddressNumber>2222</AddressNumber> <StreetName>Silverside</StreetName> <StreetNamePostType>Road,</StreetNamePostType> <PlaceName>Wilmington,</PlaceName> <StateName>DE</StateName> <ZipCode>19810</ZipCode></AddressString>
+  <AddressString><AddressNumber>111</AddressNumber> <StreetName>Banyan</StreetName> <StreetNamePostType>Drive,</StreetNamePostType> <PlaceName>Hilo,</PlaceName> <StateName>HI</StateName> <ZipCode>96720</ZipCode></AddressString>
+  <AddressString><USPSBoxType>Route</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>201,</USPSBoxID> <PlaceName>Bingham,</PlaceName> <StateName>ME</StateName> <ZipCode>04920</ZipCode></AddressString>
+  <AddressString><AddressNumber>3555</AddressNumber> <StreetName>68th</StreetName> <StreetNamePostType>Street</StreetNamePostType> <StreetNamePostDirectional>Southeast,</StreetNamePostDirectional> <PlaceName>Caledonia,</PlaceName> <StateName>MI</StateName> <ZipCode>49316</ZipCode></AddressString>
+  <AddressString><AddressNumber>318</AddressNumber> <StreetNamePreDirectional>East</StreetNamePreDirectional> <StreetName>51st</StreetName> <StreetNamePostType>Street,</StreetNamePostType> <PlaceName>Kansas</PlaceName> <PlaceName>City,</PlaceName> <StateName>MO</StateName> <ZipCode>64112</ZipCode></AddressString>
+</AddressCollection>
