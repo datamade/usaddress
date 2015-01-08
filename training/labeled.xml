@@ -1,5 +1,4 @@
 <AddressCollection>
-  <AddressString><AddressNumber>4215</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetName>West</StreetName> <StreetName>End</StreetName></AddressString>
   <AddressString><AddressNumber>8128</AddressNumber> <StreetNamePreDirectional>S.</StreetNamePreDirectional> <StreetName>DR</StreetName> <StreetName>MARTIN</StreetName> <StreetName>LUTHER</StreetName> <StreetName>KING</StreetName> <StreetName>JR</StreetName> <StreetNamePostType>Drive</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>3600</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetName>5th</StreetName> <StreetNamePostType>Ave</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>219</AddressNumber> <StreetNamePreDirectional>South</StreetNamePreDirectional> <StreetName>Dearborn</StreetName> <OccupancyIdentifier>Second</OccupancyIdentifier> <OccupancyType>Floor</OccupancyType></AddressString>
