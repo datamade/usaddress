@@ -658,7 +658,7 @@
   <AddressString><AddressNumber>43</AddressNumber> <StreetName>Little</StreetName> <StreetName>Cahill</StreetName></AddressString>
   <AddressString><AddressNumber>1604</AddressNumber> <StreetNamePreDirectional>W.</StreetNamePreDirectional> <StreetName>FARWELL</StreetName> <OccupancyIdentifier>1A</OccupancyIdentifier></AddressString>
   <AddressString><StreetNamePreType>Rts</StreetNamePreType> <StreetName>1</StreetName> <IntersectionSeparator>&amp;</IntersectionSeparator> <StreetName>24</StreetName> <StreetNamePostDirectional>East</StreetNamePostDirectional></AddressString>
-  <AddressString><AddressNumber>18847</AddressNumber> <StreetNamePreDirectional>E.</StreetNamePreDirectional> <StreetName>1400</StreetName> <StreetName>N.</StreetName> <StreetName>Road</StreetName></AddressString>
+  <AddressString><AddressNumber>18847</AddressNumber> <StreetNamePreDirectional>E.</StreetNamePreDirectional> <StreetName>1400</StreetName> <StreetName>N.</StreetName> <StreetNamePostType>Road</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>1713</AddressNumber> <StreetNamePreDirectional>West</StreetNamePreDirectional> <StreetNamePreType>U.S.</StreetNamePreType> <StreetNamePreType>Hwy</StreetNamePreType> <StreetName>50</StreetName></AddressString>
   <AddressString><AddressNumber>202</AddressNumber> <StreetName>E</StreetName> <StreetNamePostType>Street</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>409</AddressNumber> <StreetNamePreDirectional>N</StreetNamePreDirectional> <StreetNamePreModifier>Old</StreetNamePreModifier> <StreetNamePreType>Rt</StreetNamePreType> <StreetName>66</StreetName></AddressString>
