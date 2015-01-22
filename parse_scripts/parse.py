@@ -1,3 +1,4 @@
+from builtins import str
 from lxml import etree
 import ast
 import re
@@ -40,8 +41,8 @@ def osmNaturalToTraining(xml_file):
         #loop through tokens & find tags for each
         for token in addr_tokens:
             is_token_taggable = False
-            for key, value in address.items():
-                if key in osm_tags_to_addr_tags.keys() and key != 'addr:full' and token in value.split():
+            for key, value in list(address.items()):
+                if key in list(osm_tags_to_addr_tags.keys()) and key != 'addr:full' and token in value.split():
                     is_taggable = True
                     token_xml = etree.Element(osm_tags_to_addr_tags[key])
                     #check for punctuation
@@ -79,7 +80,7 @@ def osmSyntheticToTraining(xml_file):
         train_addr = etree.Element('AddressString')
         components = {'Street' : [], 'City' : [], 'Area' : []}
         for source_tag, target_tag, tag_type in synthetic_order:
-            if source_tag in address.keys():
+            if source_tag in list(address.keys()):
                 words = address[source_tag].split()
                 for word in words:
                     token_xml = etree.Element(target_tag)

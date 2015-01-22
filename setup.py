@@ -11,7 +11,10 @@ setup(
     packages=['usaddress'],
     package_data={'usaddress' : ['usaddr.crfsuite']},
     license='The MIT License: http://www.opensource.org/licenses/mit-license.php',
-    install_requires=['python-crfsuite>=0.7'],
+    install_requires=[
+        'future>=0.14.3',
+        'parsenator>=0.3',
+        'python-crfsuite>=0.7'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
