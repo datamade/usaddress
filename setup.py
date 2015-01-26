@@ -4,14 +4,17 @@ except ImportError :
     raise ImportError("setuptools module required, please go to https://pypi.python.org/pypi/setuptools and follow the instructions for installing setuptools")
 
 setup(
-    version='0.2.8',
+    version='0.3.0',
     url='https://github.com/datamade/usaddress',
     description='Parse US addresses using conditional random fields',
     name='usaddress',
     packages=['usaddress'],
     package_data={'usaddress' : ['usaddr.crfsuite']},
     license='The MIT License: http://www.opensource.org/licenses/mit-license.php',
-    install_requires=['python-crfsuite>=0.7'],
+    install_requires=[
+        'future>=0.14.3',
+        'parserator>=0.3',
+        'python-crfsuite>=0.7'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

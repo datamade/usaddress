@@ -1,3 +1,6 @@
+from __future__ import print_function
+from builtins import zip
+from builtins import object
 from usaddress import parse, GROUP_LABEL
 from parserator.training import readTrainingData
 import unittest
@@ -9,8 +12,8 @@ class TestSimpleAddresses(object) : # for test generators, must inherit from obj
 
         for labeled_address in data :
             address_text, components = labeled_address
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
 class TestSyntheticAddresses(object) :
@@ -21,8 +24,8 @@ class TestSyntheticAddresses(object) :
 
         for labeled_address in data :
             address_text, components = labeled_address
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
 class TestUS50Addresses(object) :
@@ -32,8 +35,8 @@ class TestUS50Addresses(object) :
 
         for labeled_address in data :
             address_text, components = labeled_address
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             yield fuzzyEquals, address_text, labels_pred, labels_true
 
 
@@ -63,9 +66,9 @@ def fuzzyEquals(addr,
     assert fuzzy_labels == labels
 
 def prettyPrint(addr, predicted, true) :
-    print "ADDRESS:    ", addr
-    print "fuzzy pred: ", predicted
-    print "true:       ", true
+    print("ADDRESS:    ", addr)
+    print("fuzzy pred: ", predicted)
+    print("true:       ", true)
 
 
 

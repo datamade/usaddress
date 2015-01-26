@@ -1,3 +1,6 @@
+from __future__ import print_function
+from builtins import zip
+from builtins import str
 import os
 import string
 import pycrfsuite
@@ -67,7 +70,7 @@ def parse(address_string) :
     features = tokens2features(tokens)
 
     tags = TAGGER.tag(features)
-    return zip(tokens, tags)
+    return list(zip(tokens, tags))
 
 def tag(address_string) :
     tagged_address = OrderedDict()
@@ -85,9 +88,9 @@ def tag(address_string) :
         elif label not in tagged_address :
             tagged_address[label] = [token]
         else :
-            print "ORIGINAL STRING: ",
-            print address_string
-            print parse(address_string)
+            print("ORIGINAL STRING: ", end=' ')
+            print(address_string)
+            print(parse(address_string))
             raise ValueError("More than one area of address has the same label")
             
         last_label = label
@@ -111,6 +114,7 @@ def tag(address_string) :
     return (tagged_address, address_type)
 
 def tokenize(address_string) :
+    print(address_string)
     address_string = re.sub(r'(&#38;)|(&amp;)', '&', address_string)
     re_tokens = re.compile(r"""
     \(*\b[^\s,;#&()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
@@ -137,9 +141,9 @@ def tokenFeatures(token) :
                 'abbrev' : token_clean[-1] == u'.',
                 'case' : casing(token_clean),
                 'digits' : digits(token_clean),
-                'length' : (u'd:' + unicode(len(token_abbrev))
+                'length' : (u'd:' + str(len(token_abbrev))
                             if token_abbrev.isdigit()
-                            else u'w:' + unicode(len(token_abbrev))),
+                            else u'w:' + str(len(token_abbrev))),
                 'endsinpunc' : (token[-1]
                                 if bool(re.match('.+[^.\w]', token))
                                 else False),

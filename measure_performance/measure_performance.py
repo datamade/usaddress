@@ -1,3 +1,6 @@
+from __future__ import print_function
+from builtins import zip
+from builtins import object
 from usaddress import parse
 from training import parseTrainingData
 
@@ -8,8 +11,8 @@ class TestSynthetic(object) :
         test_file = 'test_data/synthetic_osm_data_xml.xml'
 
         for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
 
@@ -19,8 +22,8 @@ class TestUS50_2(object) :
         test_file = 'test_data/us50_test_tagged.xml'
 
         for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             
             yield fuzzyEquals, address_text, labels_pred, labels_true
 
@@ -31,15 +34,15 @@ class TestOpenaddress(object) :
         test_file = 'training_data/openaddress_us_ia_linn.xml'
 
         for address_text, components in parseTrainingData(test_file) :
-            _, labels_true = zip(*components)
-            _, labels_pred = zip(*parse(address_text))
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
 
 def equals(addr, 
            labels_pred, 
            labels_true) :
-    print "ADDRESS: ", addr
+    print("ADDRESS: ", addr)
     assert labels_pred == labels_true
 
 def fuzzyEquals(addr, 
@@ -56,8 +59,8 @@ def fuzzyEquals(addr,
             fuzzy_labels.append(label)
     for label in labels_true:
         labels.append(label)
-    print "ADDRESS:    ", addr
-    print "fuzzy pred: ", fuzzy_labels
-    print "true:       ", labels
+    print("ADDRESS:    ", addr)
+    print("fuzzy pred: ", fuzzy_labels)
+    print("true:       ", labels)
 
     assert fuzzy_labels == labels

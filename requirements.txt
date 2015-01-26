@@ -1,5 +1,9 @@
+future
+nose
+parserator>=0.3
 python-crfsuite>=0.7
 requests
-lxml
-nose
-parserator
+caniusepython3
+coverage
+pylint
+tox
