@@ -33,7 +33,7 @@ setup(
     usaddress is a python library for parsing unstructured address 
     strings into address components, using advanced NLP methods.
 
-    From the python interpereter, you can
+    From the python interpreter:
 
     >>> import usaddress
     >>> usaddress.parse('123 Main St. Suite 100 Chicago, IL')
