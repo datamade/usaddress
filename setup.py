@@ -12,7 +12,6 @@ setup(
     package_data={'usaddress' : ['usaddr.crfsuite']},
     license='The MIT License: http://www.opensource.org/licenses/mit-license.php',
     install_requires=[
-        'future>=0.14.3',
         'python-crfsuite>=0.7'],
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -29,8 +28,7 @@ setup(
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Information Analysis'],
     long_description="""
-    usaddress is a python library for parsing unstructured address 
-    strings into address components, using advanced NLP methods.
+    usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
 
     From the python interpreter:
 
