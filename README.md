@@ -62,7 +62,7 @@ parserator label [infile] training/labeled.xml usaddress
   So, you could do 
   
   ```
-  parserator label [infile] training/labeled.xml usaddress  
+  parserator train training/labeled.xml usaddress  
   ```  
   
   To set multiple files as traindata, separate them with commas (e.g. ```training/foo.xml,training/bar.xml```)
