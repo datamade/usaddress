@@ -1,0 +1,13 @@
+branches:
+only:
+  - master
+language: python
+python:
+  - '2.7'
+  - '3.4'
+install:
+  - pip install -r requirements.txt
+  - python setup.py develop
+after_success: coveralls
+sudo: false
+script: nosetests --with-coverage --cover-package=usaddress

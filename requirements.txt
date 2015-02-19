@@ -1,9 +1,5 @@
-future
 nose
 parserator>=0.3
-python-crfsuite>=0.7
 requests
-caniusepython3
 coverage
-pylint
-tox
+
