@@ -101,9 +101,8 @@ def tag(address_string) :
         tagged_address[token] = component
 
 
-    if 'AddressNumber' in tagged_address :
-        if not intersection :
-            address_type = 'Street Address'
+    if 'AddressNumber' in tagged_address and not intersection :
+        address_type = 'Street Address'
     elif intersection :
         address_type = 'Intersection'
     elif 'USPSBoxID' in tagged_address :
