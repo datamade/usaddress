@@ -43,7 +43,7 @@ LABELS = [
 'SubaddressType',
 'Recipient',
 'BuildingName',
-'Null'
+'NotAddress'
 ]
 
 PARENT_LABEL = 'AddressString'
