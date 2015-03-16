@@ -9,25 +9,60 @@ usaddress |release|
 
 usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
 
-
-   .. code:: python
-
-      >>> import usaddress
-      >>> usaddress.parse('123 Main St. Suite 100 Chicago, IL')
-      [('123', 'AddressNumber'), 
-       ('Main', 'StreetName'), 
-       ('St.', 'StreetNamePostType'), 
-       ('Suite', 'OccupancyType'), 
-       ('100', 'OccupancyIdentifier'), 
-       ('Chicago,', 'PlaceName'), 
-       ('IL', 'StateName')]
-
 Installation
 ============
 
 .. code-block:: bash
 
    pip install usaddress
+
+Usage
+============
+The ``parse`` method will split your address string into components, and label each component.
+   .. code:: python
+
+      >>> import usaddress
+      >>> usaddress.parse('Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637')
+      [('Robie', 'BuildingName'), 
+      ('House,', 'BuildingName'), 
+      ('5757', 'AddressNumber'), 
+      ('South', 'StreetNamePreDirectional'), 
+      ('Woodlawn', 'StreetName'), 
+      ('Avenue,', 'StreetNamePostType'), 
+      ('Chicago,', 'PlaceName'), 
+      ('IL', 'StateName'), 
+      ('60637', 'ZipCode')]
+
+The ``tag`` method will try to be a little smarter - it will merge consecutive components & strip commas, as well as return an address type (``Street Address``, ``Intersection``, ``PO Box``, or ``Ambiguous``)
+   .. code:: python
+
+      >>> import usaddress
+      >>> usaddress.tag('Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637')
+      (OrderedDict([
+      ('BuildingName', 'Robie House'), 
+      ('AddressNumber', '5757'), 
+      ('StreetNamePreDirectional', 'South'), 
+      ('StreetName', 'Woodlawn'), 
+      ('StreetNamePostType', 'Avenue'), 
+      ('PlaceName', 'Chicago'), 
+      ('StateName', 'IL'), 
+      ('ZipCode', '60637')]), 
+      'Street Address')
+      >>> usaddress.tag('State & Lake, Chicago')
+      (OrderedDict([
+      ('StreetName', 'State'), 
+      ('IntersectionSeparator', '&'), 
+      ('SecondStreetName', 'Lake'), 
+      ('PlaceName', 'Chicago')]), 
+      'Intersection')
+      >>> usaddress.tag('P.O. Box 123, Chicago, IL')
+      (OrderedDict([
+      ('USPSBoxType', 'P.O. Box'), 
+      ('USPSBoxID', '123'), 
+      ('PlaceName', 'Chicago'), 
+      ('StateName', 'IL')]), 
+      'PO Box')
+
 
 Details
 =======
@@ -59,6 +94,7 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 * SubaddressType
 * Recipient
 * BuildingName
+* NotAddress
 
 
 Important links
