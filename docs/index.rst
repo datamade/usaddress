@@ -104,6 +104,8 @@ Important links
 * Repository: https://github.com/datamade/usaddress
 * Issues: https://github.com/datamade/usaddress/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
+* Blog Post: http://datamade.us/blog/parsing-addresses-with-usaddress/
+* Web Interface: http://parserator.datamade.us/usaddress
 
 Indices and tables
 ==================
