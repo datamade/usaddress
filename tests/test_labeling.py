@@ -57,6 +57,8 @@ def fuzzyEquals(addr,
             fuzzy_labels.append('StreetName')
         elif label.startswith('AddressNumber') :
             fuzzy_labels.append('AddressNumber')
+        elif label == ('Null') :
+            fuzzy_labels.append('NotAddress')
         else:
             fuzzy_labels.append(label)
     for label in labels_true:
