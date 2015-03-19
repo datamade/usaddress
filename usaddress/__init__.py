@@ -106,7 +106,7 @@ def tag(address_string) :
 
     if 'AddressNumber' in tagged_address and not intersection :
         address_type = 'Street Address'
-    elif intersection :
+    elif intersection and 'AddressNumber' not in tagged_address :
         address_type = 'Intersection'
     elif 'USPSBoxID' in tagged_address :
         address_type = 'PO Box'
@@ -120,7 +120,7 @@ def tokenize(address_string) :
     re_tokens = re.compile(r"""
     \(*\b[^\s,;#&()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
-    [#&]                # [^'#abc'] -> ['#']
+    [#&]                       # [^'#abc'] -> ['#']
     """,
                            re.VERBOSE | re.UNICODE)
 
@@ -133,7 +133,7 @@ def tokenize(address_string) :
 
 def tokenFeatures(token) :
 
-    if token in (u'&', u'#') :
+    if token in (u'&', u'#', u'½') :
         token_clean = token
     else :
         token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)

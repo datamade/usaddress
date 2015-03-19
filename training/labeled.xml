@@ -969,4 +969,5 @@
   <AddressString><AddressNumber>2100</AddressNumber> <StreetName>roswell</StreetName> <StreetNamePostType>rd.,</StreetNamePostType> <OccupancyType>suite</OccupancyType> <OccupancyIdentifier>200c</OccupancyIdentifier> <SubaddressType>pbm</SubaddressType> <SubaddressIdentifier>214</SubaddressIdentifier></AddressString>
   <AddressString><USPSBoxType>cmr</USPSBoxType> <USPSBoxID>411</USPSBoxID> <USPSBoxType>box</USPSBoxType> <USPSBoxID>3568</USPSBoxID></AddressString>
   <AddressString><AddressNumber>4101</AddressNumber> <StreetName>winnfield</StreetName> <StreetNamePostType>road,</StreetNamePostType> <OccupancyIdentifier>106</OccupancyIdentifier> <OccupancyIdentifier>d,</OccupancyIdentifier> <PlaceName>warrenville</PlaceName> <StateName>il</StateName> <ZipCode>60555</ZipCode></AddressString>
+  <AddressString><AddressNumber>1711</AddressNumber> <StreetNamePreDirectional>N</StreetNamePreDirectional> <StreetName>6th</StreetName> <StreetName>&#189;</StreetName> <StreetNamePostType>St</StreetNamePostType> <OccupancyIdentifier>#</OccupancyIdentifier> <OccupancyIdentifier>100</OccupancyIdentifier></AddressString>
 </AddressCollection>
