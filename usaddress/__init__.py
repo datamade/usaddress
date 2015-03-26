@@ -91,10 +91,7 @@ def tag(address_string) :
         elif label not in tagged_address :
             tagged_address[label] = [token]
         else :
-            print("ORIGINAL STRING: ", end=' ')
-            print(address_string)
-            print(parse(address_string))
-            raise ValueError("More than one area of address has the same label")
+            raise RepeatedLabelError(address_string, parse(address_string))
             
         last_label = label
 
@@ -197,3 +194,13 @@ def digits(token) :
     else :
         return 'no_digits'
                                     
+
+class RepeatedLabelError(Exception) :
+    def __init__(self, original_string, parsed_string) :
+        message = "More than one area of address has the same label"
+        super(RepeatedLabelError, self).__init__(message)
+
+        self.original_string = original_string
+        self.parsed_string = parsed_string
+
+
