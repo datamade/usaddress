@@ -71,7 +71,7 @@ Because the ``tag`` method returns an OrderedDict with labels as keys, it will t
        try:
            tagged_address, address_type = usaddress.tag(string)
        except usaddress.RepeatedLabelError as e :
-           some_special_instructions(e.parsed_address, e.original_string)
+           some_special_instructions(e.parsed_string, e.original_string)
 
 Details
 =======
