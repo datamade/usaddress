@@ -63,6 +63,15 @@ The ``tag`` method will try to be a little smarter - it will merge consecutive c
       ('StateName', 'IL')]), 
       'PO Box')
 
+Because the ``tag`` method returns an OrderedDict with labels as keys, it will throw a ``RepeatedLabelError`` error when multiple areas of an address have the same label, and thus can't be concatenated. When ``RepeatedLabelError`` is raised, it is likely that either (1) the input string is not a valid address, or (2) some tokens were labeled incorrectly.
+
+``RepeatedLabelError`` has the attributes ``original_string`` (the input string) and ``parsed_string`` (the output of the ``parse`` method on the input string). You can use these attributes to write custom exception handling, for example:
+   .. code:: python
+
+       try:
+           tagged_address, address_type = usaddress.tag(string)
+       except usaddress.RepeatedLabelError as e :
+           some_special_instructions(e.parsed_address, e.original_string)
 
 Details
 =======
