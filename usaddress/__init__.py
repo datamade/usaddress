@@ -91,7 +91,7 @@ def tag(address_string) :
         elif label not in tagged_address :
             tagged_address[label] = [token]
         else :
-            raise RepeatedLabelError(address_string, parse(address_string))
+            raise RepeatedLabelError(address_string, parse(address_string), label)
             
         last_label = label
 
@@ -198,8 +198,23 @@ def digits(token) :
                                     
 
 class RepeatedLabelError(Exception) :
-    def __init__(self, original_string, parsed_string) :
-        message = "More than one area of address has the same label"
+    def __init__(self, original_string, parsed_string, repeated_label) :
+
+        message ='''
+
+ERROR: Unable to tag this string because more than one area of the string has the same label
+
+ORIGINAL STRING:  %s
+PARSED TOKENS:    %s
+UNCERTAIN LABEL:  %s
+
+When this error is raised, it's likely that either (1) the string is not a valid address or (2) some tokens were labeled incorrectly
+
+To report an error in labeling a valid address, open an issue at https://github.com/datamade/usaddress/issues/new - it'll help us continue to improve usaddress!
+
+For more information, see the documentation at http://usaddress.readthedocs.org/
+        '''%(original_string, parsed_string, repeated_label)
+
         super(RepeatedLabelError, self).__init__(message)
 
         self.original_string = original_string
