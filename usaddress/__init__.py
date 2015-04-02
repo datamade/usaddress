@@ -139,7 +139,6 @@ def tokenFeatures(token) :
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'nopunc' : token_abbrev,
                 'abbrev' : token_clean[-1] == u'.',
-                'case' : casing(token_clean),
                 'digits' : digits(token_clean),
                 'length' : (u'd:' + str(len(token_abbrev))
                             if token_abbrev.isdigit()
@@ -177,16 +176,6 @@ def tokens2features(address):
         feature_sequence[-2]['next']['address.end'] = True
 
     return feature_sequence
-
-def casing(token) :
-    if token.isupper() :
-        return 'upper'
-    elif token.islower() :
-        return 'lower' 
-    elif token.istitle() :
-        return 'title'
-    else :
-        return 'other'
 
 def digits(token) :
     if token.isdigit() :
