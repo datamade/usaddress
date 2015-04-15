@@ -86,7 +86,7 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 * **AddressNumberPrefix** - a modifier before an address number, e.g. 'Mile', '#'
 * **AddressNumberSuffix** - a modifier after an address number, e.g 'B', '1/2'
 * **StreetNamePreDirectional** - a direction before a street name, e.g. 'North', 'S'
-* **StreetNamePostDirectional** - a direction before a street name, e.g. 'North', 'S'
+* **StreetNamePostDirectional** - a direction after a street name, e.g. 'North', 'S'
 * **StreetNamePreModifier** - a modifier before a street name that is not a direction, e.g. 'Old'
 * **StreetNamePostType** - a street type that comes after a street name, e.g. 'Avenue', 'Rd'
 * **StreetNamePreType** - a street type that comes before a street name, e.g. 'Route', 'Ave'
