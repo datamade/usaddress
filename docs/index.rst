@@ -99,8 +99,8 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 * **IntersectionSeparator** - a conjunction connecting parts of an intersection, e.g. 'and', '&'
 * **OccupancyType** - a type of occupancy within a building, e.g. 'Suite', 'Apt', 'Floor'
 * **OccupancyIdentifier** - the identifier of an occupancy, often a number or letter
-* **SubaddressIdentifier** - a level of detail in an address that is not an occupancy within a building, e.g. 'Building', 'Tower'
-* **SubaddressType** - the name/identifier of a subaddress component
+* **SubaddressType** - a level of detail in an address that is not an occupancy within a building, e.g. 'Building', 'Tower'
+* **SubaddressIdentifier** - the name/identifier of a subaddress component
 * **Recipient** - a non-address recipient, e.g. the name of a person/organization
 * **BuildingName** - the name of a building, e.g. 'Atlanta Financial Center'
 * **NotAddress** - a non-address component that doesn't refer to a recipient
