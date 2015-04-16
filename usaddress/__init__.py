@@ -136,6 +136,7 @@ def tokenFeatures(token) :
         token_clean = token
     else :
         token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)
+
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'nopunc' : token_abbrev,
                 'abbrev' : token_clean[-1] == u'.',
@@ -149,6 +150,10 @@ def tokenFeatures(token) :
                 'directional' : token_abbrev in DIRECTIONS,
                 'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
                 }
+
+    if digits(token_clean) == 'all_digits':
+        del features['nopunc']
+        features['digits.zeros'] = re.sub(r'[^0]', u' ', token)
 
     return features
 
