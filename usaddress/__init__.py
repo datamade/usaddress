@@ -138,9 +138,14 @@ def tokenFeatures(token) :
         token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)
 
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
-    features = {'nopunc' : token_abbrev,
-                'abbrev' : token_clean[-1] == u'.',
+    features = {'abbrev' : token_clean[-1] == u'.',
                 'digits' : digits(token_clean),
+                'word' : (token_abbrev 
+                          if not token_abbrev.isdigit()
+                          else False),
+                'trailing.zeros' : (trailingZeros(token_abbrev)
+                                    if token_abbrev.isdigit()
+                                    else False),
                 'length' : (u'd:' + str(len(token_abbrev))
                             if token_abbrev.isdigit()
                             else u'w:' + str(len(token_abbrev))),
@@ -151,9 +156,6 @@ def tokenFeatures(token) :
                 'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
                 }
 
-    if digits(token_clean) == 'all_digits':
-        del features['nopunc']
-        features['digits.zeros'] = re.sub(r'[^0]', u' ', token)
 
     return features
 
@@ -189,7 +191,15 @@ def digits(token) :
         return 'some_digits' 
     else :
         return 'no_digits'
-                                    
+
+def trailingZeros(token) :
+    results = re.findall(r'(0+)$', token)
+    if results :
+        return results[0]
+    else :
+        return ''
+    
+                          
 
 class RepeatedLabelError(Exception) :
     def __init__(self, original_string, parsed_string, repeated_label) :
