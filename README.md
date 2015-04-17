@@ -2,7 +2,7 @@ usaddress
 =================
 [![Build Status](https://travis-ci.org/datamade/usaddress.svg?branch=master)](https://travis-ci.org/datamade/usaddress)
 
-usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](http://usaddress.datamade.us/)!
+usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](https://parserator.datamade.us/usaddress)! For those who aren't python developers, we also have an [API](https://parserator.datamade.us/api-docs).
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
@@ -29,7 +29,7 @@ usaddress is a python library for parsing unstructured address strings into addr
   ```
 
 ## For the nerds:
-usaddress uses parserator, a library for making and improving probabilistic parsers - specifically, parsers that use [python-crfsuite](https://github.com/tpeng/python-crfsuite)'s implementation of conditional random fields. Parserator allows you to train the usaddress parser's model (a .crfsuite settings file) on labeled training data, and provides tools for easily adding new labeled training data.
+usaddress uses [parserator](https://github.com/datamade/parserator), a library for making and improving probabilistic parsers - specifically, parsers that use [python-crfsuite](https://github.com/tpeng/python-crfsuite)'s implementation of conditional random fields. Parserator allows you to train the usaddress parser's model (a .crfsuite settings file) on labeled training data, and provides tools for easily adding new labeled training data.
 #### Building & testing development code
   
   ```
@@ -73,10 +73,12 @@ parserator label [infile] training/labeled.xml usaddress
 
 ### Important links
 
-* Documentation: http://usaddress.rtfd.org/
+* Web Interface: https://parserator.datamade.us/usaddress
+* Python Package Distribution: https://pypi.python.org/pypi/usaddress
+* Python Package Documentation: http://usaddress.rtfd.org/
+* API Documentation: https://parserator.datamade.us/api-docs
 * Repository: https://github.com/datamade/usaddress
 * Issues: https://github.com/datamade/usaddress/issues
-* Distribution: https://pypi.python.org/pypi/usaddress
 * Blog post: http://datamade.us/blog/parsing-addresses-with-usaddress/
 
 ### Team
