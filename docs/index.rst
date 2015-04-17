@@ -79,31 +79,31 @@ Details
 The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard <http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard/>`__, and usaddress knows about the following types of components: 
 
 * **AddressNumber** - address number
-* **StreetName** - street name, excluding type & direction
-* **PlaceName** - city
-* **StateName** - state
-* **ZipCode** - zip code
 * **AddressNumberPrefix** - a modifier before an address number, e.g. 'Mile', '#'
 * **AddressNumberSuffix** - a modifier after an address number, e.g 'B', '1/2'
-* **StreetNamePreDirectional** - a direction before a street name, e.g. 'North', 'S'
-* **StreetNamePostDirectional** - a direction after a street name, e.g. 'North', 'S'
-* **StreetNamePreModifier** - a modifier before a street name that is not a direction, e.g. 'Old'
-* **StreetNamePostType** - a street type that comes after a street name, e.g. 'Avenue', 'Rd'
-* **StreetNamePreType** - a street type that comes before a street name, e.g. 'Route', 'Ave'
-* **USPSBoxType** - a USPS box, e.g. 'P.O. Box'
-* **USPSBoxID** - the identifier of a USPS box, usually a number
-* **USPSBoxGroupType** - a name for a group of USPS boxes, e.g. 'RR'
-* **USPSBoxGroupID** - the identifier of a USPS box group, usually a number
-* **LandmarkName** - the name of a landmark, e.g. 'Wrigley Field', 'Union Station'
+* **BuildingName** - the name of a building, e.g. 'Atlanta Financial Center'
 * **CornerOf** - words indicating that an address is a corner, e.g. 'Junction', 'corner of'
 * **IntersectionSeparator** - a conjunction connecting parts of an intersection, e.g. 'and', '&'
+* **LandmarkName** - the name of a landmark, e.g. 'Wrigley Field', 'Union Station'
+* **NotAddress** - a non-address component that doesn't refer to a recipient
 * **OccupancyType** - a type of occupancy within a building, e.g. 'Suite', 'Apt', 'Floor'
 * **OccupancyIdentifier** - the identifier of an occupancy, often a number or letter
-* **SubaddressType** - a level of detail in an address that is not an occupancy within a building, e.g. 'Building', 'Tower'
-* **SubaddressIdentifier** - the name/identifier of a subaddress component
+* **PlaceName** - city
 * **Recipient** - a non-address recipient, e.g. the name of a person/organization
-* **BuildingName** - the name of a building, e.g. 'Atlanta Financial Center'
-* **NotAddress** - a non-address component that doesn't refer to a recipient
+* **StateName** - state
+* **StreetName** - street name, excluding type & direction
+* **StreetNamePreDirectional** - a direction before a street name, e.g. 'North', 'S'
+* **StreetNamePreModifier** - a modifier before a street name that is not a direction, e.g. 'Old'
+* **StreetNamePreType** - a street type that comes before a street name, e.g. 'Route', 'Ave'
+* **StreetNamePostDirectional** - a direction after a street name, e.g. 'North', 'S'
+* **StreetNamePostType** - a street type that comes after a street name, e.g. 'Avenue', 'Rd'
+* **SubaddressIdentifier** - the name/identifier of a subaddress component
+* **SubaddressType** - a level of detail in an address that is not an occupancy within a building, e.g. 'Building', 'Tower'
+* **USPSBoxGroupID** - the identifier of a USPS box group, usually a number
+* **USPSBoxGroupType** - a name for a group of USPS boxes, e.g. 'RR'
+* **USPSBoxID** - the identifier of a USPS box, usually a number
+* **USPSBoxType** - a USPS box, e.g. 'P.O. Box'
+* **ZipCode** - zip code
 
 
 Important links
