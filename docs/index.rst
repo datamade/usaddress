@@ -96,6 +96,7 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 * **StreetNamePreModifier** - a modifier before a street name that is not a direction, e.g. 'Old'
 * **StreetNamePreType** - a street type that comes before a street name, e.g. 'Route', 'Ave'
 * **StreetNamePostDirectional** - a direction after a street name, e.g. 'North', 'S'
+* **StreetNamePostModifier** - a modifier adter a street name, e.g. 'Ext'
 * **StreetNamePostType** - a street type that comes after a street name, e.g. 'Avenue', 'Rd'
 * **SubaddressIdentifier** - the name/identifier of a subaddress component
 * **SubaddressType** - a level of detail in an address that is not an occupancy within a building, e.g. 'Building', 'Tower'
