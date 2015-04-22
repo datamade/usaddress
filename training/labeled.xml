@@ -992,4 +992,5 @@
   <AddressString><AddressNumber>W156N9762</AddressNumber> <StreetName>Pilgrim</StreetName> <StreetNamePostType>Rd</StreetNamePostType> <PlaceName>Germantown,</PlaceName> <StateName>WI</StateName> <ZipCode>53022</ZipCode></AddressString>
   <AddressString><AddressNumber>2220</AddressNumber> <StreetName>SHAWANO</StreetName> <StreetNamePostType>DR,</StreetNamePostType> <PlaceName>SAULT</PlaceName> <PlaceName>STE</PlaceName> <PlaceName>MARIE,</PlaceName> <StateName>MI</StateName> <ZipCode>49783</ZipCode></AddressString>
   <AddressString><AddressNumber>7355</AddressNumber> <StreetNamePreType>AL</StreetNamePreType> <StreetNamePreType>HIGHWAY</StreetNamePreType> <StreetName>157,</StreetName> <PlaceName>CULLMAN,</PlaceName> <StateName>AL</StateName> <ZipCode>35057</ZipCode></AddressString>
+  <AddressString><AddressNumber>W210</AddressNumber> <AddressNumber>N16570</AddressNumber> <StreetName>Glencoe</StreetName> <StreetNamePostType>Ln</StreetNamePostType> <PlaceName>Jackson,</PlaceName> <StateName>WI</StateName> <ZipCode>53037</ZipCode></AddressString>
 </AddressCollection>

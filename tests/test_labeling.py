@@ -5,7 +5,10 @@ from usaddress import parse, GROUP_LABEL
 from parserator.training import readTrainingData
 import unittest
 
-class TestSimpleAddresses(object) : # for test generators, must inherit from object
+
+class TestPerformance(object) : # for test generators, must inherit from object
+    
+    # these are simple address patterns
     def test_simple_addresses(self):
         test_file = 'measure_performance/test_data/simple_address_patterns.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
@@ -16,9 +19,23 @@ class TestSimpleAddresses(object) : # for test generators, must inherit from obj
             _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
-class TestSyntheticAddresses(object) :
-    def test_synthetic_addresses(self):
+    # for making sure that performance isn't degrading
+    # from now on, labeled examples of new address formats
+    # should go both in training data & test data
+    def test_all(self):
+        test_file = 'measure_performance/test_data/labeled.xml'
+        data = list(readTrainingData([test_file], GROUP_LABEL))
 
+        for labeled_address in data:
+            address_text, components = labeled_address
+            _, labels_true = list(zip(*components))
+            _, labels_pred = list(zip(*parse(address_text)))
+            yield equals, address_text, labels_pred, labels_true
+
+
+class TestPerformanceOld(object) : # some old tests for usaddress
+
+    def test_synthetic_addresses(self):
         test_file = 'measure_performance/test_data/synthetic_osm_data.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
 
@@ -28,7 +45,6 @@ class TestSyntheticAddresses(object) :
             _, labels_pred = list(zip(*parse(address_text)))
             yield equals, address_text, labels_pred, labels_true
 
-class TestUS50Addresses(object) :
     def test_us50(self):
         test_file = 'measure_performance/test_data/us50_test_tagged.xml'
         data = list(readTrainingData([test_file], GROUP_LABEL))
@@ -69,7 +85,7 @@ def fuzzyEquals(addr,
 
 def prettyPrint(addr, predicted, true) :
     print("ADDRESS:    ", addr)
-    print("fuzzy pred: ", predicted)
+    print("pred:       ", predicted)
     print("true:       ", true)
 
 
