@@ -8,7 +8,8 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 **What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
 
-## How to use usaddress
+## How to use the usaddress python library
+
 1. Install usaddress with [pip](http://pip.readthedocs.org/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/))
 
   In the terminal,
@@ -17,17 +18,22 @@ usaddress is a python library for parsing unstructured address strings into addr
   pip install usaddress
   ```
 2. Parse some addresses!
-  
+
+  ![usaddress](https://cloud.githubusercontent.com/assets/1406537/7869001/65c6ae62-0545-11e5-8b65-5d9e71dface5.gif)
+
+  Note that `parse` and `tag` are differet methods:
   ```python
-  >>> import usaddress
-  >>> usaddress.parse('123 Main St. Suite 100 Chicago, IL')
-  [('123', 'AddressNumber'), 
-  ('Main', 'StreetName'), 
-  ('St.', 'StreetNamePostType'), 
-  ('Suite', 'OccupancyType'), 
-  ('100', 'OccupancyIdentifier'), 
-  ('Chicago,', 'PlaceName'), 
-  ('IL', 'StateName')]
+  import usaddress
+  addr='123 Main St. Suite 100 Chicago, IL'
+  
+  # The parse method will split your address string into components, and label each component.
+  # expected output: [(u'123', 'AddressNumber'), (u'Main', 'StreetName'), (u'St.', 'StreetNamePostType'), (u'Suite', 'OccupancyType'), (u'100', 'OccupancyIdentifier'), (u'Chicago,', 'PlaceName'), (u'IL', 'StateName')]
+  usaddress.parse(addr)
+  
+  # The tag method will try to be a little smarter
+  # it will merge consecutive components, strip commas, & return an address type
+  # expected output: (OrderedDict([('AddressNumber', u'123'), ('StreetName', u'Main'), ('StreetNamePostType', u'St.'), ('OccupancyType', u'Suite'), ('OccupancyIdentifier', u'100'), ('PlaceName', u'Chicago'), ('StateName', u'IL')]), 'Street Address')
+  usaddress.tag(addr)
   ```
 
 ## For the nerds:
