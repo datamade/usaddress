@@ -9,7 +9,9 @@ usaddress is a python library for parsing unstructured address strings into addr
 **What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
 
 ## How to use usaddress
-1. Install usaddress
+1. Install usaddress with [pip](http://pip.readthedocs.org/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/))
+
+  In the terminal,
   
   ```bash
   pip install usaddress
