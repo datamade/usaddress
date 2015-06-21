@@ -21,7 +21,7 @@ usaddress is a python library for parsing unstructured address strings into addr
 
   ![usaddress](https://cloud.githubusercontent.com/assets/1406537/7869001/65c6ae62-0545-11e5-8b65-5d9e71dface5.gif)
 
-  Note that `parse` and `tag` are differet methods:
+  Note that `parse` and `tag` are different methods:
   ```python
   import usaddress
   addr='123 Main St. Suite 100 Chicago, IL'
