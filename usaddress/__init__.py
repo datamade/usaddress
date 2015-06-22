@@ -117,7 +117,7 @@ def tokenize(address_string) :
         address_string = str(address_string, encoding='utf-8')
     address_string = re.sub('(&#38;)|(&amp;)', '&', address_string)
     re_tokens = re.compile(r"""
-    \(*\b[^\s,;#&()]+[.,;)]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    \(*\b[^\s,;#&()]+[.,;)\n]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
     |
     [#&]                       # [^'#abc'] -> ['#']
     """,
