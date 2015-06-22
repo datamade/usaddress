@@ -23,4 +23,28 @@
   <AddressString><AddressNumber>232</AddressNumber> <StreetName>Dubei</StreetName> <StreetNamePostType>Ct</StreetNamePostType> <PlaceName>Salt</PlaceName> <PlaceName>Lake</PlaceName> <PlaceName>City</PlaceName> <StateName>UT</StateName> <ZipCode>84111</ZipCode></AddressString>
   <AddressString><AddressNumber>123</AddressNumber> <StreetNamePreDirectional>W</StreetNamePreDirectional> <StreetName>Hastings</StreetName> <StreetNamePostType>St</StreetNamePostType> <ZipCode>123456789</ZipCode></AddressString>
   <AddressString><USPSBoxType>PO</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>123456</USPSBoxID></AddressString>
+  <AddressString><Recipient>CORPORATE</Recipient> <Recipient>TRAVEL
+</Recipient> <Recipient>MICHAEL</Recipient> <Recipient>A</Recipient> <Recipient>CASOLO
+</Recipient> <Recipient>ATTN</Recipient> <Recipient>SHELIA</Recipient> <Recipient>LEWIS
+</Recipient> <AddressNumber>77</AddressNumber> <StreetNamePreDirectional>w</StreetNamePreDirectional> <StreetName>WACKER</StreetName> <StreetNamePostType>DR</StreetNamePostType> <OccupancyType>SUITE</OccupancyType> <OccupancyIdentifier>1800
+</OccupancyIdentifier> <PlaceName>CHICAGO</PlaceName> <StateName>IL</StateName> <ZipCode>60601</ZipCode></AddressString>
+  <AddressString><Recipient>MARTIN</Recipient> <Recipient>DAVIS
+</Recipient> <Recipient>SOS</Recipient> <Recipient>SECURITY</Recipient> <Recipient>IL</Recipient> <Recipient>CHICAGO</Recipient> <Recipient>BRANCH
+</Recipient> <AddressNumber>30</AddressNumber> <StreetNamePreDirectional>S</StreetNamePreDirectional> <StreetName>WACKER</StreetName> <StreetNamePostType>DR
+</StreetNamePostType> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>2200
+</OccupancyIdentifier> <PlaceName>CHICAGO</PlaceName> <StateName>IL</StateName> <ZipCode>60606</ZipCode></AddressString>
+  <AddressString><Recipient>Zendesk
+
+</Recipient> <Recipient>Christian</Recipient> <Recipient>Golding
+</Recipient> <AddressNumber>1019</AddressNumber> <StreetName>Market</StreetName> <StreetNamePostType>St
+
+</StreetNamePostType> <PlaceName>San</PlaceName> <PlaceName>Francisco</PlaceName> <StateName>CA</StateName> <ZipCode>94103</ZipCode></AddressString>
+  <AddressString><Recipient>LEXI</Recipient> <Recipient>HAGENSON
+</Recipient> <AddressNumber>860</AddressNumber> <StreetNamePreDirectional>w</StreetNamePreDirectional> <StreetName>Blackhawk</StreetName> <OccupancyIdentifier>305
+</OccupancyIdentifier> <PlaceName>CHICAGO</PlaceName> <StateName>ll.</StateName> <ZipCode>60642&#8212;2534</ZipCode></AddressString>
+  <AddressString><Recipient>Erin</Recipient> <Recipient>Johnson
+</Recipient> <Recipient>c/o</Recipient> <Recipient>DTZ
+</Recipient> <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>1800
+</OccupancyIdentifier> <AddressNumber>77</AddressNumber> <StreetNamePreDirectional>W</StreetNamePreDirectional> <StreetName>Wacker</StreetName> <StreetNamePostType>Dr
+</StreetNamePostType> <PlaceName>Chicago,</PlaceName> <StateName>IL</StateName> <ZipCode>606001</ZipCode></AddressString>
 </AddressCollection>
