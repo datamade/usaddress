@@ -47,4 +47,7 @@
 </Recipient> <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>1800
 </OccupancyIdentifier> <AddressNumber>77</AddressNumber> <StreetNamePreDirectional>W</StreetNamePreDirectional> <StreetName>Wacker</StreetName> <StreetNamePostType>Dr
 </StreetNamePostType> <PlaceName>Chicago,</PlaceName> <StateName>IL</StateName> <ZipCode>606001</ZipCode></AddressString>
+  <AddressString><AddressNumber>100</AddressNumber> <StreetName>Gold</StreetName> <StreetNamePostType>Street,</StreetNamePostType> <OccupancyIdentifier>2nd</OccupancyIdentifier> <OccupancyType>Fl.,</OccupancyType> <PlaceName>New</PlaceName> <PlaceName>York,</PlaceName> <StateName>NY</StateName> <ZipCode>10038</ZipCode></AddressString>
+  <AddressString><AddressNumber>59-17</AddressNumber> <StreetName>Junction</StreetName> <StreetNamePostType>Boulevard,</StreetNamePostType> <OccupancyIdentifier>17th</OccupancyIdentifier> <OccupancyType>Floor</OccupancyType> <OccupancyType>Conference</OccupancyType> <OccupancyType>Room,</OccupancyType> <PlaceName>Flushing,</PlaceName> <StateName>New</StateName> <StateName>York</StateName></AddressString>
+  <AddressString><AddressNumber>830</AddressNumber> <StreetName>Fifth</StreetName> <StreetNamePostType>Avenue,</StreetNamePostType> <OccupancyType>Room</OccupancyType> <OccupancyIdentifier>313,</OccupancyIdentifier> <PlaceName>New</PlaceName> <PlaceName>York,</PlaceName> <StateName>NY</StateName> <ZipCode>10065</ZipCode></AddressString>
 </AddressCollection>
