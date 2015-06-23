@@ -36,9 +36,9 @@ usaddress is a python library for parsing unstructured address strings into addr
   usaddress.tag(addr)
   ```
 
-## For the nerds:
-usaddress uses [parserator](https://github.com/datamade/parserator), a library for making and improving probabilistic parsers - specifically, parsers that use [python-crfsuite](https://github.com/tpeng/python-crfsuite)'s implementation of conditional random fields. Parserator allows you to train the usaddress parser's model (a .crfsuite settings file) on labeled training data, and provides tools for easily adding new labeled training data.
-#### Building & testing development code
+## How to use this development code (for the nerds)
+usaddress uses [parserator](https://github.com/datamade/parserator), a library for making and improving probabilistic parsers - specifically, parsers that use [python-crfsuite](https://github.com/tpeng/python-crfsuite)'s implementation of conditional random fields. Parserator allows you to train the usaddress parser's model (a .crfsuite settings file) on labeled training data, and provides tools for adding new labeled training data.
+#### Building & testing the code in this repo
   
   ```
   git clone https://github.com/datamade/usaddress.git  
@@ -79,7 +79,7 @@ parserator label [infile] training/labeled.xml usaddress
 
   Contribute back by making a pull request with your added training examples.
 
-### Important links
+## Important links
 
 * Web Interface: https://parserator.datamade.us/usaddress
 * Python Package Distribution: https://pypi.python.org/pypi/usaddress
@@ -89,23 +89,26 @@ parserator label [infile] training/labeled.xml usaddress
 * Issues: https://github.com/datamade/usaddress/issues
 * Blog post: http://datamade.us/blog/parsing-addresses-with-usaddress/
 
-### Team
+## Team
 
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
 * [Miroslav Batchkarov](http://mbatchkarov.github.io), University of Sussex
 
-### Errors / Bugs
+## Bad Parses / Bugs
 
-If something is not behaving intuitively, it is a bug, and should be reported.
-[Report it here](https://github.com/datamade/usaddress/issues)
+Report issues in the [issue tracker](https://github.com/datamade/usaddress/issues)
 
-### Note on Patches/Pull Requests
+If an address was parsed incorrectly, please let us know! If possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
+
+If something in the library is not behaving intuitively, it is a bug, and should be reported.
+
+## Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
 * Send us a pull request. Bonus points for topic branches.
 
-### Copyright
+## Copyright
 
 Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).
