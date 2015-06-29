@@ -1060,4 +1060,5 @@
   <AddressString><AddressNumber>115</AddressNumber> <StreetNamePreType>Business</StreetNamePreType> <StreetNamePreType>Loop</StreetNamePreType> <StreetName>70</StreetName> <StreetNamePostDirectional>w,</StreetNamePostDirectional> <BuildingName>Mizzou</BuildingName> <BuildingName>North,</BuildingName> <OccupancyType>Rm</OccupancyType> <OccupancyIdentifier>501
 </OccupancyIdentifier> <Recipient>Sponsored</Recipient> <Recipient>Programs</Recipient> <Recipient>Administration
 </Recipient> <PlaceName>Columbia</PlaceName> <StateName>MO</StateName> <ZipCode>65211</ZipCode></AddressString>
+  <AddressString><AddressNumber>105-25</AddressNumber> <StreetName>Horace</StreetName> <StreetName>Harding</StreetName> <StreetNamePostType>Expy</StreetNamePostType> <StreetNamePostDirectional>N,</StreetNamePostDirectional> <PlaceName>Corona,</PlaceName> <StateName>NY</StateName></AddressString>
 </AddressCollection>
