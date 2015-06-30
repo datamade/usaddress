@@ -1066,4 +1066,9 @@
   <AddressString><AddressNumber>3419</AddressNumber> <StreetName>SAINT</StreetName> <StreetName>JOHN</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>ST</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>3301</AddressNumber> <StreetName>NEW</StreetName> <StreetName>MEXICO</StreetName> <StreetNamePostDirectional>NW</StreetNamePostDirectional> <StreetNamePostType>AV</StreetNamePostType></AddressString>
   <AddressString><AddressNumber>2802</AddressNumber> <StreetName>BALLAST</StreetName> <StreetName>PT</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>BLVD</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>1</AddressNumber> <StreetName>SGT</StreetName> <StreetName>WM</StreetName> <StreetName>B</StreetName> <StreetName>TERRY</StreetName> <StreetNamePostType>DR</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>7650</AddressNumber> <StreetName>CRTNY</StreetName> <StreetName>CMPBL</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>CSWY</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>2350</AddressNumber> <StreetName>WASHINGTON</StreetName> <StreetNamePostDirectional>NE</StreetNamePostDirectional> <StreetNamePostType>PL</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>110</AddressNumber> <StreetName>COVENTRY</StreetName> <StreetNamePostType>SQUARE</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>3</AddressNumber> <StreetName>POLLY</StreetName> <StreetName>DRUMMOND</StreetName> <StreetNamePostType>CTR</StreetNamePostType></AddressString>
 </AddressCollection>
