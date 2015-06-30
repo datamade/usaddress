@@ -1061,4 +1061,9 @@
 </OccupancyIdentifier> <Recipient>Sponsored</Recipient> <Recipient>Programs</Recipient> <Recipient>Administration
 </Recipient> <PlaceName>Columbia</PlaceName> <StateName>MO</StateName> <ZipCode>65211</ZipCode></AddressString>
   <AddressString><AddressNumber>105-25</AddressNumber> <StreetName>Horace</StreetName> <StreetName>Harding</StreetName> <StreetNamePostType>Expy</StreetNamePostType> <StreetNamePostDirectional>N,</StreetNamePostDirectional> <PlaceName>Corona,</PlaceName> <StateName>NY</StateName></AddressString>
+  <AddressString><AddressNumber>2110</AddressNumber> <StreetName>SAINT</StreetName> <StreetName>JOHN</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>ST</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>3606</AddressNumber> <StreetName>BALLAST</StreetName> <StreetName>PT</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>BLVD</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>3419</AddressNumber> <StreetName>SAINT</StreetName> <StreetName>JOHN</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>ST</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>3301</AddressNumber> <StreetName>NEW</StreetName> <StreetName>MEXICO</StreetName> <StreetNamePostDirectional>NW</StreetNamePostDirectional> <StreetNamePostType>AV</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>2802</AddressNumber> <StreetName>BALLAST</StreetName> <StreetName>PT</StreetName> <StreetNamePostDirectional>W</StreetNamePostDirectional> <StreetNamePostType>BLVD</StreetNamePostType></AddressString>
 </AddressCollection>
