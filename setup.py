@@ -4,7 +4,7 @@ except ImportError :
     raise ImportError("setuptools module required, please go to https://pypi.python.org/pypi/setuptools and follow the instructions for installing setuptools")
 
 setup(
-    version='0.5.3',
+    version='0.5.4',
     url='https://github.com/datamade/usaddress',
     description='Parse US addresses using conditional random fields',
     name='usaddress',
