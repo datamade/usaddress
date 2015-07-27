@@ -150,7 +150,7 @@ def tokenFeatures(token) :
                             if token_abbrev.isdigit()
                             else u'w:' + str(len(token_abbrev))),
                 'endsinpunc' : (token[-1]
-                                if bool(re.match('.+[^.\w]', token))
+                                if bool(re.match('.+[^.\w]', token, flags=re.UNICODE))
                                 else False),
                 'directional' : token_abbrev in DIRECTIONS,
                 'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
