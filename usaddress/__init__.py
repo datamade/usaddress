@@ -135,7 +135,7 @@ def tokenFeatures(token) :
     if token in (u'&', u'#', u'½') :
         token_clean = token
     else :
-        token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)
+        token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token, flags=re.UNICODE)
 
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'abbrev' : token_clean[-1] == u'.',
