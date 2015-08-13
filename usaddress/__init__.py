@@ -135,7 +135,7 @@ def tokenFeatures(token) :
     if token in (u'&', u'#', u'½') :
         token_clean = token
     else :
-        token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token)
+        token_clean = re.sub(r'(^[\W]*)|([^.\w]*$)', u'', token, flags=re.UNICODE)
 
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'abbrev' : token_clean[-1] == u'.',
@@ -150,7 +150,7 @@ def tokenFeatures(token) :
                             if token_abbrev.isdigit()
                             else u'w:' + str(len(token_abbrev))),
                 'endsinpunc' : (token[-1]
-                                if bool(re.match('.+[^.\w]', token))
+                                if bool(re.match('.+[^.\w]', token, flags=re.UNICODE))
                                 else False),
                 'directional' : token_abbrev in DIRECTIONS,
                 'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
