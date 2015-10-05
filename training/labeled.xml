@@ -1074,4 +1074,6 @@
   <AddressString><AddressNumber>311</AddressNumber> <StreetName>Montezuma</StreetName> <StreetNamePostType>Ave</StreetNamePostType> <PlaceName>Santa</PlaceName> <PlaceName>Fe</PlaceName> <StateName>NM</StateName> <ZipCode>8750</ZipCode></AddressString>
   <AddressString><AddressNumber>6002</AddressNumber> <StreetName>El</StreetName> <StreetName>Tordo</StreetName> <StreetName>Rancho</StreetName> <PlaceName>Santa</PlaceName> <PlaceName>Fe</PlaceName> <StateName>CA</StateName> <ZipCode>92067</ZipCode></AddressString>
   <AddressString><AddressNumber>150</AddressNumber> <StreetName>Washington</StreetName> <StreetNamePostType>Ave.,</StreetNamePostType> <OccupancyType>Suite</OccupancyType> <OccupancyIdentifier>204</OccupancyIdentifier> <PlaceName>Santa</PlaceName> <PlaceName>Fe</PlaceName> <StateName>NM</StateName> <ZipCode>87501</ZipCode></AddressString>
+  <AddressString><AddressNumber>2854</AddressNumber> <StreetName>Capetanios,</StreetName> <PlaceName>El</PlaceName> <PlaceName>Dorado</PlaceName> <PlaceName>Hills,</PlaceName> <StateName>CA</StateName> <ZipCode>95762</ZipCode></AddressString>
+  <AddressString><AddressNumber>1725</AddressNumber> <StreetName>Mitchell</StreetName> <StreetName>Jones,</StreetName> <PlaceName>El</PlaceName> <PlaceName>Paso,</PlaceName> <StateName>TX</StateName> <ZipCode>79936</ZipCode></AddressString>
 </AddressCollection>
