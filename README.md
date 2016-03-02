@@ -61,7 +61,11 @@ parserator label [infile] training/labeled.xml usaddress
 ```  
 
 
-  This will start a console labeling task, where you will be prompted to label raw strings via the command line. For more info on using parserator, see the [parserator documentation](https://github.com/datamade/parserator/blob/master/README.md).  
+  This will start a console labeling task, where you will be prompted to label raw strings via the command line. For more info on using parserator, see the [parserator documentation](https://github.com/datamade/parserator/blob/master/README.md). 
+  
+### Creating training data from existing labeled data
+If you already have existing labeled data from another project, you'll need to convert it to our format. See https://github.com/lemgandi/FGDCMultiword for an example of how to do this.
+  
 #### Re-training the model  
   If you've added new training data, you will need to re-train the model. 
   
