@@ -6,13 +6,15 @@ from builtins import zip
 from builtins import str
 import os
 import string
-import pycrfsuite
 import re
 try :
     from collections import OrderedDict
 except ImportError :
     from ordereddict import OrderedDict
 import warnings
+
+import pycrfsuite
+import probableparsing
 
 # The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard
 # http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard
@@ -296,27 +298,8 @@ def trailingZeros(token) :
     
                           
 
-class RepeatedLabelError(Exception) :
-    def __init__(self, original_string, parsed_string, repeated_label) :
-
-        message ='''
-
-ERROR: Unable to tag this string because more than one area of the string has the same label
-
-ORIGINAL STRING:  %s
-PARSED TOKENS:    %s
-UNCERTAIN LABEL:  %s
-
-When this error is raised, it's likely that either (1) the string is not a valid address or (2) some tokens were labeled incorrectly
-
-To report an error in labeling a valid address, open an issue at https://github.com/datamade/usaddress/issues/new - it'll help us continue to improve usaddress!
-
-For more information, see the documentation at http://usaddress.readthedocs.org/
-        '''%(original_string, parsed_string, repeated_label)
-
-        super(RepeatedLabelError, self).__init__(message)
-
-        self.original_string = original_string
-        self.parsed_string = parsed_string
+class RepeatedLabelError(probableparsing.RepeatedLabelError) :
+    REPO_URL = 'https://github.com/datamade/usaddress/issues/new'
+    DOCS_URL = 'http://usaddress.readthedocs.org/'
 
 
