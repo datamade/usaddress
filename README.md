@@ -91,7 +91,7 @@ If you already have existing labeled data from another project, you'll need to c
 * API Documentation: https://parserator.datamade.us/api-docs
 * Repository: https://github.com/datamade/usaddress
 * Issues: https://github.com/datamade/usaddress/issues
-* Blog post: http://datamade.us/blog/parsing-addresses-with-usaddress/
+* Blog post: http://datamade.us/blog/parsing-addresses-with-usaddress
 
 ## Team
 
