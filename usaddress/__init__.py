@@ -300,6 +300,6 @@ def trailingZeros(token) :
 
 class RepeatedLabelError(probableparsing.RepeatedLabelError) :
     REPO_URL = 'https://github.com/datamade/usaddress/issues/new'
-    DOCS_URL = 'http://usaddress.readthedocs.org/'
+    DOCS_URL = 'https://usaddress.readthedocs.io/'
 
 

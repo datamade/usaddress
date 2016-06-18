@@ -110,7 +110,7 @@ The address components are based upon the `United States Thoroughfare, Landmark,
 Important links
 ===============
 
-* Documentation: http://usaddress.rtfd.org/
+* Documentation: https://usaddress.readthedocs.io/
 * Repository: https://github.com/datamade/usaddress
 * Issues: https://github.com/datamade/usaddress/issues
 * Distribution: https://pypi.python.org/pypi/usaddress
