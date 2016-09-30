@@ -171,17 +171,27 @@ def parse(address_string) :
     tags = TAGGER.tag(features)
     return list(zip(tokens, tags))
 
-def tag(address_string) :
+def tag(address_string, tag_mapping=None) :
     tagged_address = OrderedDict()
 
     last_label = None
-    intersection = False
+    is_intersection = False
+    og_labels = []
 
     for token, label in parse(address_string) :
         if label == 'IntersectionSeparator' :
-            intersection = True
-        if 'StreetName' in label and intersection :
+            is_intersection = True
+        if 'StreetName' in label and is_intersection :
             label = 'Second' + label 
+
+        # saving old label
+        og_labels.append(label)
+        # map tag to a new tag if tag mapping is provided
+        if tag_mapping and tag_mapping.get(label):
+            label = tag_mapping.get(label)
+        else:
+            label = label
+
         if label == last_label :
             tagged_address[label].append(token)
         elif label not in tagged_address :
@@ -197,11 +207,11 @@ def tag(address_string) :
         tagged_address[token] = component
 
 
-    if 'AddressNumber' in tagged_address and not intersection :
+    if 'AddressNumber' in og_labels and not is_intersection :
         address_type = 'Street Address'
-    elif intersection and 'AddressNumber' not in tagged_address :
+    elif is_intersection and 'AddressNumber' not in og_labels :
         address_type = 'Intersection'
-    elif 'USPSBoxID' in tagged_address :
+    elif 'USPSBoxID' in og_labels :
         address_type = 'PO Box'
     else :
         address_type = 'Ambiguous'

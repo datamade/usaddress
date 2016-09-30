@@ -59,3 +59,5 @@ docs/_build/
 # temp files
 *~
 *#
+
+.DS_Store
