@@ -1,14 +1,47 @@
 branches:
-only:
+  only:
   - master
+  - "/^v.*$/"
 language: python
-python:
-  - '2.7'
-  - '3.4'
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+  irc: chat.freenode.net#dedupe
+matrix:
+  include:
+  - os: linux
+    python: 3.4
+  - os: linux
+    python: 2.7
+  - os: osx
+    language: generic
+    env: BREW_PYTHON='python'
+  - os: osx
+    language: generic
+    env: BREW_PYTHON='python3'
+before_install:
+- if [[ $BREW_PYTHON == 'python3' ]]; then brew update; brew install $BREW_PYTHON;
+  python3 -m venv venv; source venv/bin/activate; fi
 install:
-  - pip install -r requirements.txt
-  - python setup.py develop
-  - parserator train training/labeled.xml usaddress  
-after_success: coveralls
-sudo: false
-script: nosetests --with-coverage --cover-package=usaddress
+- pip install --upgrade pip
+- pip install --upgrade -r requirements.txt
+- pip install -e .
+- parserator train training/labeled.xml usaddress
+script:
+- script: nosetests --with-coverage --cover-package=usaddress
+after_success:
+- coveralls
+- echo [distutils]                                  > ~/.pypirc
+- echo index-servers = pypi                        >> ~/.pypirc
+- echo [pypi]                                      >> ~/.pypirc
+- echo repository=https://pypi.python.org/pypi     >> ~/.pypirc
+- echo username=datamade.wheelbuilder              >> ~/.pypirc
+- echo password=$PYPIPASSWORD                      >> ~/.pypirc
+- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "osx" ]]; then python setup.py bdist_wheel
+  upload; fi
+- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "linux" ]]; then python setup.py sdist
+  upload; fi
+env:
+  global:
+  - secure: BltVbgXfZWBFpZId6l33MfMY+O9k6O75bJsyEqz+8OQ8Y7wF2NH85er+8z/gClPjbbE1UDBh+1m4ifUM+QEp6YvgLaciT2bd7x+4Z/Ur5s3IXb1dJML1W/IdBUiN8VMeDSBzHk/LxOCDnPvEPG4wRYxEK0Be+1d70An0r43MriM=
