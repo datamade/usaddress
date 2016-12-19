@@ -2,9 +2,6 @@
 # Based on https://raw.githubusercontent.com/choderalab/itctools/master/appveyor.yml
 
 environment:
-  password:
-    secure: WCflARlYtKV2j4dKfsQQVg==
-
   matrix:
     - python : 27
     - python : 27-x64
@@ -31,16 +28,3 @@ on_success:
   - echo Build succesful!
   - coverage report
 
-deploy_script:
-  - echo [distutils]                                  > %USERPROFILE%\\.pypirc
-  - echo index-servers =                             >> %USERPROFILE%\\.pypirc
-  - echo     pypi                                    >> %USERPROFILE%\\.pypirc
-  - echo [pypi]                                      >> %USERPROFILE%\\.pypirc
-  - echo repository=https://pypi.python.org/pypi     >> %USERPROFILE%\\.pypirc
-  - echo username=datamade.wheelbuilder              >> %USERPROFILE%\\.pypirc
-  - echo password=%password%                         >> %USERPROFILE%\\.pypirc
-  - set HOME=%USERPROFILE%
-  - pip install wheel
-  - ps: if($env:APPVEYOR_REPO_TAG -eq $TRUE) { python -W ignore setup.py bdist_wheel upload }
-
-deploy : on

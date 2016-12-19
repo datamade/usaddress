@@ -38,10 +38,7 @@ after_success:
 - echo repository=https://pypi.python.org/pypi     >> ~/.pypirc
 - echo username=datamade.wheelbuilder              >> ~/.pypirc
 - echo password=$PYPIPASSWORD                      >> ~/.pypirc
-- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "osx" ]]; then python setup.py bdist_wheel
-  upload; fi
-- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "linux" ]]; then python setup.py sdist
-  upload; fi
+- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "linux" ]]; then python setup.py sdist bdist_wheel upload; fi
 env:
   global:
   - secure: BltVbgXfZWBFpZId6l33MfMY+O9k6O75bJsyEqz+8OQ8Y7wF2NH85er+8z/gClPjbbE1UDBh+1m4ifUM+QEp6YvgLaciT2bd7x+4Z/Ur5s3IXb1dJML1W/IdBUiN8VMeDSBzHk/LxOCDnPvEPG4wRYxEK0Be+1d70An0r43MriM=
