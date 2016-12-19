@@ -10,7 +10,7 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 ## How to use the usaddress python library
 
-1. Install usaddress with [pip](http://pip.readthedocs.org/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/))
+1. Install usaddress with [pip](https://pip.readthedocs.io/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/))
 
   In the terminal,
   
@@ -87,7 +87,7 @@ If you already have existing labeled data from another project, you'll need to c
 
 * Web Interface: https://parserator.datamade.us/usaddress
 * Python Package Distribution: https://pypi.python.org/pypi/usaddress
-* Python Package Documentation: http://usaddress.rtfd.org/
+* Python Package Documentation: https://usaddress.readthedocs.io/
 * API Documentation: https://parserator.datamade.us/api-docs
 * Repository: https://github.com/datamade/usaddress
 * Issues: https://github.com/datamade/usaddress/issues
