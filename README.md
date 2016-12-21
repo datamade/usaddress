@@ -2,7 +2,7 @@ usaddress
 =================
 [![Build Status](https://travis-ci.org/datamade/usaddress.svg?branch=master)](https://travis-ci.org/datamade/usaddress)[![Build status](https://ci.appveyor.com/api/projects/status/5mbcd8ku0tm66noq?svg=true)](https://ci.appveyor.com/project/fgregg/usaddress)
 
-usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](https://parserator.datamade.us/usaddress)! For those who aren't python developers, we also have an [API](https://parserator.datamade.us/api-docs).
+usaddress is a Python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](https://parserator.datamade.us/usaddress)! For those who aren't Python developers, we also have an [API](https://parserator.datamade.us/api-docs).
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
@@ -10,7 +10,7 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 ## How to use the usaddress python library
 
-1. Install usaddress with [pip](https://pip.readthedocs.io/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/))
+1. Install usaddress with [pip](https://pip.readthedocs.io/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/)).
 
   In the terminal,
   
@@ -38,7 +38,9 @@ usaddress is a python library for parsing unstructured address strings into addr
 
 ## How to use this development code (for the nerds)
 usaddress uses [parserator](https://github.com/datamade/parserator), a library for making and improving probabilistic parsers - specifically, parsers that use [python-crfsuite](https://github.com/tpeng/python-crfsuite)'s implementation of conditional random fields. Parserator allows you to train the usaddress parser's model (a .crfsuite settings file) on labeled training data, and provides tools for adding new labeled training data.
-#### Building & testing the code in this repo
+### Building & testing the code in this repo
+
+To build a development version of usaddress on your machine, run the following code in your command line:
   
   ```
   git clone https://github.com/datamade/usaddress.git  
@@ -46,42 +48,19 @@ usaddress uses [parserator](https://github.com/datamade/parserator), a library f
   pip install -r requirements.txt  
   python setup.py develop  
   parserator train training/labeled.xml usaddress  
-  nosetests .  
   ```  
-#### Creating/adding labeled training data (.xml outfile) from unlabeled raw data (.csv infile)  
-  If there are address formats that the parser isn't performing well on, you can add them to training data. As the usaddress parser continually learns about new cases, it will continually become smarter and more robust.  
-  
- ```
-parserator label [infile] [outfile] usaddress  
-```  
-  Our main training file is `training/labeled.xml` so you can do
 
-```
-parserator label [infile] training/labeled.xml usaddress  
-```  
+Then run the testing suite to confirm that everything is working properly:
 
+   ```
+   nosetests .
+   ```
+   
+Having trouble building the code? [Open an issue](https://github.com/datamade/usaddress/issues/new) and we'd be glad to help you troubleshoot.
 
-  This will start a console labeling task, where you will be prompted to label raw strings via the command line. For more info on using parserator, see the [parserator documentation](https://github.com/datamade/parserator/blob/master/README.md). 
-  
-### Creating training data from existing labeled data
-If you already have existing labeled data from another project, you'll need to convert it to our format. See https://github.com/lemgandi/FGDCMultiword for an example of how to do this.
-  
-#### Re-training the model  
-  If you've added new training data, you will need to re-train the model. 
-  
-  ```
-  parserator train [traindata] usaddress  
-  ```  
-  
-  So, you could do 
-  
-  ```
-  parserator train training/labeled.xml usaddress  
-  ```  
-  
-  To set multiple files as traindata, separate them with commas (e.g. ```training/foo.xml,training/bar.xml```)
+### Adding new training data
 
-  Contribute back by making a pull request with your added training examples.
+If usaddress is consistently failing on particular address patterns, you can adjust the parser's behavior by adding new training data to the model. [Follow our guide in the training directory](https://github.com/datamade/usaddress/blob/master/training/README.md), and be sure to make a pull request so that we can incorporate your contribution into our next release!
 
 ## Important links
 
@@ -103,7 +82,7 @@ If you already have existing labeled data from another project, you'll need to c
 
 Report issues in the [issue tracker](https://github.com/datamade/usaddress/issues)
 
-If an address was parsed incorrectly, please let us know! If possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
+If an address was parsed incorrectly, please let us know! You can either [open an issue](https://github.com/datamade/usaddress/issues/new) or (if you're adventurous) [add new training data to improve the parser's model.](https://github.com/datamade/usaddress/blob/master/training/README.md) When possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
 
 If something in the library is not behaving intuitively, it is a bug, and should be reported.
 
@@ -111,7 +90,7 @@ If something in the library is not behaving intuitively, it is a bug, and should
  
 * Fork the project.
 * Make your feature addition or bug fix.
-* Send us a pull request. Bonus points for topic branches.
+* Send us a pull request. Bonus points for topic branches!
 
 ## Copyright
 
