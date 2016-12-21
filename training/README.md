@@ -101,13 +101,13 @@ Thankfully, you don't have to write this code by hand! This repo comes with a bu
 parserator label <filepath for your input CSV> <filepath for your output XML> usaddress
 ```
 
-The **output** filepath can be anything you want, since usaddress will make a new file with the name and location described by the path, but it's good practice to give it the same name and location as the input CSV file. For our example, the command for labeling our training data will look like this:
+The **output** filepath can be anything you want, since usaddress will make a new file with the name and location described by the path, but it's good practice to give it a similar name and location as the input CSV file. For our example, the command for labeling our training data will look like this:
 
 ```
 parserator label training/new_addresses.csv training/new_addresses.xml usaddress
 ```
 
-Run this command and the labelling program will launch in the command line. It will start by printing some information to describe the commands that you can use to label addresses:
+Run this command and the labeling program will launch in the command line. It will start by printing some information to describe the commands that you can use to label addresses:
 
 ```
 Start console labeling!
@@ -294,11 +294,11 @@ Once all of the tests are passing, you're safe to move on to step 5b.
 
 If you've arrived at this step, it means that all of your new and old tests passed and your model is good to go. Fantastic!
 
-Now it's time to share your work. GitHub provides a powerful way of sharing code through the *pull request* feature (and has a [really nice guide](https://help.github.com/articles/creating-a-pull-request/) for first-timers explaining how it works). Open up a new pull request and give us a short description of what you changed: What address patterns did you fix? Where did you store your training data? How many new examples/tests did you add? The clearer your description of your work, the easier it will be for the DataMade team to determine whether it's ready to 
+Now it's time to share your work. GitHub provides a powerful way of sharing code through the *pull request* feature (and has a [really nice guide](https://help.github.com/articles/creating-a-pull-request/) for first-timers explaining how it works). Open up a new pull request and give us a short description of what you changed: What address patterns did you fix? Where did you store your training data? How many new examples/tests did you add? The clearer your description of your work, the easier it will be for the DataMade team to determine whether it's ready to go.
 
 If you made it this far, **great job!** We appreciate your dedication to making usaddress better for the whole community. Drop us a line on [GitHub](https://github.com/datamade) or on [Twitter](https://twitter.com/DataMadeCo) and let us know how you're using usaddress.
 
 Need help?
 ----------
 
-We want contributing to usaddress to be as painless as possible. If you run into problems following any of our documentation, feel free to [open an issue](https://github.com/datamade/usaddress/issues/new) describing your problem and the DataMade would be glad to help.
+We want contributing to usaddress to be as painless as possible. If you run into problems following any of our documentation, feel free to [open an issue](https://github.com/datamade/usaddress/issues/new) describing your problem and the DataMade team would be glad to help.
