@@ -152,6 +152,7 @@ STREET_NAMES = {'bluf', 'paths', 'tunnl', 'valley', 'harbr', 'lodge',
                 'junctions', 'fort', 'byps', 'harbors', 'villg',
                 'brook', 'ky', 'course', 'cvs', 'run', 'vdct', 'exts'}
 
+OCCUPANCY_TYPES = {'apt', '#', 'ste', 'unit', 'lot', 'fl', 'trlr', 'bldg', 'rm', 'spc'}
 
 try :
     TAGGER = pycrfsuite.Tagger()
@@ -251,6 +252,7 @@ def tokenFeatures(token) :
                 'directional' : token_abbrev in DIRECTIONS,
                 'street_name' : token_abbrev in STREET_NAMES,
                 'has.vowels'  : bool(set(token_abbrev[1:]) & set('aeiou')),
+                'occupancy_type': token_abbrev in OCCUPANCY_TYPES,
                 }
 
 
