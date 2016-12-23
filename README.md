@@ -77,6 +77,7 @@ If usaddress is consistently failing on particular address patterns, you can adj
 * [Forest Gregg](https://github.com/fgregg), DataMade
 * [Cathy Deng](https://github.com/cathydeng), DataMade
 * [Miroslav Batchkarov](http://mbatchkarov.github.io), University of Sussex
+* [Jean Cochrane](https://github.com/jeancochrane), DataMade
 
 ## Bad Parses / Bugs
 
