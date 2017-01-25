@@ -114,31 +114,31 @@ Start console labeling!
 
 **************************************************
 These are the tags available for labeling:
-0 : AddressNumber
-1 : StreetName
-2 : PlaceName
-3 : StateName
-4 : ZipCode
-5 : AddressNumberPrefix
-6 : AddressNumberSuffix
-7 : StreetNamePreDirectional
+0 : AddressNumberPrefix
+1 : AddressNumber
+2 : AddressNumberSuffix
+3 : StreetNamePreModifier
+4 : StreetNamePreDirectional
+5 : StreetNamePreType
+6 : StreetName
+7 : StreetNamePostType
 8 : StreetNamePostDirectional
-9 : StreetNamePreModifier
-10 : StreetNamePostType
-11 : StreetNamePreType
-12 : USPSBoxType
-13 : USPSBoxID
-14 : USPSBoxGroupType
-15 : USPSBoxGroupID
-16 : LandmarkName
-17 : CornerOf
-18 : IntersectionSeparator
-19 : OccupancyType
-20 : OccupancyIdentifier
-21 : SubaddressIdentifier
-22 : SubaddressType
-23 : Recipient
-24 : BuildingName
+9 : SubaddressType
+10 : SubaddressIdentifier
+11 : BuildingName
+12 : OccupancyType
+13 : OccupancyIdentifier
+14 : CornerOf
+15 : LandmarkName
+16 : PlaceName
+17 : StateName
+18 : ZipCode
+19 : USPSBoxType
+20 : USPSBoxID
+21 : USPSBoxGroupType
+22 : USPSBoxGroupID
+23 : IntersectionSeparator
+24 : Recipient
 25 : NotAddress
 
 type 'help' at any time to see labels
