@@ -56,103 +56,86 @@ MODEL_PATH = os.path.split(os.path.abspath(__file__))[0] + '/' + MODEL_FILE
 
 DIRECTIONS = set(['n', 's', 'e', 'w',
                   'ne', 'nw', 'se', 'sw',
-                  'north', 'south', 'east', 'west', 
+                  'north', 'south', 'east', 'west',
                   'northeast', 'northwest', 'southeast', 'southwest'])
 
-STREET_NAMES = {'bluf', 'paths', 'tunnl', 'valley', 'harbr', 'lodge',
-                'plz', 'bch', 'msn', 'squ', 'frgs', 'haven', 'drs',
-                'islands', 'frk', 'extensions', 'annx', 'bayoo',
-                'knol', 'hollow', 'cpe', 'psge', 'dvd', 'loops',
-                'lock', 'crossroad', 'aly', 'fld', 'gdn', 'estates',
-                'grns', 'alley', 'gatway', 'mtn', 'trail', 'shrs',
-                'cape', 'pkwys', 'plns', 'ht', 'arcade', 'fls',
-                'knls', 'streets', 'crse', 'frg', 'boul', 'brg',
-                'vis', 'wall', 'boulv', 'center', 'lake', 'extnsn',
-                'hbr', 'hvn', 'centers', 'mntain', 'shores',
-                'mission', 'fry', 'un', 'hllw', 'via', 'forks',
-                'anex', 'gatewy', 'bridge', 'pr', 'creek', 'mdw',
-                'cliffs', 'grov', 'flt', 'manor', 'trace', 'crossing',
-                'grn', 'trks', 'fall', 'mountin', 'valleys', 'avenu',
-                'route', 'trak', 'parkway', 'crsnt', 'spg', 'locks',
-                'spurs', 'tunnel', 'loop', 'vlys', 'orchard',
-                'gardens', 'byp', 'greens', 'turnpike', 'curve',
-                'vist', 'avnue', 'clfs', 'fwy', 'strvn', 'rdge',
-                'walk', 'trafficway', 'walks', 'circl', 'ctrs',
-                'ports', 'station', 'ml', 'pnes', 'row', 'island',
-                'cen', 'ridge', 'garden', 'frway', 'junctn', 'drive',
-                'street', 'crcle', 'crest', 'mountains', 'beach',
-                'bluff', 'juncton', 'viadct', 'rvr', 'smt', 'knolls',
-                'plza', 'blf', 'traces', 'trails', 'pl', 'square',
-                'villag', 'commons', 'mtwy', 'ter', 'cp', 'cliff',
-                'xrd', 'exp', 'ville', 'path', 'track', 'est',
-                'glens', 'spng', 'branch', 'br', 'frd', 'tunl', 'mnt',
-                'bgs', 'forests', 'opas', 'point', 'skwy', 'rad',
-                'manors', 'plaza', 'gdns', 'port', 'trlr', 'bnd',
-                'frwy', 'knoll', 'place', 'throughway', 'avenue',
-                'crsent', 'rnch', 'trnpk', 'mt', 'lndg', 'freewy',
-                'trl', 'road', 'stravenue', 'ferry', 'hls', 'ave',
-                'prts', 'gtwy', 'cv', 'strvnue', 'forges', 'hill',
-                'mountain', 'allee', 'cyn', 'pln', 'hiwy', 'overpass',
-                'spngs', 'vly', 'shoals', 'shl', 'isle', 'ests',
-                'rdg', 'vlg', 'clb', 'club', 'well', 'lodg', 'expy',
-                'vill', 'crcl', 'iss', 'mtns', 'bend', 'expw',
-                'bluffs', 'prk', 'ft', 'brnch', 'bypas', 'bot',
-                'fields', 'hbrs', 'cent', 'lks', 'prt', 'key', 'cor',
-                'motorway', 'radial', 'jct', 'courts', 'hwy', 'ally',
-                'highwy', 'rapid', 'riv', 'pines', 'rdgs', 'cmp',
-                'is', 'xrds', 'brk', 'mills', 'circle', 'strt',
-                'shls', 'ramp', 'viaduct', 'aven', 'harb', 'sq',
-                'sta', 'streme', 'hway', 'rte', 'dl', 'dm', 'ext',
-                'rnchs', 'glns', 'roads', 'flds', 'frds', 'holws',
-                'vista', 'uns', 'statn', 'straven', 'villages', 'mnr',
-                'sumit', 'burg', 'flts', 'wls', 'crossroads', 'view',
-                'trwy', 'cmn', 'str', 'pts', 'hl', 'cntr', 'prairie',
-                'upas', 'shoal', 'mall', 'pne', 'vsta', 'sumitt',
-                'heights', 'express', 'pikes', 'blvd', 'hts', 'pkwy',
-                'trlrs', 'shore', 'brooks', 'trailer', 'ln', 'jctn',
-                'mount', 'pkway', 'trfy', 'squares', 'green', 'mtin',
-                'driv', 'lcks', 'brdge', 'neck', 'pine', 'islnd',
-                'common', 'mnrs', 'cnter', 'junction', 'frst', 'vlly',
-                'spring', 'xing', 'rds', 'lgts', 'tunnels', 'lk',
-                'cove', 'loaf', 'burgs', 'groves', 'court', 'vally',
-                'ct', 'terrace', 'centr', 'vst', 'shr', 'prr', 'oval',
-                'stra', 'lck', 'nck', 'rapids', 'cnyn', 'village',
-                'drv', 'sts', 'tunel', 'meadows', 'grv', 'gateway',
-                'falls', 'passage', 'inlt', 'pass', 'vw', 'harbor',
-                'bypass', 'lgt', 'extension', 'canyon', 'mews',
-                'causwa', 'river', 'knl', 'trls', 'crescent', 'anx',
-                'strm', 'tpke', 'jction', 'annex', 'crst', 'curv',
-                'jctns', 'bottom', 'corner', 'lights', 'inlet', 'lf',
-                'shoars', 'avn', 'boulevard', 'cors', 'brks', 'av',
-                'mill', 'glen', 'lndng', 'bg', 'grove', 'keys',
-                'rivr', 'dv', 'orch', 'springs', 'ranch', 'light',
-                'shoar', 'landing', 'freeway', 'mssn', 'way', 'arc',
-                'byu', 'cmns', 'forg', 'coves', 'parkwy', 'vws',
-                'parkways', 'vlgs', 'sqre', 'cir', 'wy', 'fords',
-                'sqrs', 'radiel', 'spur', 'lane', 'flat', 'trce',
-                'skyway', 'bypa', 'park', 'hills', 'mls', 'plain',
-                'unions', 'frry', 'islnds', 'causeway', 'orchrd',
-                'radl', 'mntn', 'mdws', 'medows', 'wells', 'grvs',
-                'expressway', 'vl', 'sqs', 'sprngs', 'field',
-                'tracks', 'grdns', 'rst', 'missn', 'underpass', 'ldg',
-                'circ', 'pky', 'stravn', 'clf', 'ranches', 'crssng',
-                'kys', 'rpds', 'cswy', 'rest', 'camp', 'hollows',
-                'mntns', 'stn', 'drives', 'points', 'estate', 'strav',
-                'st', 'frks', 'forest', 'div', 'centre', 'hrbor',
-                'union', 'canyn', 'cres', 'corners', 'cirs', 'spgs',
-                'views', 'meadow', 'turnpk', 'summit', 'ford',
-                'divide', 'pt', 'trk', 'ways', 'lakes', 'jcts', 'cts',
-                'dale', 'villiage', 'gardn', 'dr', 'fork', 'wl',
-                'rue', 'ovl', 'sprng', 'rd', 'sqr', 'stream',
-                'plains', 'highway', 'ldge', 'gtway', 'extn', 'frt',
-                'pike', 'expr', 'tunls', 'hiway', 'holw', 'dam',
-                'rpd', 'bayou', 'circles', 'isles', 'ctr', 'grdn',
-                'terr', 'blfs', 'btm', 'gln', 'flats', 'crk', 'forge',
-                'ridges', 'parks', 'bottm', 'land', 'grden',
-                'junctions', 'fort', 'byps', 'harbors', 'villg',
-                'brook', 'ky', 'course', 'cvs', 'run', 'vdct', 'exts'}
-
-
+STREET_NAMES = {'allee', 'alley', 'ally', 'aly', 'anex', 'annex', 'annx', 'anx',
+                'arc', 'arcade', 'av', 'ave', 'aven', 'avenu', 'avenue', 'avn',
+                'avnue', 'bayoo', 'bayou', 'bch', 'beach', 'bend', 'bg', 'bgs',
+                'blf', 'blfs', 'bluf', 'bluff', 'bluffs', 'blvd', 'bnd', 'bot',
+                'bottm', 'bottom', 'boul', 'boulevard', 'boulv', 'br', 'branch',
+                'brdge', 'brg', 'bridge', 'brk', 'brks', 'brnch', 'brook',
+                'brooks', 'btm', 'burg', 'burgs', 'byp', 'bypa', 'bypas',
+                'bypass', 'byps', 'byu', 'camp', 'canyn', 'canyon', 'cape',
+                'causeway', 'causwa', 'cen', 'cent', 'center', 'centers',
+                'centr', 'centre', 'cir', 'circ', 'circl', 'circle', 'circles',
+                'cirs', 'clb', 'clf', 'clfs', 'cliff', 'cliffs', 'club', 'cmn',
+                'cmns', 'cmp', 'cnter', 'cntr', 'cnyn', 'common', 'commons',
+                'cor', 'corner', 'corners', 'cors', 'course', 'court', 'courts',
+                'cove', 'coves', 'cp', 'cpe', 'crcl', 'crcle', 'creek', 'cres',
+                'crescent', 'crest', 'crk', 'crossing', 'crossroad',
+                'crossroads', 'crse', 'crsent', 'crsnt', 'crssng', 'crst',
+                'cswy', 'ct', 'ctr', 'ctrs', 'cts', 'curv', 'curve', 'cv',
+                'cvs', 'cyn', 'dale', 'dam', 'div', 'divide', 'dl', 'dm', 'dr',
+                'driv', 'drive', 'drives', 'drs', 'drv', 'dv', 'dvd', 'est',
+                'estate', 'estates', 'ests', 'exp', 'expr', 'express',
+                'expressway', 'expw', 'expy', 'ext', 'extension', 'extensions',
+                'extn', 'extnsn', 'exts', 'fall', 'falls', 'ferry', 'field',
+                'fields', 'flat', 'flats', 'fld', 'flds', 'fls', 'flt', 'flts',
+                'ford', 'fords', 'forest', 'forests', 'forg', 'forge', 'forges',
+                'fork', 'forks', 'fort', 'frd', 'frds', 'freeway', 'freewy',
+                'frg', 'frgs', 'frk', 'frks', 'frry', 'frst', 'frt', 'frway',
+                'frwy', 'fry', 'ft', 'fwy', 'garden', 'gardens', 'gardn',
+                'gateway', 'gatewy', 'gatway', 'gdn', 'gdns', 'glen', 'glens',
+                'gln', 'glns', 'grden', 'grdn', 'grdns', 'green', 'greens',
+                'grn', 'grns', 'grov', 'grove', 'groves', 'grv', 'grvs',
+                'gtway', 'gtwy', 'harb', 'harbor', 'harbors', 'harbr', 'haven',
+                'hbr', 'hbrs', 'heights', 'highway', 'highwy', 'hill', 'hills',
+                'hiway', 'hiwy', 'hl', 'hllw', 'hls', 'hollow', 'hollows',
+                'holw', 'holws', 'hrbor', 'ht', 'hts', 'hvn', 'hway', 'hwy',
+                'inlet', 'inlt', 'is', 'island', 'islands', 'isle', 'isles',
+                'islnd', 'islnds', 'iss', 'jct', 'jction', 'jctn', 'jctns',
+                'jcts', 'junction', 'junctions', 'junctn', 'juncton', 'key',
+                'keys', 'knl', 'knls', 'knol', 'knoll', 'knolls', 'ky', 'kys',
+                'lake', 'lakes', 'land', 'landing', 'lane', 'lck', 'lcks',
+                'ldg', 'ldge', 'lf', 'lgt', 'lgts', 'light', 'lights', 'lk',
+                'lks', 'ln', 'lndg', 'lndng', 'loaf', 'lock', 'locks', 'lodg',
+                'lodge', 'loop', 'loops', 'mall', 'manor', 'manors', 'mdw',
+                'mdws', 'meadow', 'meadows', 'medows', 'mews', 'mill', 'mills',
+                'mission', 'missn', 'ml', 'mls', 'mnr', 'mnrs', 'mnt', 'mntain',
+                'mntn', 'mntns', 'motorway', 'mount', 'mountain', 'mountains',
+                'mountin', 'msn', 'mssn', 'mt', 'mtin', 'mtn', 'mtns', 'mtwy',
+                'nck', 'neck', 'opas', 'orch', 'orchard', 'orchrd', 'oval',
+                'overpass', 'ovl', 'park', 'parks', 'parkway', 'parkways',
+                'parkwy', 'pass', 'passage', 'path', 'paths', 'pike', 'pikes',
+                'pine', 'pines', 'pkway', 'pkwy', 'pkwys', 'pky', 'pl', 'place',
+                'plain', 'plains', 'plaza', 'pln', 'plns', 'plz', 'plza', 'pne',
+                'pnes', 'point', 'points', 'port', 'ports', 'pr', 'prairie',
+                'prk', 'prr', 'prt', 'prts', 'psge', 'pt', 'pts', 'rad',
+                'radial', 'radiel', 'radl', 'ramp', 'ranch', 'ranches', 'rapid',
+                'rapids', 'rd', 'rdg', 'rdge', 'rdgs', 'rds', 'rest', 'ridge',
+                'ridges', 'riv', 'river', 'rivr', 'rnch', 'rnchs', 'road',
+                'roads', 'route', 'row', 'rpd', 'rpds', 'rst', 'rte', 'rue',
+                'run', 'rvr', 'shl', 'shls', 'shoal', 'shoals', 'shoar',
+                'shoars', 'shore', 'shores', 'shr', 'shrs', 'skwy', 'skyway',
+                'smt', 'spg', 'spgs', 'spng', 'spngs', 'spring', 'springs',
+                'sprng', 'sprngs', 'spur', 'spurs', 'sq', 'sqr', 'sqre', 'sqrs',
+                'sqs', 'squ', 'square', 'squares', 'st', 'sta', 'station',
+                'statn', 'stn', 'str', 'stra', 'strav', 'straven', 'stravenue',
+                'stravn', 'stream', 'street', 'streets', 'streme', 'strm',
+                'strt', 'strvn', 'strvnue', 'sts', 'sumit', 'sumitt', 'summit',
+                'ter', 'terr', 'terrace', 'throughway', 'tpke', 'trace',
+                'traces', 'track', 'tracks', 'trafficway', 'trail', 'trailer',
+                'trails', 'trak', 'trce', 'trfy', 'trk', 'trks', 'trl', 'trlr',
+                'trlrs', 'trls', 'trnpk', 'trwy', 'tunel', 'tunl', 'tunls',
+                'tunnel', 'tunnels', 'tunnl', 'turnpike', 'turnpk', 'un',
+                'underpass', 'union', 'unions', 'uns', 'upas', 'valley',
+                'valleys', 'vally', 'vdct', 'via', 'viadct', 'viaduct', 'view',
+                'views', 'vill', 'villag', 'village', 'villages', 'ville',
+                'villg', 'villiage', 'vis', 'vist', 'vista', 'vl', 'vlg',
+                'vlgs', 'vlly', 'vly', 'vlys', 'vst', 'vsta', 'vw', 'vws',
+                'walk', 'walks', 'wall', 'way', 'ways', 'well', 'wells', 'wl',
+                'wls', 'wy', 'xing', 'xrd', 'xrds'}
 try :
     TAGGER = pycrfsuite.Tagger()
     TAGGER.open(MODEL_PATH)
@@ -182,7 +165,7 @@ def tag(address_string, tag_mapping=None) :
         if label == 'IntersectionSeparator' :
             is_intersection = True
         if 'StreetName' in label and is_intersection :
-            label = 'Second' + label 
+            label = 'Second' + label
 
         # saving old label
         og_labels.append(label)
@@ -198,7 +181,7 @@ def tag(address_string, tag_mapping=None) :
             tagged_address[label] = [token]
         else :
             raise RepeatedLabelError(address_string, parse(address_string), label)
-            
+
         last_label = label
 
     for token in tagged_address :
@@ -246,7 +229,7 @@ def tokenFeatures(token) :
     token_abbrev = re.sub(r'[.]', u'', token_clean.lower())
     features = {'abbrev' : token_clean[-1] == u'.',
                 'digits' : digits(token_clean),
-                'word' : (token_abbrev 
+                'word' : (token_abbrev
                           if not token_abbrev.isdigit()
                           else False),
                 'trailing.zeros' : (trailingZeros(token_abbrev)
@@ -267,17 +250,17 @@ def tokenFeatures(token) :
     return features
 
 def tokens2features(address):
-    
+
     feature_sequence = [tokenFeatures(address[0])]
     previous_features = feature_sequence[-1].copy()
 
     for token in address[1:] :
-        token_features = tokenFeatures(token) 
+        token_features = tokenFeatures(token)
         current_features = token_features.copy()
 
         feature_sequence[-1]['next'] = current_features
         token_features['previous'] = previous_features
-            
+
         feature_sequence.append(token_features)
 
         previous_features = current_features
@@ -293,9 +276,9 @@ def tokens2features(address):
 
 def digits(token) :
     if token.isdigit() :
-        return 'all_digits' 
+        return 'all_digits'
     elif set(token) & set(string.digits) :
-        return 'some_digits' 
+        return 'some_digits'
     else :
         return 'no_digits'
 
@@ -305,8 +288,8 @@ def trailingZeros(token) :
         return results[0]
     else :
         return ''
-    
-                          
+
+
 
 class RepeatedLabelError(probableparsing.RepeatedLabelError) :
     REPO_URL = 'https://github.com/datamade/usaddress/issues/new'
