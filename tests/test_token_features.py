@@ -9,5 +9,6 @@ class TestTokenFeatures(unittest.TestCase):
         features = tokenFeatures(u'å')
         assert features['endsinpunc'] is False
 
+
 if __name__ == '__main__':
     unittest.main()
