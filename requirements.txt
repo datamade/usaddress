@@ -2,4 +2,4 @@ nose
 parserator>=0.3
 requests
 coverage
-
+flake8
