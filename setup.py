@@ -35,12 +35,12 @@ setup(
 
     >>> import usaddress
     >>> usaddress.parse('123 Main St. Suite 100 Chicago, IL')
-    [('123', 'AddressNumber'), 
-     ('Main', 'StreetName'), 
-     ('St.', 'StreetNamePostType'), 
-     ('Suite', 'OccupancyType'), 
-     ('100', 'OccupancyIdentifier'), 
-     ('Chicago,', 'PlaceName'), 
+    [('123', 'AddressNumber'),
+     ('Main', 'StreetName'),
+     ('St.', 'StreetNamePostType'),
+     ('Suite', 'OccupancyType'),
+     ('100', 'OccupancyIdentifier'),
+     ('Chicago,', 'PlaceName'),
      ('IL', 'StateName')]
     """
 )

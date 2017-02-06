@@ -75,7 +75,7 @@ def osmSyntheticToTraining(xml_file):
             ('addr:city', 'PlaceName', 'City'),
             ('addr:state', 'StateName', 'Area'),
             ('addr:postcode', 'ZipCode', 'Area')]
-    
+
     for address in address_list:
         train_addr = etree.Element('AddressString')
         components = {'Street' : [], 'City' : [], 'Area' : []}
@@ -87,16 +87,16 @@ def osmSyntheticToTraining(xml_file):
                     token_xml.text = word
                     token_xml.tail = ' '
                     components[tag_type].append(token_xml)
-        
+
         for tag_type in ('Street','City', 'Area') :
             l = components[tag_type]
             if l :
                 l[-1].text += ','
 
-        address_xml = (components['Street'] 
-                       + components['City'] 
+        address_xml = (components['Street']
+                       + components['City']
                        + components['Area'])
-        
+
         address_xml[-1].text = address_xml[-1].text[:-1]
         address_xml[-1].tail = None
 
