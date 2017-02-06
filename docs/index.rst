@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-================
+===================
 usaddress |release|
-================
+===================
 
 usaddress is a python library for parsing unstructured address strings into address components, using advanced NLP methods.
 
@@ -17,20 +17,20 @@ Installation
    pip install usaddress
 
 Usage
-============
+=====
 The ``parse`` method will split your address string into components, and label each component.
    .. code:: python
 
       >>> import usaddress
       >>> usaddress.parse('Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637')
-      [('Robie', 'BuildingName'), 
-      ('House,', 'BuildingName'), 
-      ('5757', 'AddressNumber'), 
-      ('South', 'StreetNamePreDirectional'), 
-      ('Woodlawn', 'StreetName'), 
-      ('Avenue,', 'StreetNamePostType'), 
-      ('Chicago,', 'PlaceName'), 
-      ('IL', 'StateName'), 
+      [('Robie', 'BuildingName'),
+      ('House,', 'BuildingName'),
+      ('5757', 'AddressNumber'),
+      ('South', 'StreetNamePreDirectional'),
+      ('Woodlawn', 'StreetName'),
+      ('Avenue,', 'StreetNamePostType'),
+      ('Chicago,', 'PlaceName'),
+      ('IL', 'StateName'),
       ('60637', 'ZipCode')]
 
 The ``tag`` method will try to be a little smarter - it will merge consecutive components & strip commas, as well as return an address type (``Street Address``, ``Intersection``, ``PO Box``, or ``Ambiguous``)
@@ -39,28 +39,28 @@ The ``tag`` method will try to be a little smarter - it will merge consecutive c
       >>> import usaddress
       >>> usaddress.tag('Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637')
       (OrderedDict([
-      ('BuildingName', 'Robie House'), 
-      ('AddressNumber', '5757'), 
-      ('StreetNamePreDirectional', 'South'), 
-      ('StreetName', 'Woodlawn'), 
-      ('StreetNamePostType', 'Avenue'), 
-      ('PlaceName', 'Chicago'), 
-      ('StateName', 'IL'), 
-      ('ZipCode', '60637')]), 
+         ('BuildingName', 'Robie House'),
+         ('AddressNumber', '5757'),
+         ('StreetNamePreDirectional', 'South'),
+         ('StreetName', 'Woodlawn'),
+         ('StreetNamePostType', 'Avenue'),
+         ('PlaceName', 'Chicago'),
+         ('StateName', 'IL'),
+         ('ZipCode', '60637')]),
       'Street Address')
       >>> usaddress.tag('State & Lake, Chicago')
       (OrderedDict([
-      ('StreetName', 'State'), 
-      ('IntersectionSeparator', '&'), 
-      ('SecondStreetName', 'Lake'), 
-      ('PlaceName', 'Chicago')]), 
+         ('StreetName', 'State'),
+         ('IntersectionSeparator', '&'),
+         ('SecondStreetName', 'Lake'),
+         ('PlaceName', 'Chicago')]),
       'Intersection')
       >>> usaddress.tag('P.O. Box 123, Chicago, IL')
       (OrderedDict([
-      ('USPSBoxType', 'P.O. Box'), 
-      ('USPSBoxID', '123'), 
-      ('PlaceName', 'Chicago'), 
-      ('StateName', 'IL')]), 
+         ('USPSBoxType', 'P.O. Box'),
+         ('USPSBoxID', '123'),
+         ('PlaceName', 'Chicago'),
+         ('StateName', 'IL')]),
       'PO Box')
 
 Because the ``tag`` method returns an OrderedDict with labels as keys, it will throw a ``RepeatedLabelError`` error when multiple areas of an address have the same label, and thus can't be concatenated. When ``RepeatedLabelError`` is raised, it is likely that either (1) the input string is not a valid address, or (2) some tokens were labeled incorrectly.
@@ -73,10 +73,53 @@ Because the ``tag`` method returns an OrderedDict with labels as keys, it will t
        except usaddress.RepeatedLabelError as e :
            some_special_instructions(e.parsed_string, e.original_string)
 
+It is also possible to pass a mapping dict to the ``tag`` method to remap the labels to your own format. For example:
+
+   .. code:: python
+
+      >>> import usaddress
+      >>> address = 'Robie House, 5757 South Woodlawn Avenue, Chicago, IL 60637'
+      >>> usaddress.tag(address, tag_mapping={
+         'Recipient': 'recipient',
+         'AddressNumber': 'address1',
+         'AddressNumberPrefix': 'address1',
+         'AddressNumberSuffix': 'address1',
+         'StreetName': 'address1',
+         'StreetNamePreDirectional': 'address1',
+         'StreetNamePreModifier': 'address1',
+         'StreetNamePreType': 'address1',
+         'StreetNamePostDirectional': 'address1',
+         'StreetNamePostModifier': 'address1',
+         'StreetNamePostType': 'address1',
+         'CornerOf': 'address1',
+         'IntersectionSeparator': 'address1',
+         'LandmarkName': 'address1',
+         'USPSBoxGroupID': 'address1',
+         'USPSBoxGroupType': 'address1',
+         'USPSBoxID': 'address1',
+         'USPSBoxType': 'address1',
+         'BuildingName': 'address2',
+         'OccupancyType': 'address2',
+         'OccupancyIdentifier': 'address2',
+         'SubaddressIdentifier': 'address2',
+         'SubaddressType': 'address2',
+         'PlaceName': 'city',
+         'StateName': 'state',
+         'ZipCode': 'zip_code',
+      })
+      (OrderedDict([
+         ('address2', u'Robie House'),
+         ('address1', u'5757 South Woodlawn Avenue'),
+         ('city', u'Chicago'),
+         ('state', u'IL'),
+         ('zip_code', u'60637')]
+      ),
+      'Street Address')
+
 Details
 =======
 
-The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard <http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard/>`__, and usaddress knows about the following types of components: 
+The address components are based upon the `United States Thoroughfare, Landmark, and Postal Address Data Standard <http://www.urisa.org/advocacy/united-states-thoroughfare-landmark-and-postal-address-data-standard/>`__, and usaddress knows about the following types of components:
 
 * **AddressNumber** - address number
 * **AddressNumberPrefix** - a modifier before an address number, e.g. 'Mile', '#'
