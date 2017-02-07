@@ -100,9 +100,9 @@ def osmSyntheticToTraining(xml_file):
             if l:
                 l[-1].text += ','
 
-        address_xml = (components['Street']
-                       + components['City']
-                       + components['Area'])
+        address_xml = (components['Street'] +
+                       components['City'] +
+                       components['Area'])
 
         address_xml[-1].text = address_xml[-1].text[:-1]
         address_xml[-1].tail = None
