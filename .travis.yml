@@ -29,7 +29,7 @@ install:
 - pip install -e .
 - parserator train training/labeled.xml usaddress
 script:
-- flake8 --ignore=E501
+- flake8 --ignore=E501 usaddress tests parse_scripts docs
 - nosetests --with-coverage --cover-package=usaddress
 after_success:
 - coveralls
