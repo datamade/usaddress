@@ -2,7 +2,7 @@
 
 set -e -x
 
-yum install -y libxml2-dev libxslt-dev
+yum install -y libxml2-devel libxslt-devel
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
