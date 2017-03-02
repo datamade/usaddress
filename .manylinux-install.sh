@@ -2,6 +2,8 @@
 
 set -e -x
 
+yum install -y libxml2-dev libxslt-dev
+
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
     if [[ "${PYBIN}" == *"cp27"* ]] || [[ "${PYBIN}" == *"cp34"* ]] || [[ "${PYBIN}" == *"cp35"* ]]; then
