@@ -1451,4 +1451,12 @@
   <AddressString><AddressNumber>668</AddressNumber> <StreetName>REV</StreetName> <StreetName>N</StreetName> <StreetName>O</StreetName> <StreetName>THOMPSON</StreetName> <StreetNamePostType>RD</StreetNamePostType> <PlaceName>FAIRMONT</PlaceName> <ZipCode>28340</ZipCode></AddressString>
   <AddressString><AddressNumber>152</AddressNumber> <StreetName>BILLY</StreetName> <StreetName>S</StreetName> <StreetName>WHITE</StreetName> <StreetNamePostType>RD</StreetNamePostType> <PlaceName>DOBSON</PlaceName> <ZipCode>27017</ZipCode></AddressString>
   <AddressString><AddressNumber>82</AddressNumber> <StreetName>GEORGE</StreetName> <StreetName>W</StreetName> <StreetName>KELLY</StreetName> <StreetNamePostType>RD</StreetNamePostType> <PlaceName>CLARKTON</PlaceName> <ZipCode>28433</ZipCode></AddressString>
+  <AddressString><AddressNumber>4315</AddressNumber> <StreetName>WEBSTER</StreetName> <StreetNamePostType>AVENUE</StreetNamePostType> <OccupancyIdentifier>LH</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>2108</AddressNumber> <StreetName>CROSS</StreetName> <StreetName>BRONX</StreetName> <StreetName>EP</StreetName> <StreetName>SR</StreetName> <StreetNamePostDirectional>S</StreetNamePostDirectional></AddressString>
+  <AddressString><AddressNumber>3850</AddressNumber> <StreetName>HUDSON</StreetName> <StreetName>MANOR</StreetName> <StreetNamePostType>TERRACE</StreetNamePostType> <OccupancyIdentifier>EE</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>4578</AddressNumber> <StreetName>MANHATTAN</StreetName> <StreetName>COLLEGE</StreetName> <StreetNamePostType>PY</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>3235</AddressNumber> <StreetName>CAMBRIDGE</StreetName> <StreetNamePostType>AVENUE</StreetNamePostType> <OccupancyIdentifier>LH</OccupancyIdentifier></AddressString>
+  <AddressString><AddressNumber>815</AddressNumber> <StreetName>HUTCHINSON</StreetName> <StreetName>RVR</StreetName> <StreetName>PY</StreetName> <StreetName>SR</StreetName></AddressString>
+  <AddressString><AddressNumber>1030</AddressNumber> <StreetName>THROGS</StreetName> <StreetName>NECK</StreetName> <StreetName>EXPWY</StreetName> <StreetName>SR</StreetName></AddressString>
+  <AddressString><AddressNumber>4425</AddressNumber> <StreetName>MANHATTAN</StreetName> <StreetName>COLLEGE</StreetName> <StreetNamePostType>PY</StreetNamePostType></AddressString>
 </AddressCollection>
