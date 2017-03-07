@@ -110,4 +110,6 @@
   <AddressString><AddressNumber>2500</AddressNumber> <StreetNamePreDirectional>S</StreetNamePreDirectional> <NotAddress>AND</NotAddress> <StreetNamePreDirectional>W</StreetNamePreDirectional> <StreetName>FARM</StreetName> <StreetNamePostType>RD</StreetNamePostType> <PlaceName>HICKORY</PlaceName> <ZipCode>28602</ZipCode></AddressString>
   <AddressString><AddressNumber>4315</AddressNumber> <StreetName>WEBSTER</StreetName> <StreetNamePostType>AVENUE</StreetNamePostType> <OccupancyIdentifier>LH</OccupancyIdentifier></AddressString>
   <AddressString><AddressNumber>4483</AddressNumber> <StreetName>MANHATTAN</StreetName> <StreetName>COLLEGE</StreetName> <StreetNamePostType>PY</StreetNamePostType></AddressString>
+  <AddressString><AddressNumber>188</AddressNumber> <StreetNamePreType>ROUTE</StreetNamePreType> <StreetName>690</StreetName> <PlaceName>SPRINGBROOK</PlaceName> <PlaceName>TOWNSHIP,</PlaceName> <StateName>PA</StateName> <ZipCode>18444</ZipCode></AddressString>
+  <AddressString><AddressNumber>333</AddressNumber> <StreetNamePreType>STATE</StreetNamePreType> <StreetNamePreType>ROUTE</StreetNamePreType> <StreetName>590</StreetName> <PlaceName>ROARING</PlaceName> <PlaceName>BROOK</PlaceName> <PlaceName>TWP,</PlaceName> <StateName>PA</StateName> <ZipCode>18444</ZipCode></AddressString>
 </AddressCollection>
