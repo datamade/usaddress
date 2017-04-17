@@ -191,11 +191,11 @@ What is 'HUNTINGDON' ? If PlaceName hit return
 What is 'VY' ? If StateName hit return
 ```
 
-Based on the tag list above, we can see that `PlaceName` corresponds to the input `2` in the program. So add the appropriate label:
+Based on the tag list above, we can see that `PlaceName` corresponds to the input `16` in the program. So add the appropriate label:
 
 ```
 What is 'VY' ? If StateName hit return
-2
+16
 ```
 
 Then accept the rest of the labels, since the model guessed them correctly:
