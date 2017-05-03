@@ -2,11 +2,16 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-from builtins import zip
-from builtins import str
+import sys
+if sys.version_info >= (3,0):
+    from builtins import zip
+    from builtins import str
+else:
+    str = unicode
 import os
 import string
 import re
+
 try:
     from collections import OrderedDict
 except ImportError:
