@@ -1,6 +1,0 @@
-<AddressCollection>
-  <AddressString><AddressNumber>900</AddressNumber> <StreetNamePreType>Business</StreetNamePreType> <StreetName>150</StreetName> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>3,</OccupancyIdentifier> <PlaceName>Mansfield,</PlaceName> <StateName>PA</StateName> <ZipCode>19402</ZipCode></AddressString>
-  <AddressString><AddressNumber>83</AddressNumber> <StreetNamePreType>Business</StreetNamePreType> <StreetName>15,</StreetName> <PlaceName>Mansfield,</PlaceName> <StateName>PA</StateName> <ZipCode>16933</ZipCode></AddressString>
-  <AddressString><AddressNumber>900</AddressNumber> <StreetNamePreType>Business</StreetNamePreType> <StreetName>150</StreetName> <OccupancyType>STE</OccupancyType> <OccupancyIdentifier>3,</OccupancyIdentifier> <PlaceName>Mansfield,</PlaceName> <StateName>PA</StateName> <ZipCode>19402</ZipCode></AddressString>
-  <AddressString><AddressNumber>100</AddressNumber> <StreetNamePreType>Business</StreetNamePreType> <StreetName>40,</StreetName> <PlaceName>Kernersville,</PlaceName> <StateName>NC</StateName> <ZipCode>27284</ZipCode></AddressString>
-</AddressCollection>
