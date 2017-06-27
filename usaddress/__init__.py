@@ -131,9 +131,8 @@ STREET_NAMES = {
     'villages', 'ville', 'villg', 'villiage', 'vis', 'vist', 'vista', 'vl',
     'vlg', 'vlgs', 'vlly', 'vly', 'vlys', 'vst', 'vsta', 'vw', 'vws', 'walk',
     'walks', 'wall', 'way', 'ways', 'well', 'wells', 'wl', 'wls', 'wy', 'xc',
-    'xg', 'xing', 'xrd', 'xrds' 
+    'xg', 'xing', 'xrd', 'xrds'
 }
-
 
 
 try:
