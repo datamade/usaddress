@@ -17,6 +17,9 @@ matrix:
   - os: osx
     language: generic
     before_install:
+      - brew update
+      - brew upgrade python
+      - brew install python2
       - pip install virtualenv
       - python2 -m virtualenv env
       - source env/bin/activate
