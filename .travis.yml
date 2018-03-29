@@ -16,30 +16,33 @@ matrix:
     python: 2.7
   - os: osx
     language: generic
-    env: BREW_PYTHON='python'
+    before_install:
+      - pip install virtualenv
+      - python2 -m virtualenv env
+      - source env/bin/activate
   - os: osx
     language: generic
-    env: BREW_PYTHON='python3'
-before_install:
-- if [[ $BREW_PYTHON == 'python3' ]]; then brew update; brew install $BREW_PYTHON;
-  python3 -m venv venv; source venv/bin/activate; fi
+    before_install:
+      - brew update
+      - brew upgrade python
+      - python3 -m venv env
+      - source env/bin/activate
 install:
 - pip install --upgrade pip
 - pip install --upgrade -r requirements.txt
 - pip install -e .
 - parserator train training/labeled.xml usaddress
 script:
-- flake8 --ignore=E501 usaddress tests parse_scripts docs
 - nosetests --with-coverage --cover-package=usaddress
-after_success:
-- coveralls
-- echo [distutils]                                  > ~/.pypirc
-- echo index-servers = pypi                        >> ~/.pypirc
-- echo [pypi]                                      >> ~/.pypirc
-- echo repository=https://pypi.python.org/pypi     >> ~/.pypirc
-- echo username=datamade.wheelbuilder              >> ~/.pypirc
-- echo password=$PYPIPASSWORD                      >> ~/.pypirc
-- if [[ $TRAVIS_TAG && "$TRAVIS_OS_NAME" == "linux" ]]; then python setup.py sdist bdist_wheel upload; fi
+deploy:
+  - provider: pypi
+    skip_cleanup: true
+    user: datamade.wheelbuilder
+    on:
+      tags: true
+      condition: "$TRAVIS_OS_NAME = linux"
+    distributions: "sdist bdist_wheel"
+    password: $PYPIPASSWORD
 env:
   global:
   - secure: BltVbgXfZWBFpZId6l33MfMY+O9k6O75bJsyEqz+8OQ8Y7wF2NH85er+8z/gClPjbbE1UDBh+1m4ifUM+QEp6YvgLaciT2bd7x+4Z/Ur5s3IXb1dJML1W/IdBUiN8VMeDSBzHk/LxOCDnPvEPG4wRYxEK0Be+1d70An0r43MriM=
