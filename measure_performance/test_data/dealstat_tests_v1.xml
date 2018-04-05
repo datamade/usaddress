@@ -1,0 +1,5 @@
+<AddressCollection>
+  <AddressString><AddressNumber>200</AddressNumber> <StreetNamePreDirectional>EAST</StreetNamePreDirectional> <StreetName>ELM,</StreetName> <PlaceName>DENVER,</PlaceName> <StateName>COLORADO"</StateName></AddressString>
+  <AddressString><AddressNumber>55</AddressNumber> <StreetName>WINDSOR</StreetName> <StreetNamePostType>PLACE,</StreetNamePostType> <PlaceName>CHAMPAIGN,</PlaceName> <StateName>ILLINOIS"</StateName></AddressString>
+  <AddressString><AddressNumber>5</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>MAIN,</StreetName> <PlaceName>VAN</PlaceName> <PlaceName>NUYS,</PlaceName> <StateName>CALIFORNIA"</StateName></AddressString>
+</AddressCollection>

@@ -1,0 +1,10 @@
+<AddressCollection>
+  <AddressString><AddressNumber>610</AddressNumber> <StreetNamePreDirectional>EAST</StreetNamePreDirectional> <StreetName>MAIN</StreetName> <PlaceName>MARION</PlaceName> <StateName>KANSAS"</StateName></AddressString>
+  <AddressString><AddressNumber>10</AddressNumber> <StreetNamePreDirectional>EAST</StreetNamePreDirectional> <StreetName>LAKE,</StreetName> <PlaceName>DENVER,</PlaceName> <StateName>COLORADO"</StateName></AddressString>
+  <AddressString><AddressNumber>2104</AddressNumber> <StreetName>WINDSOR</StreetName> <StreetNamePostType>PLACE,</StreetNamePostType> <PlaceName>CHAMPAIGN,</PlaceName> <StateName>ILLINOIS"</StateName></AddressString>
+  <AddressString><AddressNumber>2104</AddressNumber> <StreetName>WINDSOR</StreetName> <StreetNamePostType>PLACE</StreetNamePostType> <PlaceName>CHICAGO</PlaceName> <StateName>ILLINOIS"</StateName></AddressString>
+  <AddressString><AddressNumber>19</AddressNumber> <StreetName>HARGROVE</StreetName> <StreetNamePostType>GRADE,</StreetNamePostType> <PlaceName>PALM</PlaceName> <PlaceName>COAST</PlaceName> <StateName>FL"</StateName></AddressString>
+  <AddressString><AddressNumber>61</AddressNumber> <StreetNamePreDirectional>WEST</StreetNamePreDirectional> <StreetName>MAIN,</StreetName> <PlaceName>MARION,</PlaceName> <StateName>KANSAS"</StateName></AddressString>
+  <AddressString><AddressNumber>55</AddressNumber> <StreetNamePreDirectional>WEST</StreetNamePreDirectional> <StreetName>10TH</StreetName> <PlaceName>DENVER</PlaceName> <StateName>COLORADO"</StateName></AddressString>
+  <AddressString><AddressNumber>100</AddressNumber> <StreetNamePreDirectional>WEST</StreetNamePreDirectional> <StreetName>SEVENTH,</StreetName> <PlaceName>VAN</PlaceName> <PlaceName>NUYS,</PlaceName> <StateName>CALIFORNIA"</StateName></AddressString>
+</AddressCollection>
