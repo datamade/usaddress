@@ -2,4 +2,10 @@
   <AddressString><AddressNumber>200</AddressNumber> <StreetNamePreDirectional>EAST</StreetNamePreDirectional> <StreetName>ELM,</StreetName> <PlaceName>DENVER,</PlaceName> <StateName>COLORADO"</StateName></AddressString>
   <AddressString><AddressNumber>55</AddressNumber> <StreetName>WINDSOR</StreetName> <StreetNamePostType>PLACE,</StreetNamePostType> <PlaceName>CHAMPAIGN,</PlaceName> <StateName>ILLINOIS"</StateName></AddressString>
   <AddressString><AddressNumber>5</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>MAIN,</StreetName> <PlaceName>VAN</PlaceName> <PlaceName>NUYS,</PlaceName> <StateName>CALIFORNIA"</StateName></AddressString>
+  <AddressString><AddressNumber>2609</AddressNumber> <StreetName>BAYVIEW,</StreetName> <PlaceName>FORT</PlaceName> <PlaceName>LAUDERDALE,</PlaceName> <StateName>FL"</StateName></AddressString>
+  <AddressString><AddressNumber>55</AddressNumber> <StreetName>WINDSOR</StreetName> <StreetNamePostType>PLACE,</StreetNamePostType> <PlaceName>CHAMPAIGN,</PlaceName> <StateName>ILLINOIS"</StateName></AddressString>
+  <AddressString><AddressNumber>6024</AddressNumber> <StreetName>8TH</StreetName> <StreetNamePostType>ST,</StreetNamePostType> <PlaceName>N.</PlaceName> <PlaceName>MIAMI,</PlaceName> <StateName>FL</StateName> <ZipCode>33144"</ZipCode></AddressString>
+  <AddressString><AddressNumber>5</AddressNumber> <StreetNamePreDirectional>NORTH</StreetNamePreDirectional> <StreetName>MAIN,</StreetName> <PlaceName>VAN</PlaceName> <PlaceName>NUYS,</PlaceName> <StateName>CALIFORNIA"</StateName></AddressString>
+  <AddressString><AddressNumber>783</AddressNumber> <StreetName>HOPE</StreetName> <StreetNamePostType>ST,</StreetNamePostType> <PlaceName>PROVIDENCE,</PlaceName> <StateName>RHODE</StateName> <StateName>ISLAND</StateName> <ZipCode>02906"</ZipCode></AddressString>
+  <AddressString><AddressNumber>200</AddressNumber> <StreetNamePreDirectional>EAST</StreetNamePreDirectional> <StreetName>ELM,</StreetName> <PlaceName>DENVER,</PlaceName> <StateName>COLORADO"</StateName></AddressString>
 </AddressCollection>
