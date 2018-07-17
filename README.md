@@ -8,6 +8,8 @@ usaddress is a Python library for parsing unstructured address strings into addr
 
 **What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
 
+It also does not normalize the address. However, [this library built on top of usaddress does](https://github.com/GreenBuildingRegistry/usaddress-scourgify).
+
 ## How to use the usaddress python library
 
 1. Install usaddress with [pip](https://pip.readthedocs.io/en/latest/quickstart.html), a tool for installing and managing python packages ([beginner's guide here](http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/)).
