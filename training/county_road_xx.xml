@@ -1,0 +1,8 @@
+<AddressCollection>
+  <AddressString><AddressNumber>0</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>MM,</StreetName> <PlaceName>AMHERST</PlaceName> <PlaceName>JUNCTION,</PlaceName> <StateName>WI</StateName> <ZipCode>54407</ZipCode></AddressString>
+  <AddressString><AddressNumber>1000</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>DB,</StreetName> <PlaceName>MOSINEE,</PlaceName> <StateName>WI</StateName> <ZipCode>54455</ZipCode></AddressString>
+  <AddressString><AddressNumber>133</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>KK,</StreetName> <PlaceName>AMHERST,</PlaceName> <StateName>WI</StateName> <ZipCode>54406</ZipCode></AddressString>
+  <AddressString><AddressNumber>5859</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>DD,</StreetName> <PlaceName>WAUPACA,</PlaceName> <StateName>WI</StateName> <ZipCode>54981</ZipCode></AddressString>
+  <AddressString><AddressNumber>1331</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>ZZ,</StreetName> <PlaceName>AMHERST</PlaceName> <PlaceName>JUNCTION,</PlaceName> <StateName>WI</StateName> <ZipCode>54407</ZipCode></AddressString>
+  <AddressString><AddressNumber>10006</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>MM,</StreetName> <PlaceName>AMHERST</PlaceName> <PlaceName>JUNCTION,</PlaceName> <StateName>WI</StateName> <ZipCode>54407</ZipCode></AddressString>
+</AddressCollection>
