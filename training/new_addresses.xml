@@ -1,0 +1,82 @@
+<AddressCollection>
+  <AddressString><USPSBoxType>P</USPSBoxType> <USPSBoxType>O</USPSBoxType> <USPSBoxType>B</USPSBoxType> <USPSBoxID>5</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>68</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>23A</USPSBoxID></AddressString>
+  <AddressString><StreetName>New</StreetName> <StreetName>Park</StreetName> <StreetNamePostType>BCH</StreetNamePostType> <StreetNamePostDirectional>West</StreetNamePostDirectional> <PlaceName>Hartford</PlaceName> <StateName>CT</StateName> <ZipCode>06110</ZipCode></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>RTE</USPSBoxGroupType> <USPSBoxGroupID>24</USPSBoxGroupID> <USPSBoxType>box</USPSBoxType> <USPSBoxID>2A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>rte</USPSBoxGroupType> <USPSBoxGroupID>15B</USPSBoxGroupID> <USPSBoxType>bOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>1A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>STAR</USPSBoxGroupType> <USPSBoxGroupType>RTE</USPSBoxGroupType> <USPSBoxGroupID>102</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>95</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>b34</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxType>Caller</USPSBoxType> <USPSBoxID>001A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RD</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>LL</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>21</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>mS</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>LL</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>DRAWER</USPSBoxType> <USPSBoxID>LL</USPSBoxID></AddressString>
+  <AddressString><OccupancyType>CALLER</OccupancyType> <USPSBoxID>25</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>mSc</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>001A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxID>DRAWER</USPSBoxID> <USPSBoxID>25</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>Ms</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>299A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>Rfd</USPSBoxGroupType> <USPSBoxGroupID>001A</USPSBoxGroupID> <USPSBoxType>bOX</USPSBoxType> <USPSBoxID>38</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rd</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>299A</USPSBoxGroupID> <USPSBoxType>bOx</USPSBoxType> <USPSBoxID>34</USPSBoxID></AddressString>
+  <AddressString><StreetName>Upper</StreetName> <StreetName>hUNtErs</StreetName> <StreetNamePostType>Trce</StreetNamePostType> <PlaceName>Louisville</PlaceName> <StateName>KY</StateName> <ZipCode>40216</ZipCode></AddressString>
+  <AddressString><USPSBoxGroupType>rfd</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>25</USPSBoxGroupID> <USPSBoxType>bOx</USPSBoxType> <USPSBoxID>22</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RT</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>065</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>32</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>MS</USPSBoxType> <USPSBoxID>L</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RFD</USPSBoxGroupType> <USPSBoxGroupID>LL</USPSBoxGroupID> <USPSBoxType>BoX</USPSBoxType> <USPSBoxID>32</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RFD</USPSBoxGroupType> <USPSBoxGroupID>L</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>21</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>DRAWER</USPSBoxType> <USPSBoxID>001A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>mSC</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>LL</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>CALler</USPSBoxType> <USPSBoxID>299A</USPSBoxID></AddressString>
+  <AddressString><StreetName>Garden</StreetName> <StreetName>Hills</StreetName> <StreetNamePostType>Plaza</StreetNamePostType> <SubaddressType>Building</SubaddressType> <SubaddressIdentifier>M</SubaddressIdentifier> <OccupancyType>Apt</OccupancyType> <OccupancyIdentifier>55</OccupancyIdentifier> <PlaceName>Valrico</PlaceName> <StateName>FL</StateName> <ZipCode>334594</ZipCode></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>12A</USPSBoxGroupID> <USPSBoxType>boX</USPSBoxType> <USPSBoxID>285</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>CallEr</USPSBoxType> <USPSBoxID>LL</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>StaR</USPSBoxGroupType> <USPSBoxGroupType>Rte</USPSBoxGroupType> <USPSBoxGroupID>12A</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>455B</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>99</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxGroupType>star</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>15B</USPSBoxGroupID> <USPSBoxType>bOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>102</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RT</USPSBoxGroupType> <USPSBoxGroupID>001</USPSBoxGroupID> <USPSBoxType>BOx</USPSBoxType> <USPSBoxID>99</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rfD</USPSBoxGroupType> <USPSBoxGroupID>065</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>21</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RT</USPSBoxGroupType> <USPSBoxGroupID>L</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>2-2</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rT</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>001A</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>65</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>Rfd</USPSBoxGroupType> <USPSBoxGroupID>001</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>C</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HWY</USPSBoxGroupType> <USPSBoxGroupType>Contract</USPSBoxGroupType> <USPSBoxGroupType>RTE</USPSBoxGroupType> <USPSBoxGroupID>68</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>98A</USPSBoxID></AddressString>
+  <AddressString><StreetName>New</StreetName> <StreetName>Main</StreetName> <StreetNamePostType>Street</StreetNamePostType> <SubaddressType>Floor</SubaddressType> <SubaddressIdentifier>3</SubaddressIdentifier> <OccupancyType>Unit</OccupancyType> <OccupancyIdentifier>123</OccupancyIdentifier> <PlaceName>Schenectady</PlaceName> <StateName>NY</StateName></AddressString>
+  <AddressString><USPSBoxType>MsC</USPSBoxType> <USPSBoxID>25</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rd</USPSBoxGroupType> <USPSBoxGroupID>25</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>6y</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>23</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONtraCT</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>95</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>235A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rD</USPSBoxGroupType> <USPSBoxGroupID>001</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>6t</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>12A</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>285</USPSBoxID></AddressString>
+  <AddressString><AddressNumber>44</AddressNumber> <StreetName>Greek</StreetName> <StreetName>village</StreetName> <StreetName>BLG</StreetName> <StreetName>21C</StreetName> <OccupancyType>Ste</OccupancyType> <OccupancyIdentifier>2</OccupancyIdentifier> <PlaceName>Richmond</PlaceName> <StateName>VA</StateName> <ZipCode>56433</ZipCode></AddressString>
+  <AddressString><USPSBoxGroupType>rfd</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>299A</USPSBoxGroupID> <USPSBoxType>box</USPSBoxType> <USPSBoxID>A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>ms</USPSBoxType> <USPSBoxID>25</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>DRAWER</USPSBoxType> <USPSBoxID>L</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>StaR</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>68</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>23A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>RD</USPSBoxGroupType> <USPSBoxGroupID>L</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>32</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>p</USPSBoxType> <USPSBoxType>o</USPSBoxType> <USPSBoxType>b</USPSBoxType> <USPSBoxID>44</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>P</USPSBoxType> <USPSBoxType>o</USPSBoxType> <USPSBoxType>b</USPSBoxType> <USPSBoxID>21-5</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>MS</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>001</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>P</USPSBoxType> <USPSBoxType>o</USPSBoxType> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>99</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>star</USPSBoxGroupType> <USPSBoxGroupType>route</USPSBoxGroupType> <USPSBoxGroupID>24</USPSBoxGroupID> <USPSBoxType>box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>45</USPSBoxID></AddressString>
+  <AddressString><StreetName>MID</StreetName> <StreetName>ISLAND</StreetName> <StreetNamePostType>PLZ</StreetNamePostType></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>5a</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>45ac</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxGroupType>Rd</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>065</USPSBoxGroupID> <USPSBoxType>BoX</USPSBoxType> <USPSBoxID>99</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HWY</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>102</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>255A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>DRAWER</USPSBoxType> <USPSBoxID>299A</USPSBoxID></AddressString>
+  <AddressString><StreetName>bAy</StreetName> <StreetName>MaIN</StreetName> <StreetNamePostType>Street</StreetNamePostType> <SubaddressType>building</SubaddressType> <SubaddressIdentifier>M</SubaddressIdentifier> <OccupancyType>Apt</OccupancyType> <OccupancyIdentifier>2</OccupancyIdentifier> <StateName>NY</StateName> <ZipCode>11801</ZipCode></AddressString>
+  <AddressString><USPSBoxType>msc</USPSBoxType> <USPSBoxID>299A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rD</USPSBoxGroupType> <USPSBoxGroupID>001A</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>55</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>Msc</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>065</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>MSC</USPSBoxType> <USPSBoxID>001</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>MS</USPSBoxType> <USPSBoxID>001A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>P</USPSBoxType> <USPSBoxType>O</USPSBoxType> <USPSBoxType>B</USPSBoxType> <USPSBoxID>6Y</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>rte</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>24</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>2A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>hwy</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>route</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>15B</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>1A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>stAR</USPSBoxGroupType> <USPSBoxGroupType>RTE</USPSBoxGroupType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>95</USPSBoxID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>45C</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>CaLLer</USPSBoxType> <USPSBoxID>L</USPSBoxID></AddressString>
+  <AddressString><StreetName>hARboUR</StreetName> <StreetName>hILl</StreetName> <StreetNamePostType>rd</StreetNamePostType> <SubaddressType>Bldg</SubaddressType> <SubaddressIdentifier>#</SubaddressIdentifier> <SubaddressIdentifier>3</SubaddressIdentifier> <SubaddressType>Floor</SubaddressType> <SubaddressIdentifier>3</SubaddressIdentifier> <PlaceName>Miami</PlaceName> <StateName>FL</StateName> <ZipCode>23231</ZipCode></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>rte</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>95</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>235A</USPSBoxID></AddressString>
+  <AddressString><StreetName>Van</StreetName> <StreetName>Ness</StreetName> <StreetNamePostType>Street</StreetNamePostType> <StreetNamePostDirectional>NW,</StreetNamePostDirectional> <SubaddressType>BLD</SubaddressType> <SubaddressIdentifier>13C,</SubaddressIdentifier> <OccupancyType>Rm</OccupancyType> <OccupancyIdentifier>13</OccupancyIdentifier></AddressString>
+  <AddressString><USPSBoxGroupType>hc</USPSBoxGroupType> <USPSBoxGroupType>RTE</USPSBoxGroupType> <USPSBoxGroupID>102</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>255D</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rt</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>LL</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>2</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>P</USPSBoxType> <USPSBoxType>O</USPSBoxType> <USPSBoxType>B</USPSBoxType> <USPSBoxID>2A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxType>Msc</USPSBoxType> <USPSBoxID>L</USPSBoxID></AddressString>
+</AddressCollection>

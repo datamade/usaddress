@@ -1,0 +1,5 @@
+<AddressCollection>
+  <AddressString><USPSBoxGroupType>RT</USPSBoxGroupType> <USPSBoxGroupID>32</USPSBoxGroupID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>R</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>4c</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>rd</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>25</USPSBoxGroupID></AddressString>
+</AddressCollection>
