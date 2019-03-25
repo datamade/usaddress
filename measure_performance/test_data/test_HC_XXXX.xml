@@ -1,0 +1,10 @@
+<AddressCollection>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>2333</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>85</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>284</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>27</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>7326</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>66</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>992</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>88</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>076</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>23</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>026</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>74</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>0853</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>12</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupID>0676</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>11</USPSBoxID></AddressString>
+</AddressCollection>
