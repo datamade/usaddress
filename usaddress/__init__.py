@@ -244,7 +244,7 @@ def tokenFeatures(token):
                    if token_abbrev.isdigit()
                    else u'w:' + str(len(token_abbrev))),
         'endsinpunc': (token[-1]
-                       if bool(re.match('.+[^.\w]', token, flags=re.UNICODE))
+                       if bool(re.match(r'.+[^.\w]', token, flags=re.UNICODE))
                        else False),
         'directional': token_abbrev in DIRECTIONS,
         'street_name': token_abbrev in STREET_NAMES,
