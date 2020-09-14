@@ -52,7 +52,6 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-*.crfsuite
 *.csv
 *.txt
 

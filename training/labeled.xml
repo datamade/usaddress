@@ -1497,4 +1497,5 @@
   <AddressString><AddressNumber>W206N</AddressNumber> <AddressNumber>W16282</AddressNumber> <StreetName>Marashland</StreetName> <StreetNamePostType>Dr,</StreetNamePostType> <PlaceName>Jackson,</PlaceName> <StateName>WI</StateName> <ZipCode>53037</ZipCode></AddressString>
   <AddressString><AddressNumber>N170</AddressNumber> <AddressNumber>W20015</AddressNumber> <StreetName>Hunters</StreetName> <StreetNamePostType>Rd,</StreetNamePostType> <PlaceName>Jackson,</PlaceName> <StateName>WI</StateName> <ZipCode>53037</ZipCode></AddressString>
   <AddressString><AddressNumber>N170W20015</AddressNumber> <StreetName>Hunters</StreetName> <StreetNamePostType>Rd,</StreetNamePostType> <PlaceName>Jackson,</PlaceName> <StateName>WI</StateName> <ZipCode>53037</ZipCode></AddressString>
+  <AddressString><AddressNumber>3901</AddressNumber> <StreetNamePreType>COUNTY</StreetNamePreType> <StreetNamePreType>ROAD</StreetNamePreType> <StreetName>317,</StreetName> <OccupancyType>LOT</OccupancyType> <OccupancyIdentifier>64</OccupancyIdentifier> <PlaceName>Cleburne</PlaceName> <StateName>TX</StateName> <ZipCode>76031</ZipCode></AddressString>
 </AddressCollection>
