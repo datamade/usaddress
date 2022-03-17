@@ -2,13 +2,22 @@ usaddress
 =================
 [![Build Status](https://travis-ci.org/datamade/usaddress.svg?branch=master)](https://travis-ci.org/datamade/usaddress)[![Build status](https://ci.appveyor.com/api/projects/status/5mbcd8ku0tm66noq?svg=true)](https://ci.appveyor.com/project/fgregg/usaddress)
 
-usaddress is a Python library for parsing unstructured United States address strings into address components, using advanced NLP methods. Try it out on our [web interface](https://parserator.datamade.us/usaddress)! For those who aren't Python developers, we also have an [API](https://parserator.datamade.us/api-docs).
+usaddress is a Python library for parsing unstructured United States address strings into address components, using advanced NLP methods.
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
 **What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
 
 It also does not normalize the address. However, [this library built on top of usaddress does](https://github.com/GreenBuildingRegistry/usaddress-scourgify).
+
+
+## Tools built with usaddress
+
+### [Parserator API](https://parserator.datamade.us/)
+A RESTful API built on top of usaddress for programmers who don't use python. Requires an API key and the first 1,000 parses are free.
+
+### [Parserator Google Sheets App](https://workspace.google.com/u/0/marketplace/app/parserator_parse_and_split_addresses/945974620840)
+Parserator: Parse and Split Addresses allows you to easily split addresses into separate columns by street, city, state, zipcode and more right in Google Sheets.
 
 ## How to use the usaddress python library
 
