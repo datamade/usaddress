@@ -1,7 +1,5 @@
 usaddress
 =================
-[![Build Status](https://travis-ci.org/datamade/usaddress.svg?branch=master)](https://travis-ci.org/datamade/usaddress)[![Build status](https://ci.appveyor.com/api/projects/status/5mbcd8ku0tm66noq?svg=true)](https://ci.appveyor.com/project/fgregg/usaddress)
-
 usaddress is a Python library for parsing unstructured United States address strings into address components, using advanced NLP methods.
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
