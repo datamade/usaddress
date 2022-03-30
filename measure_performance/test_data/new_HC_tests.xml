@@ -1,0 +1,14 @@
+<AddressCollection>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>rte</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>46</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>992</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>R</USPSBoxGroupType> <USPSBoxGroupID>32</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>e3</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>StaR</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>75</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>5Z</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>72</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>1A</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>R</USPSBoxGroupType> <USPSBoxGroupID>4C</USPSBoxGroupID> <USPSBoxType>Box</USPSBoxType> <USPSBoxID>54</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HC</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>3</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>5</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONtraCT</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>56</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>45C</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>88</USPSBoxGroupID> <USPSBoxType>bOX</USPSBoxType> <USPSBoxID>76E&#8221;</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HCR</USPSBoxGroupType> <USPSBoxGroupID>4e</USPSBoxGroupID> <USPSBoxType>box</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>32&#8221;</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONTRACT</USPSBoxGroupType> <USPSBoxGroupType>rte</USPSBoxGroupType> <USPSBoxGroupID>#</USPSBoxGroupID> <USPSBoxGroupID>32</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>#</USPSBoxID> <USPSBoxID>1232</USPSBoxID></AddressString>
+  <AddressString><USPSBoxGroupType>HIGHWAY</USPSBoxGroupType> <USPSBoxGroupType>CONtraCT</USPSBoxGroupType> <USPSBoxGroupType>ROUTE</USPSBoxGroupType> <USPSBoxGroupID>1</USPSBoxGroupID> <USPSBoxType>BOX</USPSBoxType> <USPSBoxID>77Z</USPSBoxID></AddressString>
+</AddressCollection>
+
