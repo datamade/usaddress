@@ -8,9 +8,7 @@
 
 name: Upload Python Package
 
-on:
-  release:
-    types: [published]
+on: [push, pull_request]
 
 permissions:
   contents: read
