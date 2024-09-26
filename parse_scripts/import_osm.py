@@ -1,5 +1,6 @@
-import requests
 import codecs
+
+import requests
 
 query1 = """<union>
 <query type="way">
@@ -46,11 +47,13 @@ query1 = """<union>
 </query>
 </union>
 
-<print/>""" % ((-70.000000, 50.000000, 25.000000, -125.000000) * 6)
-r1 = requests.post('http://overpass-api.de/api/interpreter/', data=query1)
-r1.encoding = 'utf-8'
+<print/>""" % (
+    (-70.000000, 50.000000, 25.000000, -125.000000) * 6
+)
+r1 = requests.post("http://overpass-api.de/api/interpreter/", data=query1)
+r1.encoding = "utf-8"
 
-f = codecs.open('data/osm_data.xml', encoding='utf-8', mode='w+')
+f = codecs.open("data/osm_data.xml", encoding="utf-8", mode="w+")
 f.write(r1.text)
 
 
@@ -71,8 +74,9 @@ query2 = """<union>
 </query>
 </union>
 
-<print/>""" % ((-87.61309146881104, 41.890042371392965, 41.87234107841773,
-                -87.64235973358154) * 2)
+<print/>""" % (
+    (-87.61309146881104, 41.890042371392965, 41.87234107841773, -87.64235973358154) * 2
+)
 # r2 = requests.post('http://overpass-api.de/api/interpreter/', data=query2)
 
 # f = codecs.open("data/osm_data_street.xml", "wb", "utf-8")
@@ -92,11 +96,13 @@ query3 = """<union>
 </union>
 
 <print/>
-""" % ((-70.000000, 50.000000, 25.000000, -125.000000) * 2)
+""" % (
+    (-70.000000, 50.000000, 25.000000, -125.000000) * 2
+)
 
-if __name__ == '__main__':
-    r3 = requests.post('http://overpass-api.de/api/interpreter/', data=query3)
+if __name__ == "__main__":
+    r3 = requests.post("http://overpass-api.de/api/interpreter/", data=query3)
 
     f = codecs.open("data/osm_data_full_addr.xml", "wb", "utf-8")
-    r3.encoding = 'utf-8'
+    r3.encoding = "utf-8"
     f.write(r3.text)
