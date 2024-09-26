@@ -4,7 +4,7 @@ version = "0.5.10"
 description = "Parse US addresses using conditional random fields"
 readme = "README.md"
 license = {text = "MIT License", url = "http://www.opensource.org/licenses/mit-license.php"}
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 dependencies = [
   "python-crfsuite>=0.7",
   "probableparsing"
