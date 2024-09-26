@@ -16,10 +16,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install .
-          pip install -r requirements.txt
+          pip install .[dev]
       - name: flake8
-        run: flake8 dedupe tests benchmarks/benchmarks
+        run: flake8 usaddress tests
       - name: isort
         if: always()
         run: isort --check-only .
@@ -47,18 +46,9 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip
-        pip install -e .
-    - name: Install test dependencies
-      run: pip install -r requirements.txt
+        pip install .[dev]
     - name: pytest
       run: pytest
-    - name: Code Coverage
-      uses: codecov/codecov-action@v4
-      env:
-        OS: ${{ matrix.os }}
-        PYTHON: '3.12'
-      with:
-        env_vars: OS,PYTHON
 
   deploy:
     if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
@@ -66,6 +56,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    name: Upload release to PyPI
+    environment:
+      name: pypi
+      url: https://pypi.org/p/usaddress
+    permissions:
+      id-token: write 
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
@@ -78,8 +74,5 @@ jobs:
         pip install build
     - name: Build package
       run: python -m build
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
