@@ -1,7 +1,6 @@
 import ast
 import random
 import re
-from builtins import str
 
 from lxml import etree
 
@@ -140,7 +139,7 @@ def osmSyntheticToTraining(xml_file):
 
 def trainFileFromLines(addr_file, is_train=True):
     # us50 data -> training or test file (xml)
-    lines = open(addr_file, "r")
+    lines = open(addr_file)
     if is_train is True:
         outputFileName = (
             "training/training_data/"
