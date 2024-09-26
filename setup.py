@@ -17,9 +17,10 @@ class TrainModel(Command):
         pass
 
     def run(self):
+        PYTHONPATH = os.environ.get("PYTHONPATH", "")
         subprocess.run(
             ["parserator", "train", "training/labeled.xml", "usaddress"],
-            env=dict(os.environ, PYTHONPATH="."),
+            env=dict(os.environ, PYTHONPATH=f".:{PYTHONPATH}"),
         )
 
 
