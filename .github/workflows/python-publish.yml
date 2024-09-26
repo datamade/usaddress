@@ -46,7 +46,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip
-        pip install -e .[dev] -v -v
+        pip install -e .[dev]
     - name: pytest
       run: pytest
 

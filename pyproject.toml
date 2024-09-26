@@ -31,7 +31,8 @@ dev = ["pytest",
        "black",
        "isort",
        "mypy",
-       "flake8"       
+       "flake8",
+       "parserator"
 ]
 
 [build-system]
