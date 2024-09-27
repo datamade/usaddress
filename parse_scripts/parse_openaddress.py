@@ -1,5 +1,7 @@
 import json
+
 from lxml import etree
+
 from usaddress import tokenize
 
 
@@ -24,22 +26,22 @@ def json2addrlist(data, tagmapping):
 
 
 def list2xml(addr_list, outfile):
-    xml_addr_list = etree.Element('AddressCollection')
+    xml_addr_list = etree.Element("AddressCollection")
     for addr in addr_list:
-        xml_addr = etree.Element('AddressString')
+        xml_addr = etree.Element("AddressString")
         # handle commas?
         for component in addr:
             if component[1]:
                 for token in tokenize(component[1]):
                     token_xml = etree.Element(component[0])
                     token_xml.text = token
-                    token_xml.tail = ' '
+                    token_xml.tail = " "
                     xml_addr.append(token_xml)
         xml_addr[-1].tail = None
         xml_addr_list.append(xml_addr)
 
     output = etree.tostring(xml_addr_list, pretty_print=True)
-    with open(outfile, 'w') as f:
+    with open(outfile, "w") as f:
         f.write(output)
 
 
@@ -57,7 +59,8 @@ tag_mapping = [
     ["OccupancyIdentifier", True, "UNITNO"],
     ["PlaceName", True, "CITY"],
     ["StateName", False, "IA"],
-    ["ZipCode", True, "ZIP"]]
+    ["ZipCode", True, "ZIP"],
+]
 
 
 infile = "../data/openaddresses/us-ia-linn.json"
