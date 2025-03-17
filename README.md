@@ -55,7 +55,7 @@ To build a development version of usaddress on your machine, run the following c
   ```
   git clone https://github.com/datamade/usaddress.git  
   cd usaddress  
-  pip install -e .[dev]
+  pip install -e ."[dev]"
   ```  
 
 Then run the testing suite to confirm that everything is working properly:
@@ -103,4 +103,4 @@ If something in the library is not behaving intuitively, it is a bug, and should
 
 ## Copyright
 
-Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).
+Copyright (c) 2025 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).

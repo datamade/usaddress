@@ -29,7 +29,7 @@ After forking the repo, you'll need to get usaddress running on your machine. Ru
 
 ```
 cd usaddress  
-pip install -r requirements.txt  
+pip install setuptools
 python setup.py develop  
 parserator train training/labeled.xml usaddress 
 ```
