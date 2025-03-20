@@ -294,7 +294,7 @@ Once all of the tests are passing, you're safe to move on to step 5b.
 
 If you've arrived at this step, it means that all of your new and old tests passed and your model is good to go. Fantastic! Next up in order to have the public package trained and tested on your data, you'll need to add it to the canonical data.
 
-To do this, just copy your everything within the `<AddressCollection>` tags of your new_addresses.xml file, and paste it towards the end of the same tags within the labeled.xml files found in the training directory. Repeat the same steps for the testing data.
+To do this, just copy your everything within the `<AddressCollection>` tags of your `new_addresses.xml` file, and paste it towards the end of the same tags within the `labeled.xml` file found in the `training/` directory. Repeat the same steps for the testing data and the `test_data/` directory.
 
 **5c. Make a pull request.**
 
