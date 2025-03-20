@@ -262,7 +262,7 @@ The labeling program will launch, and if usaddress can suggest the proper labels
 But it's not good enough to confirm that usaddress has learned new patterns – you also need to confirm that it hasn't *unlearned* old patterns in the process of incorporating your new training data. To do that, run the usaddress testing suite with the following command:
 
 ```
-nosetests .
+pytest
 ```
 
 The output will fill your screen with a big block of dots (.) and/or Fs (F). Each dot corresponds to a test that *passed* (meaning that usaddress produced the expected parse for an address) while each F corresponds to a test that *failed* (meaning that usaddress failed to properly parse the address). 
@@ -276,7 +276,7 @@ Ran 4896 tests in 2.158s
 OK
 ```
 
-Congratulations! The model has officially improved. You can safely move on to step 5b, where you'll share your work.
+Congratulations! The model has officially improved. You can safely move on to step 5b, where you'll get your work ready to be shared.
 
 If any of our tests failed, however, things become more complicated. The output will break down the tests that failed, showing you the parse that the model produced (labeled `pred`) and the parse that the test expected (labeled `true`). In this case, jump to step 5a to debug your errors.
 
@@ -290,9 +290,13 @@ Take the failing addresses and try to find real-world addresses that match the p
 
 Once all of the tests are passing, you're safe to move on to step 5b.
 
-**5b. Make a pull request.**
+**5b. Add your training and testing data.**
 
-If you've arrived at this step, it means that all of your new and old tests passed and your model is good to go. Fantastic!
+If you've arrived at this step, it means that all of your new and old tests passed and your model is good to go. Fantastic! Next up in order to have the public package trained and tested on your data, you'll need to add it to the canonical data.
+
+To do this, just copy your everything within the `<AddressCollection>` tags of your new_addresses.xml file, and paste it towards the end of the same tags within the labeled.xml files found in the training directory. Repeat the same steps for the testing data.
+
+**5c. Make a pull request.**
 
 Now it's time to share your work. GitHub provides a powerful way of sharing code through the *pull request* feature (and has a [really nice guide](https://help.github.com/articles/creating-a-pull-request/) for first-timers explaining how it works). Open up a new pull request and give us a short description of what you changed: What address patterns did you fix? Where did you store your training data? How many new examples/tests did you add? The clearer your description of your work, the easier it will be for the DataMade team to determine whether it's ready to go.
 
