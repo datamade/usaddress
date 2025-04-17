@@ -280,6 +280,21 @@ Congratulations! The model has officially improved. You can safely move on to st
 
 If any of our tests failed, however, things become more complicated. The output will break down the tests that failed, showing you the parse that the model produced (labeled `pred`) and the parse that the test expected (labeled `true`). In this case, jump to step 5a to debug your errors.
 
+If you'd like to additionally spot check singular addresses in the python shell, install a virtual environment, activate it, and open a shell.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python
+# shell starts up
+>>> 
+```
+
+Then import usaddress and start parsing!
+```python
+>>> import usaddress
+>>> usaddress.parse("a funky address")
+```
+
 **5a. Repeat steps 1-4 until the tests pass.**
 
 If you've arrived at this step, it means that some of your tests failed. Uh oh! 
