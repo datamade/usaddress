@@ -280,10 +280,11 @@ Congratulations! The model has officially improved. You can safely move on to st
 
 If any of our tests failed, however, things become more complicated. The output will break down the tests that failed, showing you the parse that the model produced (labeled `pred`) and the parse that the test expected (labeled `true`). In this case, jump to step 5a to debug your errors.
 
-If you'd like to additionally spot check singular addresses in the python shell, install a virtual environment, activate it, and open a shell.
+If you'd like to additionally spot check singular addresses in the python shell, install a virtual environment, activate it, install your WIP version of this package, and open a shell.
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+pip install -e ".[dev]" -v
 python
 # shell starts up
 >>> 
