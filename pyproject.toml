@@ -1,6 +1,6 @@
 [project]
 name = "usaddress"
-version = "0.5.13"
+version = "0.5.14"
 description = "Parse US addresses using conditional random fields"
 readme = "README.md"
 license = {text = "MIT License", url = "http://www.opensource.org/licenses/mit-license.php"}

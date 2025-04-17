@@ -68,7 +68,7 @@ Having trouble building the code? [Open an issue](https://github.com/datamade/us
 
 ### Adding new training data
 
-If usaddress is consistently failing on particular address patterns, you can adjust the parser's behavior by adding new training data to the model. [Follow our guide in the training directory](https://github.com/datamade/usaddress/blob/master/training/README.md), and be sure to make a pull request so that we can incorporate your contribution into our next release!
+If usaddress is consistently failing on particular address patterns, you can adjust the parser's behavior by adding new training data to the model. [Follow our guide in the training directory](./training/README.md), and be sure to make a pull request so that we can incorporate your contribution into our next release!
 
 ## Important links
 
@@ -91,7 +91,7 @@ If usaddress is consistently failing on particular address patterns, you can adj
 
 Report issues in the [issue tracker](https://github.com/datamade/usaddress/issues)
 
-If an address was parsed incorrectly, please let us know! You can either [open an issue](https://github.com/datamade/usaddress/issues/new) or (if you're adventurous) [add new training data to improve the parser's model.](https://github.com/datamade/usaddress/blob/master/training/README.md) When possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
+If an address was parsed incorrectly, please let us know! You can either [open an issue](https://github.com/datamade/usaddress/issues/new) or (if you're adventurous) [add new training data to improve the parser's model.](./training/README.md) When possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
 
 If something in the library is not behaving intuitively, it is a bug, and should be reported.
 
@@ -103,4 +103,4 @@ If something in the library is not behaving intuitively, it is a bug, and should
 
 ## Copyright
 
-Copyright (c) 2025 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).
+Copyright (c) 2025 Atlanta Journal Constitution. Released under the [MIT License](./LICENSE).
