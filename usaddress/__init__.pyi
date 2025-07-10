@@ -12,7 +12,6 @@ def parse(address_string: str) -> list[tuple[str, str]]:
     """
     ...
 
-
 def tag(address_string: str, tag_mapping=None) -> tuple[dict[str, str], str]:
     """
     Parse and merge consecutive components & strip commas.
@@ -36,7 +35,6 @@ def tag(address_string: str, tag_mapping=None) -> tuple[dict[str, str], str]:
     """
     ...
 
-
 def tokenize(address_string: str) -> list[str]:
     """
     Split each component of an address into a list of unlabeled tokens.
@@ -49,9 +47,7 @@ def tokenize(address_string: str) -> list[str]:
     """
     ...
 
-
 Feature = dict[str, typing.Union[str, bool, "Feature"]]
-
 
 def tokenFeatures(token: str) -> Feature:
     """
@@ -66,7 +62,6 @@ def tokenFeatures(token: str) -> Feature:
     """
     ...
 
-
 def tokens2features(address: list[str]) -> list[Feature]:
     """
     Turn every token into a `Feature` dict, and return a list of each token as a `Feature`.
@@ -80,7 +75,6 @@ def tokens2features(address: list[str]) -> list[Feature]:
     """
     ...
 
-
 def digits(token: str) -> typing.Literal["all_digits", "some_digits", "no_digits"]:
     """
     Identify whether the token string is all digits, has some digits, or has no digits
@@ -92,7 +86,6 @@ def digits(token: str) -> typing.Literal["all_digits", "some_digits", "no_digits
         str: A label denoting the presence of digits in the token (`all_digits`, `some_digits`, or `no_digits`)
     """
     ...
-
 
 # for some reason mypy can't believe that this will return a str as of 10/2024
 def trailingZeros(token: str) -> str:
