@@ -1,0 +1,68 @@
+[project]
+name = "usaddress"
+version = "0.5.15"
+description = "Parse US addresses using conditional random fields"
+readme = "README.md"
+license = {text = "MIT License", url = "http://www.opensource.org/licenses/mit-license.php"}
+requires-python = ">=3.9"
+dependencies = [
+  "python-crfsuite>=0.7",
+  "probableparsing"
+  ]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]  
+
+[project.urls]
+Homepage = "https://github.com/datamade/usaddress"
+
+[project.optional-dependencies]
+dev = ["pytest",
+       "black",
+       "isort",
+       "mypy",
+       "flake8",
+       "parserator"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "parserator", "probableparsing"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools.packages.find]
+include = ["usaddress"]
+
+
+[tool.setuptools.package-data]
+usaddress = ['usaddr.crfsuite']
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+testpaths = [
+  "tests",
+  ]
+
+[tool.mypy]
+files = ["usaddress"]
+show_error_codes = true
+ignore_missing_imports = true
+check_untyped_defs = true
+implicit_reexport = false
+
+[tool.isort]
+profile = "black"
+src_paths = ["usaddress", "tests"]

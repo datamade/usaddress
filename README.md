@@ -1,14 +1,21 @@
 usaddress
 =================
-[![Build Status](https://travis-ci.org/datamade/usaddress.svg?branch=master)](https://travis-ci.org/datamade/usaddress)[![Build status](https://ci.appveyor.com/api/projects/status/5mbcd8ku0tm66noq?svg=true)](https://ci.appveyor.com/project/fgregg/usaddress)
-
-usaddress is a Python library for parsing unstructured address strings into address components, using advanced NLP methods. Try it out on our [web interface](https://parserator.datamade.us/usaddress)! For those who aren't Python developers, we also have an [API](https://parserator.datamade.us/api-docs).
+usaddress is a Python library for parsing unstructured United States address strings into address components, using advanced NLP methods.
 
 **What this can do:** Using a probabilistic model, it makes (very educated) guesses in identifying address components, even in tricky cases where rule-based parsers typically break down.
 
 **What this cannot do:** It cannot identify address components with perfect accuracy, nor can it verify that a given address is correct/valid.
 
 It also does not normalize the address. However, [this library built on top of usaddress does](https://github.com/GreenBuildingRegistry/usaddress-scourgify).
+
+
+## Tools built with usaddress
+
+### [Parserator API](https://parserator.datamade.us/)
+A RESTful API built on top of usaddress for programmers who don't use python. Requires an API key and the first 1,000 parses are free.
+
+### [Parserator Google Sheets App](https://workspace.google.com/u/0/marketplace/app/parserator_parse_and_split_addresses/945974620840)
+Parserator: Parse and Split Addresses allows you to easily split addresses into separate columns by street, city, state, zipcode and more right in Google Sheets.
 
 ## How to use the usaddress python library
 
@@ -48,22 +55,20 @@ To build a development version of usaddress on your machine, run the following c
   ```
   git clone https://github.com/datamade/usaddress.git  
   cd usaddress  
-  pip install -r requirements.txt  
-  python setup.py develop  
-  parserator train training/labeled.xml usaddress  
+  pip install -e ."[dev]"
   ```  
 
 Then run the testing suite to confirm that everything is working properly:
 
    ```
-   nosetests .
+   pytest
    ```
    
 Having trouble building the code? [Open an issue](https://github.com/datamade/usaddress/issues/new) and we'd be glad to help you troubleshoot.
 
 ### Adding new training data
 
-If usaddress is consistently failing on particular address patterns, you can adjust the parser's behavior by adding new training data to the model. [Follow our guide in the training directory](https://github.com/datamade/usaddress/blob/master/training/README.md), and be sure to make a pull request so that we can incorporate your contribution into our next release!
+If usaddress is consistently failing on particular address patterns, you can adjust the parser's behavior by adding new training data to the model. [Follow our guide in the training directory](./training/README.md), and be sure to make a pull request so that we can incorporate your contribution into our next release!
 
 ## Important links
 
@@ -86,7 +91,7 @@ If usaddress is consistently failing on particular address patterns, you can adj
 
 Report issues in the [issue tracker](https://github.com/datamade/usaddress/issues)
 
-If an address was parsed incorrectly, please let us know! You can either [open an issue](https://github.com/datamade/usaddress/issues/new) or (if you're adventurous) [add new training data to improve the parser's model.](https://github.com/datamade/usaddress/blob/master/training/README.md) When possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
+If an address was parsed incorrectly, please let us know! You can either [open an issue](https://github.com/datamade/usaddress/issues/new) or (if you're adventurous) [add new training data to improve the parser's model.](./training/README.md) When possible, please send over a few real-world examples of similar address patterns, along with some info about the source of the data - this will help us train the parser and improve its performance.
 
 If something in the library is not behaving intuitively, it is a bug, and should be reported.
 
@@ -98,4 +103,4 @@ If something in the library is not behaving intuitively, it is a bug, and should
 
 ## Copyright
 
-Copyright (c) 2014 Atlanta Journal Constitution. Released under the [MIT License](https://github.com/datamade/usaddress/blob/master/LICENSE).
+Copyright (c) 2025 Atlanta Journal Constitution. Released under the [MIT License](./LICENSE).
