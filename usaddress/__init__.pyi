@@ -1,5 +1,14 @@
 import typing
 
+import probableparsing
+
+class RepeatedLabelError(probableparsing.RepeatedLabelError):
+    REPO_URL: str
+    DOCS_URL: str
+    message: str
+    original_string: str
+    parsed_string: list[tuple[str, str]]
+
 def parse(address_string: str) -> list[tuple[str, str]]:
     """
     Split an address string into components, and label each component.
