@@ -46,6 +46,22 @@ GROUP_LABEL = "AddressCollection"
 MODEL_FILE = "usaddr.crfsuite"
 MODEL_PATH = os.path.split(os.path.abspath(__file__))[0] + "/" + MODEL_FILE
 
+# hot path for tokenize()/tokenFeatures(), which run once per address and
+# once per token, respectively.
+AMPERSAND_ENTITY_RE = re.compile("(&#38;)|(&amp;)")
+TOKEN_RE = re.compile(
+    r"""
+    \(*\b[^\s,;#&()]+[.,;)\n]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
+    |
+    [#&]                       # [^'#abc'] -> ['#']
+    """,
+    re.VERBOSE | re.UNICODE,
+)
+LEADING_TRAILING_PUNC_RE = re.compile(r"(^[\W]*)|([^.\w]*$)", flags=re.UNICODE)
+PERIOD_RE = re.compile(r"[.]")
+ENDS_IN_PUNC_RE = re.compile(r".+[^.\w]", flags=re.UNICODE)
+TRAILING_ZEROS_RE = re.compile(r"(0+)$")
+
 DIRECTIONS = {
     "n",
     "s",
@@ -731,23 +747,14 @@ def tag(address_string: str, tag_mapping=None) -> tuple[dict[str, str], str]:
 def tokenize(address_string: str) -> list[str]:
     if isinstance(address_string, bytes):
         address_string = str(address_string, encoding="utf-8")
-    address_string = re.sub("(&#38;)|(&amp;)", "&", address_string)
-    re_tokens = re.compile(
-        r"""
-    \(*\b[^\s,;#&()]+[.,;)\n]*   # ['ab. cd,ef '] -> ['ab.', 'cd,', 'ef']
-    |
-    [#&]                       # [^'#abc'] -> ['#']
-    """,
-        re.VERBOSE | re.UNICODE,
-    )
+    address_string = AMPERSAND_ENTITY_RE.sub("&", address_string)
 
-    tokens = re_tokens.findall(address_string)
+    tokens = TOKEN_RE.findall(address_string)
 
     if not tokens:
         return []
 
     return tokens
-
 
 Feature = dict[str, typing.Union[str, bool, "Feature"]]
 
@@ -756,9 +763,8 @@ def tokenFeatures(token: str) -> Feature:
     if token in ("&", "#", "½"):
         token_clean = token
     else:
-        token_clean = re.sub(r"(^[\W]*)|([^.\w]*$)", "", token, flags=re.UNICODE)
-
-    token_abbrev = re.sub(r"[.]", "", token_clean.lower())
+        token_clean = LEADING_TRAILING_PUNC_RE.sub("", token)
+    token_abbrev = PERIOD_RE.sub("", token_clean.lower())
     features = {
         "abbrev": token_clean[-1] == ".",
         "digits": digits(token_clean),
@@ -772,7 +778,7 @@ def tokenFeatures(token: str) -> Feature:
             else "w:" + str(len(token_abbrev))
         ),
         "endsinpunc": (
-            token[-1] if bool(re.match(r".+[^.\w]", token, flags=re.UNICODE)) else False
+            token[-1] if bool(ENDS_IN_PUNC_RE.match(token)) else False
         ),
         "directional": token_abbrev in DIRECTIONS,
         "street_name": token_abbrev in STREET_NAMES,
@@ -818,7 +824,7 @@ def digits(token: str) -> typing.Literal["all_digits", "some_digits", "no_digits
 
 # for some reason mypy can't believe that this will return a str as of 10/2024
 def trailingZeros(token):
-    results = re.findall(r"(0+)$", token)
+    results = TRAILING_ZEROS_RE.findall(token)
     if results:
         return results[0]
     else:
