@@ -680,7 +680,9 @@ def parse(address_string: str) -> list[tuple[str, str]]:
     return list(zip(tokens, tags))
 
 
-def tag(address_string: str, tag_mapping=None) -> tuple[dict[str, str], str]:
+def tag(
+    address_string: str, tag_mapping: typing.Optional[typing.Mapping[str, str]] = None
+) -> tuple[dict[str, str], str]:
     tagged_components: dict[str, list] = {}
 
     last_label = None

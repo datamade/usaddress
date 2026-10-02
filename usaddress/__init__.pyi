@@ -12,7 +12,9 @@ def parse(address_string: str) -> list[tuple[str, str]]:
     """
     ...
 
-def tag(address_string: str, tag_mapping=None) -> tuple[dict[str, str], str]:
+def tag(
+    address_string: str, tag_mapping: typing.Optional[typing.Mapping[str, str]] = None
+) -> tuple[dict[str, str], str]:
     """
     Parse and merge consecutive components & strip commas.
     Also return an address type (`Street Address`, `Intersection`, `PO Box`, or `Ambiguous`).
